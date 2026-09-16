@@ -1,0 +1,16 @@
+{
+  "python": "3.12.7",
+  "numpy": "1.26.4",
+  "pandas": "2.2.2",
+  "scipy": "1.13.1",
+  "scikit-learn": "1.5.1",
+  "geopandas": "1.1.3",
+  "shapely": "2.1.2",
+  "pyproj": "3.7.2",
+  "matplotlib": "3.9.2",
+  "threadpoolctl": "3.5.0",
+  "torch": "2.12.0",
+  "python-docx": "not installed in this runtime",
+  "pypdf": "not installed in this runtime",
+  "Pillow": "10.4.0"
+}

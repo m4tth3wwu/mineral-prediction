@@ -1,0 +1,71 @@
+{
+  "version": "pink_shared_contact_v3.1",
+  "alpha": 0.1,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "feature_manifest_sha256": "11bab4798c1d07e4ea1231ee8d7951a417c5553c7fd899b6e9c02be2da550468",
+  "feature_cache": "D:\\code\\ResearchPractice\\mineral_prediction\\output\\ppp_binary_features_v3",
+  "models": {
+    "M0_no_lithology": [
+      "log1p_Cu_ppm",
+      "log1p_Au_ppm",
+      "log1p_Mo_ppm",
+      "Fe_pct",
+      "log1p_dist_fault_km",
+      "gravity_bouguer",
+      "gravity_distance_deg",
+      "has_gravity"
+    ],
+    "M1_intrusive_indicator": [
+      "log1p_Cu_ppm",
+      "log1p_Au_ppm",
+      "log1p_Mo_ppm",
+      "Fe_pct",
+      "log1p_dist_fault_km",
+      "gravity_bouguer",
+      "gravity_distance_deg",
+      "has_gravity",
+      "lith_intrusive"
+    ],
+    "M2_old_polygon_contact": [
+      "log1p_Cu_ppm",
+      "log1p_Au_ppm",
+      "log1p_Mo_ppm",
+      "Fe_pct",
+      "log1p_dist_fault_km",
+      "gravity_bouguer",
+      "gravity_distance_deg",
+      "has_gravity",
+      "lith_intrusive",
+      "log1p_dist_intrusive_contact_km"
+    ],
+    "M2_binary_contact": [
+      "log1p_Cu_ppm",
+      "log1p_Au_ppm",
+      "log1p_Mo_ppm",
+      "Fe_pct",
+      "log1p_dist_fault_km",
+      "gravity_bouguer",
+      "gravity_distance_deg",
+      "has_gravity",
+      "lith_intrusive",
+      "log1p_dist_binary_contact_km"
+    ],
+    "M3_coverage_sensitivity": [
+      "log1p_Cu_ppm",
+      "log1p_Au_ppm",
+      "log1p_Mo_ppm",
+      "Fe_pct",
+      "log1p_dist_fault_km",
+      "gravity_bouguer",
+      "gravity_distance_deg",
+      "has_gravity",
+      "lith_intrusive",
+      "log1p_dist_binary_contact_km",
+      "log1p_nearest_geochemistry_km"
+    ]
+  }
+}

@@ -1,0 +1,246 @@
+{
+  "purpose": "Original file byte hashes before baseline; existing code is not edited.",
+  "files": [
+    {
+      "path": "mineral_prediction/ACAWLR_gravity_fault_maps.py",
+      "bytes": 51882,
+      "sha256": "ad628cf415c44e3795efad55e9473e2359e30d2570f0ba24bf495bd3455b6213"
+    },
+    {
+      "path": "mineral_prediction/ACAWLR_GRAVITY_FAULT_MAPS_README.md",
+      "bytes": 2047,
+      "sha256": "0589629c06ddb32c2e0e6f76078038695a4afdd88f39bbd2019c985d824731b8"
+    },
+    {
+      "path": "mineral_prediction/ACAWLR_improved.py",
+      "bytes": 36346,
+      "sha256": "80aaf0431b209498303116bf85a76bfba9dd882827549cb26bb783f8a262ba56"
+    },
+    {
+      "path": "mineral_prediction/ACAWLR_paper_44_16_multiscale.py",
+      "bytes": 93038,
+      "sha256": "a8d043d16e2c748e63a4d29057a1363a6e3c3ff8654492d8ee2a7c7b2b0e2448"
+    },
+    {
+      "path": "mineral_prediction/ACAWLR_paper_44_16_reproduction.py",
+      "bytes": 48453,
+      "sha256": "2039da7308a787309b3c2f5f3c742e7b2be14dc006d20899d79163ed333db27f"
+    },
+    {
+      "path": "mineral_prediction/ACAWLR_paper_aligned.py",
+      "bytes": 40525,
+      "sha256": "8f6d2ab892e7b62cddd0e570fd16793109a25693abf53511da8d6308cf05ace9"
+    },
+    {
+      "path": "mineral_prediction/analyze_stars.py",
+      "bytes": 3031,
+      "sha256": "cf558f71ff5b98e37cf1ce181c811ba20c1527e08b65e2a579a52576010da6a6"
+    },
+    {
+      "path": "mineral_prediction/audit_completed_run.py",
+      "bytes": 8633,
+      "sha256": "cf29355c74cedf6135870fe3e0ea63ff1f687816d5f84e681ae80a5684cbed12"
+    },
+    {
+      "path": "mineral_prediction/audit_project_delivery.py",
+      "bytes": 5516,
+      "sha256": "9681f95670d9f6e611b1209248a79f151cb72f2bcd9e86e2769b4850559106fa"
+    },
+    {
+      "path": "mineral_prediction/build_method_comparison_report.py",
+      "bytes": 43148,
+      "sha256": "cfe78f6a31a311b4ffa84b6badc8ed048129aad33c0b9c49e3691cc9dbbcd8b0"
+    },
+    {
+      "path": "mineral_prediction/build_paper_figures.py",
+      "bytes": 8061,
+      "sha256": "bf1884ff89cae812e529a96f48e55b3a4b4618feabe77e3f63c398909910a083"
+    },
+    {
+      "path": "mineral_prediction/build_research_overview.py",
+      "bytes": 8090,
+      "sha256": "c14b9e00fc78f7b47ee83a1c75e1d05fb58a9704a0686adb178d871ff3348b33"
+    },
+    {
+      "path": "mineral_prediction/build_simple_explanation.py",
+      "bytes": 10520,
+      "sha256": "7794d402326524e1731630e123e172c7e04c99aafef854bac3842cf052ca1d14"
+    },
+    {
+      "path": "mineral_prediction/fetch_point_review_sources.py",
+      "bytes": 1893,
+      "sha256": "ca656edf54dc95ce3f3e3b117b2f150bc0ff7d091a4db417b49996891cbea56c"
+    },
+    {
+      "path": "mineral_prediction/inspect_docx_terms.py",
+      "bytes": 879,
+      "sha256": "d4a857c457ce16f2cde0e80ce521f69377e149b1f35d634745771253e9ad7674"
+    },
+    {
+      "path": "mineral_prediction/inspect_spatial_regression_pdf.py",
+      "bytes": 1431,
+      "sha256": "0fbe67076dd1938ecbbf3ba4ebf5152b08c2d20fe68da412e3ed12cc9795e45b"
+    },
+    {
+      "path": "mineral_prediction/map_factor_data_distribution.py",
+      "bytes": 17667,
+      "sha256": "c3cd950ffd7cbb9af9d10a554046367d5c97cb35944d6d9a3d924acccee90c83"
+    },
+    {
+      "path": "mineral_prediction/match_figure2g_deposits.py",
+      "bytes": 13232,
+      "sha256": "376acb08153d483e8bfa4f568435d69b5eda70019c0704c03611e7c21a380cbc"
+    },
+    {
+      "path": "mineral_prediction/PAPER_ALIGNMENT_NOTES.md",
+      "bytes": 1741,
+      "sha256": "cf24de08ae1dcc76ad58f0d1fc187345238922ae572b849737b392f681cc0908"
+    },
+    {
+      "path": "mineral_prediction/PPP_binary_lithology_v3.py",
+      "bytes": 26604,
+      "sha256": "f808f027a457f4faaca0cef1161c24ed07651c879aeb2c85ab8566523bd02b24"
+    },
+    {
+      "path": "mineral_prediction/PPP_BINARY_V3_README.md",
+      "bytes": 2767,
+      "sha256": "200d56c79706f23d4d81632ea540595ebcf61f29667cc810582b2dc4a2c11d9c"
+    },
+    {
+      "path": "mineral_prediction/PPP_LITHOLOGY_METHOD_README.md",
+      "bytes": 3919,
+      "sha256": "62b3093bd8f454981c0fa35c6aa32b84d830b1f58e7992138b216bb2b270e888"
+    },
+    {
+      "path": "mineral_prediction/PPP_lithology_spatial_validation.py",
+      "bytes": 47012,
+      "sha256": "e7ec8ad257bc19ea88dcbfc74d2e49bcc05491aff02514f32357cbc9132fbee8"
+    },
+    {
+      "path": "mineral_prediction/PPP_THREE_PAPERS_README.md",
+      "bytes": 4882,
+      "sha256": "576d0b41da0c7b13108b151dab04d8e9fffca1bc64bffb99b597c3f28518e065"
+    },
+    {
+      "path": "mineral_prediction/PPP_three_papers_simple.py",
+      "bytes": 31778,
+      "sha256": "63d0ee44a07891ef6d9c48ec64d1b45e30529c677612b86168746f7e05af9b27"
+    },
+    {
+      "path": "mineral_prediction/reports/paper_figures/图注与使用说明.md",
+      "bytes": 1812,
+      "sha256": "06e1aff91b149a5fe69e004362e0fbac8a892eac73bb8ad46307d9611d33c9ff"
+    },
+    {
+      "path": "mineral_prediction/review_eight_points.py",
+      "bytes": 9425,
+      "sha256": "6154ac53fd13ccf65cf22236c642ff034b8675b49e0911355043a09815d6b888"
+    },
+    {
+      "path": "mineral_prediction/run_current_ppp.ps1",
+      "bytes": 616,
+      "sha256": "53a75c70c294cfbcf9bf6e178b5cb79dba113da94f74c49420e1743ab4589a0f"
+    },
+    {
+      "path": "mineral_prediction/select_mineral_points.py",
+      "bytes": 6347,
+      "sha256": "76bb96be3857ef0ddad3bba15cd7cf798fb32fff8eefa186a0608630f1d1c583"
+    },
+    {
+      "path": "mineral_prediction/test_point_selection.py",
+      "bytes": 739,
+      "sha256": "7ac7b52dc6afa159800f5afd9002eb89cce84c41ee4ee69e41d1ac649c0772ba"
+    },
+    {
+      "path": "mineral_prediction/test_ppp_binary_lithology_v3.py",
+      "bytes": 4232,
+      "sha256": "5665c1ff15ae23e77fc52ea02b470e828b251bd3e047afb7477e5a9912157426"
+    },
+    {
+      "path": "mineral_prediction/test_ppp_three_papers_simple.py",
+      "bytes": 7530,
+      "sha256": "1d16e20aafde5c78609ccf877f189d488f5892db4648373ab90ca0fcaab71df2"
+    },
+    {
+      "path": "mineral_prediction/traditional_spatial_logistic.py",
+      "bytes": 28631,
+      "sha256": "fe3da30732038532c6f896b603414c2c5d1f3b189ccbf53ee7aa366b9f755cf0"
+    },
+    {
+      "path": "mineral_prediction/verify_ppp_v3_results.py",
+      "bytes": 2768,
+      "sha256": "1178b54d9d75e43b6bbf488d60cdcca66c74825a169741281e717100a41a4a93"
+    },
+    {
+      "path": "mineral_prediction/传统统计_vs_ACAWLR_结果对比说明.md",
+      "bytes": 1632,
+      "sha256": "d27c5936a560387aab23608df8c34e90df2b7d9adadd7edbccd32f45b3b4ffae"
+    },
+    {
+      "path": "README_当前PPP运行.md",
+      "bytes": 746,
+      "sha256": "4ac5d159d0829cbd95675260fb9ea0ec02823b187af861ad5f968b855de684ff"
+    },
+    {
+      "path": "README_目录说明.md",
+      "bytes": 951,
+      "sha256": "bb100d072d05ed5224c935953d784b8c507192ef910db4762e89abae74fad994"
+    },
+    {
+      "path": "run_current_ppp.ps1",
+      "bytes": 616,
+      "sha256": "53a75c70c294cfbcf9bf6e178b5cb79dba113da94f74c49420e1743ab4589a0f"
+    },
+    {
+      "path": "scripts/ACAWLR.py",
+      "bytes": 32102,
+      "sha256": "a1d0913bf54432667fd38fbbfcd7fef3d070495a026f2bb3ffc491e9b14087c1"
+    },
+    {
+      "path": "scripts/ACAWLR_improved.py",
+      "bytes": 36346,
+      "sha256": "80aaf0431b209498303116bf85a76bfba9dd882827549cb26bb783f8a262ba56"
+    },
+    {
+      "path": "scripts/ACAWLR_paper_44_16_multiscale.py",
+      "bytes": 93038,
+      "sha256": "a8d043d16e2c748e63a4d29057a1363a6e3c3ff8654492d8ee2a7c7b2b0e2448"
+    },
+    {
+      "path": "scripts/ACAWLR_paper_44_16_reproduction.py",
+      "bytes": 48453,
+      "sha256": "2039da7308a787309b3c2f5f3c742e7b2be14dc006d20899d79163ed333db27f"
+    },
+    {
+      "path": "scripts/legacy_downloaded/ACAWLR_fault_ready.py",
+      "bytes": 27371,
+      "sha256": "4a5bc3d89b5bc56d248a45bd10e60f77018a9789e8550e0f5c8a05edfa8394e9"
+    },
+    {
+      "path": "scripts/legacy_downloaded/ACAWLR_fault_USCanada_latest.py",
+      "bytes": 28399,
+      "sha256": "2e86741197d82fb748b7d3bc7b19a7724e6e256e7d163d49909af80fb9a26400"
+    },
+    {
+      "path": "scripts/legacy_downloaded/ACAWLR_fivefold_imbalanced_fault.py",
+      "bytes": 31389,
+      "sha256": "2f0dfbba1064ea526ef18c21b9581b81b8f6262639c90f68cf14a35d4909d161"
+    },
+    {
+      "path": "scripts/legacy_downloaded/README.md",
+      "bytes": 416,
+      "sha256": "25ab6737a406169211d303079627fe02b24464dca1caa9f35cf5040983efb17d"
+    },
+    {
+      "path": "scripts/run_current_ppp.ps1",
+      "bytes": 616,
+      "sha256": "53a75c70c294cfbcf9bf6e178b5cb79dba113da94f74c49420e1743ab4589a0f"
+    },
+    {
+      "path": "baseline/run_config.json",
+      "bytes": 1752,
+      "sha256": "22e564feb0d178a477f2262247f36d544dcd832ef9728aa91081f1033fe6927f",
+      "copied_from": "mineral_prediction/output/ppp_run_20260905_195450_443/config.json"
+    }
+  ]
+}
