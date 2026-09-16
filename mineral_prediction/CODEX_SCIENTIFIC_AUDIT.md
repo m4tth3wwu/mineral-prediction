@@ -372,3 +372,103 @@ sum_f (n_f*A_f*AUC_f) / sum_f(n_f*A_f)
 5. 上述契约明确后，才批准一项范围有限的当前M2-new固定参数积分审计；是否需要重拟合由积分证据决定，而不是AUC是否提高。
 
 本Stage 1A的交付仅为本报告及其精确allowlist。没有实施上述后续修正，没有自动开始Stage 1B。
+
+
+## Stage 1B verification results
+
+### B1. Scope, environment and execution record
+
+日期：2026-09-16。起点为 Stage 1A 提交 `7b22319d2e37a6050067cbc83461f58bb7bc24c9`；开始时工作区干净，分支为 `codex-refactor`。上文第1–13节保留为 Stage 1A 的历史审计记录，其中“本阶段未运行测试”等表述指 Stage 1A；本节记录新执行的 Stage 1B 证据。
+
+**结果：现有20项测试全部通过，新增2项无拟合的微型指标回归测试通过；已有审计中的19项几何/记录检查和26项文件哈希检查通过；实际仅重放1个既有空间折，保存预测的最大绝对误差为1.0658141036401503e-14。没有发现新的测试失败或已证实的科学实现错误。**
+
+运行时：`D:/anaconda/python.exe`，Python 3.12.7；NumPy 1.26.4、pandas 2.2.2、SciPy 1.13.1、scikit-learn 1.5.1、Shapely 2.1.2、pyproj 3.7.2、GeoPandas 1.1.3。设置 OMP/OPENBLAS/MKL 线程数为1；使用 `-B` / PYTHONDONTWRITEBYTECODE 避免写入pyc。未安装或升级依赖。
+
+先执行用户指定套件：
+
+```powershell
+& 'D:/anaconda/python.exe' -B -m unittest -v test_ppp_binary_lithology_v3 test_ppp_three_papers_simple
+```
+
+结果：`Ran 20 tests in 0.526s — OK`，0 failures、0 errors、0 skips。其中v3合成几何/分区/缓存5项，simple数学8项、空间3项、旧simple_v2已存结果4项。后四项只读取历史产物，**没有重新运行旧simple_v2模型或CV**。
+
+原始日志及deterministic audit新输出保存在独立目录：
+`mineral_prediction/output/stage1b_verification_20260916/`。
+目录含 `unit_tests.txt`、`metric_regression_tests.txt`、`environment.json`、`audit_console.txt`、`replay_call_budget.json` 与 `audit/` 下的摘要/哈希/坐标/折检查表。该目录按既有规则local-only、未加入Git；本节和新增测试源码是随提交保存的可审查证据。未修改.gitignore。
+
+### B2. Existing deterministic audit and the single replay
+
+使用已有 `audit_completed_run.py` 的 `main()`，原始输入仍是 `ppp_run_20260905_195450_443` 和其feature cache；仅在调用时把模块的 `OUT` 指向新的 `stage1b_verification_20260916/audit`。没有执行原脚本的默认历史输出写入路径，没有改动审计程序源码。
+
+另以临时 `unittest.mock.patch` 包装 `ppp.fit_points`：首次调用原函数、记录参数和收敛状态；若第二次调用立即报错。审计结束断言调用数恰为1。因此19项fold checks是读取已存划分并重建几何/核对成员关系，**不代表19次训练，不是完整 spatial CV**。合成unit tests里的微型拟合也不是实际数据fold replay。
+
+| 单折核验项 | 本次实测 |
+|---|---|
+| 模型 / seed / fold | M2_binary_contact / 42 / 1 |
+| alpha | 0.1，未修改或搜索 |
+| 训练事件 / 留出事件 / guard排除事件 | 28 / 9 / 7，共44 |
+| 训练quadrature | 21,194 |
+| 训练与留出事件最小平面距离 | 75.53254375314215 km，>50 km |
+| 优化器success | True |
+| 最大绝对梯度 | 4.1592140340246386e-05，小于原代码保护阈值0.01 |
+| 9个留出事件的保存log-intensity最大复现误差 | 1.0658141036401503e-14，小于原审计容差1e-7 |
+| 训练quadrature面积加权Cu均值（独立重算） | 3.089988564850937 |
+| replay模型prep中的Cu均值 | 3.089988564850937 |
+
+held-out名单与保存预测表按deposit核对一致；训练/测试名单无交集。审计以Shapely test-square并集距离重建训练事件和训练quadrature掩膜，同时排除测试块与50 km guard，并核对保存的train/test/quadrature数量。重放使用这个训练子集，成功复现保存分数，为“该折没有把测试quadrature纳入训练积分、prep使用训练域”提供运行证据。**这仍不是独立重写PPP求解器的数值交叉验证**，也未对所有特征的median/SD各做一份独立实现。
+
+其他既有轻量检查结果：
+
+- 15个block折（42/43/44各5折）以及4个compact折的成员、保存记录和事件间隔全部匹配；所有检查的最小事件间隔为54.90892622792758 km。compact检查核对事件及区域，未独立核对全部compact训练quadrature积分权重。
+- 60个事件的坐标与来源表最大差为0 degree，split标签一致。EPSG:4326 → ESRI:102039重投影最大误差为6.984919309616089e-10 m，小于0.01 m容差；60点都不恰好位于积分点中心。这支持“保留输入事件坐标”，不证明论文图件匹配坐标准确。
+- 19个signature输入文件（含原始数据、主要shapefile sidecars、三个生产模块、旧support和点表）与7个缓存输出文件共26项SHA-256全部匹配；另行通过run config中feature_manifest_sha256与当前manifest的绑定断言。没有调用会自动重建特征的 `v3.load_features`。
+- 原审计最后用已保存全量参数直接重算历史16点分数，满足其误差<1e-10的断言，Top10未覆盖仍是4点：Fish Creek、Gabbs Group、San Xavier North、Two Peaks。这里只复核保存预测，没有用44点重新拟合或启动新44/16实验。
+- 缓存哈希一致现在是本次核验结果，不再只是读取历史“passed”文字。但它只保证被记录文件的字节一致；不证明原始资料正确、所有依赖均已记录或发现偏差已消除。
+
+### B3. Only two small new regression tests
+
+没有重复新增梯度、mass、合成guard或cache corruption测试。仅在已有 `test_ppp_three_papers_simple.py` 增加27行 `MetricWeightingTests`，补足现有套件未直接覆盖的指标面积权重。两项测试均不调用fit_points，不读取真实数据，不改变生产算法：
+
+1. `test_auc_uses_background_area_and_half_credit_for_ties`：背景分数[0,1,1,2]，面积[1,2,3,4]，事件分数1。按面积的手算AUC是 `(1 + 0.5*(2+3))/10 = 0.35`；若误用等权格点则为0.5。测试得到0.35，同时核对该离散例的Top10实际面积为0.4、事件命中0。
+2. `test_cv_auc_uses_event_area_pairs_not_event_only_weights`：两折事件数[2,1]、面积[10,100]、AUC[0.2,0.8]，正确汇总为 `(20*0.2+100*0.8)/120=0.7`，仅事件加权会是0.4。测试得到0.7，并核对capture和conditional gain各自仍按事件口径汇总。
+
+只运行新增类：
+
+```powershell
+& 'D:/anaconda/python.exe' -B -m unittest -v test_ppp_three_papers_simple.MetricWeightingTests
+```
+
+结果：`Ran 2 tests in 0.008s — OK`。因此本次共执行22个不同测试，全部通过；并非把整个22项套件又重复运行一次。
+
+这使Stage 1A关于 `test_events * test_area_km2` 的判断从源码推导获得了独立手算例的运行支持，也确认现有图2“按测试事件数加权”的图注需要修正。图注修正不属于本次verification的代码变更。
+
+### B4. Which Stage 1A judgments are now verified?
+
+| Stage 1A判断 | Stage 1B证据级别与范围 |
+|---|---|
+| PPP gradient、profiled intercept/mass、saved LL关系正确 | 已通过现有合成数值梯度、mass/LL一致性和logsumexp大值测试；单折拟合成功。对完整似然等价性、惩罚解释和凸性的普遍结论仍来自第3节数学推导，有限测试不构成所有输入的证明。 |
+| area weighting和unit scaling正确 | 现有非等面积数学fixture、面积统一放大只改截距、coarsen面积守恒测试通过；新增指标测试直接确认背景AUC及跨折AUC权重。未据此宣称实际海岸面积或当前M2-new积分已收敛。 |
+| event/quadrature separation | 现有测试证明改event_count不影响拟合、改真实事件特征会影响拟合；实测60点保留来源坐标，单折名单/积分域/保存预测一致。 |
+| preprocessing没有直接测试集fit泄漏 | 现有prep不可被测试matrix修改的测试通过；replay中训练域Cu均值独立核对一致。支持代码所声明的折内处理，不证明全区预先调查协变量没有观测过程信息。 |
+| 50 km spatial guard | 合成方块距离测试通过；实际19组事件几何检查通过；单折训练quadrature掩膜与保存记录/预测一致。不是地质相关性已在50 km消失的证明。 |
+| GIS单位/坐标链 | 合成接触距离m→km、面积单位变换、60点投影检查通过；没有完整重算原始地化/重力/断层，不扩张为全部GIS单位已核查。 |
+| cache provenance | mock缓存复用/损坏失效测试通过；实际26项哈希及run-manifest绑定通过；本次没有缓存重建。 |
+| 新模型是独立log-linear PPP，即B | 与运行所用fit_points一致，但身份判断主要仍是Stage 1A调用链证据；没有通过测试变成ACAWLR+PPP。 |
+| 旧simple_v2的已保存5/10 km质量门槛满足 | RealDataResultTests读取已有结果后通过；不是本次重跑，也不能推广到v3新接触特征。 |
+
+### B5. Findings that remain static or scientifically unresolved
+
+以下事项本阶段没有获得新的实验验证，继续保留Stage 1A结论的边界：
+
+- 目录选择/发现偏差、M3是否能代表effort、历史16点的重复使用和alpha历史选择风险，不能由当前实现测试消除。
+- compact区域由全部44点坐标构造、同折AUC的estimand、全域44拟合对16子集raw likelihood的解释，仍是代码/设计与数学层面的判断，未做新验证设计。
+- 1个Ice积分格与Kelsey漏格是Stage 1A已读取的证据；本阶段没有再扫描重做该检查、改support或运行域敏感性实验。其对预测的影响仍未量化。
+- 新M2共同接触距离的积分收敛、sliver/拓扑真值、全部原始missing编码、全fine网格坐标一致性、输出极端外推稳定性，均未新增验证。
+- 图2权重实现已有运行支持；hardcoded路径、可变cache来源绑定和图件视觉质量仍是此前静态审计/待验收项。生产图脚本未修改。
+- 高AUC、预测重现、mass恒等式与稳定缓存，仍不能被解释成绝对有矿概率、未知矿床数量或独立盲测成功。
+
+### B6. New issues and final scope
+
+**未发现新的失败测试、缓存不一致、坐标差异、guard违反或单折预测复现失败；无需纠正Stage 1A核心数学或模型身份结论。** 新增测试补上了非等面积AUC及跨折权重的覆盖缺口，并未发现需要修复的生产计算错误。已有科学限制与图注问题仍未解决；“验证通过”不等于Stage 1A所有风险关闭。
+
+最终改动仅为本报告新增本节和现有测试文件新增两个微型回归测试。未改生产模型/参数、未重跑完整CV、未新44/16实验、未sensitivity analysis、未新模型、未重构；实际数据只拟合一个既有fold。历史结果和默认审计输出未覆盖，main与pre-codex-refactor仍指向基线a3a3f186；不merge、不push。按要求提交 `stage1b: verify scientific audit` 后停止，不自动进入Stage 2。

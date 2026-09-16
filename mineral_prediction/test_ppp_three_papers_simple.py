@@ -105,6 +105,33 @@ class SpatialTests(unittest.TestCase):
         self.assertEqual(mapping, model.make_fold_map(grid, events, 10, 3, 42))
 
 
+class MetricWeightingTests(unittest.TestCase):
+    def test_auc_uses_background_area_and_half_credit_for_ties(self):
+        grid = pd.DataFrame({"x": [0., 1., 1., 2.], "area_km2": [1., 2., 3., 4.]})
+        events = pd.DataFrame({"x": [1.]})
+        prep = model.legacy.Preprocessor(["x"], {"x": 0.}, {"x": 0.}, {"x": 1.})
+        fit = model.PointFit(np.array([1.]), 0., prep, 0., 1, True, 0.)
+        scores = model.evaluate(fit, grid, events)
+        # Below-event area 1 plus half of tied area 5, divided by total area 10.
+        self.assertAlmostEqual(scores["presence_background_auc"], 0.35)
+        self.assertEqual(scores["top_10pct_hits"], 0)
+        self.assertAlmostEqual(scores["top_10pct_actual_area_fraction"], 0.4)
+
+    def test_cv_auc_uses_event_area_pairs_not_event_only_weights(self):
+        rows = pd.DataFrame({
+            "model": ["synthetic"] * 2, "seed": [42] * 2, "grid_km": [10] * 2,
+            "test_events": [2, 1], "test_area_km2": [10., 100.],
+            "presence_background_auc": [0.2, 0.8], "top_10pct_hits": [0, 1],
+            "conditional_log_gain_per_event": [1., 4.],
+        })
+        repeats, summary = model.summarize_cv(rows)
+        # AUC=(20*0.2 + 100*0.8)/120=0.7; event-only weighting would give 0.4.
+        self.assertAlmostEqual(repeats.iloc[0].same_fold_auc, 0.7)
+        self.assertAlmostEqual(summary.iloc[0].auc_mean, 0.7)
+        self.assertAlmostEqual(repeats.iloc[0].top_10pct_capture, 1 / 3)
+        self.assertAlmostEqual(repeats.iloc[0].conditional_log_gain_per_event, 2.)
+
+
 @unittest.skipUnless((model.ROOT / "output/ppp_three_papers_simple_v2/README_results.md").exists(),
                      "Run the real-data experiment first")
 class RealDataResultTests(unittest.TestCase):
