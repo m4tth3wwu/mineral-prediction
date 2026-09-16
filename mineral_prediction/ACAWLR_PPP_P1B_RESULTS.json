@@ -1,0 +1,2532 @@
+{
+  "seeds": [
+    11,
+    23,
+    37,
+    53,
+    71
+  ],
+  "steps": 300,
+  "restarts": 3,
+  "learning_rate": 0.01,
+  "penalty": {
+    "beta": 0.02,
+    "u": 0.2,
+    "theta": 0.001
+  },
+  "dtype": "float64",
+  "area_unit": "km^2",
+  "intensity_rmse_unit": "relative intensity A*p; area mean 1",
+  "std": "sample standard deviation, ddof=1",
+  "runs": {
+    "256": [
+      {
+        "g_correlation": 0.9078486120722393,
+        "g_rmse": 0.36619285431431214,
+        "intensity_correlation": 0.9283271990507951,
+        "intensity_rmse": 0.33341495999639714,
+        "density_rmse": 3.473072499962471e-05,
+        "top20_overlap": 0.8109378946623157,
+        "coefficient_rmse": 0.4652757262636697,
+        "coefficient_correlations": [
+          0.919178601838735,
+          0.9191786018387351
+        ],
+        "reference_error": 0.0,
+        "rank_one_residual": 7.353880019281908e-17,
+        "evaluation_log_z": 10.183183452741643,
+        "truth_log_z": 9.87800346155763,
+        "n": 256,
+        "seed": 11,
+        "resolution": 12,
+        "initial": {
+          "step": 0,
+          "objective": 2347.4119499583044,
+          "profile_objective": 2347.3966736284015,
+          "penalty": 0.015276329902906166,
+          "log_likelihood": -1183.8312478416335,
+          "intercept": -3.6243403338072513,
+          "log_z": 9.169517778286814,
+          "n": 256,
+          "training_area": 9600.0,
+          "area_unit": "km^2"
+        },
+        "final": {
+          "step": 300,
+          "objective": 2271.0307026673495,
+          "profile_objective": 2270.4551511230184,
+          "penalty": 0.5755515443311126,
+          "log_likelihood": -1106.8897253362504,
+          "intercept": -4.629135023882854,
+          "log_z": 10.174312468362416,
+          "n": 256,
+          "training_area": 9600.0,
+          "area_unit": "km^2"
+        },
+        "selected_restart": 0,
+        "starts": [
+          {
+            "g_correlation": 0.9078486120722393,
+            "g_rmse": 0.36619285431431214,
+            "intensity_correlation": 0.9283271990507951,
+            "intensity_rmse": 0.33341495999639714,
+            "density_rmse": 3.473072499962471e-05,
+            "top20_overlap": 0.8109378946623157,
+            "coefficient_rmse": 0.4652757262636697,
+            "coefficient_correlations": [
+              0.919178601838735,
+              0.9191786018387351
+            ],
+            "reference_error": 0.0,
+            "rank_one_residual": 7.353880019281908e-17,
+            "evaluation_log_z": 10.183183452741643,
+            "truth_log_z": 9.87800346155763,
+            "n": 256,
+            "seed": 11,
+            "resolution": 12,
+            "initial": {
+              "step": 0,
+              "objective": 2347.4119499583044,
+              "profile_objective": 2347.3966736284015,
+              "penalty": 0.015276329902906166,
+              "log_likelihood": -1183.8312478416335,
+              "intercept": -3.6243403338072513,
+              "log_z": 9.169517778286814,
+              "n": 256,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            },
+            "final": {
+              "step": 300,
+              "objective": 2271.0307026673495,
+              "profile_objective": 2270.4551511230184,
+              "penalty": 0.5755515443311126,
+              "log_likelihood": -1106.8897253362504,
+              "intercept": -4.629135023882854,
+              "log_z": 10.174312468362416,
+              "n": 256,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            }
+          },
+          {
+            "g_correlation": 0.1890850653386949,
+            "g_rmse": 0.7756864680958149,
+            "intensity_correlation": 0.3428297814175965,
+            "intensity_rmse": 0.6103285990685154,
+            "density_rmse": 6.357589573630369e-05,
+            "top20_overlap": 0.6381847421269087,
+            "coefficient_rmse": 0.7989242204628358,
+            "coefficient_correlations": [
+              0.0,
+              0.0
+            ],
+            "reference_error": 0.0,
+            "rank_one_residual": 0.0,
+            "evaluation_log_z": 9.191827117807366,
+            "truth_log_z": 9.87800346155763,
+            "n": 256,
+            "seed": 11,
+            "resolution": 12,
+            "initial": {
+              "step": 0,
+              "objective": 2347.41273721912,
+              "profile_objective": 2347.3967625253094,
+              "penalty": 0.01597469381069621,
+              "log_likelihood": -1183.8313367385415,
+              "intercept": -3.6243412897213867,
+              "log_z": 9.169518734200949,
+              "n": 256,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            },
+            "final": {
+              "step": 300,
+              "objective": 2341.7635552012994,
+              "profile_objective": 2341.7622118444756,
+              "penalty": 0.0013433568235562453,
+              "log_likelihood": -1178.1967860577076,
+              "intercept": -3.6464745949810835,
+              "log_z": 9.191652039460646,
+              "n": 256,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            }
+          },
+          {
+            "g_correlation": 0.1890850653376587,
+            "g_rmse": 0.7756864680964511,
+            "intensity_correlation": 0.3428297814186107,
+            "intensity_rmse": 0.6103285990682235,
+            "density_rmse": 6.357589573627327e-05,
+            "top20_overlap": 0.6381847421269087,
+            "coefficient_rmse": 0.798924220463763,
+            "coefficient_correlations": [
+              -2.3877408310449906e-17,
+              0.0
+            ],
+            "reference_error": 0.0,
+            "rank_one_residual": 0.0,
+            "evaluation_log_z": 9.1918271178081,
+            "truth_log_z": 9.87800346155763,
+            "n": 256,
+            "seed": 11,
+            "resolution": 12,
+            "initial": {
+              "step": 0,
+              "objective": 2347.412494901731,
+              "profile_objective": 2347.39668557604,
+              "penalty": 0.015809325690905016,
+              "log_likelihood": -1183.831259789272,
+              "intercept": -3.624341347554437,
+              "log_z": 9.169518792034,
+              "n": 256,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            },
+            "final": {
+              "step": 300,
+              "objective": 2341.7635551958447,
+              "profile_objective": 2341.762211844475,
+              "penalty": 0.0013433513693743326,
+              "log_likelihood": -1178.1967860577072,
+              "intercept": -3.646474594981812,
+              "log_z": 9.191652039461374,
+              "n": 256,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            }
+          }
+        ]
+      },
+      {
+        "g_correlation": 0.5303798113933245,
+        "g_rmse": 0.8294305817675669,
+        "intensity_correlation": 0.1322854806018432,
+        "intensity_rmse": 4.463521968870502,
+        "density_rmse": 0.0004649502050906773,
+        "top20_overlap": 0.5269563725956068,
+        "coefficient_rmse": 1.1859112705587336,
+        "coefficient_correlations": [
+          0.2754863491571441,
+          -0.27548634915714415
+        ],
+        "reference_error": 0.0,
+        "rank_one_residual": 4.9494656083233255e-17,
+        "evaluation_log_z": 9.880198825954112,
+        "truth_log_z": 9.87800346155763,
+        "n": 256,
+        "seed": 23,
+        "resolution": 12,
+        "initial": {
+          "step": 0,
+          "objective": 2347.4122748319332,
+          "profile_objective": 2347.396330380748,
+          "penalty": 0.015944451185304354,
+          "log_likelihood": -1183.8309045939802,
+          "intercept": -3.6243399552261595,
+          "log_z": 9.169517399705722,
+          "n": 256,
+          "training_area": 9600.0,
+          "area_unit": "km^2"
+        },
+        "final": {
+          "step": 300,
+          "objective": 2277.3028757578513,
+          "profile_objective": 2276.37865615496,
+          "penalty": 0.9242196028910857,
+          "log_likelihood": -1112.813230368192,
+          "intercept": -3.823797023447278,
+          "log_z": 9.36897446792684,
+          "n": 256,
+          "training_area": 9600.0,
+          "area_unit": "km^2"
+        },
+        "selected_restart": 2,
+        "starts": [
+          {
+            "g_correlation": 0.8292034728323839,
+            "g_rmse": 0.4863044497529947,
+            "intensity_correlation": 0.8317282250026176,
+            "intensity_rmse": 0.5885134289696929,
+            "density_rmse": 6.130348218434302e-05,
+            "top20_overlap": 0.6750956616438273,
+            "coefficient_rmse": 0.6627971898465721,
+            "coefficient_correlations": [
+              0.920743505584547,
+              0.9207435055845472
+            ],
+            "reference_error": 0.0,
+            "rank_one_residual": 3.461697674791578e-15,
+            "evaluation_log_z": 10.00678300616487,
+            "truth_log_z": 9.87800346155763,
+            "n": 256,
+            "seed": 23,
+            "resolution": 12,
+            "initial": {
+              "step": 0,
+              "objective": 2347.411311910296,
+              "profile_objective": 2347.396651220738,
+              "penalty": 0.014660689557841968,
+              "log_likelihood": -1183.83122543397,
+              "intercept": -3.6243385462659488,
+              "log_z": 9.169515990745511,
+              "n": 256,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            },
+            "final": {
+              "step": 300,
+              "objective": 2313.902921150258,
+              "profile_objective": 2313.126968792818,
+              "penalty": 0.7759523574398541,
+              "log_likelihood": -1149.56154300605,
+              "intercept": -4.446483350415977,
+              "log_z": 9.99166079489554,
+              "n": 256,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            }
+          },
+          {
+            "g_correlation": 0.9684830652306812,
+            "g_rmse": 0.20425508266619777,
+            "intensity_correlation": 0.9794320814734013,
+            "intensity_rmse": 0.1482504013902766,
+            "density_rmse": 1.544275014482048e-05,
+            "top20_overlap": 0.9089072105794869,
+            "coefficient_rmse": 0.3541752455803435,
+            "coefficient_correlations": [
+              0.9462897827955622,
+              0.946289782795562
+            ],
+            "reference_error": 0.0,
+            "rank_one_residual": 5.261536292521881e-16,
+            "evaluation_log_z": 10.020238773940138,
+            "truth_log_z": 9.87800346155763,
+            "n": 256,
+            "seed": 23,
+            "resolution": 12,
+            "initial": {
+              "step": 0,
+              "objective": 2347.412092931695,
+              "profile_objective": 2347.3968519740883,
+              "penalty": 0.015240957606556683,
+              "log_likelihood": -1183.8314261873204,
+              "intercept": -3.624344089095186,
+              "log_z": 9.169521533574748,
+              "n": 256,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            },
+            "final": {
+              "step": 300,
+              "objective": 2292.3019936421365,
+              "profile_objective": 2291.969566476281,
+              "penalty": 0.33242716585505605,
+              "log_likelihood": -1128.4041406895133,
+              "intercept": -4.469309985306942,
+              "log_z": 10.014487429786504,
+              "n": 256,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            }
+          },
+          {
+            "g_correlation": 0.5303798113933245,
+            "g_rmse": 0.8294305817675669,
+            "intensity_correlation": 0.1322854806018432,
+            "intensity_rmse": 4.463521968870502,
+            "density_rmse": 0.0004649502050906773,
+            "top20_overlap": 0.5269563725956068,
+            "coefficient_rmse": 1.1859112705587336,
+            "coefficient_correlations": [
+              0.2754863491571441,
+              -0.27548634915714415
+            ],
+            "reference_error": 0.0,
+            "rank_one_residual": 4.9494656083233255e-17,
+            "evaluation_log_z": 9.880198825954112,
+            "truth_log_z": 9.87800346155763,
+            "n": 256,
+            "seed": 23,
+            "resolution": 12,
+            "initial": {
+              "step": 0,
+              "objective": 2347.4122748319332,
+              "profile_objective": 2347.396330380748,
+              "penalty": 0.015944451185304354,
+              "log_likelihood": -1183.8309045939802,
+              "intercept": -3.6243399552261595,
+              "log_z": 9.169517399705722,
+              "n": 256,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            },
+            "final": {
+              "step": 300,
+              "objective": 2277.3028757578513,
+              "profile_objective": 2276.37865615496,
+              "penalty": 0.9242196028910857,
+              "log_likelihood": -1112.813230368192,
+              "intercept": -3.823797023447278,
+              "log_z": 9.36897446792684,
+              "n": 256,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            }
+          }
+        ]
+      },
+      {
+        "g_correlation": 0.777240605614133,
+        "g_rmse": 0.44709714691559527,
+        "intensity_correlation": 0.8610040896079323,
+        "intensity_rmse": 0.3545547050203661,
+        "density_rmse": 3.69327817729548e-05,
+        "top20_overlap": 0.6921767764966397,
+        "coefficient_rmse": 0.6703260991642965,
+        "coefficient_correlations": [
+          0.6135790854465508,
+          0.6135790854465508
+        ],
+        "reference_error": 0.0,
+        "rank_one_residual": 4.372011077607797e-16,
+        "evaluation_log_z": 9.656258830148195,
+        "truth_log_z": 9.87800346155763,
+        "n": 256,
+        "seed": 37,
+        "resolution": 12,
+        "initial": {
+          "step": 0,
+          "objective": 2347.412554132065,
+          "profile_objective": 2347.3966033308616,
+          "penalty": 0.015950801203634762,
+          "log_likelihood": -1183.8311775440936,
+          "intercept": -3.62434305998189,
+          "log_z": 9.169520504461453,
+          "n": 256,
+          "training_area": 9600.0,
+          "area_unit": "km^2"
+        },
+        "final": {
+          "step": 300,
+          "objective": 2287.695532387663,
+          "profile_objective": 2287.259392948801,
+          "penalty": 0.43613943886210865,
+          "log_likelihood": -1123.6939671620332,
+          "intercept": -4.052094776864862,
+          "log_z": 9.597272221344424,
+          "n": 256,
+          "training_area": 9600.0,
+          "area_unit": "km^2"
+        },
+        "selected_restart": 2,
+        "starts": [
+          {
+            "g_correlation": 0.35740177369574905,
+            "g_rmse": 0.7496376056546695,
+            "intensity_correlation": 0.3489527428244536,
+            "intensity_rmse": 0.6096947476442406,
+            "density_rmse": 6.350986954627506e-05,
+            "top20_overlap": 0.5071996952103526,
+            "coefficient_rmse": 0.7606898734203226,
+            "coefficient_correlations": [
+              0.0,
+              0.0
+            ],
+            "reference_error": 0.0,
+            "rank_one_residual": 0.0,
+            "evaluation_log_z": 9.188144066718037,
+            "truth_log_z": 9.87800346155763,
+            "n": 256,
+            "seed": 37,
+            "resolution": 12,
+            "initial": {
+              "step": 0,
+              "objective": 2347.41273209871,
+              "profile_objective": 2347.3968281929297,
+              "penalty": 0.015903905780311166,
+              "log_likelihood": -1183.8314024061617,
+              "intercept": -3.624341373676505,
+              "log_z": 9.169518818156067,
+              "n": 256,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            },
+            "final": {
+              "step": 300,
+              "objective": 2342.6944883469664,
+              "profile_objective": 2342.6933666531413,
+              "penalty": 0.0011216938248771887,
+              "log_likelihood": -1179.1279408663734,
+              "intercept": -3.642820461150291,
+              "log_z": 9.187997905629853,
+              "n": 256,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            }
+          },
+          {
+            "g_correlation": 0.8225585174593066,
+            "g_rmse": 0.4331470678826574,
+            "intensity_correlation": 0.8611747586154038,
+            "intensity_rmse": 0.3302142153172509,
+            "density_rmse": 3.439731409554697e-05,
+            "top20_overlap": 0.8358220601908806,
+            "coefficient_rmse": 0.46183499885376084,
+            "coefficient_correlations": [
+              0.7942536499967248,
+              0.7942536499967248
+            ],
+            "reference_error": 0.0,
+            "rank_one_residual": 5.316180994057312e-16,
+            "evaluation_log_z": 9.54677316932164,
+            "truth_log_z": 9.87800346155763,
+            "n": 256,
+            "seed": 37,
+            "resolution": 12,
+            "initial": {
+              "step": 0,
+              "objective": 2347.413249452961,
+              "profile_objective": 2347.396390808146,
+              "penalty": 0.01685864481465353,
+              "log_likelihood": -1183.830965021378,
+              "intercept": -3.6243462491254848,
+              "log_z": 9.169523693605047,
+              "n": 256,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            },
+            "final": {
+              "step": 300,
+              "objective": 2307.1232148456425,
+              "profile_objective": 2306.464599352888,
+              "penalty": 0.6586154927545023,
+              "log_likelihood": -1142.89917356612,
+              "intercept": -3.9914676191978673,
+              "log_z": 9.53664506367743,
+              "n": 256,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            }
+          },
+          {
+            "g_correlation": 0.777240605614133,
+            "g_rmse": 0.44709714691559527,
+            "intensity_correlation": 0.8610040896079323,
+            "intensity_rmse": 0.3545547050203661,
+            "density_rmse": 3.69327817729548e-05,
+            "top20_overlap": 0.6921767764966397,
+            "coefficient_rmse": 0.6703260991642965,
+            "coefficient_correlations": [
+              0.6135790854465508,
+              0.6135790854465508
+            ],
+            "reference_error": 0.0,
+            "rank_one_residual": 4.372011077607797e-16,
+            "evaluation_log_z": 9.656258830148195,
+            "truth_log_z": 9.87800346155763,
+            "n": 256,
+            "seed": 37,
+            "resolution": 12,
+            "initial": {
+              "step": 0,
+              "objective": 2347.412554132065,
+              "profile_objective": 2347.3966033308616,
+              "penalty": 0.015950801203634762,
+              "log_likelihood": -1183.8311775440936,
+              "intercept": -3.62434305998189,
+              "log_z": 9.169520504461453,
+              "n": 256,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            },
+            "final": {
+              "step": 300,
+              "objective": 2287.695532387663,
+              "profile_objective": 2287.259392948801,
+              "penalty": 0.43613943886210865,
+              "log_likelihood": -1123.6939671620332,
+              "intercept": -4.052094776864862,
+              "log_z": 9.597272221344424,
+              "n": 256,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            }
+          }
+        ]
+      },
+      {
+        "g_correlation": 0.47444008854147823,
+        "g_rmse": 0.8088507824373489,
+        "intensity_correlation": 0.7235509945810361,
+        "intensity_rmse": 0.46649682781415325,
+        "density_rmse": 4.8593419563974296e-05,
+        "top20_overlap": 0.9049833692716039,
+        "coefficient_rmse": 1.0788423960003006,
+        "coefficient_correlations": [
+          0.14011860314471541,
+          -0.14011860314471544
+        ],
+        "reference_error": 0.0,
+        "rank_one_residual": 3.851629920046536e-17,
+        "evaluation_log_z": 9.389857607931097,
+        "truth_log_z": 9.87800346155763,
+        "n": 256,
+        "seed": 53,
+        "resolution": 12,
+        "initial": {
+          "step": 0,
+          "objective": 2347.4122485682715,
+          "profile_objective": 2347.396564967684,
+          "penalty": 0.015683600587735984,
+          "log_likelihood": -1183.831139180916,
+          "intercept": -3.624342226182148,
+          "log_z": 9.16951967066171,
+          "n": 256,
+          "training_area": 9600.0,
+          "area_unit": "km^2"
+        },
+        "final": {
+          "step": 300,
+          "objective": 2305.845389646385,
+          "profile_objective": 2305.599335005963,
+          "penalty": 0.24605464042180714,
+          "log_likelihood": -1142.033909219195,
+          "intercept": -3.8341140007145684,
+          "log_z": 9.37929144519413,
+          "n": 256,
+          "training_area": 9600.0,
+          "area_unit": "km^2"
+        },
+        "selected_restart": 0,
+        "starts": [
+          {
+            "g_correlation": 0.47444008854147823,
+            "g_rmse": 0.8088507824373489,
+            "intensity_correlation": 0.7235509945810361,
+            "intensity_rmse": 0.46649682781415325,
+            "density_rmse": 4.8593419563974296e-05,
+            "top20_overlap": 0.9049833692716039,
+            "coefficient_rmse": 1.0788423960003006,
+            "coefficient_correlations": [
+              0.14011860314471541,
+              -0.14011860314471544
+            ],
+            "reference_error": 0.0,
+            "rank_one_residual": 3.851629920046536e-17,
+            "evaluation_log_z": 9.389857607931097,
+            "truth_log_z": 9.87800346155763,
+            "n": 256,
+            "seed": 53,
+            "resolution": 12,
+            "initial": {
+              "step": 0,
+              "objective": 2347.4122485682715,
+              "profile_objective": 2347.396564967684,
+              "penalty": 0.015683600587735984,
+              "log_likelihood": -1183.831139180916,
+              "intercept": -3.624342226182148,
+              "log_z": 9.16951967066171,
+              "n": 256,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            },
+            "final": {
+              "step": 300,
+              "objective": 2305.845389646385,
+              "profile_objective": 2305.599335005963,
+              "penalty": 0.24605464042180714,
+              "log_likelihood": -1142.033909219195,
+              "intercept": -3.8341140007145684,
+              "log_z": 9.37929144519413,
+              "n": 256,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            }
+          },
+          {
+            "g_correlation": 0.32342783054267815,
+            "g_rmse": 0.7545008581438779,
+            "intensity_correlation": 0.3619626686825783,
+            "intensity_rmse": 0.6095392217535973,
+            "density_rmse": 6.34936689326664e-05,
+            "top20_overlap": 0.6368744354990699,
+            "coefficient_rmse": 0.7678719752942235,
+            "coefficient_correlations": [
+              0.0,
+              -1.3775427871413406e-17
+            ],
+            "reference_error": 0.0,
+            "rank_one_residual": 0.0,
+            "evaluation_log_z": 9.183247571263458,
+            "truth_log_z": 9.87800346155763,
+            "n": 256,
+            "seed": 53,
+            "resolution": 12,
+            "initial": {
+              "step": 0,
+              "objective": 2347.412222485875,
+              "profile_objective": 2347.3966883009616,
+              "penalty": 0.015534184913616439,
+              "log_likelihood": -1183.8312625141937,
+              "intercept": -3.624340360312421,
+              "log_z": 9.169517804791983,
+              "n": 256,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            },
+            "final": {
+              "step": 300,
+              "objective": 2343.927581877817,
+              "profile_objective": 2343.9267554451235,
+              "penalty": 0.0008264326932978933,
+              "log_likelihood": -1180.3613296583555,
+              "intercept": -3.637962347800138,
+              "log_z": 9.1831397922797,
+              "n": 256,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            }
+          },
+          {
+            "g_correlation": 0.3234278305020176,
+            "g_rmse": 0.7545008581488377,
+            "intensity_correlation": 0.3619626686898929,
+            "intensity_rmse": 0.609539221752241,
+            "density_rmse": 6.349366893252509e-05,
+            "top20_overlap": 0.6368744354990699,
+            "coefficient_rmse": 0.7678719753015373,
+            "coefficient_correlations": [
+              0.0,
+              0.0
+            ],
+            "reference_error": 0.0,
+            "rank_one_residual": 0.0,
+            "evaluation_log_z": 9.183247571263564,
+            "truth_log_z": 9.87800346155763,
+            "n": 256,
+            "seed": 53,
+            "resolution": 12,
+            "initial": {
+              "step": 0,
+              "objective": 2347.412819885033,
+              "profile_objective": 2347.3966735465124,
+              "penalty": 0.016146338520872792,
+              "log_likelihood": -1183.8312477597444,
+              "intercept": -3.6243408307426916,
+              "log_z": 9.169518275222254,
+              "n": 256,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            },
+            "final": {
+              "step": 300,
+              "objective": 2343.9275818778165,
+              "profile_objective": 2343.926755445123,
+              "penalty": 0.0008264326934672776,
+              "log_likelihood": -1180.361329658355,
+              "intercept": -3.6379623478002445,
+              "log_z": 9.183139792279807,
+              "n": 256,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            }
+          }
+        ]
+      },
+      {
+        "g_correlation": 0.3388783162388574,
+        "g_rmse": 0.7528798455123522,
+        "intensity_correlation": 0.3695870199969882,
+        "intensity_rmse": 0.6040136943017128,
+        "density_rmse": 6.291809315642842e-05,
+        "top20_overlap": 0.589972825930039,
+        "coefficient_rmse": 0.7654803819985695,
+        "coefficient_correlations": [
+          2.3877408310449906e-17,
+          1.3775427871413406e-17
+        ],
+        "reference_error": 0.0,
+        "rank_one_residual": 0.0,
+        "evaluation_log_z": 9.19331311460397,
+        "truth_log_z": 9.87800346155763,
+        "n": 256,
+        "seed": 71,
+        "resolution": 12,
+        "initial": {
+          "step": 0,
+          "objective": 2347.4121004356102,
+          "profile_objective": 2347.396704914625,
+          "penalty": 0.01539552098519537,
+          "log_likelihood": -1183.831279127857,
+          "intercept": -3.62434106136718,
+          "log_z": 9.169518505846742,
+          "n": 256,
+          "training_area": 9600.0,
+          "area_unit": "km^2"
+        },
+        "final": {
+          "step": 300,
+          "objective": 2341.405748699408,
+          "profile_objective": 2341.404313758454,
+          "penalty": 0.0014349409538914073,
+          "log_likelihood": -1177.838887971686,
+          "intercept": -3.6479491686658507,
+          "log_z": 9.193126613145413,
+          "n": 256,
+          "training_area": 9600.0,
+          "area_unit": "km^2"
+        },
+        "selected_restart": 1,
+        "starts": [
+          {
+            "g_correlation": 0.3388783162387847,
+            "g_rmse": 0.7528798455123579,
+            "intensity_correlation": 0.36958701999699894,
+            "intensity_rmse": 0.6040136943017159,
+            "density_rmse": 6.291809315642875e-05,
+            "top20_overlap": 0.589972825930039,
+            "coefficient_rmse": 0.7654803819985776,
+            "coefficient_correlations": [
+              0.0,
+              0.0
+            ],
+            "reference_error": 0.0,
+            "rank_one_residual": 0.0,
+            "evaluation_log_z": 9.193313114603937,
+            "truth_log_z": 9.87800346155763,
+            "n": 256,
+            "seed": 71,
+            "resolution": 12,
+            "initial": {
+              "step": 0,
+              "objective": 2347.4113794775712,
+              "profile_objective": 2347.396719539993,
+              "penalty": 0.014659937578394795,
+              "log_likelihood": -1183.8312937532248,
+              "intercept": -3.6243408682142393,
+              "log_z": 9.169518312693802,
+              "n": 256,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            },
+            "final": {
+              "step": 300,
+              "objective": 2341.4057486994084,
+              "profile_objective": 2341.4043137584545,
+              "penalty": 0.0014349409538889943,
+              "log_likelihood": -1177.8388879716865,
+              "intercept": -3.6479491686658188,
+              "log_z": 9.193126613145381,
+              "n": 256,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            }
+          },
+          {
+            "g_correlation": 0.3388783162388574,
+            "g_rmse": 0.7528798455123522,
+            "intensity_correlation": 0.3695870199969882,
+            "intensity_rmse": 0.6040136943017128,
+            "density_rmse": 6.291809315642842e-05,
+            "top20_overlap": 0.589972825930039,
+            "coefficient_rmse": 0.7654803819985695,
+            "coefficient_correlations": [
+              2.3877408310449906e-17,
+              1.3775427871413406e-17
+            ],
+            "reference_error": 0.0,
+            "rank_one_residual": 0.0,
+            "evaluation_log_z": 9.19331311460397,
+            "truth_log_z": 9.87800346155763,
+            "n": 256,
+            "seed": 71,
+            "resolution": 12,
+            "initial": {
+              "step": 0,
+              "objective": 2347.4121004356102,
+              "profile_objective": 2347.396704914625,
+              "penalty": 0.01539552098519537,
+              "log_likelihood": -1183.831279127857,
+              "intercept": -3.62434106136718,
+              "log_z": 9.169518505846742,
+              "n": 256,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            },
+            "final": {
+              "step": 300,
+              "objective": 2341.405748699408,
+              "profile_objective": 2341.404313758454,
+              "penalty": 0.0014349409538914073,
+              "log_likelihood": -1177.838887971686,
+              "intercept": -3.6479491686658507,
+              "log_z": 9.193126613145413,
+              "n": 256,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            }
+          },
+          {
+            "g_correlation": 0.7381279389543619,
+            "g_rmse": 0.4368476099902608,
+            "intensity_correlation": 0.5683177420942876,
+            "intensity_rmse": 0.7153199224137373,
+            "density_rmse": 7.451249191809764e-05,
+            "top20_overlap": 0.3249043383561729,
+            "coefficient_rmse": 0.6286779804556548,
+            "coefficient_correlations": [
+              0.7624141961505342,
+              0.7624141961505341
+            ],
+            "reference_error": 0.0,
+            "rank_one_residual": 2.5219911414134674e-16,
+            "evaluation_log_z": 9.97053255719948,
+            "truth_log_z": 9.87800346155763,
+            "n": 256,
+            "seed": 71,
+            "resolution": 12,
+            "initial": {
+              "step": 0,
+              "objective": 2347.4132028263202,
+              "profile_objective": 2347.396125797124,
+              "penalty": 0.017077029195900987,
+              "log_likelihood": -1183.8307000103562,
+              "intercept": -3.6243386424887474,
+              "log_z": 9.16951608696831,
+              "n": 256,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            },
+            "final": {
+              "step": 300,
+              "objective": 2350.5607801562396,
+              "profile_objective": 2350.2618418840993,
+              "penalty": 0.2989382721402529,
+              "log_likelihood": -1186.6964160973314,
+              "intercept": -4.423493504285209,
+              "log_z": 9.968670948764771,
+              "n": 256,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            }
+          }
+        ]
+      }
+    ],
+    "44": [
+      {
+        "g_correlation": -0.2944349762222839,
+        "g_rmse": 0.8771428967742456,
+        "intensity_correlation": -0.20323733282637838,
+        "intensity_rmse": 0.7560965238676032,
+        "density_rmse": 7.8760054569542e-05,
+        "top20_overlap": 0.07813197565333815,
+        "coefficient_rmse": 0.9433703624001174,
+        "coefficient_correlations": [
+          0.0,
+          0.0
+        ],
+        "reference_error": 0.0,
+        "rank_one_residual": 0.0,
+        "evaluation_log_z": 9.207809728874356,
+        "truth_log_z": 9.87800346155763,
+        "n": 44,
+        "seed": 11,
+        "resolution": 12,
+        "initial": {
+          "step": 0,
+          "objective": 403.4747710973154,
+          "profile_objective": 403.4587964035047,
+          "penalty": 0.01597469381069621,
+          "log_likelihood": -280.95445251110124,
+          "intercept": -5.3853291002826875,
+          "log_z": 9.169518734200949,
+          "n": 44,
+          "training_area": 9600.0,
+          "area_unit": "km^2"
+        },
+        "final": {
+          "step": 300,
+          "objective": 401.8055428281274,
+          "profile_objective": 401.80322963313654,
+          "penalty": 0.002313194990826421,
+          "log_likelihood": -279.29888574073306,
+          "intercept": -5.42332042193201,
+          "log_z": 9.207510055850271,
+          "n": 44,
+          "training_area": 9600.0,
+          "area_unit": "km^2"
+        },
+        "selected_restart": 1,
+        "starts": [
+          {
+            "g_correlation": -0.2944349762199641,
+            "g_rmse": 0.8771428967745869,
+            "intensity_correlation": -0.20323733282314937,
+            "intensity_rmse": 0.7560965238675958,
+            "density_rmse": 7.876005456954124e-05,
+            "top20_overlap": 0.07813197565333815,
+            "coefficient_rmse": 0.9433703624005937,
+            "coefficient_correlations": [
+              -2.3877408310449906e-17,
+              0.0
+            ],
+            "reference_error": 0.0,
+            "rank_one_residual": 0.0,
+            "evaluation_log_z": 9.20780972887476,
+            "truth_log_z": 9.87800346155763,
+            "n": 44,
+            "seed": 11,
+            "resolution": 12,
+            "initial": {
+              "step": 0,
+              "objective": 403.4741039655776,
+              "profile_objective": 403.4588276356747,
+              "penalty": 0.015276329902906166,
+              "log_likelihood": -280.9544837432712,
+              "intercept": -5.385328144368552,
+              "log_z": 9.169517778286814,
+              "n": 44,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            },
+            "final": {
+              "step": 300,
+              "objective": 401.80554282812744,
+              "profile_objective": 401.8032296331366,
+              "penalty": 0.0023131949908508174,
+              "log_likelihood": -279.2988857407331,
+              "intercept": -5.423320421932415,
+              "log_z": 9.207510055850676,
+              "n": 44,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            }
+          },
+          {
+            "g_correlation": -0.2944349762222839,
+            "g_rmse": 0.8771428967742456,
+            "intensity_correlation": -0.20323733282637838,
+            "intensity_rmse": 0.7560965238676032,
+            "density_rmse": 7.8760054569542e-05,
+            "top20_overlap": 0.07813197565333815,
+            "coefficient_rmse": 0.9433703624001174,
+            "coefficient_correlations": [
+              0.0,
+              0.0
+            ],
+            "reference_error": 0.0,
+            "rank_one_residual": 0.0,
+            "evaluation_log_z": 9.207809728874356,
+            "truth_log_z": 9.87800346155763,
+            "n": 44,
+            "seed": 11,
+            "resolution": 12,
+            "initial": {
+              "step": 0,
+              "objective": 403.4747710973154,
+              "profile_objective": 403.4587964035047,
+              "penalty": 0.01597469381069621,
+              "log_likelihood": -280.95445251110124,
+              "intercept": -5.3853291002826875,
+              "log_z": 9.169518734200949,
+              "n": 44,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            },
+            "final": {
+              "step": 300,
+              "objective": 401.8055428281274,
+              "profile_objective": 401.80322963313654,
+              "penalty": 0.002313194990826421,
+              "log_likelihood": -279.29888574073306,
+              "intercept": -5.42332042193201,
+              "log_z": 9.207510055850271,
+              "n": 44,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            }
+          },
+          {
+            "g_correlation": -0.2944349762191901,
+            "g_rmse": 0.8771428967742679,
+            "intensity_correlation": -0.2032373328219938,
+            "intensity_rmse": 0.7560965238671136,
+            "density_rmse": 7.8760054569491e-05,
+            "top20_overlap": 0.07813197565333815,
+            "coefficient_rmse": 0.9433703624001487,
+            "coefficient_correlations": [
+              0.0,
+              0.0
+            ],
+            "reference_error": 0.0,
+            "rank_one_residual": 0.0,
+            "evaluation_log_z": 9.207809728874661,
+            "truth_log_z": 9.87800346155763,
+            "n": 44,
+            "seed": 11,
+            "resolution": 12,
+            "initial": {
+              "step": 0,
+              "objective": 403.4746464194859,
+              "profile_objective": 403.458837093795,
+              "penalty": 0.015809325690905016,
+              "log_likelihood": -280.95449320139153,
+              "intercept": -5.385329158115738,
+              "log_z": 9.169518792034,
+              "n": 44,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            },
+            "final": {
+              "step": 300,
+              "objective": 401.80554282812744,
+              "profile_objective": 401.8032296331366,
+              "penalty": 0.002313194990864324,
+              "log_likelihood": -279.2988857407331,
+              "intercept": -5.4233204219323135,
+              "log_z": 9.207510055850575,
+              "n": 44,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            }
+          }
+        ]
+      },
+      {
+        "g_correlation": 0.32235194042129406,
+        "g_rmse": 0.7803339843271282,
+        "intensity_correlation": 0.42121695426960587,
+        "intensity_rmse": 0.5975089320284154,
+        "density_rmse": 6.224051375295993e-05,
+        "top20_overlap": 0.6406907502515191,
+        "coefficient_rmse": 0.8056879475708293,
+        "coefficient_correlations": [
+          0.0,
+          0.0
+        ],
+        "reference_error": 0.0,
+        "rank_one_residual": 0.0,
+        "evaluation_log_z": 9.240083688757174,
+        "truth_log_z": 9.87800346155763,
+        "n": 44,
+        "seed": 23,
+        "resolution": 12,
+        "initial": {
+          "step": 0,
+          "objective": 403.47345459314636,
+          "profile_objective": 403.4587939035885,
+          "penalty": 0.014660689557841968,
+          "log_likelihood": -280.95445001118503,
+          "intercept": -5.38532635682725,
+          "log_z": 9.169515990745511,
+          "n": 44,
+          "training_area": 9600.0,
+          "area_unit": "km^2"
+        },
+        "final": {
+          "step": 300,
+          "objective": 400.45750118784844,
+          "profile_objective": 400.4532055381971,
+          "penalty": 0.0042956496513264835,
+          "log_likelihood": -277.9488616457936,
+          "intercept": -5.455345409012711,
+          "log_z": 9.239535042930973,
+          "n": 44,
+          "training_area": 9600.0,
+          "area_unit": "km^2"
+        },
+        "selected_restart": 0,
+        "starts": [
+          {
+            "g_correlation": 0.32235194042129406,
+            "g_rmse": 0.7803339843271282,
+            "intensity_correlation": 0.42121695426960587,
+            "intensity_rmse": 0.5975089320284154,
+            "density_rmse": 6.224051375295993e-05,
+            "top20_overlap": 0.6406907502515191,
+            "coefficient_rmse": 0.8056879475708293,
+            "coefficient_correlations": [
+              0.0,
+              0.0
+            ],
+            "reference_error": 0.0,
+            "rank_one_residual": 0.0,
+            "evaluation_log_z": 9.240083688757174,
+            "truth_log_z": 9.87800346155763,
+            "n": 44,
+            "seed": 23,
+            "resolution": 12,
+            "initial": {
+              "step": 0,
+              "objective": 403.47345459314636,
+              "profile_objective": 403.4587939035885,
+              "penalty": 0.014660689557841968,
+              "log_likelihood": -280.95445001118503,
+              "intercept": -5.38532635682725,
+              "log_z": 9.169515990745511,
+              "n": 44,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            },
+            "final": {
+              "step": 300,
+              "objective": 400.45750118784844,
+              "profile_objective": 400.4532055381971,
+              "penalty": 0.0042956496513264835,
+              "log_likelihood": -277.9488616457936,
+              "intercept": -5.455345409012711,
+              "log_z": 9.239535042930973,
+              "n": 44,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            }
+          },
+          {
+            "g_correlation": 0.3223519404113,
+            "g_rmse": 0.7803339843307425,
+            "intensity_correlation": 0.42121695427872585,
+            "intensity_rmse": 0.5975089320252572,
+            "density_rmse": 6.224051375263097e-05,
+            "top20_overlap": 0.6406907502515191,
+            "coefficient_rmse": 0.805687947576083,
+            "coefficient_correlations": [
+              0.0,
+              0.0
+            ],
+            "reference_error": 0.0,
+            "rank_one_residual": 0.0,
+            "evaluation_log_z": 9.24008368875849,
+            "truth_log_z": 9.87800346155763,
+            "n": 44,
+            "seed": 23,
+            "resolution": 12,
+            "initial": {
+              "step": 0,
+              "objective": 403.4740653641903,
+              "profile_objective": 403.45882440658374,
+              "penalty": 0.015240957606556683,
+              "log_likelihood": -280.95448051418026,
+              "intercept": -5.385331899656487,
+              "log_z": 9.169521533574748,
+              "n": 44,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            },
+            "final": {
+              "step": 300,
+              "objective": 400.45750118784844,
+              "profile_objective": 400.45320553819704,
+              "penalty": 0.004295649651409133,
+              "log_likelihood": -277.94886164579356,
+              "intercept": -5.455345409014017,
+              "log_z": 9.239535042932278,
+              "n": 44,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            }
+          },
+          {
+            "g_correlation": 0.32235194039594417,
+            "g_rmse": 0.7803339843391409,
+            "intensity_correlation": 0.4212169542956862,
+            "intensity_rmse": 0.5975089320209932,
+            "density_rmse": 6.224051375218679e-05,
+            "top20_overlap": 0.6406907502515191,
+            "coefficient_rmse": 0.8056879475882907,
+            "coefficient_correlations": [
+              0.0,
+              0.0
+            ],
+            "reference_error": 0.0,
+            "rank_one_residual": 0.0,
+            "evaluation_log_z": 9.240083688764617,
+            "truth_log_z": 9.87800346155763,
+            "n": 44,
+            "seed": 23,
+            "resolution": 12,
+            "initial": {
+              "step": 0,
+              "objective": 403.4746885242312,
+              "profile_objective": 403.4587440730459,
+              "penalty": 0.015944451185304354,
+              "log_likelihood": -280.95440018064244,
+              "intercept": -5.38532776578746,
+              "log_z": 9.169517399705722,
+              "n": 44,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            },
+            "final": {
+              "step": 300,
+              "objective": 400.45750118785236,
+              "profile_objective": 400.4532055381967,
+              "penalty": 0.004295649655642123,
+              "log_likelihood": -277.9488616457932,
+              "intercept": -5.455345409020097,
+              "log_z": 9.239535042938359,
+              "n": 44,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            }
+          }
+        ]
+      },
+      {
+        "g_correlation": 0.2985814951523872,
+        "g_rmse": 0.7594313952368478,
+        "intensity_correlation": 0.15675391504387381,
+        "intensity_rmse": 0.6522389673643215,
+        "density_rmse": 6.794155910045016e-05,
+        "top20_overlap": 0.19044645834047605,
+        "coefficient_rmse": 0.7751322574071922,
+        "coefficient_correlations": [
+          0.0,
+          -1.3775427871413406e-17
+        ],
+        "reference_error": 0.0,
+        "rank_one_residual": 0.0,
+        "evaluation_log_z": 9.193555171559524,
+        "truth_log_z": 9.87800346155763,
+        "n": 44,
+        "seed": 37,
+        "resolution": 12,
+        "initial": {
+          "step": 0,
+          "objective": 403.4756591565381,
+          "profile_objective": 403.45880051172344,
+          "penalty": 0.01685864481465353,
+          "log_likelihood": -280.95445661931996,
+          "intercept": -5.385334059686786,
+          "log_z": 9.169523693605047,
+          "n": 44,
+          "training_area": 9600.0,
+          "area_unit": "km^2"
+        },
+        "final": {
+          "step": 300,
+          "objective": 402.4160514202864,
+          "profile_objective": 402.41460285865105,
+          "penalty": 0.001448561635350073,
+          "log_likelihood": -279.91025896624757,
+          "intercept": -5.409177028255728,
+          "log_z": 9.19336666217399,
+          "n": 44,
+          "training_area": 9600.0,
+          "area_unit": "km^2"
+        },
+        "selected_restart": 1,
+        "starts": [
+          {
+            "g_correlation": 0.2985814951544721,
+            "g_rmse": 0.7594313952366847,
+            "intensity_correlation": 0.1567539150455166,
+            "intensity_rmse": 0.6522389673644057,
+            "density_rmse": 6.794155910045893e-05,
+            "top20_overlap": 0.19044645834047605,
+            "coefficient_rmse": 0.7751322574069524,
+            "coefficient_correlations": [
+              0.0,
+              1.3775427871413406e-17
+            ],
+            "reference_error": 0.0,
+            "rank_one_residual": 0.0,
+            "evaluation_log_z": 9.193555171560057,
+            "truth_log_z": 9.87800346155763,
+            "n": 44,
+            "seed": 37,
+            "resolution": 12,
+            "initial": {
+              "step": 0,
+              "objective": 403.47473901450104,
+              "profile_objective": 403.45883510872073,
+              "penalty": 0.015903905780311166,
+              "log_likelihood": -280.95449121631725,
+              "intercept": -5.385329184237806,
+              "log_z": 9.169518818156067,
+              "n": 44,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            },
+            "final": {
+              "step": 300,
+              "objective": 402.4160514202923,
+              "profile_objective": 402.41460285865105,
+              "penalty": 0.001448561641265797,
+              "log_likelihood": -279.91025896624757,
+              "intercept": -5.4091770282562575,
+              "log_z": 9.193366662174519,
+              "n": 44,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            }
+          },
+          {
+            "g_correlation": 0.2985814951523872,
+            "g_rmse": 0.7594313952368478,
+            "intensity_correlation": 0.15675391504387381,
+            "intensity_rmse": 0.6522389673643215,
+            "density_rmse": 6.794155910045016e-05,
+            "top20_overlap": 0.19044645834047605,
+            "coefficient_rmse": 0.7751322574071922,
+            "coefficient_correlations": [
+              0.0,
+              -1.3775427871413406e-17
+            ],
+            "reference_error": 0.0,
+            "rank_one_residual": 0.0,
+            "evaluation_log_z": 9.193555171559524,
+            "truth_log_z": 9.87800346155763,
+            "n": 44,
+            "seed": 37,
+            "resolution": 12,
+            "initial": {
+              "step": 0,
+              "objective": 403.4756591565381,
+              "profile_objective": 403.45880051172344,
+              "penalty": 0.01685864481465353,
+              "log_likelihood": -280.95445661931996,
+              "intercept": -5.385334059686786,
+              "log_z": 9.169523693605047,
+              "n": 44,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            },
+            "final": {
+              "step": 300,
+              "objective": 402.4160514202864,
+              "profile_objective": 402.41460285865105,
+              "penalty": 0.001448561635350073,
+              "log_likelihood": -279.91025896624757,
+              "intercept": -5.409177028255728,
+              "log_z": 9.19336666217399,
+              "n": 44,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            }
+          },
+          {
+            "g_correlation": 0.2985814951547698,
+            "g_rmse": 0.7594313952364359,
+            "intensity_correlation": 0.1567539150461055,
+            "intensity_rmse": 0.6522389673637681,
+            "density_rmse": 6.794155910039251e-05,
+            "top20_overlap": 0.19044645834047605,
+            "coefficient_rmse": 0.7751322574065866,
+            "coefficient_correlations": [
+              0.0,
+              0.0
+            ],
+            "reference_error": 0.0,
+            "rank_one_residual": 0.0,
+            "evaluation_log_z": 9.193555171559439,
+            "truth_log_z": 9.87800346155763,
+            "n": 44,
+            "seed": 37,
+            "resolution": 12,
+            "initial": {
+              "step": 0,
+              "objective": 403.4747308574793,
+              "profile_objective": 403.45878005627566,
+              "penalty": 0.015950801203634762,
+              "log_likelihood": -280.9544361638722,
+              "intercept": -5.385330870543191,
+              "log_z": 9.169520504461453,
+              "n": 44,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            },
+            "final": {
+              "step": 300,
+              "objective": 402.41605142028715,
+              "profile_objective": 402.4146028586511,
+              "penalty": 0.0014485616360457735,
+              "log_likelihood": -279.9102589662476,
+              "intercept": -5.409177028255643,
+              "log_z": 9.193366662173904,
+              "n": 44,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            }
+          }
+        ]
+      },
+      {
+        "g_correlation": -0.01249255949163706,
+        "g_rmse": 0.8157155258178246,
+        "intensity_correlation": 0.1797219927488478,
+        "intensity_rmse": 0.6520925564048797,
+        "density_rmse": 6.792630795884164e-05,
+        "top20_overlap": 0.4302114425276901,
+        "coefficient_rmse": 0.8566701357720031,
+        "coefficient_correlations": [
+          0.0,
+          0.0
+        ],
+        "reference_error": 0.0,
+        "rank_one_residual": 0.0,
+        "evaluation_log_z": 9.199686857862249,
+        "truth_log_z": 9.87800346155763,
+        "n": 44,
+        "seed": 53,
+        "resolution": 12,
+        "initial": {
+          "step": 0,
+          "objective": 403.4743685577843,
+          "profile_objective": 403.4588343728707,
+          "penalty": 0.015534184913616439,
+          "log_likelihood": -280.9544904804672,
+          "intercept": -5.385328170873722,
+          "log_z": 9.169517804791983,
+          "n": 44,
+          "training_area": 9600.0,
+          "area_unit": "km^2"
+        },
+        "final": {
+          "step": 300,
+          "objective": 402.14937217789384,
+          "profile_objective": 402.14755457076143,
+          "penalty": 0.001817607132434041,
+          "log_likelihood": -279.64321067835795,
+          "intercept": -5.415260572596052,
+          "log_z": 9.199450206514314,
+          "n": 44,
+          "training_area": 9600.0,
+          "area_unit": "km^2"
+        },
+        "selected_restart": 1,
+        "starts": [
+          {
+            "g_correlation": -0.01249255947300717,
+            "g_rmse": 0.815715525805697,
+            "intensity_correlation": 0.17972199275990186,
+            "intensity_rmse": 0.65209255639638,
+            "density_rmse": 6.792630795795625e-05,
+            "top20_overlap": 0.4302114425276901,
+            "coefficient_rmse": 0.8566701357546723,
+            "coefficient_correlations": [
+              0.0,
+              0.0
+            ],
+            "reference_error": 0.0,
+            "rank_one_residual": 0.0,
+            "evaluation_log_z": 9.199686857855164,
+            "truth_log_z": 9.87800346155763,
+            "n": 44,
+            "seed": 53,
+            "resolution": 12,
+            "initial": {
+              "step": 0,
+              "objective": 403.4744115259564,
+              "profile_objective": 403.45872792536863,
+              "penalty": 0.015683600587735984,
+              "log_likelihood": -280.95438403296515,
+              "intercept": -5.385330036743449,
+              "log_z": 9.16951967066171,
+              "n": 44,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            },
+            "final": {
+              "step": 300,
+              "objective": 402.1493721778939,
+              "profile_objective": 402.1475545707619,
+              "penalty": 0.0018176071320071896,
+              "log_likelihood": -279.6432106783584,
+              "intercept": -5.415260572589025,
+              "log_z": 9.199450206507287,
+              "n": 44,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            }
+          },
+          {
+            "g_correlation": -0.01249255949163706,
+            "g_rmse": 0.8157155258178246,
+            "intensity_correlation": 0.1797219927488478,
+            "intensity_rmse": 0.6520925564048797,
+            "density_rmse": 6.792630795884164e-05,
+            "top20_overlap": 0.4302114425276901,
+            "coefficient_rmse": 0.8566701357720031,
+            "coefficient_correlations": [
+              0.0,
+              0.0
+            ],
+            "reference_error": 0.0,
+            "rank_one_residual": 0.0,
+            "evaluation_log_z": 9.199686857862249,
+            "truth_log_z": 9.87800346155763,
+            "n": 44,
+            "seed": 53,
+            "resolution": 12,
+            "initial": {
+              "step": 0,
+              "objective": 403.4743685577843,
+              "profile_objective": 403.4588343728707,
+              "penalty": 0.015534184913616439,
+              "log_likelihood": -280.9544904804672,
+              "intercept": -5.385328170873722,
+              "log_z": 9.169517804791983,
+              "n": 44,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            },
+            "final": {
+              "step": 300,
+              "objective": 402.14937217789384,
+              "profile_objective": 402.14755457076143,
+              "penalty": 0.001817607132434041,
+              "log_likelihood": -279.64321067835795,
+              "intercept": -5.415260572596052,
+              "log_z": 9.199450206514314,
+              "n": 44,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            }
+          },
+          {
+            "g_correlation": -0.012492559490015405,
+            "g_rmse": 0.81571552581682,
+            "intensity_correlation": 0.1797219927498676,
+            "intensity_rmse": 0.6520925564041588,
+            "density_rmse": 6.792630795876655e-05,
+            "top20_overlap": 0.4302114425276901,
+            "coefficient_rmse": 0.8566701357705676,
+            "coefficient_correlations": [
+              0.0,
+              0.0
+            ],
+            "reference_error": 0.0,
+            "rank_one_residual": 0.0,
+            "evaluation_log_z": 9.199686857861671,
+            "truth_log_z": 9.87800346155763,
+            "n": 44,
+            "seed": 53,
+            "resolution": 12,
+            "initial": {
+              "step": 0,
+              "objective": 403.4749424331934,
+              "profile_objective": 403.45879609467255,
+              "penalty": 0.016146338520872792,
+              "log_likelihood": -280.95445220226907,
+              "intercept": -5.3853286413039925,
+              "log_z": 9.169518275222254,
+              "n": 44,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            },
+            "final": {
+              "step": 300,
+              "objective": 402.149372177894,
+              "profile_objective": 402.14755457076143,
+              "penalty": 0.0018176071325640753,
+              "log_likelihood": -279.64321067835795,
+              "intercept": -5.41526057259548,
+              "log_z": 9.199450206513742,
+              "n": 44,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            }
+          }
+        ]
+      },
+      {
+        "g_correlation": 0.15101172511374078,
+        "g_rmse": 1.089649306496316,
+        "intensity_correlation": 0.4175317373788393,
+        "intensity_rmse": 0.7282261296055657,
+        "density_rmse": 7.585688850057975e-05,
+        "top20_overlap": 0.5800433020089732,
+        "coefficient_rmse": 1.2874644173478496,
+        "coefficient_correlations": [
+          -0.13999770931105146,
+          0.13999770931105146
+        ],
+        "reference_error": 0.0,
+        "rank_one_residual": 3.1091909276669937e-16,
+        "evaluation_log_z": 9.252212024406422,
+        "truth_log_z": 9.87800346155763,
+        "n": 44,
+        "seed": 71,
+        "resolution": 12,
+        "initial": {
+          "step": 0,
+          "objective": 403.475778595451,
+          "profile_objective": 403.4587015662551,
+          "penalty": 0.017077029195900987,
+          "log_likelihood": -280.95435767385163,
+          "intercept": -5.385326453050048,
+          "log_z": 9.16951608696831,
+          "n": 44,
+          "training_area": 9600.0,
+          "area_unit": "km^2"
+        },
+        "final": {
+          "step": 300,
+          "objective": 389.63965473572307,
+          "profile_objective": 389.3259231680639,
+          "penalty": 0.31373156765913723,
+          "log_likelihood": -266.82157927566044,
+          "intercept": -5.45502888049028,
+          "log_z": 9.239218514408542,
+          "n": 44,
+          "training_area": 9600.0,
+          "area_unit": "km^2"
+        },
+        "selected_restart": 2,
+        "starts": [
+          {
+            "g_correlation": 0.3742621904634634,
+            "g_rmse": 0.7861823088930315,
+            "intensity_correlation": 0.2824786348616677,
+            "intensity_rmse": 0.6807489271070121,
+            "density_rmse": 7.091134657364709e-05,
+            "top20_overlap": 0.3261747661131241,
+            "coefficient_rmse": 0.8141759947878797,
+            "coefficient_correlations": [
+              0.0,
+              0.0
+            ],
+            "reference_error": 0.0,
+            "rank_one_residual": 0.0,
+            "evaluation_log_z": 9.270951982342647,
+            "truth_log_z": 9.87800346155763,
+            "n": 44,
+            "seed": 71,
+            "resolution": 12,
+            "initial": {
+              "step": 0,
+              "objective": 403.47347953654884,
+              "profile_objective": 403.4588195989704,
+              "penalty": 0.014659937578394795,
+              "log_likelihood": -280.95447570656694,
+              "intercept": -5.38532867877554,
+              "log_z": 9.169518312693802,
+              "n": 44,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            },
+            "final": {
+              "step": 300,
+              "objective": 399.12293572173627,
+              "profile_objective": 399.11677663969067,
+              "penalty": 0.006159082045590118,
+              "log_likelihood": -276.6124327472872,
+              "intercept": -5.485971981505513,
+              "log_z": 9.270161615423774,
+              "n": 44,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            }
+          },
+          {
+            "g_correlation": 0.37426219046346365,
+            "g_rmse": 0.7861823088930021,
+            "intensity_correlation": 0.2824786348616943,
+            "intensity_rmse": 0.680748927106961,
+            "density_rmse": 7.091134657364177e-05,
+            "top20_overlap": 0.3261747661131241,
+            "coefficient_rmse": 0.8141759947878372,
+            "coefficient_correlations": [
+              2.3877408310449906e-17,
+              0.0
+            ],
+            "reference_error": 0.0,
+            "rank_one_residual": 0.0,
+            "evaluation_log_z": 9.270951982342604,
+            "truth_log_z": 9.87800346155763,
+            "n": 44,
+            "seed": 71,
+            "resolution": 12,
+            "initial": {
+              "step": 0,
+              "objective": 403.4742017395277,
+              "profile_objective": 403.4588062185425,
+              "penalty": 0.01539552098519537,
+              "log_likelihood": -280.95446232613904,
+              "intercept": -5.385328871928481,
+              "log_z": 9.169518505846742,
+              "n": 44,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            },
+            "final": {
+              "step": 300,
+              "objective": 399.12293572173627,
+              "profile_objective": 399.11677663969067,
+              "penalty": 0.006159082045587943,
+              "log_likelihood": -276.6124327472872,
+              "intercept": -5.485971981505472,
+              "log_z": 9.270161615423733,
+              "n": 44,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            }
+          },
+          {
+            "g_correlation": 0.15101172511374078,
+            "g_rmse": 1.089649306496316,
+            "intensity_correlation": 0.4175317373788393,
+            "intensity_rmse": 0.7282261296055657,
+            "density_rmse": 7.585688850057975e-05,
+            "top20_overlap": 0.5800433020089732,
+            "coefficient_rmse": 1.2874644173478496,
+            "coefficient_correlations": [
+              -0.13999770931105146,
+              0.13999770931105146
+            ],
+            "reference_error": 0.0,
+            "rank_one_residual": 3.1091909276669937e-16,
+            "evaluation_log_z": 9.252212024406422,
+            "truth_log_z": 9.87800346155763,
+            "n": 44,
+            "seed": 71,
+            "resolution": 12,
+            "initial": {
+              "step": 0,
+              "objective": 403.475778595451,
+              "profile_objective": 403.4587015662551,
+              "penalty": 0.017077029195900987,
+              "log_likelihood": -280.95435767385163,
+              "intercept": -5.385326453050048,
+              "log_z": 9.16951608696831,
+              "n": 44,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            },
+            "final": {
+              "step": 300,
+              "objective": 389.63965473572307,
+              "profile_objective": 389.3259231680639,
+              "penalty": 0.31373156765913723,
+              "log_likelihood": -266.82157927566044,
+              "intercept": -5.45502888049028,
+              "log_z": 9.239218514408542,
+              "n": 44,
+              "training_area": 9600.0,
+              "area_unit": "km^2"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "summaries": {
+    "256": {
+      "intensity_correlation": {
+        "mean": 0.6029509567677189,
+        "std": 0.3402169179255573
+      },
+      "intensity_rmse": {
+        "mean": 1.2444004312006263,
+        "std": 1.8027543238329946
+      },
+      "g_correlation": {
+        "mean": 0.6057574867720065,
+        "std": 0.23174126343886983
+      },
+      "g_rmse": {
+        "mean": 0.640890242189435,
+        "std": 0.2175513115693996
+      },
+      "coefficient_rmse": {
+        "mean": 0.8331671747971139,
+        "std": 0.2963222684614503
+      },
+      "top20_overlap": {
+        "mean": 0.7050054477912411,
+        "std": 0.155170393807233
+      },
+      "final_objective": {
+        "mean": 2296.6560498317313,
+        "std": 28.277527083672616
+      },
+      "pairwise_intensity_correlation_mean": 0.32385105947000714,
+      "pairwise_intensity_rmse_mean": 2.169557343935941
+    },
+    "44": {
+      "intensity_correlation": {
+        "mean": 0.1943974533229577,
+        "std": 0.25543190041774183
+      },
+      "intensity_rmse": {
+        "mean": 0.6772326218541571,
+        "std": 0.06409451078010053
+      },
+      "g_correlation": {
+        "mean": 0.09300352499470022,
+        "std": 0.25468900880343576
+      },
+      "g_rmse": {
+        "mean": 0.8644546217304725,
+        "std": 0.13356206196094053
+      },
+      "coefficient_rmse": {
+        "mean": 0.9336650240995983,
+        "std": 0.20779027125622146
+      },
+      "top20_overlap": {
+        "mean": 0.3839047857563994,
+        "std": 0.24365795258193068
+      },
+      "final_objective": {
+        "mean": 399.29362446997584,
+        "std": 5.449043941683665
+      },
+      "pairwise_intensity_correlation_mean": -0.005701952574213928,
+      "pairwise_intensity_rmse_mean": 0.5249595827770663
+    }
+  },
+  "fixed_model_refinement": [
+    {
+      "resolution": 12,
+      "log_z": 10.174312468362416,
+      "truth_log_z": 9.87295232316786,
+      "intensity_rmse": 0.011596432965172652
+    },
+    {
+      "resolution": 24,
+      "log_z": 10.182380932846296,
+      "truth_log_z": 9.876991760814196,
+      "intensity_rmse": 0.001044852432213208
+    },
+    {
+      "resolution": 48,
+      "log_z": 10.183183452741643,
+      "truth_log_z": 9.87800346155763,
+      "intensity_rmse": 0.0
+    }
+  ],
+  "refit_refinement": [
+    {
+      "g_correlation": 0.9078486120722393,
+      "g_rmse": 0.36619285431431214,
+      "intensity_correlation": 0.9283271990507951,
+      "intensity_rmse": 0.33341495999639714,
+      "density_rmse": 3.473072499962471e-05,
+      "top20_overlap": 0.8109378946623157,
+      "coefficient_rmse": 0.4652757262636697,
+      "coefficient_correlations": [
+        0.919178601838735,
+        0.9191786018387351
+      ],
+      "reference_error": 0.0,
+      "rank_one_residual": 7.353880019281908e-17,
+      "evaluation_log_z": 10.183183452741643,
+      "truth_log_z": 9.87800346155763,
+      "n": 256,
+      "seed": 11,
+      "resolution": 12,
+      "initial": {
+        "step": 0,
+        "objective": 2347.4119499583044,
+        "profile_objective": 2347.3966736284015,
+        "penalty": 0.015276329902906166,
+        "log_likelihood": -1183.8312478416335,
+        "intercept": -3.6243403338072513,
+        "log_z": 9.169517778286814,
+        "n": 256,
+        "training_area": 9600.0,
+        "area_unit": "km^2"
+      },
+      "final": {
+        "step": 300,
+        "objective": 2271.0307026673495,
+        "profile_objective": 2270.4551511230184,
+        "penalty": 0.5755515443311126,
+        "log_likelihood": -1106.8897253362504,
+        "intercept": -4.629135023882854,
+        "log_z": 10.174312468362416,
+        "n": 256,
+        "training_area": 9600.0,
+        "area_unit": "km^2"
+      },
+      "selected_restart": 0,
+      "starts": [
+        {
+          "g_correlation": 0.9078486120722393,
+          "g_rmse": 0.36619285431431214,
+          "intensity_correlation": 0.9283271990507951,
+          "intensity_rmse": 0.33341495999639714,
+          "density_rmse": 3.473072499962471e-05,
+          "top20_overlap": 0.8109378946623157,
+          "coefficient_rmse": 0.4652757262636697,
+          "coefficient_correlations": [
+            0.919178601838735,
+            0.9191786018387351
+          ],
+          "reference_error": 0.0,
+          "rank_one_residual": 7.353880019281908e-17,
+          "evaluation_log_z": 10.183183452741643,
+          "truth_log_z": 9.87800346155763,
+          "n": 256,
+          "seed": 11,
+          "resolution": 12,
+          "initial": {
+            "step": 0,
+            "objective": 2347.4119499583044,
+            "profile_objective": 2347.3966736284015,
+            "penalty": 0.015276329902906166,
+            "log_likelihood": -1183.8312478416335,
+            "intercept": -3.6243403338072513,
+            "log_z": 9.169517778286814,
+            "n": 256,
+            "training_area": 9600.0,
+            "area_unit": "km^2"
+          },
+          "final": {
+            "step": 300,
+            "objective": 2271.0307026673495,
+            "profile_objective": 2270.4551511230184,
+            "penalty": 0.5755515443311126,
+            "log_likelihood": -1106.8897253362504,
+            "intercept": -4.629135023882854,
+            "log_z": 10.174312468362416,
+            "n": 256,
+            "training_area": 9600.0,
+            "area_unit": "km^2"
+          }
+        },
+        {
+          "g_correlation": 0.1890850653386949,
+          "g_rmse": 0.7756864680958149,
+          "intensity_correlation": 0.3428297814175965,
+          "intensity_rmse": 0.6103285990685154,
+          "density_rmse": 6.357589573630369e-05,
+          "top20_overlap": 0.6381847421269087,
+          "coefficient_rmse": 0.7989242204628358,
+          "coefficient_correlations": [
+            0.0,
+            0.0
+          ],
+          "reference_error": 0.0,
+          "rank_one_residual": 0.0,
+          "evaluation_log_z": 9.191827117807366,
+          "truth_log_z": 9.87800346155763,
+          "n": 256,
+          "seed": 11,
+          "resolution": 12,
+          "initial": {
+            "step": 0,
+            "objective": 2347.41273721912,
+            "profile_objective": 2347.3967625253094,
+            "penalty": 0.01597469381069621,
+            "log_likelihood": -1183.8313367385415,
+            "intercept": -3.6243412897213867,
+            "log_z": 9.169518734200949,
+            "n": 256,
+            "training_area": 9600.0,
+            "area_unit": "km^2"
+          },
+          "final": {
+            "step": 300,
+            "objective": 2341.7635552012994,
+            "profile_objective": 2341.7622118444756,
+            "penalty": 0.0013433568235562453,
+            "log_likelihood": -1178.1967860577076,
+            "intercept": -3.6464745949810835,
+            "log_z": 9.191652039460646,
+            "n": 256,
+            "training_area": 9600.0,
+            "area_unit": "km^2"
+          }
+        },
+        {
+          "g_correlation": 0.1890850653376587,
+          "g_rmse": 0.7756864680964511,
+          "intensity_correlation": 0.3428297814186107,
+          "intensity_rmse": 0.6103285990682235,
+          "density_rmse": 6.357589573627327e-05,
+          "top20_overlap": 0.6381847421269087,
+          "coefficient_rmse": 0.798924220463763,
+          "coefficient_correlations": [
+            -2.3877408310449906e-17,
+            0.0
+          ],
+          "reference_error": 0.0,
+          "rank_one_residual": 0.0,
+          "evaluation_log_z": 9.1918271178081,
+          "truth_log_z": 9.87800346155763,
+          "n": 256,
+          "seed": 11,
+          "resolution": 12,
+          "initial": {
+            "step": 0,
+            "objective": 2347.412494901731,
+            "profile_objective": 2347.39668557604,
+            "penalty": 0.015809325690905016,
+            "log_likelihood": -1183.831259789272,
+            "intercept": -3.624341347554437,
+            "log_z": 9.169518792034,
+            "n": 256,
+            "training_area": 9600.0,
+            "area_unit": "km^2"
+          },
+          "final": {
+            "step": 300,
+            "objective": 2341.7635551958447,
+            "profile_objective": 2341.762211844475,
+            "penalty": 0.0013433513693743326,
+            "log_likelihood": -1178.1967860577072,
+            "intercept": -3.646474594981812,
+            "log_z": 9.191652039461374,
+            "n": 256,
+            "training_area": 9600.0,
+            "area_unit": "km^2"
+          }
+        }
+      ]
+    },
+    {
+      "g_correlation": 0.9359440201565333,
+      "g_rmse": 0.26575134981740123,
+      "intensity_correlation": 0.925908994330109,
+      "intensity_rmse": 0.3481110083825235,
+      "density_rmse": 3.626156337317953e-05,
+      "top20_overlap": 0.839894326539816,
+      "coefficient_rmse": 0.29504825686795344,
+      "coefficient_correlations": [
+        0.9740721171136728,
+        0.9740721171136728
+      ],
+      "reference_error": 0.0,
+      "rank_one_residual": 4.365294567557719e-16,
+      "evaluation_log_z": 10.083784918314343,
+      "truth_log_z": 9.87800346155763,
+      "n": 256,
+      "seed": 11,
+      "resolution": 18,
+      "initial": {
+        "step": 0,
+        "objective": 2347.4119496470125,
+        "profile_objective": 2347.3966733171096,
+        "penalty": 0.015276329902906166,
+        "log_likelihood": -1183.8312475303417,
+        "intercept": -3.6243403325912675,
+        "log_z": 9.16951777707083,
+        "n": 256,
+        "training_area": 9600.0,
+        "area_unit": "km^2"
+      },
+      "final": {
+        "step": 300,
+        "objective": 2274.666384503378,
+        "profile_objective": 2274.1476477551705,
+        "penalty": 0.5187367482075075,
+        "log_likelihood": -1110.5822219684026,
+        "intercept": -4.533565611718051,
+        "log_z": 10.078743056197613,
+        "n": 256,
+        "training_area": 9600.0,
+        "area_unit": "km^2"
+      },
+      "selected_restart": 0,
+      "starts": [
+        {
+          "g_correlation": 0.9359440201565333,
+          "g_rmse": 0.26575134981740123,
+          "intensity_correlation": 0.925908994330109,
+          "intensity_rmse": 0.3481110083825235,
+          "density_rmse": 3.626156337317953e-05,
+          "top20_overlap": 0.839894326539816,
+          "coefficient_rmse": 0.29504825686795344,
+          "coefficient_correlations": [
+            0.9740721171136728,
+            0.9740721171136728
+          ],
+          "reference_error": 0.0,
+          "rank_one_residual": 4.365294567557719e-16,
+          "evaluation_log_z": 10.083784918314343,
+          "truth_log_z": 9.87800346155763,
+          "n": 256,
+          "seed": 11,
+          "resolution": 18,
+          "initial": {
+            "step": 0,
+            "objective": 2347.4119496470125,
+            "profile_objective": 2347.3966733171096,
+            "penalty": 0.015276329902906166,
+            "log_likelihood": -1183.8312475303417,
+            "intercept": -3.6243403325912675,
+            "log_z": 9.16951777707083,
+            "n": 256,
+            "training_area": 9600.0,
+            "area_unit": "km^2"
+          },
+          "final": {
+            "step": 300,
+            "objective": 2274.666384503378,
+            "profile_objective": 2274.1476477551705,
+            "penalty": 0.5187367482075075,
+            "log_likelihood": -1110.5822219684026,
+            "intercept": -4.533565611718051,
+            "log_z": 10.078743056197613,
+            "n": 256,
+            "training_area": 9600.0,
+            "area_unit": "km^2"
+          }
+        },
+        {
+          "g_correlation": 0.1890814134001067,
+          "g_rmse": 0.7755511779054,
+          "intensity_correlation": 0.3423648973660812,
+          "intensity_rmse": 0.6104516784173115,
+          "density_rmse": 6.358871650180328e-05,
+          "top20_overlap": 0.6381847421269087,
+          "coefficient_rmse": 0.7987270769052528,
+          "coefficient_correlations": [
+            2.3877408310449906e-17,
+            0.0
+          ],
+          "reference_error": 0.0,
+          "rank_one_residual": 0.0,
+          "evaluation_log_z": 9.191618455585427,
+          "truth_log_z": 9.87800346155763,
+          "n": 256,
+          "seed": 11,
+          "resolution": 18,
+          "initial": {
+            "step": 0,
+            "objective": 2347.412737578726,
+            "profile_objective": 2347.3967628849155,
+            "penalty": 0.01597469381069621,
+            "log_likelihood": -1183.8313370981475,
+            "intercept": -3.6243412911260977,
+            "log_z": 9.16951873560566,
+            "n": 256,
+            "training_area": 9600.0,
+            "area_unit": "km^2"
+          },
+          "final": {
+            "step": 300,
+            "objective": 2341.7899516277475,
+            "profile_objective": 2341.788620869356,
+            "penalty": 0.0013307583916048625,
+            "log_likelihood": -1178.2231950825878,
+            "intercept": -3.646370194912037,
+            "log_z": 9.1915476393916,
+            "n": 256,
+            "training_area": 9600.0,
+            "area_unit": "km^2"
+          }
+        },
+        {
+          "g_correlation": 0.18908141340065718,
+          "g_rmse": 0.7755511779057634,
+          "intensity_correlation": 0.3423648973679343,
+          "intensity_rmse": 0.6104516784168329,
+          "density_rmse": 6.358871650175342e-05,
+          "top20_overlap": 0.6381847421269087,
+          "coefficient_rmse": 0.7987270769057826,
+          "coefficient_correlations": [
+            0.0,
+            0.0
+          ],
+          "reference_error": 0.0,
+          "rank_one_residual": 0.0,
+          "evaluation_log_z": 9.191618455586116,
+          "truth_log_z": 9.87800346155763,
+          "n": 256,
+          "seed": 11,
+          "resolution": 18,
+          "initial": {
+            "step": 0,
+            "objective": 2347.412495360466,
+            "profile_objective": 2347.396686034775,
+            "penalty": 0.015809325690905016,
+            "log_likelihood": -1183.831260248007,
+            "intercept": -3.6243413493463708,
+            "log_z": 9.169518793825933,
+            "n": 256,
+            "training_area": 9600.0,
+            "area_unit": "km^2"
+          },
+          "final": {
+            "step": 300,
+            "objective": 2341.789951617602,
+            "profile_objective": 2341.788620869356,
+            "penalty": 0.001330748246356275,
+            "log_likelihood": -1178.2231950825878,
+            "intercept": -3.6463701949127207,
+            "log_z": 9.191547639392283,
+            "n": 256,
+            "training_area": 9600.0,
+            "area_unit": "km^2"
+          }
+        }
+      ]
+    },
+    {
+      "g_correlation": 0.9449231647748131,
+      "g_rmse": 0.28995770356474676,
+      "intensity_correlation": 0.9590075862197678,
+      "intensity_rmse": 0.2809463362205944,
+      "density_rmse": 2.926524335631192e-05,
+      "top20_overlap": 0.8494298676461229,
+      "coefficient_rmse": 0.4590447951349936,
+      "coefficient_correlations": [
+        0.917725449017467,
+        0.917725449017467
+      ],
+      "reference_error": 0.0,
+      "rank_one_residual": 1.0433343063203322e-16,
+      "evaluation_log_z": 10.137146164001136,
+      "truth_log_z": 9.87800346155763,
+      "n": 256,
+      "seed": 11,
+      "resolution": 24,
+      "initial": {
+        "step": 0,
+        "objective": 2347.4119494168513,
+        "profile_objective": 2347.3966730869483,
+        "penalty": 0.015276329902906166,
+        "log_likelihood": -1183.8312473001804,
+        "intercept": -3.6243403316922,
+        "log_z": 9.169517776171762,
+        "n": 256,
+        "training_area": 9600.0,
+        "area_unit": "km^2"
+      },
+      "final": {
+        "step": 300,
+        "objective": 2277.038895975973,
+        "profile_objective": 2276.5363560605147,
+        "penalty": 0.5025399154583048,
+        "log_likelihood": -1112.9709302737467,
+        "intercept": -4.590627896284725,
+        "log_z": 10.135805340764287,
+        "n": 256,
+        "training_area": 9600.0,
+        "area_unit": "km^2"
+      },
+      "selected_restart": 0,
+      "starts": [
+        {
+          "g_correlation": 0.9449231647748131,
+          "g_rmse": 0.28995770356474676,
+          "intensity_correlation": 0.9590075862197678,
+          "intensity_rmse": 0.2809463362205944,
+          "density_rmse": 2.926524335631192e-05,
+          "top20_overlap": 0.8494298676461229,
+          "coefficient_rmse": 0.4590447951349936,
+          "coefficient_correlations": [
+            0.917725449017467,
+            0.917725449017467
+          ],
+          "reference_error": 0.0,
+          "rank_one_residual": 1.0433343063203322e-16,
+          "evaluation_log_z": 10.137146164001136,
+          "truth_log_z": 9.87800346155763,
+          "n": 256,
+          "seed": 11,
+          "resolution": 24,
+          "initial": {
+            "step": 0,
+            "objective": 2347.4119494168513,
+            "profile_objective": 2347.3966730869483,
+            "penalty": 0.015276329902906166,
+            "log_likelihood": -1183.8312473001804,
+            "intercept": -3.6243403316922,
+            "log_z": 9.169517776171762,
+            "n": 256,
+            "training_area": 9600.0,
+            "area_unit": "km^2"
+          },
+          "final": {
+            "step": 300,
+            "objective": 2277.038895975973,
+            "profile_objective": 2276.5363560605147,
+            "penalty": 0.5025399154583048,
+            "log_likelihood": -1112.9709302737467,
+            "intercept": -4.590627896284725,
+            "log_z": 10.135805340764287,
+            "n": 256,
+            "training_area": 9600.0,
+            "area_unit": "km^2"
+          }
+        },
+        {
+          "g_correlation": 0.18908015365818148,
+          "g_rmse": 0.7755042811796405,
+          "intensity_correlation": 0.34220271285627835,
+          "intensity_rmse": 0.6104947601509669,
+          "density_rmse": 6.35932041823924e-05,
+          "top20_overlap": 0.6381847421269087,
+          "coefficient_rmse": 0.7986587361195119,
+          "coefficient_correlations": [
+            0.0,
+            -1.3775427871413406e-17
+          ],
+          "reference_error": 0.0,
+          "rank_one_residual": 0.0,
+          "evaluation_log_z": 9.191545904667688,
+          "truth_log_z": 9.87800346155763,
+          "n": 256,
+          "seed": 11,
+          "resolution": 24,
+          "initial": {
+            "step": 0,
+            "objective": 2347.4127377863615,
+            "profile_objective": 2347.396763092551,
+            "penalty": 0.01597469381069621,
+            "log_likelihood": -1183.8313373057829,
+            "intercept": -3.6243412919371734,
+            "log_z": 9.169518736416736,
+            "n": 256,
+            "training_area": 9600.0,
+            "area_unit": "km^2"
+          },
+          "final": {
+            "step": 300,
+            "objective": 2341.79915899745,
+            "profile_objective": 2341.7978326310836,
+            "penalty": 0.0013263663665015945,
+            "log_likelihood": -1178.2324068443156,
+            "intercept": -3.6463337832436826,
+            "log_z": 9.191511227723245,
+            "n": 256,
+            "training_area": 9600.0,
+            "area_unit": "km^2"
+          }
+        },
+        {
+          "g_correlation": 0.1890801536594587,
+          "g_rmse": 0.775504281179956,
+          "intensity_correlation": 0.3422027128587751,
+          "intensity_rmse": 0.6104947601503348,
+          "density_rmse": 6.359320418232655e-05,
+          "top20_overlap": 0.6381847421269087,
+          "coefficient_rmse": 0.7986587361199715,
+          "coefficient_correlations": [
+            -2.3877408310449906e-17,
+            0.0
+          ],
+          "reference_error": 0.0,
+          "rank_one_residual": 0.0,
+          "evaluation_log_z": 9.19154590466847,
+          "truth_log_z": 9.87800346155763,
+          "n": 256,
+          "seed": 11,
+          "resolution": 24,
+          "initial": {
+            "step": 0,
+            "objective": 2347.412495541133,
+            "profile_objective": 2347.396686215442,
+            "penalty": 0.015809325690905016,
+            "log_likelihood": -1183.831260428674,
+            "intercept": -3.6243413500521013,
+            "log_z": 9.169518794531664,
+            "n": 256,
+            "training_area": 9600.0,
+            "area_unit": "km^2"
+          },
+          "final": {
+            "step": 300,
+            "objective": 2341.7991590022084,
+            "profile_objective": 2341.797832631083,
+            "penalty": 0.0013263711254777116,
+            "log_likelihood": -1178.2324068443152,
+            "intercept": -3.646333783244464,
+            "log_z": 9.191511227724027,
+            "n": 256,
+            "training_area": 9600.0,
+            "area_unit": "km^2"
+          }
+        }
+      ]
+    }
+  ],
+  "refit_surface_comparisons": [
+    {
+      "resolution": 12,
+      "correlation_to_12": 1.0,
+      "rmse_to_12": 0.0
+    },
+    {
+      "resolution": 18,
+      "correlation_to_12": 0.9650392152457035,
+      "rmse_to_12": 0.2228188030995504
+    },
+    {
+      "resolution": 24,
+      "correlation_to_12": 0.9774478116170983,
+      "rmse_to_12": 0.17715063160644956
+    }
+  ],
+  "suite": {
+    "command": "python -B -m unittest discover -s mineral_prediction -p 'test_acawlr_ppp*.py' -v",
+    "total": 23,
+    "passed": 22,
+    "failed": [
+      "test_n256_truth_recovery"
+    ],
+    "seconds": 173.184
+  },
+  "single_start_summary": {
+    "256": {
+      "intensity_correlation": {
+        "mean": 0.6404292362911803,
+        "std": 0.26678822083965553
+      },
+      "intensity_rmse": {
+        "mean": 0.52042673174524,
+        "std": 0.11986783828612432
+      },
+      "g_correlation": {
+        "mean": 0.581554452676127,
+        "std": 0.2685179385695562
+      },
+      "g_rmse": {
+        "mean": 0.6327731075343366,
+        "std": 0.1946820395844269
+      },
+      "coefficient_rmse": {
+        "mean": 0.7466171135058886,
+        "std": 0.22198325363411892
+      }
+    },
+    "44": {
+      "intensity_correlation": {
+        "mean": 0.16738683282270853,
+        "std": 0.23200395509675184
+      },
+      "intensity_rmse": {
+        "mean": 0.6677371813527618,
+        "std": 0.05786543628809061
+      },
+      "g_correlation": {
+        "mean": 0.13765361806925164,
+        "std": 0.2851487753693779
+      },
+      "g_rmse": {
+        "mean": 0.8037612222074256,
+        "std": 0.04569125398823954
+      },
+      "coefficient_rmse": {
+        "mean": 0.8390073395841855,
+        "std": 0.06521199772974931
+      }
+    }
+  },
+  "recovery_thresholds": {
+    "mean_intensity_correlation_min": 0.7,
+    "mean_intensity_rmse_max": 0.8,
+    "mean_g_correlation_min": 0.65,
+    "mean_top20_overlap_min": 0.5,
+    "each_intensity_correlation_min": 0.4
+  },
+  "verification_rerun": {
+    "command": "python -B -m unittest discover -s mineral_prediction -p 'test_acawlr_ppp*.py' -v",
+    "total": 23,
+    "passed": 22,
+    "failed": [
+      "test_acawlr_ppp_p1b.SyntheticP1BTests.test_n256_truth_recovery"
+    ],
+    "seconds": 172.866,
+    "exit_code": 1,
+    "log_file": "ACAWLR_PPP_P1B_TEST_RUN.txt"
+  }
+}

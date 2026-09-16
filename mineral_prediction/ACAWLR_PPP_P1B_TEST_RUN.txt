@@ -1,0 +1,49 @@
+test_chunk_size_and_reorder_invariance (test_acawlr_ppp_bridge.SyntheticP0Tests.test_chunk_size_and_reorder_invariance) ... ok
+test_event_quadrature_role_invariance (test_acawlr_ppp_bridge.SyntheticP0Tests.test_event_quadrature_role_invariance) ... ok
+test_full_and_streaming_calculation_agree (test_acawlr_ppp_bridge.SyntheticP0Tests.test_full_and_streaming_calculation_agree) ... ok
+test_loss_and_gradient_are_finite (test_acawlr_ppp_bridge.SyntheticP0Tests.test_loss_and_gradient_are_finite) ... ok
+test_nonlinear_gradient_matches_finite_difference (test_acawlr_ppp_bridge.SyntheticP0Tests.test_nonlinear_gradient_matches_finite_difference) ... ok
+test_predictor_varies_with_position (test_acawlr_ppp_bridge.SyntheticP0Tests.test_predictor_varies_with_position) ... ok
+test_profiled_intercept_matches_direct_one_dimensional_solution (test_acawlr_ppp_bridge.SyntheticP0Tests.test_profiled_intercept_matches_direct_one_dimensional_solution) ... ok
+test_all_parameter_gradient_blocks_against_finite_difference (test_acawlr_ppp_p1.SyntheticP1ATests.test_all_parameter_gradient_blocks_against_finite_difference) ... ok
+test_architecture_rank_one_and_reference_constraint (test_acawlr_ppp_p1.SyntheticP1ATests.test_architecture_rank_one_and_reference_constraint) ... ok
+test_axial_symmetry (test_acawlr_ppp_p1.SyntheticP1ATests.test_axial_symmetry) ... ok
+test_full_streaming_penalty_and_gradient_agree (test_acawlr_ppp_p1.SyntheticP1ATests.test_full_streaming_penalty_and_gradient_agree) ... ok
+test_invalid_inputs_and_nonfinite_state_fail (test_acawlr_ppp_p1.SyntheticP1ATests.test_invalid_inputs_and_nonfinite_state_fail) ... ok
+test_role_chunk_reorder_and_train_eval_invariance (test_acawlr_ppp_p1.SyntheticP1ATests.test_role_chunk_reorder_and_train_eval_invariance) ... ok
+test_training_decreases_loss_and_updates_neural_weights (test_acawlr_ppp_p1.SyntheticP1ATests.test_training_decreases_loss_and_updates_neural_weights) ... ok
+P1-B n=256 seed=11: intensity corr=0.9283, RMSE=0.3334
+P1-B n=256 seed=23: intensity corr=0.1323, RMSE=4.4635
+P1-B n=256 seed=37: intensity corr=0.8610, RMSE=0.3546
+P1-B n=256 seed=53: intensity corr=0.7236, RMSE=0.4665
+P1-B n=256 seed=71: intensity corr=0.3696, RMSE=0.6040
+P1-B n=44 seed=11: intensity corr=-0.2032, RMSE=0.7561
+P1-B n=44 seed=23: intensity corr=0.4212, RMSE=0.5975
+P1-B n=44 seed=37: intensity corr=0.1568, RMSE=0.6522
+P1-B n=44 seed=53: intensity corr=0.1797, RMSE=0.6521
+P1-B n=44 seed=71: intensity corr=0.4175, RMSE=0.7282
+P1-B refinement 18x18: corr=0.9259
+P1-B refinement 24x24: corr=0.9590
+test_full_streaming_gradients_and_updates (test_acawlr_ppp_p1b.SyntheticP1BTests.test_full_streaming_gradients_and_updates) ... ok
+test_generator_reproducibility_and_domain (test_acawlr_ppp_p1b.SyntheticP1BTests.test_generator_reproducibility_and_domain) ... ok
+test_n256_truth_recovery (test_acawlr_ppp_p1b.SyntheticP1BTests.test_n256_truth_recovery) ... FAIL
+test_n44_smoke_and_stability_summary (test_acawlr_ppp_p1b.SyntheticP1BTests.test_n44_smoke_and_stability_summary) ... ok
+test_no_real_data_io (test_acawlr_ppp_p1b.SyntheticP1BTests.test_no_real_data_io) ... ok
+test_quadrature_refinement_sanity (test_acawlr_ppp_p1b.SyntheticP1BTests.test_quadrature_refinement_sanity) ... ok
+test_reference_rank_one_and_profile_mass (test_acawlr_ppp_p1b.SyntheticP1BTests.test_reference_rank_one_and_profile_mass) ... ok
+test_restart_selection_uses_training_objective_only (test_acawlr_ppp_p1b.SyntheticP1BTests.test_restart_selection_uses_training_objective_only) ... ok
+test_truth_normalization_and_nontrivial_structure (test_acawlr_ppp_p1b.SyntheticP1BTests.test_truth_normalization_and_nontrivial_structure) ... ok
+P1-B summaries: {"256": {"intensity_correlation": {"mean": 0.6029509567677189, "std": 0.3402169179255573}, "intensity_rmse": {"mean": 1.2444004312006263, "std": 1.8027543238329946}, "g_correlation": {"mean": 0.6057574867720065, "std": 0.23174126343886983}, "g_rmse": {"mean": 0.640890242189435, "std": 0.2175513115693996}, "coefficient_rmse": {"mean": 0.8331671747971139, "std": 0.2963222684614503}, "top20_overlap": {"mean": 0.7050054477912411, "std": 0.155170393807233}, "final_objective": {"mean": 2296.6560498317313, "std": 28.277527083672616}, "pairwise_intensity_correlation_mean": 0.32385105947000714, "pairwise_intensity_rmse_mean": 2.169557343935941}, "44": {"intensity_correlation": {"mean": 0.1943974533229577, "std": 0.25543190041774183}, "intensity_rmse": {"mean": 0.6772326218541571, "std": 0.06409451078010053}, "g_correlation": {"mean": 0.09300352499470022, "std": 0.25468900880343576}, "g_rmse": {"mean": 0.8644546217304725, "std": 0.13356206196094053}, "coefficient_rmse": {"mean": 0.9336650240995983, "std": 0.20779027125622146}, "top20_overlap": {"mean": 0.3839047857563994, "std": 0.24365795258193068}, "final_objective": {"mean": 399.29362446997584, "std": 5.449043941683665}, "pairwise_intensity_correlation_mean": -0.005701952574213928, "pairwise_intensity_rmse_mean": 0.5249595827770663}}
+
+======================================================================
+FAIL: test_n256_truth_recovery (test_acawlr_ppp_p1b.SyntheticP1BTests.test_n256_truth_recovery)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\code\ResearchPractice\mineral_prediction\test_acawlr_ppp_p1b.py", line 138, in test_n256_truth_recovery
+    self.assertGreater(summary['intensity_correlation']['mean'], .7)
+AssertionError: 0.6029509567677189 not greater than 0.7
+
+----------------------------------------------------------------------
+Ran 23 tests in 172.866s
+
+FAILED (failures=1)
