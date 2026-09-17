@@ -1,0 +1,18 @@
+{
+  "command": "python -B unittest discovery test_acawlr_ppp*.py (P1-C report enabled; P1-B report disabled)",
+  "tests": 33,
+  "failures": [
+    {
+      "test": "test_acawlr_ppp_p1b.SyntheticP1BTests.test_n256_truth_recovery",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\code\\ResearchPractice\\mineral_prediction\\test_acawlr_ppp_p1b.py\", line 138, in test_n256_truth_recovery\n    self.assertGreater(summary['intensity_correlation']['mean'], .7)\nAssertionError: 0.6029509567677189 not greater than 0.7\n"
+    },
+    {
+      "test": "test_acawlr_ppp_p1c_teacher_student.TeacherStudentFullExperiments.test_B_n256_recovery",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\code\\ResearchPractice\\mineral_prediction\\test_acawlr_ppp_p1c_teacher_student.py\", line 169, in test_B_n256_recovery\n    self.assertEqual(failures,[], '\\n'.join(failures))\nAssertionError: Lists differ: ['B_n256_data23_init1011: intensity correlation <= 0.4'] != []\n\nFirst list contains 1 additional elements.\nFirst extra element 0:\n'B_n256_data23_init1011: intensity correlation <= 0.4'\n\n- ['B_n256_data23_init1011: intensity correlation <= 0.4']\n+ [] : B_n256_data23_init1011: intensity correlation <= 0.4\n"
+    }
+  ],
+  "errors": [],
+  "skipped": [],
+  "seconds": 312.4758737000011,
+  "exit_code": 1
+}

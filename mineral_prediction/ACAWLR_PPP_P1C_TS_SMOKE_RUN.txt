@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "D:\code\ResearchPractice\mineral_prediction\acawlr_ppp_teacher_student.py", line 332, in <module>
+    report, archive = run_experiments(smoke=args.smoke)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\ResearchPractice\mineral_prediction\acawlr_ppp_teacher_student.py", line 251, in run_experiments
+    assert diagnostics['spatial_score']['std'] > .1
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

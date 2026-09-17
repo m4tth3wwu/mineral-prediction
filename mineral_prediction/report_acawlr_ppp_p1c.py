@@ -1,0 +1,160 @@
+"""Render P1-C saved results only; never fit, select, or replace any run."""
+import json
+import math
+from pathlib import Path
+import torch
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+from matplotlib.colors import LogNorm
+from acawlr_ppp_teacher_student import make_teacher
+from acawlr_ppp_synthetic import quadrature, normalized_density, DOMAIN_AREA
+
+
+def main():
+    root = Path(__file__).resolve().parent
+    report = json.loads((root/'ACAWLR_PPP_P1C_TS_RESULTS.json').read_text(encoding='utf-8'))
+    suite = json.loads((root/'ACAWLR_PPP_P1C_TS_SUITE.json').read_text(encoding='utf-8'))
+    archive = torch.load(root/'ACAWLR_PPP_P1C_TS_STATES.pt', weights_only=True)
+    torch.set_num_threads(1)
+    teacher = make_teacher()
+    teacher.load_state_dict(archive['teacher_state'])
+    grid, area = quadrature(48)
+    with torch.no_grad():
+        p, _ = normalized_density(teacher.g(grid), area)
+    truth = p * DOMAIN_AREA
+    groups = [('A',44),('A',256),('B',44),('B',256)]
+    t = torch.linspace(-1,1,49,dtype=torch.float64)
+    edges = t + .12*torch.sin(math.pi*t)
+    surfaces = [truth] + [v['relative_intensity'] for v in archive['cases'].values()]
+    vmax = max(float(v.max()) for v in surfaces)
+    vmin = min(float(v.min()) for v in surfaces)
+    fig, axes = plt.subplots(4,6,figsize=(17,10),layout='constrained',sharex=True,sharey=True)
+    for row,(experiment,n) in enumerate(groups):
+        cases = [c for c in report['runs'] if c['experiment']==experiment and c['n']==n]
+        values = [truth]+[archive['cases'][c['id']]['relative_intensity'] for c in cases]
+        for col,(ax,value) in enumerate(zip(axes[row],values)):
+            mesh=ax.pcolormesh(edges.numpy()*60,edges.numpy()*40,value.reshape(48,48).T.numpy(),
+                               shading='flat',cmap='viridis',norm=LogNorm(vmin=vmin,vmax=vmax))
+            if col==0:
+                ax.set_title(f'{experiment}, n={n}: teacher')
+                ax.set_ylabel('y (km)')
+            else:
+                c=cases[col-1]
+                varying=c['init_seed'] if experiment=='A' else c['data_seed']
+                ax.set_title(f"seed {varying}; r={c['intensity_correlation']:.3f}\nh std={c['h_std']:.3g}",fontsize=9)
+            if row==3: ax.set_xlabel('x (km)')
+            ax.set_aspect('equal')
+    fig.colorbar(mesh,ax=axes,shrink=.8,label='Relative intensity A*p (shared log scale; no clipping)')
+    fig.suptitle('P1-C: every student run; A varies initialization, B varies sampled events',fontsize=15)
+    fig.savefig(root/'ACAWLR_PPP_P1C_TS_SURFACES.png',dpi=160)
+    plt.close(fig)
+    summary_lines=[]
+    pair_lines=[]
+    for ex,n in groups:
+        s=report['summaries'][ex][str(n)]
+        def fmt(k): return f"{s[k]['mean']:.4f} ± {s[k]['std']:.4f}"
+        summary_lines.append('| '+ ' | '.join([ex,str(n)]+[fmt(k) for k in ('intensity_correlation','intensity_rmse','g_correlation','g_rmse','coefficient_rmse','top20_overlap')])+' |')
+        pair_lines.append(f"| {ex} | {n} | {fmt('final_objective')} | {s['pairwise_correlation']['mean']:.4f} ± {s['pairwise_correlation']['std']:.4f} | {s['pairwise_correlation']['min']:.4f} | {s['pairwise_rmse']['mean']:.4f} ± {s['pairwise_rmse']['std']:.4f} |")
+    case_lines=[]
+    for c in report['runs']:
+        f=c['final']
+        case_lines.append(f"| {c['experiment']} | {c['n']} | {c['data_seed']} | {c['init_seed']} | {c['intensity_correlation']:.6f} | {c['intensity_rmse']:.6f} | {c['coefficient_rmse']:.6f} | {c['h_std']:.6g} | {f['profile_objective']:.6f} | {f['penalty']:.6f} | {f['log_z']:.6f} | {f['intercept']:.6f} | {c['final_gradient']['l2']:.6g} |")
+    qlines=[]
+    examples=[('Teacher',report['teacher']['refinement'])]
+    for key in ('B_n44_data53_init1011','A_n256_data11_init1023','B_n256_data23_init1011'):
+        examples.append((key,next(c for c in report['runs'] if c['id']==key)['quadrature']))
+    for label,q in examples:
+        zs=[v['log_z'] for v in q['values']]
+        c0,c1=q['comparisons']
+        qlines.append(f"| {label} | {zs[0]:.8f} | {zs[1]:.8f} | {zs[2]:.8f} | {c0['delta_log_z']:.8f} | {c0['intensity_rmse']:.8f} | {c1['delta_log_z']:.8f} | {c1['intensity_rmse']:.8f} |")
+    notes='''# ACAWLR–PPP P1-C Teacher–Student synthetic validation
+
+结论：**二者都有，但在本次实验切片中，数据变化引起的预测波动更大。n=256 仍未实现跨数据样本的稳定恢复。** A 组通过沿用 P1-B 的宽松强度恢复门槛；B 组 data seed 23 失败。精确可表示性已验证，因此本阶段的失败不能归因于 teacher 不属于有限 student 模型类。初始化影响空间支路是否塌缩；固定初始化后，数据也显著改变拟合结果。部分终点梯度很大，不能将 B 组变化全部归为不可消除的抽样误差。
+
+## 范围与预先固定的设置
+
+- 基线：codex-refactor / 8d9dd77。仅新增 P1-C 文件；11 个既有模型、历史说明、结果、测试及纯类来源的 Git blob 已逐个核对不变，见 HISTORY_AUDIT.json。未读取真实矿点，未运行真实44/16、选点、湖泊或GIS流程。
+- Teacher/student 直接使用同一个 `ReducedRankOneSyntheticPredictor` 类，均为675参数、固定4×3 anchors、固定参考点及方向、无BN/dropout。β(s)=β+u h(s)，g=xᵀβ(s)。完整 state_dict 包含参数与 buffers。96²网格复制检查中 g、β(s)、p 及 A·p 的最大绝对误差全部为0。
+- Teacher seed=20260917。明确构造 ASPNN 的初始路径 sigmoid(2|perpendicular offset|−2)，CAWNN 中心复制通道、单位readout，再对神经参数施加该 seed 的0.01 Gaussian扰动。最终固定 β=(0.3,−0.2)、u=(6,3)；参数逐张量范数与完整状态均已保存。没有使用 student 表现选取 teacher。
+- 预检历史完整保留：首次构造 u=(4,2) 的空间分量面积加权std=0.09989648，未达到预设0.1门槛，因此在任何student训练前停止。随后仅将u固定为(6,3)，保持seed、门槛和网络不变。首次失败日志及完整 teacher 诊断分别为 SMOKE_RUN.txt / TEACHER_PREFLIGHT_REJECTED.json。最终teacher此后未调整。
+- 域沿用 [-60,60]×[-40,40] km，面积9600 km²；x=(sx/60000,sy/40000)，非等面积中点quadrature。连续均匀proposal拒绝采样，CAWNN区间传播给出全域上界M=4.6871490210，接受率exp(g−M)。上界不取自网格；给定N采样，不吸附、不生成pseudo-negative。每个data seed的44事件都是其256事件前44项。
+- A：data seed固定11，initialization seeds=(1011,1023,1037,1053,1071)。B：initialization state固定为seed1011生成的完整快照，data seeds=(11,23,37,53,71)。每次显式load_state_dict，各B运行初始状态逐元素完全一致；事件/初始状态均有SHA256并保存原tensor。A/B共享的anchor分别独立训练，最终状态bit-identical。
+- 每次仅一次Adam训练、300步、lr=.01；沿用sum尺度λβ=.02、λu=.2、λθ=.001。无restart选优、epoch选优、teacher监督、BCE、最终classification sigmoid或正则调参。训练24²，主评价48²，所有teacher/student都做24²/48²/96²积分诊断；未加密重训。
+- 恢复门槛在正式运行前固定，完全沿用P1-B：n256平均强度相关>0.7、强度RMSE<0.8、平均g相关>0.65、top20>0.5，且每个seed强度相关>0.4。A/B分别验收。不对NN内部参数作恢复验收，也没有事后新增或调整系数误差门槛。44样本的同组门槛结果只作描述，保留在JSON。
+
+## Teacher自身检查
+
+96²面积加权：g范围[-1.054698,1.059449]，std=0.319449；h范围[-0.00000456,0.188791]，std=0.042525；空间得分 xᵀu h 的std=0.149845。A·p范围[0.330785,2.739732]，最高20%面积含概率质量0.301883，relative intensity二阶矩1.114815。所有量finite，reference error=0，rank-1相对残差6.83e−17。空间支路不是近常数，强度具有温和且明确的空间变化。Teacher正则值4.511812。
+
+## A/B分别汇总
+
+各组5次；std为样本标准差(ddof=1)。所有空间指标面积加权。强度RMSE指A·p，p的km⁻² RMSE另存JSON；系数RMSE对两个系数平均；top20沿用P1-B的非等面积单元规则，边界单元可能略超过20%面积。
+
+| 实验 | n | 强度相关 | 强度RMSE | g相关 | g RMSE | 系数面RMSE | top20 overlap |
+|---|---|---|---|---|---|---|---|
+'''+ '\n'.join(summary_lines)+'''
+
+| 实验 | n | 最终惩罚目标 | pairwise预测相关 mean±std | pairwise相关最小值 | pairwise预测RMSE mean±std |
+|---|---|---|---|---|---|
+'''+ '\n'.join(pair_lines)+'''
+
+每组10对预测面比较全部保存在JSON中，pairwise std只是这10个相关对的描述统计，不能当作10个独立重复计算推断置信区间。B组各目标值对应不同数据，不据此给不同数据集的拟合优劣排序。
+
+## 全部20个拟合（无删除、无选优）
+
+logZ与b使用训练24²积分；gradient L2是最终含正则sum目标对全部675参数的梯度范数。
+
+| 实验 | n | data seed | init seed | 强度相关 | 强度RMSE | 系数RMSE | h std | profile objective | penalty | logZ | b | gradient L2 |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+'''+ '\n'.join(case_lines)+'''
+
+所有最终梯度finite，reference error均为0；最大rank-1绝对残差6.40e−15。原始相对rank-1残差、g指标、top20、初始/最终目标等均存JSON。
+
+## Quadrature sanity
+
+所有20个student均检查，并保留每项结果；以下列teacher、较高相关解、n256常系数解及失败解，未据此挑选训练结果。积分归一化比较统一在同一个48²评价网格进行。
+
+| 对象 | logZ 24² | logZ 48² | logZ 96² | ΔlogZ 24→48 | A·p RMSE 24→48 | ΔlogZ 48→96 | A·p RMSE 48→96 |
+|---|---|---|---|---|---|---|---|
+'''+ '\n'.join(qlines)+'''
+
+预声明稳定性门槛为|ΔlogZ|<0.01且A·p RMSE<0.03，各解均通过。最大24→48 ΔlogZ=0.00772773、RMSE=0.01009871；最大48→96 ΔlogZ=0.00214789、RMSE=0.00279306，均出现在失败解data23。失败data23在48²上最大A·p=54.7885（teacher在96²上约2.7397），data71最大A·p=21.2460，说明出现了局部尖峰。相关失败不是只由整体归一化常数不同造成。这次没有重现P1-B的0.511级积分偏差，但失败解尚有残余积分误差：其256×ΔlogZ约1.978（24→48），不可称为连续积分已精确或完全排除quadrature影响。此处改变Z只会给同一g预测面乘常数，所以refinement correlation≈1是代数结果，不能独立证明积分收敛。没有改变训练积分以追求恢复通过。
+
+## 对核心问题的解释
+
+1. **固定数据、改变初始化（A）**：n256均通过宽松强度门槛，但pairwise预测相关均值只有0.8018、最低0.6740；三个初始化塌缩为常数h，两个保留空间支路。初始化/非凸优化路径效应确实存在，不能说优化已基本解决。n44五个初始化全部塌缩且预测几乎相同（pairwise RMSE约1.11e−11），相关仅0.5296；这属于稳定地拟合不足，不能说是初始化随机波动。
+2. **固定初始化、改变数据（B）**：n256相关0.7122±0.2182、pairwise预测RMSE=0.5345，明显大于A的0.1234；data23相关0.374970低于不变的0.4门槛。该数据集n44相关0.908512，而n256反而失败；不能用“样本增加一定改善”解释当前结果。B的n44全部h=0，但不同数据下的全局趋势仍可使强度相关很高。
+3. **随机性归因边界**：设计严格拆开了输入随机性来源，但B的data改变也会改变优化路径；所以B测到的是固定初态下的数据敏感性，不等同于已证明的不可约finite-sample方差。A只固定一个数据集，B只固定一个初态，不是全交叉设计，不能估计普遍适用的独立方差贡献百分比。
+4. **收敛证据**：A中非塌缩解的最终gradient L2为3.139和49.038；B的n256范围3.139–327.969，失败data23为48.814。固定300步没有提供充分收敛证据。塌缩解梯度很小也不代表恢复正确。现有结果更支持“数据敏感性与优化路径/有限预算共同作用”，不能断言纯粹是初始化、纯粹是抽样，或某个autograd bug。
+5. **样本规模**：A的256相对44强度恢复改善；但B的256相关均值反而低于44，误差波动更大。因此不能将本次结果概括为“256稳定、只有44信息不足”。小样本信息不足仍是候选机制，尚未被单独识别。
+6. **可表示性与系数面**：本teacher精确属于student有限模型类，但B的256仍失败，已经排除此实验中的“手工truth不可表示”解释。高强度相关也不等于β(s)恢复：A256系数RMSE=0.3024±0.0499且3/5 h塌缩，B256=0.3620±0.1845。本设计不保证系数函数的联合可识别性；更不能从这个单一温和teacher推断所有teacher或P1-B手工truth均可恢复。
+7. **正则**：teacher当前参数化penalty=4.5118，student最终penalty约0.00045–0.34356；所有student的惩罚目标均低于直接复制teacher的同数据目标。该差异提示正则与经验似然需要继续诊断，但teacher参数化未必是表示同一函数的最小惩罚形式，student也可能拟合采样噪声，不能据此证明正则是主因。本轮未更改任何λ。
+
+## 测试、日志与复现
+
+先运行两步smoke的A/B、44/256共8个案例，再运行6个数学/设计测试，最后完整unittest discovery。最终共33项，31通过、2失败，耗时'''+f"{suite['seconds']:.3f}"+'''秒，退出码1：
+
+- 原有 `test_acawlr_ppp_p1b.SyntheticP1BTests.test_n256_truth_recovery`，原样复现。
+- 新增 `test_acawlr_ppp_p1c_teacher_student.TeacherStudentFullExperiments.test_B_n256_recovery`，保留data23<0.4的失败。
+
+P0/P1-A原14项全部通过，P1-B原9项8过1失败，P1-C新增10项9过1失败。测试覆盖精确复制、连续采样与矩检查、初态逐元素一致性、两种随机性、rank/reference、profile质量与目标恒等式、full/streaming梯度、quadrature以及BCE/伪负例/分类sigmoid和真实文件访问防护。
+
+新smoke测试首次出现的数值判据问题也保留：近零空间分量在β(s)−β中相消，相对第二奇异值为1.5361e−12。修正仅针对新测试，改用64×float64 eps×||β(s)||的绝对舍入界；同时继续记录未经调整的相对残差，并保留rank-1逐元素恒等式检查。既有P0/P1-A/P1-B断言、阈值、代码均未改；恢复门槛也未改。原失败日志为MATH_TEST_RUN.txt，随后6项通过日志为MATH_VERIFIED_RUN.txt。
+
+主结果JSON保存每个seed的全部指标、初始/最终训练量、teacher、组汇总和每对surface结果。STATES.pt保存teacher完整状态，以及每次拟合的事件、完整初态、终态、全部301步history和48²预测面；可用`torch.load(..., weights_only=True)`读取。SMOKE_RESULTS/SMOKE_STATES独立保存两步smoke，绝不替代正式300步结果。TEST_RUN.txt和SUITE.json保存完整复验结果。图SURFACES.png展示所有运行、共享且未截断的对数强度色标，不只展示最佳解。
+
+复现数学smoke：`python -B -m unittest discover -s mineral_prediction -p test_acawlr_ppp_p1c_teacher_student.py -k TeacherStudentMathTests -v`。
+
+复现全部测试：从D:\\code\\ResearchPractice运行`python -B -m unittest discover -s mineral_prediction -p "test_acawlr_ppp*.py" -v`。默认不写报告；如需新报告，将ACAWLR_P1C_OUTPUT设为单独的新目录，并清除ACAWLR_P1B_REPORT，防止历史P1-B测试自身的可选报告写入。独立运行器为`python -B mineral_prediction/acawlr_ppp_teacher_student.py --output <已存在的新目录>`，加`--smoke`得到独立smoke。绘图脚本report_acawlr_ppp_p1c.py只读取正式结果，不重新训练。
+
+## 下一步建议（尚未执行）
+
+优先在独立阶段预声明固定案例和收敛判据，检查高梯度终点的优化预算/步长、teacher初始化与普通初始化对照，并继续跟踪h塌缩；保留本阶段结果。随后以独立、固定的正则对照检查sum尺度收缩，并检查同函数不同参数化的惩罚差异；必要时对失败case提高积分精度作为单独实验。若需要区分抽样误差和数据×初始化相互作用，应做data×init全交叉设计，而不是从当前两条切片计算方差归因。本次未执行这些下一阶段工作，也未进入真实数据。
+'''
+    (root/'ACAWLR_PPP_P1C_TS_NOTES.md').write_text(notes,encoding='utf-8')
+    print('Wrote notes and all-run surface figure')
+
+
+if __name__=='__main__':
+    main()

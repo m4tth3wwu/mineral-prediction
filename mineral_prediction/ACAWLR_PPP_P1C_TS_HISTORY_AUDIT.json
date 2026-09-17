@@ -1,0 +1,72 @@
+{
+  "baseline_commit": "8d9dd7745e842a1e501f556553a01e6ec7fa7902",
+  "branch": "codex-refactor",
+  "files": [
+    {
+      "path": "mineral_prediction/acawlr_ppp_bridge.py",
+      "baseline_blob": "a91c6d1b093987805bc9b8b843d2a3cceb0772fb",
+      "current_blob": "a91c6d1b093987805bc9b8b843d2a3cceb0772fb",
+      "unchanged": true
+    },
+    {
+      "path": "mineral_prediction/acawlr_ppp_synthetic.py",
+      "baseline_blob": "5fe3431ab659f1d7d002174986889bd83f0891a4",
+      "current_blob": "5fe3431ab659f1d7d002174986889bd83f0891a4",
+      "unchanged": true
+    },
+    {
+      "path": "mineral_prediction/test_acawlr_ppp_bridge.py",
+      "baseline_blob": "4ce1e6d5c2337558eee8996846e8e3daa25d9f69",
+      "current_blob": "4ce1e6d5c2337558eee8996846e8e3daa25d9f69",
+      "unchanged": true
+    },
+    {
+      "path": "mineral_prediction/test_acawlr_ppp_p1.py",
+      "baseline_blob": "5775cf3ce90c25e8da07f649b713b24b779d368b",
+      "current_blob": "5775cf3ce90c25e8da07f649b713b24b779d368b",
+      "unchanged": true
+    },
+    {
+      "path": "mineral_prediction/test_acawlr_ppp_p1b.py",
+      "baseline_blob": "5753b5c2652d704947919e6d628ee109bcd5f544",
+      "current_blob": "5753b5c2652d704947919e6d628ee109bcd5f544",
+      "unchanged": true
+    },
+    {
+      "path": "mineral_prediction/ACAWLR_PPP_P0_NOTES.md",
+      "baseline_blob": "93c86ce58b4986f54b7281c1f87ae42de5fd7587",
+      "current_blob": "93c86ce58b4986f54b7281c1f87ae42de5fd7587",
+      "unchanged": true
+    },
+    {
+      "path": "mineral_prediction/ACAWLR_PPP_P1A_NOTES.md",
+      "baseline_blob": "5fa90c7259ba3d5c7d70dfe6f9299857cff9609e",
+      "current_blob": "5fa90c7259ba3d5c7d70dfe6f9299857cff9609e",
+      "unchanged": true
+    },
+    {
+      "path": "mineral_prediction/ACAWLR_PPP_P1B_NOTES.md",
+      "baseline_blob": "ccf47e5ee4bf2753200512f02fa96ae61f8d3333",
+      "current_blob": "ccf47e5ee4bf2753200512f02fa96ae61f8d3333",
+      "unchanged": true
+    },
+    {
+      "path": "mineral_prediction/ACAWLR_PPP_P1B_RESULTS.json",
+      "baseline_blob": "82e7a1bd666559cc8c4b7c814072032a6f33fd68",
+      "current_blob": "82e7a1bd666559cc8c4b7c814072032a6f33fd68",
+      "unchanged": true
+    },
+    {
+      "path": "mineral_prediction/ACAWLR_PPP_P1B_TEST_RUN.txt",
+      "baseline_blob": "973815df09f008ad01b60e25bc2e52f111e50e29",
+      "current_blob": "973815df09f008ad01b60e25bc2e52f111e50e29",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/ACAWLR_improved.py",
+      "baseline_blob": "dbd3d757dac8fecc0a13752a28e220bdb53e31b4",
+      "current_blob": "dbd3d757dac8fecc0a13752a28e220bdb53e31b4",
+      "unchanged": true
+    }
+  ]
+}

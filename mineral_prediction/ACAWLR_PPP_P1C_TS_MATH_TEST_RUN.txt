@@ -1,0 +1,19 @@
+test_continuous_sampling_reproducibility_prefix_and_moments (test_acawlr_ppp_p1c_teacher_student.TeacherStudentMathTests.test_continuous_sampling_reproducibility_prefix_and_moments) ... ok
+test_design_changes_exactly_one_source (test_acawlr_ppp_p1c_teacher_student.TeacherStudentMathTests.test_design_changes_exactly_one_source) ... ok
+test_exact_representability_dense_grid (test_acawlr_ppp_p1c_teacher_student.TeacherStudentMathTests.test_exact_representability_dense_grid) ... ok
+test_no_bce_pseudo_negative_or_classification_sigmoid (test_acawlr_ppp_p1c_teacher_student.TeacherStudentMathTests.test_no_bce_pseudo_negative_or_classification_sigmoid) ... ok
+test_profile_objective_gradient_rank_reference_after_smoke (test_acawlr_ppp_p1c_teacher_student.TeacherStudentMathTests.test_profile_objective_gradient_rank_reference_after_smoke) ... FAIL
+test_teacher_nontrivial_constraints_and_refinement (test_acawlr_ppp_p1c_teacher_student.TeacherStudentMathTests.test_teacher_nontrivial_constraints_and_refinement) ... ok
+
+======================================================================
+FAIL: test_profile_objective_gradient_rank_reference_after_smoke (test_acawlr_ppp_p1c_teacher_student.TeacherStudentMathTests.test_profile_objective_gradient_rank_reference_after_smoke)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\code\ResearchPractice\mineral_prediction\test_acawlr_ppp_p1c_teacher_student.py", line 115, in test_profile_objective_gradient_rank_reference_after_smoke
+    self.assertLess(float((singular[1]/singular[0]).detach()),1e-12)
+AssertionError: 1.5361048325575462e-12 not less than 1e-12
+
+----------------------------------------------------------------------
+Ran 6 tests in 13.954s
+
+FAILED (failures=1)
