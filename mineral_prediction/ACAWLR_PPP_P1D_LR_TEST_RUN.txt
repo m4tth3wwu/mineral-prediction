@@ -1,0 +1,11 @@
+test_checkpoint_ppp_gradient_and_dense_predictor_recovery (test_acawlr_ppp_p1d_lr.LearningRateDiagnosticTests.test_checkpoint_ppp_gradient_and_dense_predictor_recovery) ... ok
+test_exact_inputs_and_only_requested_conditions (test_acawlr_ppp_p1d_lr.LearningRateDiagnosticTests.test_exact_inputs_and_only_requested_conditions) ... ok
+test_history_and_instrumentation_source_unchanged (test_acawlr_ppp_p1d_lr.LearningRateDiagnosticTests.test_history_and_instrumentation_source_unchanged) ... ok
+test_loss_components_and_actual_parameter_updates (test_acawlr_ppp_p1d_lr.LearningRateDiagnosticTests.test_loss_components_and_actual_parameter_updates) ... ok
+test_same_training_loop_optimizer_settings_and_checkpoint_schedule (test_acawlr_ppp_p1d_lr.LearningRateDiagnosticTests.test_same_training_loop_optimizer_settings_and_checkpoint_schedule) ... ok
+test_supplemented_baseline_exactly_reproduces_history (test_acawlr_ppp_p1d_lr.LearningRateDiagnosticTests.test_supplemented_baseline_exactly_reproduces_history) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 5.356s
+
+OK

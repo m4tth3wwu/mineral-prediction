@@ -1,0 +1,206 @@
+{
+  "baseline_commit": "6d58b87c6a08937fc7a1056cea1a62e32ab1a548",
+  "learning_rates": [
+    0.01,
+    0.003,
+    0.001
+  ],
+  "seeds": [
+    23,
+    53,
+    71
+  ],
+  "init_seed": 1011,
+  "n": 256,
+  "horizon": 2000,
+  "checkpoints": [
+    0,
+    100,
+    300,
+    600,
+    1000,
+    1500,
+    2000
+  ],
+  "evaluate_every": 25,
+  "early_stopping": false,
+  "unchanged_baseline_protocol": {
+    "baseline_commit": "8935490128d92dd191bb6a812d69fef184d4b821",
+    "data_seeds": [
+      23,
+      71,
+      53
+    ],
+    "init_seed": 1011,
+    "n": 256,
+    "horizon": 2000,
+    "checkpoint_steps": [
+      0,
+      100,
+      300,
+      600,
+      1000,
+      1500,
+      2000
+    ],
+    "evaluate_every": 25,
+    "early_stopping": false,
+    "penalty": {
+      "beta": 0.02,
+      "u": 0.2,
+      "theta": 0.001
+    },
+    "training_quadrature": 24,
+    "evaluation_quadrature": 48,
+    "optimizer": "torch.optim.Adam",
+    "optimizer_defaults": {
+      "lr": 0.01,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "eps": 1e-08,
+      "weight_decay": 0,
+      "amsgrad": false,
+      "maximize": false,
+      "foreach": null,
+      "capturable": false,
+      "differentiable": false,
+      "fused": null,
+      "decoupled_weight_decay": false
+    },
+    "torch_version": "2.12.0+cpu",
+    "dtype": "float64",
+    "threads": 1,
+    "reproduction_tolerances": {
+      "rtol": 1e-09,
+      "atol": 1e-10,
+      "history_max_abs_tolerance": 1e-08
+    },
+    "diagnostic_thresholds": {
+      "h_collapse_max": 1e-12,
+      "h_near_collapse_max": 0.0001,
+      "gradient_explosion_per_event_min": 10.0,
+      "sharp_peak_relative_min": 10.0,
+      "convergence_window": 200,
+      "convergence_max_gradient_per_event": 0.001,
+      "convergence_objective_range_per_event": 1e-05
+    },
+    "teacher_sha256": "b0d6db361a0a0c5e685d0e91f07601521760a7efd34e15c07f909ff4473338d8",
+    "historical_sha256": {
+      "mineral_prediction/ACAWLR_PPP_BRIDGE_DESIGN.md": "01ed458f4525e2d637c4626d2be4a5d2865a2811df98b628006a884ad3ca4d92",
+      "mineral_prediction/ACAWLR_PPP_P0_NOTES.md": "45c5e5670b05789caa24e51a2d25b690014ce69f6708de205793cd948afd2e2f",
+      "mineral_prediction/ACAWLR_PPP_P1A_NOTES.md": "bb5382fb0fff6ff0c9065d821bea0bcac9e55579e8b8a0f52248102aca65c457",
+      "mineral_prediction/ACAWLR_PPP_P1B_NOTES.md": "0e68a13a5c6d69cc7e50ead0ead4bfa88c703735b8607c7cc9bce4a76f17d4f7",
+      "mineral_prediction/ACAWLR_PPP_P1B_RESULTS.json": "789b85c69d7f7a68a758f2ac0389b3034bc88b37982f0a8abdfe7fd11b6e61ff",
+      "mineral_prediction/ACAWLR_PPP_P1B_TEST_RUN.txt": "f348cbe337a6055fa69942f385408376bbdc1c5a02a4ebeb01301caef95d06f7",
+      "mineral_prediction/ACAWLR_PPP_P1C_TS_HISTORY_AUDIT.json": "2af48d08539075ac9b34e6a229f677824cf8bbeed145472041bef0864c796dad",
+      "mineral_prediction/ACAWLR_PPP_P1C_TS_MATH_TEST_RUN.txt": "d5d0d29c4bdedd07374e512b9a94e316b92b27674deedddc3ea4d20d31cab141",
+      "mineral_prediction/ACAWLR_PPP_P1C_TS_MATH_VERIFIED_RUN.txt": "03df260c74aabff0d9ccc422b1cf64d6558fdff6a2a4bb99151cca3cdf7e4cf9",
+      "mineral_prediction/ACAWLR_PPP_P1C_TS_NOTES.md": "8c7df9ee112b26c14ff5e46bc123d6b4c52fa6754d7455f8dafd334005c67e60",
+      "mineral_prediction/ACAWLR_PPP_P1C_TS_RESULTS.json": "c2f582c2589a0da8c678c6b5d16349ba88ea6f0332c4d6a1ae6c0c34cd6165d5",
+      "mineral_prediction/ACAWLR_PPP_P1C_TS_SMOKE_RESULTS.json": "6b6e6dd33f06fe41fb7fd08b31a6220d7604a1944170efc9d0a97dbb56a78390",
+      "mineral_prediction/ACAWLR_PPP_P1C_TS_SMOKE_RUN.txt": "6c3ad26994c57435258c3bf19492f990c8a1babb9dd059076af27ac80fef3e2f",
+      "mineral_prediction/ACAWLR_PPP_P1C_TS_SMOKE_STATES.pt": "525b37e291eac663c67039d190ce638c908084e7e847b7e1a20e30a370c301b6",
+      "mineral_prediction/ACAWLR_PPP_P1C_TS_SMOKE_VERIFIED_RUN.txt": "f21c9e96995f260fb760545f2cb58fb6a4625b23aac7e39fcc6ed274ce41b456",
+      "mineral_prediction/ACAWLR_PPP_P1C_TS_STATES.pt": "da9b44f60955924fe37dd9de9d19b6aa8b24b469669aa3db20c7de9e459a0fe7",
+      "mineral_prediction/ACAWLR_PPP_P1C_TS_SUITE.json": "6179a6156beee49b12cc488e1ef864c7fa0e228f815c12f3acbc4af3ef977ae2",
+      "mineral_prediction/ACAWLR_PPP_P1C_TS_SURFACES.png": "d4b6f885f6473cdff68badd8c304a78e2db647c267877874140dd47a0cbe452b",
+      "mineral_prediction/ACAWLR_PPP_P1C_TS_TEACHER_PREFLIGHT_REJECTED.json": "4cfcbd776858e652cc6aa08833a1448e6f2a3740e0049a631d1361577aa3d27e",
+      "mineral_prediction/ACAWLR_PPP_P1C_TS_TEST_RUN.txt": "7095bd7cb20e24b62602ea72ab40223fb9d53d9558b46f086572fae7dff8f936",
+      "mineral_prediction/acawlr_ppp_bridge.py": "c95ed6131085bbce953c797a54cf00b410a8aad7fcfe3178173d4d2b7a23953d",
+      "mineral_prediction/acawlr_ppp_synthetic.py": "f4338fcdafcf3b18988e9e8c89d7fca0cb3660bc5f6192440cddaa614f82261b",
+      "mineral_prediction/acawlr_ppp_teacher_student.py": "5bc1d1d4ac80454149d95fa262bdf838ed52fb379088dd85ae1c447af59783d3",
+      "mineral_prediction/report_acawlr_ppp_p1c.py": "0d965546591a160552535134e1a2d3b56e05055d15be55b0e53848c605ff95f1",
+      "mineral_prediction/test_acawlr_ppp_bridge.py": "d9bba7c1718b176b5c4f87b3e309ace45d28aa72b281da1a0e24b0cded008656",
+      "mineral_prediction/test_acawlr_ppp_p1.py": "9f95942afee603daf29b40c4a02f1f7ee1f61ee15f072053b3ec5bae8732bd43",
+      "mineral_prediction/test_acawlr_ppp_p1b.py": "33a1cc7fc41752877af977df22b3eba46a34aa0c2033f315db7041b5b2d67436",
+      "mineral_prediction/test_acawlr_ppp_p1c_teacher_student.py": "70302b9cbb7bf092bd15f1e27cb6ea2854138413764c356af45457ff807d153b",
+      "scripts/ACAWLR_improved.py": "80aaf0431b209498303116bf85a76bfba9dd882827549cb26bb783f8a262ba56"
+    },
+    "source_sha256": "e3dbcd53d0603e67800dca3bc8f41e9a4b815086aa43bb78ed40081098819226"
+  },
+  "diagnostics": {
+    "h_collapse_max": 1e-12,
+    "h_near_collapse_max": 0.0001,
+    "gradient_explosion_per_event_min": 10.0,
+    "sharp_peak_relative_min": 10.0,
+    "convergence_window": 200,
+    "convergence_max_gradient_per_event": 0.001,
+    "convergence_objective_range_per_event": 1e-05
+  },
+  "oscillation": {
+    "ppp_range_min": 1.0,
+    "total_variation_over_range_min": 5.0,
+    "windows": [
+      [
+        301,
+        600
+      ],
+      [
+        601,
+        1000
+      ],
+      [
+        1001,
+        1500
+      ],
+      [
+        1501,
+        2000
+      ],
+      [
+        1801,
+        2000
+      ]
+    ]
+  },
+  "update_definition": "row t measures theta_t-theta_(t-1); gradient at row t generates update at t+1",
+  "relative_update_definition": "L2(actual update) / max(L2(previous full trainable parameter vector),1e-30)",
+  "objective_definition": "ppp_objective=n*logZ-sum_event(g); total_loss=ppp_objective+regularization_total",
+  "baseline_replay_reason": "Original archive lacks per-step parameter updates; replay only supplements these diagnostics and must exactly reproduce all original checkpoints/history.",
+  "historical_sha256": {
+    "mineral_prediction/ACAWLR_PPP_BRIDGE_DESIGN.md": "01ed458f4525e2d637c4626d2be4a5d2865a2811df98b628006a884ad3ca4d92",
+    "mineral_prediction/ACAWLR_PPP_P0_NOTES.md": "45c5e5670b05789caa24e51a2d25b690014ce69f6708de205793cd948afd2e2f",
+    "mineral_prediction/ACAWLR_PPP_P1A_NOTES.md": "bb5382fb0fff6ff0c9065d821bea0bcac9e55579e8b8a0f52248102aca65c457",
+    "mineral_prediction/ACAWLR_PPP_P1B_NOTES.md": "0e68a13a5c6d69cc7e50ead0ead4bfa88c703735b8607c7cc9bce4a76f17d4f7",
+    "mineral_prediction/ACAWLR_PPP_P1B_RESULTS.json": "789b85c69d7f7a68a758f2ac0389b3034bc88b37982f0a8abdfe7fd11b6e61ff",
+    "mineral_prediction/ACAWLR_PPP_P1B_TEST_RUN.txt": "f348cbe337a6055fa69942f385408376bbdc1c5a02a4ebeb01301caef95d06f7",
+    "mineral_prediction/ACAWLR_PPP_P1C_TS_HISTORY_AUDIT.json": "2af48d08539075ac9b34e6a229f677824cf8bbeed145472041bef0864c796dad",
+    "mineral_prediction/ACAWLR_PPP_P1C_TS_MATH_TEST_RUN.txt": "d5d0d29c4bdedd07374e512b9a94e316b92b27674deedddc3ea4d20d31cab141",
+    "mineral_prediction/ACAWLR_PPP_P1C_TS_MATH_VERIFIED_RUN.txt": "03df260c74aabff0d9ccc422b1cf64d6558fdff6a2a4bb99151cca3cdf7e4cf9",
+    "mineral_prediction/ACAWLR_PPP_P1C_TS_NOTES.md": "8c7df9ee112b26c14ff5e46bc123d6b4c52fa6754d7455f8dafd334005c67e60",
+    "mineral_prediction/ACAWLR_PPP_P1C_TS_RESULTS.json": "c2f582c2589a0da8c678c6b5d16349ba88ea6f0332c4d6a1ae6c0c34cd6165d5",
+    "mineral_prediction/ACAWLR_PPP_P1C_TS_SMOKE_RESULTS.json": "6b6e6dd33f06fe41fb7fd08b31a6220d7604a1944170efc9d0a97dbb56a78390",
+    "mineral_prediction/ACAWLR_PPP_P1C_TS_SMOKE_RUN.txt": "6c3ad26994c57435258c3bf19492f990c8a1babb9dd059076af27ac80fef3e2f",
+    "mineral_prediction/ACAWLR_PPP_P1C_TS_SMOKE_STATES.pt": "525b37e291eac663c67039d190ce638c908084e7e847b7e1a20e30a370c301b6",
+    "mineral_prediction/ACAWLR_PPP_P1C_TS_SMOKE_VERIFIED_RUN.txt": "f21c9e96995f260fb760545f2cb58fb6a4625b23aac7e39fcc6ed274ce41b456",
+    "mineral_prediction/ACAWLR_PPP_P1C_TS_STATES.pt": "da9b44f60955924fe37dd9de9d19b6aa8b24b469669aa3db20c7de9e459a0fe7",
+    "mineral_prediction/ACAWLR_PPP_P1C_TS_SUITE.json": "6179a6156beee49b12cc488e1ef864c7fa0e228f815c12f3acbc4af3ef977ae2",
+    "mineral_prediction/ACAWLR_PPP_P1C_TS_SURFACES.png": "d4b6f885f6473cdff68badd8c304a78e2db647c267877874140dd47a0cbe452b",
+    "mineral_prediction/ACAWLR_PPP_P1C_TS_TEACHER_PREFLIGHT_REJECTED.json": "4cfcbd776858e652cc6aa08833a1448e6f2a3740e0049a631d1361577aa3d27e",
+    "mineral_prediction/ACAWLR_PPP_P1C_TS_TEST_RUN.txt": "7095bd7cb20e24b62602ea72ab40223fb9d53d9558b46f086572fae7dff8f936",
+    "mineral_prediction/ACAWLR_PPP_P1D_OPTIMIZATION_CHECKPOINT_TABLE.md": "00dc68d9a912b7b5c4a7d5a8e1290432f42d9fbf473481bd1c1fad3af1daecc2",
+    "mineral_prediction/ACAWLR_PPP_P1D_OPTIMIZATION_NOTES.md": "0b0cdbb9e52ff0c7641fc0afde2aa1de7f80e269aab8a7df8ed4444dfcfb76f8",
+    "mineral_prediction/ACAWLR_PPP_P1D_OPTIMIZATION_PROTOCOL.json": "ae996a85cd4a7974d25eeb75908a4e945ab59a754b061cf488aeafd88d962553",
+    "mineral_prediction/ACAWLR_PPP_P1D_OPTIMIZATION_RESULTS.json": "6c2f1fd277d869b42f878f8289209858c5afe3038fe873655332ad436b4c3bd6",
+    "mineral_prediction/ACAWLR_PPP_P1D_OPTIMIZATION_RUN.txt": "97c3f47dbfe2288d1e677375d5e45393c94d0ea00fee06aa13d80f1fe723926b",
+    "mineral_prediction/ACAWLR_PPP_P1D_OPTIMIZATION_STATES.pt": "2cb2fc84a16cabb0e66f81c81fd5dfc18c3b8d377a11b275261e33059dcbc467",
+    "mineral_prediction/ACAWLR_PPP_P1D_OPTIMIZATION_TEST_RUN.txt": "ddd217ecddcf39242283b8f09d808974264e4e1960b76273eb6c5e254775afbf",
+    "mineral_prediction/ACAWLR_PPP_P1D_OPTIMIZATION_TRAJECTORIES.png": "c47dcdc8a3b8dc1ab88cc822e0f5032949fd0f7426ee63f321dccbbb7327f256",
+    "mineral_prediction/ACAWLR_PPP_P1D_OPTIMIZATION_TRAJECTORY_SUMMARY.json": "6e6835cb1f2ce1a926fd5634971a72f565029f68ae68324289718d2c6560d2b7",
+    "mineral_prediction/acawlr_ppp_bridge.py": "c95ed6131085bbce953c797a54cf00b410a8aad7fcfe3178173d4d2b7a23953d",
+    "mineral_prediction/acawlr_ppp_optimization.py": "e3dbcd53d0603e67800dca3bc8f41e9a4b815086aa43bb78ed40081098819226",
+    "mineral_prediction/acawlr_ppp_synthetic.py": "f4338fcdafcf3b18988e9e8c89d7fca0cb3660bc5f6192440cddaa614f82261b",
+    "mineral_prediction/acawlr_ppp_teacher_student.py": "5bc1d1d4ac80454149d95fa262bdf838ed52fb379088dd85ae1c447af59783d3",
+    "mineral_prediction/report_acawlr_ppp_p1c.py": "0d965546591a160552535134e1a2d3b56e05055d15be55b0e53848c605ff95f1",
+    "mineral_prediction/report_acawlr_ppp_p1d.py": "2228faa0dbe3fa148188b0e834b3bbc39d643ea1b9d3fdc6bccfdda626b5b509",
+    "mineral_prediction/test_acawlr_ppp_bridge.py": "d9bba7c1718b176b5c4f87b3e309ace45d28aa72b281da1a0e24b0cded008656",
+    "mineral_prediction/test_acawlr_ppp_p1.py": "9f95942afee603daf29b40c4a02f1f7ee1f61ee15f072053b3ec5bae8732bd43",
+    "mineral_prediction/test_acawlr_ppp_p1b.py": "33a1cc7fc41752877af977df22b3eba46a34aa0c2033f315db7041b5b2d67436",
+    "mineral_prediction/test_acawlr_ppp_p1c_teacher_student.py": "70302b9cbb7bf092bd15f1e27cb6ea2854138413764c356af45457ff807d153b",
+    "mineral_prediction/test_acawlr_ppp_p1d_optimization.py": "e54416ffba7f1a34ffea905e9c1e7a76a2b18e7f1e30aa5a1210b63390257fa3",
+    "scripts/ACAWLR_improved.py": "80aaf0431b209498303116bf85a76bfba9dd882827549cb26bb783f8a262ba56"
+  },
+  "runner_sha256": "9e66480ba87634259fd74e52d17be7e078eecbb292d86018aa9085d8e05b5ecb"
+}
