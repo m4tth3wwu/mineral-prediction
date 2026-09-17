@@ -1,0 +1,11 @@
+test_all_historical_files_unchanged (test_acawlr_ppp_p1d_optimization.OptimizationDiagnosticTests.test_all_historical_files_unchanged) ... ok
+test_checkpoint_metrics_objective_and_no_forbidden_loss (test_acawlr_ppp_p1d_optimization.OptimizationDiagnosticTests.test_checkpoint_metrics_objective_and_no_forbidden_loss) ... ok
+test_complete_unselected_trajectories_and_finite_checks (test_acawlr_ppp_p1d_optimization.OptimizationDiagnosticTests.test_complete_unselected_trajectories_and_finite_checks) ... ok
+test_exact_archived_inputs_only_three_n256_cases (test_acawlr_ppp_p1d_optimization.OptimizationDiagnosticTests.test_exact_archived_inputs_only_three_n256_cases) ... ok
+test_optimizer_continuity_and_unchanged_configuration (test_acawlr_ppp_p1d_optimization.OptimizationDiagnosticTests.test_optimizer_continuity_and_unchanged_configuration) ... ok
+test_step300_reproduces_p1c_and_first301_objectives (test_acawlr_ppp_p1d_optimization.OptimizationDiagnosticTests.test_step300_reproduces_p1c_and_first301_objectives) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 4.051s
+
+OK

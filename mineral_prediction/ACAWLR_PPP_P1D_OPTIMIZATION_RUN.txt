@@ -1,0 +1,23 @@
+P1-D data=23 step=0: objective=2347.411903568 grad/n=0.153008 corr=0.576361 h_std=8.62027e-06
+P1-D data=23 step=100: objective=2333.674971679 grad/n=0.177153 corr=0.739604 h_std=0.0423564
+P1-D data=23 step=300: objective=2330.276118152 grad/n=0.190679 corr=0.374970 h_std=0.148468
+P1-D data=71 step=0: objective=2347.411902634 grad/n=0.190599 corr=0.576361 h_std=8.62027e-06
+P1-D data=71 step=100: objective=2328.824195470 grad/n=0.0581592 corr=0.859242 h_std=0.418586
+P1-D data=71 step=300: objective=2327.507672578 grad/n=1.28113 corr=0.622127 h_std=0.540077
+P1-D data=53 step=0: objective=2347.411883711 grad/n=0.21071 corr=0.576361 h_std=8.62027e-06
+P1-D data=53 step=100: objective=2325.436949211 grad/n=0.0438784 corr=0.912082 h_std=0.19997
+P1-D data=53 step=300: objective=2324.807331954 grad/n=0.0195002 corr=0.902998 h_std=0.228612
+All three step300 reproduction gates passed; keeping all optimizer states intact.
+P1-D data=23 step=600: objective=2338.546470844 grad/n=0.000943942 corr=0.917519 h_std=0
+P1-D data=23 step=1000: objective=2338.428993770 grad/n=0.000446966 corr=0.917519 h_std=0
+P1-D data=23 step=1500: objective=2338.393353380 grad/n=0.000122644 corr=0.917519 h_std=1.4671e-17
+P1-D data=23 step=2000: objective=2338.385486775 grad/n=4.24313e-05 corr=0.917519 h_std=1.77283e-14
+P1-D data=71 step=600: objective=2324.903408336 grad/n=1.33889 corr=0.350058 h_std=0.488471
+P1-D data=71 step=1000: objective=2322.031498544 grad/n=0.0375489 corr=0.238430 h_std=0.545466
+P1-D data=71 step=1500: objective=2333.974126639 grad/n=0.0252495 corr=0.931572 h_std=0
+P1-D data=71 step=2000: objective=2333.583205948 grad/n=0.00106237 corr=0.923296 h_std=0
+P1-D data=53 step=600: objective=2322.691205609 grad/n=0.380352 corr=0.846094 h_std=0.317323
+P1-D data=53 step=1000: objective=2324.268352754 grad/n=0.0147133 corr=0.906253 h_std=0.484738
+P1-D data=53 step=1500: objective=2322.596388413 grad/n=0.0258613 corr=0.883123 h_std=0.505851
+P1-D data=53 step=2000: objective=2325.618053554 grad/n=0.0309391 corr=0.927700 h_std=0.578884
+D:\code\ResearchPractice\mineral_prediction\ACAWLR_PPP_P1D_OPTIMIZATION_RESULTS.json
