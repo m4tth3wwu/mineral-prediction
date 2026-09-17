@@ -1,0 +1,5 @@
+{
+  "reason": "After completed numerical run: correct discovered Git-root description and use actual nonuniform spatial cell edges in plots. No numerical diagnostics or protocol changed.",
+  "previous_sha256": "0b576c56f0746a309540300e20bfde10dd18dad978b9bd293d4344470b282187",
+  "current_sha256": "1c5a4bed4159d21a49093d00cc3ec836bf5e29fc7556b53086b135800fb94f59"
+}

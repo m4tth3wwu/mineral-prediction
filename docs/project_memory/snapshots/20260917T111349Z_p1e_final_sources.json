@@ -1,0 +1,13 @@
+{
+  "timestamp_utc": "2026-09-17T11:30:07.968028+00:00",
+  "HEAD": "af633edd655a6e14398f59a222b69d07a347620b",
+  "tracked_git_diff": "",
+  "files": {
+    "mineral_prediction/acawlr_ppp_p1e_identifiability.py": "eca791e77b77c6acb5ea15266bcfb0df7d59e33e0c0f14d75e807db209f1bfea",
+    "mineral_prediction/report_acawlr_ppp_p1e_identifiability.py": "1c5a4bed4159d21a49093d00cc3ec836bf5e29fc7556b53086b135800fb94f59",
+    "mineral_prediction/test_acawlr_ppp_p1e_identifiability.py": "274bf401d87e3d0d10749d0d340a0640ddf98e4ab8460c03cd5665886225f1fd"
+  },
+  "ignored_new_files": true,
+  "actual_execution_snapshot": "mineral_prediction/p1e_identifiability/20260917T112555Z_p1e_v1/raw/source_at_execution",
+  "frozen_manifest": "mineral_prediction/docs/project_memory/snapshots/20260917T111349Z_p1e_frozen.json"
+}

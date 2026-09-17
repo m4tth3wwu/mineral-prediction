@@ -1,0 +1,3 @@
+# Next decision
+
+Population baseline is not yet validated. The smallest next action is a protocol review of whether failures confined to archived empirical endpoints should block fresh population controls, with the actual GATES.json evidence. Do not change this frozen run or launch a sweep. Only after an explicitly revised protocol and trustworthy population baseline, propose one matched population-versus-empirical comparison on archived data23/init1011, same grid/optimizer/penalty; do not compare old 24² empirical training against new 48² population and call all differences finite-sample effects.

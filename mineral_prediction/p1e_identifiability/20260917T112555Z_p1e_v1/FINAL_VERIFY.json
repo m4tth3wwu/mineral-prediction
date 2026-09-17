@@ -1,0 +1,12 @@
+{
+  "timestamp_utc": "2026-09-17T11:31:09.821571+00:00",
+  "tests_exit_code": 0,
+  "tests_count": 14,
+  "canonical_run_index_events": 13,
+  "paths_resolve": true,
+  "protocol_hash_unchanged": true,
+  "frozen_files": 55,
+  "frozen_unchanged": true,
+  "population_trajectories": 0,
+  "branch_diagnostic_forward_only": true
+}

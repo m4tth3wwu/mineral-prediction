@@ -1,0 +1,47 @@
+{
+  "audit": {
+    "status": "IN_PROGRESS",
+    "scientific_status": "not_evaluated",
+    "reason": null
+  },
+  "A": {
+    "status": "COMPLETED",
+    "scientific_status": "numerical_unresolved",
+    "reason": null
+  },
+  "B": {
+    "status": "COMPLETED",
+    "scientific_status": "passed",
+    "reason": null
+  },
+  "C": {
+    "status": "COMPLETED",
+    "scientific_status": "passed",
+    "reason": null
+  },
+  "C_teacher": {
+    "status": "COMPLETED",
+    "scientific_status": "passed",
+    "reason": null
+  },
+  "C_init1011": {
+    "status": "COMPLETED",
+    "scientific_status": "passed",
+    "reason": null
+  },
+  "C_collapsed": {
+    "status": "COMPLETED",
+    "scientific_status": "passed",
+    "reason": null
+  },
+  "D": {
+    "status": "BLOCKED",
+    "scientific_status": "not_evaluated",
+    "reason": "['fidelity_legacy_0.001_71']"
+  },
+  "run": {
+    "status": "COMPLETED",
+    "scientific_status": "numerical_unresolved",
+    "reason": null
+  }
+}

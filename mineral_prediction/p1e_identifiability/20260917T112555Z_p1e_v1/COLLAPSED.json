@@ -1,0 +1,204 @@
+{
+  "unpenalized": {
+    "beta": [
+      0.4871716319298806,
+      -0.21436806559756724
+    ],
+    "global_solver": "converged",
+    "gradient_max": 2.1851659370852872e-10,
+    "h_max": 0.0,
+    "displacements": [
+      {
+        "direction": 0,
+        "step": -0.01,
+        "objective_delta": 1.0133683190360898e-05
+      },
+      {
+        "direction": 0,
+        "step": 0.01,
+        "objective_delta": 1.0133081104868324e-05
+      },
+      {
+        "direction": 0,
+        "step": -0.001,
+        "objective_delta": 1.0133362593478523e-07
+      },
+      {
+        "direction": 0,
+        "step": 0.001,
+        "objective_delta": 1.0133317118743435e-07
+      },
+      {
+        "direction": 0,
+        "step": -0.0001,
+        "objective_delta": 1.013177097775042e-09
+      },
+      {
+        "direction": 0,
+        "step": 0.0001,
+        "objective_delta": 1.013177097775042e-09
+      },
+      {
+        "direction": 1,
+        "step": -0.01,
+        "objective_delta": 5.5704826991131995e-06
+      },
+      {
+        "direction": 1,
+        "step": 0.01,
+        "objective_delta": 5.570729626924731e-06
+      },
+      {
+        "direction": 1,
+        "step": -0.001,
+        "objective_delta": 5.570564098889008e-08
+      },
+      {
+        "direction": 1,
+        "step": 0.001,
+        "objective_delta": 5.570564098889008e-08
+      },
+      {
+        "direction": 1,
+        "step": -0.0001,
+        "objective_delta": 5.570655048359185e-10
+      },
+      {
+        "direction": 1,
+        "step": 0.0001,
+        "objective_delta": 5.570655048359185e-10
+      },
+      {
+        "direction": 2,
+        "step": -0.01,
+        "objective_delta": 2.1055499473732198e-05
+      },
+      {
+        "direction": 2,
+        "step": 0.01,
+        "objective_delta": 2.1053600448794896e-05
+      },
+      {
+        "direction": 2,
+        "step": -0.001,
+        "objective_delta": 2.1054620447102934e-07
+      },
+      {
+        "direction": 2,
+        "step": 0.001,
+        "objective_delta": 2.105439307342749e-07
+      },
+      {
+        "direction": 2,
+        "step": -0.0001,
+        "objective_delta": 2.105480234604329e-09
+      },
+      {
+        "direction": 2,
+        "step": 0.0001,
+        "objective_delta": 2.105480234604329e-09
+      }
+    ]
+  },
+  "penalized": {
+    "beta": [
+      0.48705194887881564,
+      -0.2143173460681586
+    ],
+    "global_solver": "converged",
+    "gradient_max": 2.1743619925407298e-10,
+    "h_max": 0.0,
+    "displacements": [
+      {
+        "direction": 0,
+        "step": -0.01,
+        "objective_delta": 1.0258127986162435e-05
+      },
+      {
+        "direction": 0,
+        "step": 0.01,
+        "objective_delta": 1.0257526355417212e-05
+      },
+      {
+        "direction": 0,
+        "step": -0.001,
+        "objective_delta": 1.0257872418151237e-07
+      },
+      {
+        "direction": 0,
+        "step": 0.001,
+        "objective_delta": 1.025778146868106e-07
+      },
+      {
+        "direction": 0,
+        "step": -0.0001,
+        "objective_delta": 1.025910023599863e-09
+      },
+      {
+        "direction": 0,
+        "step": 0.0001,
+        "objective_delta": 1.025910023599863e-09
+      },
+      {
+        "direction": 1,
+        "step": -0.01,
+        "objective_delta": 5.631230123981368e-06
+      },
+      {
+        "direction": 1,
+        "step": 0.01,
+        "objective_delta": 5.631477051792899e-06
+      },
+      {
+        "direction": 1,
+        "step": -0.001,
+        "objective_delta": 5.63131834496744e-08
+      },
+      {
+        "direction": 1,
+        "step": 0.001,
+        "objective_delta": 5.6313638197025284e-08
+      },
+      {
+        "direction": 1,
+        "step": -0.0001,
+        "objective_delta": 5.629772203974426e-10
+      },
+      {
+        "direction": 1,
+        "step": 0.0001,
+        "objective_delta": 5.629772203974426e-10
+      },
+      {
+        "direction": 2,
+        "step": -0.01,
+        "objective_delta": 2.1126230421941727e-05
+      },
+      {
+        "direction": 2,
+        "step": 0.01,
+        "objective_delta": 2.1124331851751776e-05
+      },
+      {
+        "direction": 2,
+        "step": -0.001,
+        "objective_delta": 2.112533366016578e-07
+      },
+      {
+        "direction": 2,
+        "step": 0.001,
+        "objective_delta": 2.1125197235960513e-07
+      },
+      {
+        "direction": 2,
+        "step": -0.0001,
+        "objective_delta": 2.112301444867626e-09
+      },
+      {
+        "direction": 2,
+        "step": 0.0001,
+        "objective_delta": 2.112301444867626e-09
+      }
+    ]
+  }
+}

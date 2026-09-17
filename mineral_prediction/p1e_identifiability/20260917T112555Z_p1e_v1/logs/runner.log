@@ -1,0 +1,21 @@
+D:\code\ResearchPractice\mineral_prediction\acawlr_ppp_p1e_identifiability.py:232: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\torch\csrc\autograd\generated\python_variable_methods.cpp:839.)
+  derivative=float((plus-minus)/(2*eps)); shrink.append(dict(epsilon=eps,central=derivative,forward=float((plus-base)/eps),analytic=-9.,passed=abs(derivative+9)<=1e-7+1e-4*9))
+historical 0.01_23 {'errors': {'logZ': 3.5231980319849754e-06, 'KL': 2.523873835258428e-06, 'TV': 6.458324172266272e-06}, 'passed': True}
+historical 0.01_53 {'errors': {'logZ': 2.7558127069227112e-05, 'KL': 1.5112329101896194e-05, 'TV': 5.085512476758758e-05}, 'passed': True}
+historical 0.01_71 {'errors': {'logZ': 5.5050305505233155e-06, 'KL': 1.7737693251973496e-06, 'TV': 5.08617195549288e-06}, 'passed': True}
+historical 0.003_23 {'errors': {'logZ': 5.281207027252321e-07, 'KL': 2.5085487374454374e-05, 'TV': 1.979104724436631e-06}, 'passed': True}
+historical 0.003_53 {'errors': {'logZ': 9.271609473060494e-06, 'KL': 1.2245228511176265e-06, 'TV': 9.833177010948324e-06}, 'passed': True}
+historical 0.003_71 {'errors': {'logZ': 8.343621649054e-05, 'KL': 1.5568813239497103e-05, 'TV': 1.931472495808606e-05}, 'passed': True}
+historical 0.001_23 {'errors': {'logZ': 8.47832699157891e-05, 'KL': 5.0697565395552147e-05, 'TV': 3.9506025554650326e-05}, 'passed': True}
+historical 0.001_53 {'errors': {'logZ': 3.1518687178433424e-05, 'KL': 8.57682114130398e-06, 'TV': 1.026645066351528e-05}, 'passed': True}
+historical 0.001_71 {'errors': {'logZ': 0.0005061547841709313, 'KL': 0.0006009842396359488, 'TV': 0.000325084429145972}, 'passed': False}
+controls 48 global gap 0.006343499739344338 fixed-h converged
+controls 96 global gap 0.006333561314923131 fixed-h converged
+controls 192 global gap 0.006331074725981267 fixed-h converged
+Jacobian start teacher
+Jacobian complete teacher {'1e-06': {'g': 128, 'field': 129}, '1e-08': {'g': 185, 'field': 186}, '1e-10': {'g': 270, 'field': 272}}
+Jacobian start init1011
+Jacobian complete init1011 {'1e-06': {'g': 31, 'field': 33}, '1e-08': {'g': 107, 'field': 108}, '1e-10': {'g': 134, 'field': 134}}
+Jacobian start collapsed
+Jacobian complete collapsed {'1e-06': {'g': 2, 'field': 2}, '1e-08': {'g': 2, 'field': 2}, '1e-10': {'g': 2, 'field': 2}}

@@ -1,0 +1,32 @@
+{
+  "checks": {
+    "teacher_copy": true,
+    "teacher_gradient": true,
+    "teacher_identity": true,
+    "symmetries": true,
+    "FD": true,
+    "KL_identity": true,
+    "teacher_fidelity": true,
+    "archived_forward": true,
+    "fidelity_legacy_0.01_23": true,
+    "fidelity_legacy_0.01_53": true,
+    "fidelity_legacy_0.01_71": true,
+    "fidelity_legacy_0.003_23": true,
+    "fidelity_legacy_0.003_53": true,
+    "fidelity_legacy_0.003_71": true,
+    "fidelity_legacy_0.001_23": true,
+    "fidelity_legacy_0.001_53": true,
+    "fidelity_legacy_0.001_71": false,
+    "fidelity_global": true,
+    "fidelity_global_ridge": true,
+    "fidelity_fixed_h": true,
+    "fidelity_fixed_h_ridge": true,
+    "convex_solvers": true,
+    "jacobian": true,
+    "collapsed_stationary": true
+  },
+  "passed": false,
+  "failed": [
+    "fidelity_legacy_0.001_71"
+  ]
+}

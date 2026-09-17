@@ -1,0 +1,20 @@
+D:\anaconda\python.exe -B -m unittest discover -s . -p test_acawlr_ppp_p1e_identifiability.py -v
+test_canonical_undefined_zero_branch (test_acawlr_ppp_p1e_identifiability.DiagnosticTests.test_canonical_undefined_zero_branch) ... ok
+test_chain_jacobian_finite_difference (test_acawlr_ppp_p1e_identifiability.DiagnosticTests.test_chain_jacobian_finite_difference) ... ok
+test_detached_targets_and_invalid_weights (test_acawlr_ppp_p1e_identifiability.DiagnosticTests.test_detached_targets_and_invalid_weights) ... ok
+test_fixed_h_solver_oracle (test_acawlr_ppp_p1e_identifiability.DiagnosticTests.test_fixed_h_solver_oracle) ... ok
+test_formal_hash_and_buffers (test_acawlr_ppp_p1e_identifiability.DiagnosticTests.test_formal_hash_and_buffers) ... ok
+test_frozen_integrity (test_acawlr_ppp_p1e_identifiability.DiagnosticTests.test_frozen_integrity) ... ok
+test_global_inverse_moments (test_acawlr_ppp_p1e_identifiability.DiagnosticTests.test_global_inverse_moments) ... ok
+test_kl_identity_and_constant_gauge (test_acawlr_ppp_p1e_identifiability.DiagnosticTests.test_kl_identity_and_constant_gauge) ... ok
+test_memory_event_schema_and_links (test_acawlr_ppp_p1e_identifiability.DiagnosticTests.test_memory_event_schema_and_links) ... ok
+test_normalizer_dense_uniform (test_acawlr_ppp_p1e_identifiability.DiagnosticTests.test_normalizer_dense_uniform) ... ok
+test_normalizer_limits_and_derivatives (test_acawlr_ppp_p1e_identifiability.DiagnosticTests.test_normalizer_limits_and_derivatives) ... ok
+test_output_refuses_existing_directory (test_acawlr_ppp_p1e_identifiability.DiagnosticTests.test_output_refuses_existing_directory) ... ok
+test_penalty_scaling_and_all_parameters (test_acawlr_ppp_p1e_identifiability.DiagnosticTests.test_penalty_scaling_and_all_parameters) ... ok
+test_symmetry_and_anchor (test_acawlr_ppp_p1e_identifiability.DiagnosticTests.test_symmetry_and_anchor) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 1.549s
+
+OK

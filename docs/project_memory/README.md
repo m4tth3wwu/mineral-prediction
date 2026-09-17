@@ -1,0 +1,3 @@
+# Project memory
+
+Canonical entry: docs/project_memory/CATCH_UP.md relative to Git root D:/code/ResearchPractice. Read current session, frozen protocol/provenance, raw evidence, then involved source. Five objects: p (density), g (scalar predictor), b (coefficient field), beta/u/h (anchored decomposition), theta (neural parameters). Memory is an evidence index, not authorization to train. Preserve failures and append-only decisions/run events. Initial records under mineral_prediction/docs/project_memory are retained as historical provenance; this directory is now the canonical handoff. Existing Git allowlist ignores new files; no ignore rules changed.
