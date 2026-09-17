@@ -1,0 +1,47 @@
+{
+  "prepare": {
+    "status": "COMPLETED",
+    "scientific_status": "passed",
+    "reason": "[]"
+  },
+  "stage1": {
+    "status": "COMPLETED",
+    "scientific_status": "passed",
+    "reason": null
+  },
+  "standard_P0": {
+    "status": "COMPLETED",
+    "scientific_status": "passed",
+    "reason": null
+  },
+  "standard_Plambda": {
+    "status": "COMPLETED",
+    "scientific_status": "passed",
+    "reason": null
+  },
+  "local_P0": {
+    "status": "COMPLETED",
+    "scientific_status": "passed",
+    "reason": null
+  },
+  "local_Plambda": {
+    "status": "COMPLETED",
+    "scientific_status": "passed",
+    "reason": null
+  },
+  "stage2": {
+    "status": "SKIPPED",
+    "scientific_status": "not_evaluated",
+    "reason": "predeclared paired criterion not met; no dose search"
+  },
+  "verification_attempt1": {
+    "status": "FAILED",
+    "scientific_status": "not_evaluated",
+    "reason": "Post-training independent verification OpenMP runtime conflict; no training failure or replay. Error preserved in logs/verification_attempt1_error.txt."
+  },
+  "delivery": {
+    "status": "COMPLETED",
+    "scientific_status": "passed",
+    "reason": "4 main trajectories/8000 updates; endpoints fidelity pass; no collapse; dose condition not met. Hypothesis unsupported is not execution failure."
+  }
+}

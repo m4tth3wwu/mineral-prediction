@@ -1,0 +1,140 @@
+D:\anaconda\python.exe -B mineral_prediction/acawlr_ppp_p1f_population.py --phase prepare --output-dir D:\code\ResearchPractice\mineral_prediction\p1f_population\20260917T121240Z_p1f_v1
+{
+  "legacy_audit": {
+    "source": "mineral_prediction/p1e_identifiability/20260917T112555Z_p1e_v1/STRUCTURE.json#/historical/0.001_71/fidelity",
+    "result": {
+      "errors": {
+        "logZ": 0.0005061547841709313,
+        "KL": 0.0006009842396359488,
+        "TV": 0.000325084429145972
+      },
+      "passed": false
+    },
+    "blocks_fresh": false,
+    "v1_status": "BLOCKED",
+    "v1_trajectories": 0
+  },
+  "fresh_pretraining": {
+    "checks": {
+      "environment": true,
+      "teacher_hash": true,
+      "standard_hash": true,
+      "legacy_count_zero_verified": true,
+      "teacher_logZ": true,
+      "teacher_density_common_grid": true,
+      "teacher_moments": true,
+      "controls_fidelity_global": true,
+      "controls_solver_global": true,
+      "controls_fidelity_global_ridge": true,
+      "controls_solver_global_ridge": true,
+      "controls_fidelity_fixed_h": true,
+      "controls_solver_fixed_h": true,
+      "controls_fidelity_fixed_h_ridge": true,
+      "controls_solver_fixed_h_ridge": true,
+      "teacher_copy": true,
+      "teacher_gradient": true,
+      "initial_fidelity_standard": true,
+      "KL_identity_standard": true,
+      "initial_fidelity_local": true,
+      "KL_identity_local": true,
+      "gradient_FD": true
+    },
+    "passed": true,
+    "failed": [],
+    "diagnostics": {
+      "teacher": {
+        "logZ96": 9.221106845524758,
+        "logZ192": 9.22111606643119,
+        "delta_logZ": 9.220906431295361e-06,
+        "common_grid_TV": 4.610474471977709e-06,
+        "moments": {
+          "48": [
+            0.15979486175020385,
+            -0.07120066591259976,
+            0.012189756234800016,
+            -0.010402111494313089,
+            0.10411079463344194
+          ],
+          "96": [
+            0.15988287430937723,
+            -0.0712291297022068,
+            0.012201109889265364,
+            -0.010410214588857407,
+            0.1041867038022747
+          ],
+          "192": [
+            0.15990485226713477,
+            -0.07123630081096219,
+            0.012203949067779853,
+            -0.010412242281914183,
+            0.10420568340326973
+          ]
+        },
+        "moment_max_delta": 2.1977957757546296e-05,
+        "q_RMS192": 0.1498675295761872,
+        "field_RMS192": 0.38849187761347936
+      },
+      "global": {
+        "errors": {
+          "logZ": 1.2594373956176241e-05,
+          "KL": 2.486588941863488e-06,
+          "TV": 9.000425744448703e-06
+        },
+        "passed": true
+      },
+      "global_ridge": {
+        "errors": {
+          "logZ": 1.258804624626464e-05,
+          "KL": 2.4865881833591175e-06,
+          "TV": 8.986129888116645e-06
+        },
+        "passed": true
+      },
+      "fixed_h": {
+        "errors": {
+          "logZ": 9.220906433071718e-06,
+          "KL": 1.7763568394002505e-15,
+          "TV": 7.426981816685942e-16
+        },
+        "passed": true
+      },
+      "fixed_h_ridge": {
+        "errors": {
+          "logZ": 8.073456255530687e-06,
+          "KL": 5.603012525057238e-07,
+          "TV": 1.873034552610231e-06
+        },
+        "passed": true
+      },
+      "implementation": {
+        "copy_errors": {
+          "g": 0.0,
+          "b": 0.0,
+          "h": 0.0
+        },
+        "gradient_max": 0.0
+      },
+      "gradient_FD": [
+        {
+          "epsilon": 0.0001,
+          "analytic": -0.1528366782510593,
+          "numerical": -0.15283667825549685,
+          "passed": true
+        },
+        {
+          "epsilon": 1e-05,
+          "analytic": -0.1528366782510593,
+          "numerical": -0.15283667824661507,
+          "passed": true
+        },
+        {
+          "epsilon": 1e-06,
+          "analytic": -0.1528366782510593,
+          "numerical": -0.15283667931242917,
+          "passed": true
+        }
+      ]
+    }
+  },
+  "endpoints": {}
+}

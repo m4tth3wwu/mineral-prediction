@@ -1,0 +1,11 @@
+{
+  "time": "2026-09-17T12:40:41.676720+00:00",
+  "HEAD": "bf97a33056911b84240df612d78795006f77446d",
+  "source": {
+    "mineral_prediction/acawlr_ppp_p1f_population.py": "3e9442d7c9461f66ee60c5a84d976e505639ecc27c7f0a82c6e31363ce2dca55",
+    "mineral_prediction/report_acawlr_ppp_p1f_population.py": "0be0e87f0dc7c39782b2bde78a3d4d915d2a29c3ecd62ba7e2553be8fb02d290",
+    "mineral_prediction/test_acawlr_ppp_p1f_population.py": "4c68b795ee94c38d7d7bdc51c7c144213591fba59651a2f84fc3391a9f188be7"
+  },
+  "training_manifest": "mineral_prediction/p1f_population/20260917T121240Z_p1f_v1/SOURCE_MANIFEST.json",
+  "report_provenance": "mineral_prediction/p1f_population/20260917T121240Z_p1f_v1/REPORT_PROVENANCE.json"
+}

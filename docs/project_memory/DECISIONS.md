@@ -14,3 +14,13 @@
 
 ## D-20260917-005
 2026-09-17T11:38:38.577506+00:00. User explicitly requested GitHub push. Commit and push this reviewed P1-E delivery to existing origin/codex-refactor; include complete raw evidence and both canonical and historical memory. No force push, visibility change, new training or edits to frozen prior stages. Earlier local-only/no-push statements describe the preceding session, not the current authorization.
+
+## D-20260917-006
+2026-09-17T12:20:18.405132+00:00. User explicitly authorized P1-F causal discrimination. Freeze a new protocol with separate legacy audit and fresh gates; retain P1-E v1 BLOCKED/0 trajectories. Four main runs standard/local × zero/original penalty, no seed expansion. 0.1 dose only on the predeclared matched criterion. Evidence: mineral_prediction/p1f_population/20260917T121240Z_p1f_v1/PROTOCOL.json, GATES.json, PRETRAIN_CONFIRMATION.json. This is not permission to alter P1-E or launch further searches. Current source snapshot and threshold hashes fixed before any updates.
+
+## D-20260917-007
+2026-09-17T12:40:41.676720+00:00. P1-F four matched population trajectories completed2000 each, all endpoint fidelity and density/predictor recovery gates pass. Both starts give CaseC. Neither stable function-level shrinkage nor any collapse observed. Conditional dose trigger not met, so no0.1 runs. Evidence: mineral_prediction/p1f_population/20260917T121240Z_p1f_v1/POPULATION_COMPARISON.json, DOSE_DECISION.json, FINAL_VERIFY.json. Parameter u reduction is not field collapse: local Plambda u=6.70807→1.5104092, q/teacher=1.0620138. This weighs against the proposed stable population shrink/collapse mechanism in this tested setup; not a universal exclusion. Second-paper candidate cools; Level1 upper bound/uncertain, not Level2/3. Next only propose archived data23/init1011 empirical matched lambda0/1 at identical grid/optimizer/budget, no run authorization inferred.
+
+
+## P1-F publication authorization 2026-09-17T12:47:00.171604+00:00
+用户要求“直接push”：提交完整P1-F代码、结果及交接记录至现有origin/codex-refactor；使用普通push，保持冻结历史文件不变。

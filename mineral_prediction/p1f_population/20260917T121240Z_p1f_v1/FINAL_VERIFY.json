@@ -1,0 +1,61 @@
+{
+  "time": "2026-09-17T12:38:51.356675+00:00",
+  "tests": 10,
+  "checks": {
+    "standard_P0": {
+      "rows": 2001,
+      "observations": 81,
+      "checkpoints": 7,
+      "independent_errors": {
+        "KL": 1.7763568394002505e-15,
+        "TV": 1.5829351718288365e-17,
+        "b_RMSE": 5.551115123125783e-17
+      },
+      "objective_error": 0.0
+    },
+    "standard_Plambda": {
+      "rows": 2001,
+      "observations": 81,
+      "checkpoints": 7,
+      "independent_errors": {
+        "KL": 0.0,
+        "TV": 4.336808689942018e-18,
+        "b_RMSE": 0.0
+      },
+      "objective_error": 2.2736673654932815e-13
+    },
+    "local_P0": {
+      "rows": 2001,
+      "observations": 81,
+      "checkpoints": 7,
+      "independent_errors": {
+        "KL": 0.0,
+        "TV": 2.792244110623801e-18,
+        "b_RMSE": 1.6940658945086007e-21
+      },
+      "objective_error": 0.0
+    },
+    "local_Plambda": {
+      "rows": 2001,
+      "observations": 81,
+      "checkpoints": 7,
+      "independent_errors": {
+        "KL": 0.0,
+        "TV": 6.938893903907228e-18,
+        "b_RMSE": 6.938893903907228e-18
+      },
+      "objective_error": 2.2715163083830703e-13
+    }
+  },
+  "frozen": {
+    "time": "2026-09-17T12:38:51.356675+00:00",
+    "count": 143,
+    "passed": true,
+    "changed": []
+  },
+  "updates": 8000,
+  "protocol_and_training_source_unchanged": true,
+  "matched_initial_states": true,
+  "no_dose_runs": true,
+  "method": "Independent Python standard-library reductions; no training"
+}

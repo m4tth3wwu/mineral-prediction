@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-09-17T12:12:44.739891+00:00",
+  "protocol_sha256": "cbcf97669fd44f3fe1dd98fafba0f7f18faeadf7fdd1177eeeb4261666b3b33d",
+  "source_manifest_sha256": "7f39ffe2a9acd2c8bd191d46c47921eb348051a067b239ef43e96671a8072623",
+  "protocol_existed_before_first_forward": true,
+  "neural_updates_so_far": 0,
+  "definitions_have_no_results_dependency": true,
+  "fresh_gate_passed": true,
+  "legacy_veto_removed_by_explicit_user_request": true
+}

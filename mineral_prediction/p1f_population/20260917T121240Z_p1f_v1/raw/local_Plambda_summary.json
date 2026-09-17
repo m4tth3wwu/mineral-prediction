@@ -1,0 +1,195 @@
+{
+  "label": "local_Plambda",
+  "lambda_multiplier": 1.0,
+  "status": "COMPLETED",
+  "last_step": 2000,
+  "initial192": {
+    "logZ": 9.221169867856954,
+    "KL": 2.1504655833837205e-08,
+    "TV": 8.949688595139325e-05,
+    "centered_g_area_RMSE": 0.00021249202639078292,
+    "centered_g_teacher_RMSE": 0.00020738924719388533,
+    "beta_error": 0.0004141610812074413,
+    "u_norm": 6.708069970332146,
+    "theta_norm": 4.5850730061606555,
+    "h": {
+      "mean": 0.0392936525231907,
+      "RMS": 0.05789174862483725,
+      "variance": 0.0018074634302280971,
+      "max_abs": 0.18961838509618872
+    },
+    "q": {
+      "mean": 9.64605801126331e-07,
+      "RMS": 0.14980710734073885,
+      "variance": 0.02244216940886919,
+      "max_abs": 0.5679390115423557
+    },
+    "field_contribution_RMS": 0.3883419004802881,
+    "b_RMSE": 0.0002753330649957999,
+    "b_relative_RMSE": 0.0006356273493879395,
+    "b_component_RMSE": [
+      0.0002591905294232971,
+      0.00029058021752561506
+    ],
+    "theta_distance": 0.008121832235666204,
+    "q_ratio": 0.99959682904216,
+    "field_ratio": 0.9996139504019683,
+    "canonical": {
+      "defined": true,
+      "v": [
+        0.8944267115386861,
+        0.4472145544211326
+      ],
+      "angle": 1.0720554440382607e-06,
+      "f_RMSE": 0.0001531455095096887
+    },
+    "labels": {
+      "collapse": false,
+      "near_zero": false,
+      "category": "not_shrunken_by_definition",
+      "density_success": true,
+      "predictor_success": true,
+      "spatial_signal_success": true
+    }
+  },
+  "final": {
+    "96": {
+      "logZ": 9.22126470249298,
+      "KL": 4.354762202751772e-05,
+      "TV": 0.0032200787419855905,
+      "centered_g_area_RMSE": 0.009344416924226669,
+      "centered_g_teacher_RMSE": 0.009330313262872054,
+      "beta_error": 0.06801259458675112,
+      "u_norm": 1.510409244781272,
+      "theta_norm": 4.6383905218557775,
+      "h": {
+        "mean": 0.1528131322268121,
+        "RMS": 0.22963812518013163,
+        "variance": 0.029381815155276637,
+        "max_abs": 0.6690796885865896
+      },
+      "q": {
+        "mean": 0.00023151333419908733,
+        "RMS": 0.15914028338234337,
+        "variance": 0.025325576196588647,
+        "max_abs": 0.6116279545230594
+      },
+      "field_contribution_RMS": 0.3468475472263099,
+      "b_RMSE": 0.04558229491831989,
+      "b_relative_RMSE": 0.10523508555888089,
+      "b_component_RMSE": [
+        0.04049932360632314,
+        0.05015272681990182
+      ],
+      "theta_distance": 3.809744275089987,
+      "q_ratio": 1.062034598536453,
+      "field_ratio": 0.8928825509740801,
+      "canonical": {
+        "defined": true,
+        "v": [
+          0.9427310654441148,
+          0.3335538011275008
+        ],
+        "angle": 0.12357684846885081,
+        "f_RMSE": 0.05108705251974905
+      },
+      "labels": {
+        "collapse": false,
+        "near_zero": false,
+        "category": "not_shrunken_by_definition",
+        "density_success": true,
+        "predictor_success": true,
+        "spatial_signal_success": true
+      }
+    },
+    "192": {
+      "logZ": 9.221273769756683,
+      "KL": 4.356966058693956e-05,
+      "TV": 0.0032203518999346587,
+      "centered_g_area_RMSE": 0.009346533188009671,
+      "centered_g_teacher_RMSE": 0.009332673332810631,
+      "beta_error": 0.06801259458675112,
+      "u_norm": 1.510409244781272,
+      "theta_norm": 4.6383905218557775,
+      "h": {
+        "mean": 0.15282674412896152,
+        "RMS": 0.22965593881968785,
+        "variance": 0.029385836514093124,
+        "max_abs": 0.6710359608920577
+      },
+      "q": {
+        "mean": 0.0002315169180907037,
+        "RMS": 0.15916138364968305,
+        "variance": 0.025332292445198235,
+        "max_abs": 0.6154212059107763
+      },
+      "field_contribution_RMS": 0.3468744531121788,
+      "b_RMSE": 0.045585340399841155,
+      "b_relative_RMSE": 0.10523723000628346,
+      "b_component_RMSE": [
+        0.0405038200655652,
+        0.05015463167879013
+      ],
+      "theta_distance": 3.809744275089987,
+      "q_ratio": 1.0620137937802676,
+      "field_ratio": 0.8928744025307349,
+      "canonical": {
+        "defined": true,
+        "v": [
+          0.9427310654441148,
+          0.3335538011275008
+        ],
+        "angle": 0.12357684846885081,
+        "f_RMSE": 0.05109398236613235
+      },
+      "labels": {
+        "collapse": false,
+        "near_zero": false,
+        "category": "not_shrunken_by_definition",
+        "density_success": true,
+        "predictor_success": true,
+        "spatial_signal_success": true
+      }
+    }
+  },
+  "fidelity": {
+    "errors": {
+      "logZ": 9.067263702533523e-06,
+      "KL": 2.2038559421844184e-08,
+      "TV": 2.731579490681743e-07
+    },
+    "passed": true
+  },
+  "density_success": true,
+  "predictor_success": true,
+  "stable_shrinkage": false,
+  "stable_severe_shrinkage": false,
+  "stable_collapse": false,
+  "tail_q_ratio_range": 0.02713035443454226,
+  "tail_KL_range": 3.11851428129728e-05,
+  "stationarity": {
+    "max_gradient_per256": 0.0017806192028831352,
+    "total_range_per256": 0.00043880943920093785,
+    "passed": false
+  },
+  "branch_ever_grew": true,
+  "collapse_observed_steps": [],
+  "local_probe": {
+    "initial_gap_resolved": true,
+    "interpretation": "local_recovery_probe",
+    "excess_gap_reduction90": false
+  },
+  "penalty_reference": {
+    "beta": 0.0010156515707222715,
+    "u": 0.2281336086720733,
+    "theta": 0.010757333316620753
+  },
+  "penalty_effective": {
+    "beta": 0.0010156515707222715,
+    "u": 0.2281336086720733,
+    "theta": 0.010757333316620753
+  },
+  "steps": 2000,
+  "seconds": 125.5213033,
+  "penalized_excess_over_teacher_192": -4.260751416255471
+}

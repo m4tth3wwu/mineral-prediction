@@ -1,0 +1,20 @@
+{
+  "time": "2026-09-17T12:42:22.698837+00:00",
+  "pairs": {
+    "standard": {
+      "field_ratio_P0_to_teacher": 0.5793348241475615,
+      "field_ratio_Plambda_to_teacher": 0.538393354412149,
+      "paired_field_norm_reduction": 0.07066978891809972,
+      "q_ratio_P0_to_teacher": 1.147551764834022,
+      "q_ratio_Plambda_to_teacher": 1.0614995002114915
+    },
+    "local": {
+      "field_ratio_P0_to_teacher": 0.9999701211449779,
+      "field_ratio_Plambda_to_teacher": 0.8928744025307349,
+      "paired_field_norm_reduction": 0.10709891860730503,
+      "q_ratio_P0_to_teacher": 0.9999657012679883,
+      "q_ratio_Plambda_to_teacher": 1.0620137937802676
+    }
+  },
+  "interpretation": "Prespecified shrinkage categories use q RMS. No threshold/category changed. b-beta field norm shows modest paired reductions, so absence of q-shrink/collapse must not be restated as absence of all field-amplitude change. Standard P0 already has lower field norm than teacher; this part cannot be attributed to positive regularization."
+}

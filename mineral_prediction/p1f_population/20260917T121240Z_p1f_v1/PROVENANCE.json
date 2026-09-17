@@ -1,0 +1,173 @@
+{
+  "start": "2026-09-17T12:12:41.785318+00:00",
+  "HEAD": "bf97a33056911b84240df612d78795006f77446d",
+  "branch": "codex-refactor",
+  "git_status": "",
+  "prepare_command": "D:\\anaconda\\python.exe -B mineral_prediction/acawlr_ppp_p1f_population.py --phase prepare --output-dir D:\\code\\ResearchPractice\\mineral_prediction\\p1f_population\\20260917T121240Z_p1f_v1",
+  "torch": "2.12.0+cpu",
+  "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+  "device": "cpu",
+  "threads": 1,
+  "dtype": "float64",
+  "protocol_sha256": "cbcf97669fd44f3fe1dd98fafba0f7f18faeadf7fdd1177eeeb4261666b3b33d",
+  "source_manifest_sha256": "7f39ffe2a9acd2c8bd191d46c47921eb348051a067b239ef43e96671a8072623",
+  "frozen_manifest": "docs/project_memory/snapshots/20260917T120519Z_p1f_frozen_before.json",
+  "old_v1_protocol_sha256": "5089b8a2e3e93ae17cc48d4d660f692afa1b0f3448ec777141a2c7a82c438e3e",
+  "old_v1_gates_sha256": "c6a112e9dcc02639f8aaffa95eae10a180958aa7acfbc141aa0674e07815087e",
+  "teacher_sha256": "b0d6db361a0a0c5e685d0e91f07601521760a7efd34e15c07f909ff4473338d8",
+  "initial_hashes": {
+    "standard": "c94a02d1929dfa4d5ffbbfb55c8aaccf7d7d2d52f686203bf8e5c2eeffc064c6",
+    "local": "02e6383dd2e0d22cfa84d36e8477aa347dde36c98ae4b534e02b147ec3e7be38"
+  },
+  "grid_hashes": {
+    "48": "88d757e3df9aa25ea7a8d14112201398d1032aa9fd9c443a9a76c33ce56f15bd",
+    "96": "85d9a160bd1bbb69b23610eef86574b8d00e36d9933f9c1dcb16b32e778f3e22",
+    "192": "ed796836ca272ff5bde76da4785e91058985f1ce90b2a3cb73ffebc2df3f2709"
+  },
+  "parameter_order": [
+    {
+      "name": "beta",
+      "shape": [
+        2
+      ]
+    },
+    {
+      "name": "u",
+      "shape": [
+        2
+      ]
+    },
+    {
+      "name": "aspnn.network.0.weight",
+      "shape": [
+        16,
+        2
+      ]
+    },
+    {
+      "name": "aspnn.network.0.bias",
+      "shape": [
+        16
+      ]
+    },
+    {
+      "name": "aspnn.network.2.weight",
+      "shape": [
+        8,
+        16
+      ]
+    },
+    {
+      "name": "aspnn.network.2.bias",
+      "shape": [
+        8
+      ]
+    },
+    {
+      "name": "aspnn.network.4.weight",
+      "shape": [
+        4,
+        8
+      ]
+    },
+    {
+      "name": "aspnn.network.4.bias",
+      "shape": [
+        4
+      ]
+    },
+    {
+      "name": "aspnn.network.6.weight",
+      "shape": [
+        1,
+        4
+      ]
+    },
+    {
+      "name": "aspnn.network.6.bias",
+      "shape": [
+        1
+      ]
+    },
+    {
+      "name": "cawnn.head.weight",
+      "shape": [
+        4,
+        1,
+        3,
+        3
+      ]
+    },
+    {
+      "name": "cawnn.head.bias",
+      "shape": [
+        4
+      ]
+    },
+    {
+      "name": "cawnn.residual.0.weight",
+      "shape": [
+        4,
+        4,
+        3,
+        3
+      ]
+    },
+    {
+      "name": "cawnn.residual.0.bias",
+      "shape": [
+        4
+      ]
+    },
+    {
+      "name": "cawnn.residual.2.weight",
+      "shape": [
+        4,
+        4,
+        3,
+        3
+      ]
+    },
+    {
+      "name": "cawnn.residual.2.bias",
+      "shape": [
+        4
+      ]
+    },
+    {
+      "name": "cawnn.channel.0.weight",
+      "shape": [
+        1,
+        4,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "cawnn.channel.2.weight",
+      "shape": [
+        4,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "cawnn.spatial.weight",
+      "shape": [
+        1,
+        2,
+        7,
+        7
+      ]
+    },
+    {
+      "name": "cawnn.readout.weight",
+      "shape": [
+        1,
+        4
+      ]
+    }
+  ],
+  "static_completed": "2026-09-17T12:12:44.731923+00:00"
+}

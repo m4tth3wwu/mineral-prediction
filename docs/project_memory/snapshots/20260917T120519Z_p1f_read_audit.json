@@ -1,0 +1,1149 @@
+[
+  {
+    "path": "docs/project_memory/prompts/20260917T111349Z_p1e_CODEX_PROJECT_MEMORY_ADDENDUM.md",
+    "sha256": "a8fdf37bda95b392a910efa7575e9962fc732fdc7369ea89eb0d554968094672",
+    "characters": 5807,
+    "read_complete": true
+  },
+  {
+    "path": "docs/project_memory/prompts/20260917T111349Z_p1e_P1E_IDENTIFIABILITY_CODEX_PROMPT_WITH_PROJECT_MEMORY.md",
+    "sha256": "12d902202d379ca286a6b8545238ea644316a91105e117dfc857994f5d6714fd",
+    "characters": 21215,
+    "read_complete": true
+  },
+  {
+    "path": "docs/project_memory/prompts/20260917T111349Z_p1e_user.md",
+    "sha256": "e821415457e29671ef32467c7229d254ba719f15572aea21088e8db47362bed8",
+    "characters": 115,
+    "read_complete": true
+  },
+  {
+    "path": "docs/project_memory/sessions/20260917T111349Z_p1e.md",
+    "sha256": "d1a396b69621070e6d36595c8c6995e639c0aece31c049e1ecf02f73823a8b55",
+    "characters": 2985,
+    "read_complete": true
+  },
+  {
+    "path": "docs/project_memory/sessions/20260917T113838Z_github_push.md",
+    "sha256": "9939c2be5f95706daaa9bb68a2b844fe0baa3aeab26ed8181ba37f0d7458647d",
+    "characters": 1342,
+    "read_complete": true
+  },
+  {
+    "path": "docs/project_memory/snapshots/20260917T111349Z_p1e_final_sources.json",
+    "sha256": "3aa2d0c364884203d99b49134d6a572895db82c2f13f6fffb8bcc92fdd947105",
+    "characters": 807,
+    "read_complete": true,
+    "json_top_level": [
+      "timestamp_utc",
+      "HEAD",
+      "tracked_git_diff",
+      "files",
+      "ignored_new_files",
+      "actual_execution_snapshot",
+      "frozen_manifest"
+    ]
+  },
+  {
+    "path": "docs/project_memory/snapshots/20260917T113838Z_github_push_delivery.json",
+    "sha256": "246d7e9628d86cf96dfa15baa906b691147c323d722d542b5c347203fa12b26e",
+    "characters": 14237,
+    "read_complete": true,
+    "json_top_level": [
+      "timestamp_utc",
+      "scope",
+      "files"
+    ]
+  },
+  {
+    "path": "mineral_prediction/ACAWLR_PPP_BRIDGE_DESIGN.md",
+    "sha256": "01ed458f4525e2d637c4626d2be4a5d2865a2811df98b628006a884ad3ca4d92",
+    "characters": 22879,
+    "read_complete": true
+  },
+  {
+    "path": "mineral_prediction/ACAWLR_PPP_P0_NOTES.md",
+    "sha256": "45c5e5670b05789caa24e51a2d25b690014ce69f6708de205793cd948afd2e2f",
+    "characters": 899,
+    "read_complete": true
+  },
+  {
+    "path": "mineral_prediction/ACAWLR_PPP_P1A_NOTES.md",
+    "sha256": "bb5382fb0fff6ff0c9065d821bea0bcac9e55579e8b8a0f52248102aca65c457",
+    "characters": 1117,
+    "read_complete": true
+  },
+  {
+    "path": "mineral_prediction/ACAWLR_PPP_P1B_NOTES.md",
+    "sha256": "0e68a13a5c6d69cc7e50ead0ead4bfa88c703735b8607c7cc9bce4a76f17d4f7",
+    "characters": 5212,
+    "read_complete": true
+  },
+  {
+    "path": "mineral_prediction/ACAWLR_PPP_P1B_RESULTS.json",
+    "sha256": "789b85c69d7f7a68a758f2ac0389b3034bc88b37982f0a8abdfe7fd11b6e61ff",
+    "characters": 87722,
+    "read_complete": true,
+    "json_top_level": [
+      "seeds",
+      "steps",
+      "restarts",
+      "learning_rate",
+      "penalty",
+      "dtype",
+      "area_unit",
+      "intensity_rmse_unit",
+      "std",
+      "runs",
+      "summaries",
+      "fixed_model_refinement",
+      "refit_refinement",
+      "refit_surface_comparisons",
+      "suite",
+      "single_start_summary",
+      "recovery_thresholds",
+      "verification_rerun"
+    ]
+  },
+  {
+    "path": "mineral_prediction/ACAWLR_PPP_P1B_TEST_RUN.txt",
+    "sha256": "f348cbe337a6055fa69942f385408376bbdc1c5a02a4ebeb01301caef95d06f7",
+    "characters": 5608,
+    "read_complete": true
+  },
+  {
+    "path": "mineral_prediction/ACAWLR_PPP_P1C_TS_HISTORY_AUDIT.json",
+    "sha256": "2af48d08539075ac9b34e6a229f677824cf8bbeed145472041bef0864c796dad",
+    "characters": 2632,
+    "read_complete": true,
+    "json_top_level": [
+      "baseline_commit",
+      "branch",
+      "files"
+    ]
+  },
+  {
+    "path": "mineral_prediction/ACAWLR_PPP_P1C_TS_MATH_TEST_RUN.txt",
+    "sha256": "d5d0d29c4bdedd07374e512b9a94e316b92b27674deedddc3ea4d20d31cab141",
+    "characters": 1793,
+    "read_complete": true
+  },
+  {
+    "path": "mineral_prediction/ACAWLR_PPP_P1C_TS_MATH_VERIFIED_RUN.txt",
+    "sha256": "03df260c74aabff0d9ccc422b1cf64d6558fdff6a2a4bb99151cca3cdf7e4cf9",
+    "characters": 1117,
+    "read_complete": true
+  },
+  {
+    "path": "mineral_prediction/ACAWLR_PPP_P1C_TS_NOTES.md",
+    "sha256": "8c7df9ee112b26c14ff5e46bc123d6b4c52fa6754d7455f8dafd334005c67e60",
+    "characters": 10118,
+    "read_complete": true
+  },
+  {
+    "path": "mineral_prediction/ACAWLR_PPP_P1C_TS_RESULTS.json",
+    "sha256": "c2f582c2589a0da8c678c6b5d16349ba88ea6f0332c4d6a1ae6c0c34cd6165d5",
+    "characters": 79797,
+    "read_complete": true,
+    "json_top_level": [
+      "stage",
+      "teacher",
+      "config",
+      "runs",
+      "summaries",
+      "quadrature_diagnostic_examples",
+      "archive"
+    ]
+  },
+  {
+    "path": "mineral_prediction/ACAWLR_PPP_P1C_TS_SMOKE_RESULTS.json",
+    "sha256": "6b6e6dd33f06fe41fb7fd08b31a6220d7604a1944170efc9d0a97dbb56a78390",
+    "characters": 35411,
+    "read_complete": true,
+    "json_top_level": [
+      "stage",
+      "teacher",
+      "config",
+      "runs",
+      "summaries",
+      "quadrature_diagnostic_examples",
+      "archive"
+    ]
+  },
+  {
+    "path": "mineral_prediction/ACAWLR_PPP_P1C_TS_SMOKE_RUN.txt",
+    "sha256": "6c3ad26994c57435258c3bf19492f990c8a1babb9dd059076af27ac80fef3e2f",
+    "characters": 485,
+    "read_complete": true
+  },
+  {
+    "path": "mineral_prediction/ACAWLR_PPP_P1C_TS_SMOKE_VERIFIED_RUN.txt",
+    "sha256": "f21c9e96995f260fb760545f2cb58fb6a4625b23aac7e39fcc6ed274ce41b456",
+    "characters": 596,
+    "read_complete": true
+  },
+  {
+    "path": "mineral_prediction/ACAWLR_PPP_P1C_TS_SUITE.json",
+    "sha256": "6179a6156beee49b12cc488e1ef864c7fa0e228f815c12f3acbc4af3ef977ae2",
+    "characters": 1339,
+    "read_complete": true,
+    "json_top_level": [
+      "command",
+      "tests",
+      "failures",
+      "errors",
+      "skipped",
+      "seconds",
+      "exit_code"
+    ]
+  },
+  {
+    "path": "mineral_prediction/ACAWLR_PPP_P1C_TS_TEACHER_PREFLIGHT_REJECTED.json",
+    "sha256": "4cfcbd776858e652cc6aa08833a1448e6f2a3740e0049a631d1361577aa3d27e",
+    "characters": 2989,
+    "read_complete": true,
+    "json_top_level": [
+      "seed",
+      "state_sha256",
+      "parameters",
+      "beta",
+      "u",
+      "parameter_norms",
+      "g",
+      "h",
+      "spatial_score",
+      "intensity_concentration",
+      "all_finite",
+      "reference_error",
+      "rank_one_residual",
+      "penalty",
+      "rejection_score_bound",
+      "refinement",
+      "exact_copy"
+    ]
+  },
+  {
+    "path": "mineral_prediction/ACAWLR_PPP_P1C_TS_TEST_RUN.txt",
+    "sha256": "7095bd7cb20e24b62602ea72ab40223fb9d53d9558b46f086572fae7dff8f936",
+    "characters": 9312,
+    "read_complete": true
+  },
+  {
+    "path": "mineral_prediction/ACAWLR_PPP_P1D_LR_NOTES.md",
+    "sha256": "e5fbdd1a61afb2dd5368f778fbdfd9064aee3a1eb73f82a250b5459f252c47d2",
+    "characters": 8003,
+    "read_complete": true
+  },
+  {
+    "path": "mineral_prediction/ACAWLR_PPP_P1D_LR_PROTOCOL.json",
+    "sha256": "52d977a90bede9a6a0a60fbfa4ecc396928ee5687649b01d3c0112fa4cd12fb5",
+    "characters": 12086,
+    "read_complete": true,
+    "json_top_level": [
+      "baseline_commit",
+      "learning_rates",
+      "seeds",
+      "init_seed",
+      "n",
+      "horizon",
+      "checkpoints",
+      "evaluate_every",
+      "early_stopping",
+      "unchanged_baseline_protocol",
+      "diagnostics",
+      "oscillation",
+      "update_definition",
+      "relative_update_definition",
+      "objective_definition",
+      "baseline_replay_reason",
+      "historical_sha256",
+      "runner_sha256"
+    ]
+  },
+  {
+    "path": "mineral_prediction/ACAWLR_PPP_P1D_LR_RESULTS.json",
+    "sha256": "4ae8919d67b75520e3a507c19ae6947af880a5ea1543cad66369e7e559d88460",
+    "characters": 11888978,
+    "read_complete": true,
+    "json_top_level": [
+      "protocol",
+      "status",
+      "seconds",
+      "cases",
+      "historical_files_unchanged"
+    ]
+  },
+  {
+    "path": "mineral_prediction/ACAWLR_PPP_P1D_LR_RUN.txt",
+    "sha256": "8e768185d5cb074e6272a28b643db17d0c41fd37bfb0797cc5c7d9a0eb21d1ff",
+    "characters": 12442,
+    "read_complete": true
+  },
+  {
+    "path": "mineral_prediction/ACAWLR_PPP_P1D_LR_SUMMARY.json",
+    "sha256": "592f598cb12d459f5e30a41c9550ad342d56f5481026e62259e22ccd4af264da",
+    "characters": 82944,
+    "read_complete": true,
+    "json_top_level": "list"
+  },
+  {
+    "path": "mineral_prediction/ACAWLR_PPP_P1D_LR_TABLE.md",
+    "sha256": "713cd45c0da9a10a8ebb7d68ab144170377e2b99f3ffca124139c3bfe36db6a0",
+    "characters": 1748,
+    "read_complete": true
+  },
+  {
+    "path": "mineral_prediction/ACAWLR_PPP_P1D_LR_TEST_RUN.txt",
+    "sha256": "7e5c88f33aabdd64efd69d680dcac96c35c77789995bb3ab66330f607e25125b",
+    "characters": 1112,
+    "read_complete": true
+  },
+  {
+    "path": "mineral_prediction/ACAWLR_PPP_P1D_OPTIMIZATION_CHECKPOINT_TABLE.md",
+    "sha256": "00dc68d9a912b7b5c4a7d5a8e1290432f42d9fbf473481bd1c1fad3af1daecc2",
+    "characters": 5404,
+    "read_complete": true
+  },
+  {
+    "path": "mineral_prediction/ACAWLR_PPP_P1D_OPTIMIZATION_NOTES.md",
+    "sha256": "0b0cdbb9e52ff0c7641fc0afde2aa1de7f80e269aab8a7df8ed4444dfcfb76f8",
+    "characters": 8620,
+    "read_complete": true
+  },
+  {
+    "path": "mineral_prediction/ACAWLR_PPP_P1D_OPTIMIZATION_PROTOCOL.json",
+    "sha256": "ae996a85cd4a7974d25eeb75908a4e945ab59a754b061cf488aeafd88d962553",
+    "characters": 5066,
+    "read_complete": true,
+    "json_top_level": [
+      "baseline_commit",
+      "data_seeds",
+      "init_seed",
+      "n",
+      "horizon",
+      "checkpoint_steps",
+      "evaluate_every",
+      "early_stopping",
+      "penalty",
+      "training_quadrature",
+      "evaluation_quadrature",
+      "optimizer",
+      "optimizer_defaults",
+      "torch_version",
+      "dtype",
+      "threads",
+      "reproduction_tolerances",
+      "diagnostic_thresholds",
+      "teacher_sha256",
+      "historical_sha256",
+      "source_sha256"
+    ]
+  },
+  {
+    "path": "mineral_prediction/ACAWLR_PPP_P1D_OPTIMIZATION_RESULTS.json",
+    "sha256": "6c2f1fd277d869b42f878f8289209858c5afe3038fe873655332ad436b4c3bd6",
+    "characters": 3196228,
+    "read_complete": true,
+    "json_top_level": [
+      "protocol",
+      "status",
+      "seconds",
+      "historical_files_unchanged",
+      "cases"
+    ]
+  },
+  {
+    "path": "mineral_prediction/ACAWLR_PPP_P1D_OPTIMIZATION_RUN.txt",
+    "sha256": "97c3f47dbfe2288d1e677375d5e45393c94d0ea00fee06aa13d80f1fe723926b",
+    "characters": 2128,
+    "read_complete": true
+  },
+  {
+    "path": "mineral_prediction/ACAWLR_PPP_P1D_OPTIMIZATION_TEST_RUN.txt",
+    "sha256": "ddd217ecddcf39242283b8f09d808974264e4e1960b76273eb6c5e254775afbf",
+    "characters": 1124,
+    "read_complete": true
+  },
+  {
+    "path": "mineral_prediction/ACAWLR_PPP_P1D_OPTIMIZATION_TRAJECTORY_SUMMARY.json",
+    "sha256": "6e6835cb1f2ce1a926fd5634971a72f565029f68ae68324289718d2c6560d2b7",
+    "characters": 12965,
+    "read_complete": true,
+    "json_top_level": "list"
+  },
+  {
+    "path": "mineral_prediction/acawlr_ppp_bridge.py",
+    "sha256": "c95ed6131085bbce953c797a54cf00b410a8aad7fcfe3178173d4d2b7a23953d",
+    "characters": 14822,
+    "read_complete": true,
+    "top_level_definitions": [
+      "_pure_core_classes",
+      "SyntheticSpatialPredictor",
+      "ProfiledPPP",
+      "_validate",
+      "profiled_ppp",
+      "streaming_ppp_value_and_grad",
+      "ReducedCAWNN",
+      "ReducedRankOneSyntheticPredictor",
+      "RankOnePenalty",
+      "rank_one_value_and_grad",
+      "fit_rank_one_synthetic"
+    ]
+  },
+  {
+    "path": "mineral_prediction/acawlr_ppp_optimization.py",
+    "sha256": "e3dbcd53d0603e67800dca3bc8f41e9a4b815086aa43bb78ed40081098819226",
+    "characters": 13225,
+    "read_complete": true,
+    "top_level_definitions": [
+      "sha256",
+      "history_manifest",
+      "write_json",
+      "load_inputs",
+      "Trajectory",
+      "run"
+    ]
+  },
+  {
+    "path": "mineral_prediction/acawlr_ppp_p1d_lr.py",
+    "sha256": "9e66480ba87634259fd74e52d17be7e078eecbb292d86018aa9085d8e05b5ecb",
+    "characters": 9844,
+    "read_complete": true,
+    "top_level_definitions": [
+      "frozen_manifest",
+      "vector",
+      "exported",
+      "LearningRateTrajectory",
+      "run"
+    ]
+  },
+  {
+    "path": "mineral_prediction/acawlr_ppp_p1e_identifiability.py",
+    "sha256": "eca791e77b77c6acb5ea15266bcfb0df7d59e33e0c0f14d75e807db209f1bfea",
+    "characters": 38024,
+    "read_complete": true,
+    "top_level_definitions": [
+      "utc",
+      "sha",
+      "read",
+      "write",
+      "vec",
+      "setvec",
+      "model",
+      "penalty_parts",
+      "flat_grad",
+      "surface",
+      "target",
+      "pop",
+      "measures",
+      "fidelity",
+      "canonical",
+      "global_functions",
+      "solve_global",
+      "convex_newton",
+      "event",
+      "reserve_output",
+      "protocol",
+      "setup",
+      "load_archives",
+      "compare_surface",
+      "symmetries",
+      "line_diagnostics",
+      "stage_a",
+      "stage_b",
+      "collapsed_check",
+      "HWrapper",
+      "jacobians",
+      "stage_c",
+      "gates",
+      "branch_diagnostics",
+      "population_run",
+      "run_population",
+      "run"
+    ]
+  },
+  {
+    "path": "mineral_prediction/acawlr_ppp_synthetic.py",
+    "sha256": "f4338fcdafcf3b18988e9e8c89d7fca0cb3660bc5f6192440cddaa614f82261b",
+    "characters": 7167,
+    "read_complete": true,
+    "top_level_definitions": [
+      "SyntheticTruth",
+      "quadrature",
+      "normalized_density",
+      "correlation",
+      "rmse",
+      "evaluate",
+      "fit_case",
+      "stability_summary"
+    ]
+  },
+  {
+    "path": "mineral_prediction/acawlr_ppp_teacher_student.py",
+    "sha256": "5bc1d1d4ac80454149d95fa262bdf838ed52fb379088dd85ae1c447af59783d3",
+    "characters": 17651,
+    "read_complete": true,
+    "top_level_definitions": [
+      "state_hash",
+      "make_teacher",
+      "_affine_bounds",
+      "_channel_bounds",
+      "rejection_bound",
+      "sample_events",
+      "refinement",
+      "exact_copy_sanity",
+      "teacher_diagnostics",
+      "recovery_failures",
+      "fit_student",
+      "prepare_design",
+      "run_experiments",
+      "save_report"
+    ]
+  },
+  {
+    "path": "mineral_prediction/docs/project_memory/ACTIVE_SESSION.json",
+    "sha256": "08fddb0da70e052d45f3cb8b3b787f85dfedf0bc2a6e64e2a8087b5665268cb8",
+    "characters": 183,
+    "read_complete": true,
+    "json_top_level": [
+      "session_id",
+      "head",
+      "frozen_manifest"
+    ]
+  },
+  {
+    "path": "mineral_prediction/docs/project_memory/CATCH_UP.md",
+    "sha256": "4295115ef903c685c692979d5d637f08641312974d1f1747c7e83dfa4f301c74",
+    "characters": 137,
+    "read_complete": true
+  },
+  {
+    "path": "mineral_prediction/docs/project_memory/DECISIONS.md",
+    "sha256": "bab6766aad544bfae97036dce57cfea0a34f6939a734475c50743f1fca69d5fb",
+    "characters": 488,
+    "read_complete": true
+  },
+  {
+    "path": "mineral_prediction/docs/project_memory/LAST_RUN.json",
+    "sha256": "fbe88de7f3e6207a19f8cb79fc6f2951edf3ba01dbd5171ee7badc811bb1e421",
+    "characters": 98,
+    "read_complete": true,
+    "json_top_level": [
+      "run_id",
+      "output_dir"
+    ]
+  },
+  {
+    "path": "mineral_prediction/docs/project_memory/README.md",
+    "sha256": "a496a9dedebaedf53a0a78f55c78ec119fce1f5c31dccf803efc268eb24da9a9",
+    "characters": 481,
+    "read_complete": true
+  },
+  {
+    "path": "mineral_prediction/docs/project_memory/RUN_INDEX.jsonl",
+    "sha256": "c8e281a55af68e773a6449ee9fa8a0c7977d36b70b8c774002772dac56c1192d",
+    "characters": 18852,
+    "read_complete": true
+  },
+  {
+    "path": "mineral_prediction/docs/project_memory/prompts/20260917T111349Z_p1e_CODEX_PROJECT_MEMORY_ADDENDUM.md",
+    "sha256": "a8fdf37bda95b392a910efa7575e9962fc732fdc7369ea89eb0d554968094672",
+    "characters": 5807,
+    "read_complete": true
+  },
+  {
+    "path": "mineral_prediction/docs/project_memory/prompts/20260917T111349Z_p1e_P1E_IDENTIFIABILITY_CODEX_PROMPT_WITH_PROJECT_MEMORY.md",
+    "sha256": "12d902202d379ca286a6b8545238ea644316a91105e117dfc857994f5d6714fd",
+    "characters": 21215,
+    "read_complete": true
+  },
+  {
+    "path": "mineral_prediction/docs/project_memory/prompts/20260917T111349Z_p1e_user.md",
+    "sha256": "e821415457e29671ef32467c7229d254ba719f15572aea21088e8db47362bed8",
+    "characters": 115,
+    "read_complete": true
+  },
+  {
+    "path": "mineral_prediction/docs/project_memory/sessions/20260917T111349Z_p1e.md",
+    "sha256": "31a6d3da6a31549b11a692e002504a1b0bccbb3ea033f9c106546f0341c9ce57",
+    "characters": 2023,
+    "read_complete": true
+  },
+  {
+    "path": "mineral_prediction/docs/project_memory/sessions/20260917T112555Z_p1e_v1_runner.log",
+    "sha256": "a6e2d25a27f91c17745bc0460e7733dd8ba88d9d19b4f206be563cbe9edd9472",
+    "characters": 2416,
+    "read_complete": true
+  },
+  {
+    "path": "mineral_prediction/docs/project_memory/snapshots/20260917T111349Z_p1e_frozen.json",
+    "sha256": "44a9b92720113d9ad296ef5d0d1d61c89f178737d848ac01dc86b2b8c04d6241",
+    "characters": 5778,
+    "read_complete": true,
+    "json_top_level": [
+      "acawlr_ppp_bridge.py",
+      "ACAWLR_PPP_BRIDGE_DESIGN.md",
+      "acawlr_ppp_optimization.py",
+      "ACAWLR_PPP_P0_NOTES.md",
+      "ACAWLR_PPP_P1A_NOTES.md",
+      "ACAWLR_PPP_P1B_NOTES.md",
+      "ACAWLR_PPP_P1B_RESULTS.json",
+      "ACAWLR_PPP_P1B_TEST_RUN.txt",
+      "ACAWLR_PPP_P1C_TS_HISTORY_AUDIT.json",
+      "ACAWLR_PPP_P1C_TS_MATH_TEST_RUN.txt",
+      "ACAWLR_PPP_P1C_TS_MATH_VERIFIED_RUN.txt",
+      "ACAWLR_PPP_P1C_TS_NOTES.md",
+      "ACAWLR_PPP_P1C_TS_RESULTS.json",
+      "ACAWLR_PPP_P1C_TS_SMOKE_RESULTS.json",
+      "ACAWLR_PPP_P1C_TS_SMOKE_RUN.txt",
+      "ACAWLR_PPP_P1C_TS_SMOKE_STATES.pt",
+      "ACAWLR_PPP_P1C_TS_SMOKE_VERIFIED_RUN.txt",
+      "ACAWLR_PPP_P1C_TS_STATES.pt",
+      "ACAWLR_PPP_P1C_TS_SUITE.json",
+      "ACAWLR_PPP_P1C_TS_SURFACES.png",
+      "ACAWLR_PPP_P1C_TS_TEACHER_PREFLIGHT_REJECTED.json",
+      "ACAWLR_PPP_P1C_TS_TEST_RUN.txt",
+      "acawlr_ppp_p1d_lr.py",
+      "ACAWLR_PPP_P1D_LR_DENSE_PREDICTORS.png",
+      "ACAWLR_PPP_P1D_LR_NOTES.md",
+      "ACAWLR_PPP_P1D_LR_OPTIMIZATION.png",
+      "ACAWLR_PPP_P1D_LR_PROTOCOL.json",
+      "ACAWLR_PPP_P1D_LR_RECOVERY.png",
+      "ACAWLR_PPP_P1D_LR_RESULTS.json",
+      "ACAWLR_PPP_P1D_LR_RUN.txt",
+      "ACAWLR_PPP_P1D_LR_STATES.pt",
+      "ACAWLR_PPP_P1D_LR_SUMMARY.json",
+      "ACAWLR_PPP_P1D_LR_TABLE.md",
+      "ACAWLR_PPP_P1D_LR_TEST_RUN.txt",
+      "ACAWLR_PPP_P1D_OPTIMIZATION_CHECKPOINT_TABLE.md",
+      "ACAWLR_PPP_P1D_OPTIMIZATION_NOTES.md",
+      "ACAWLR_PPP_P1D_OPTIMIZATION_PROTOCOL.json",
+      "ACAWLR_PPP_P1D_OPTIMIZATION_RESULTS.json",
+      "ACAWLR_PPP_P1D_OPTIMIZATION_RUN.txt",
+      "ACAWLR_PPP_P1D_OPTIMIZATION_STATES.pt",
+      "ACAWLR_PPP_P1D_OPTIMIZATION_TEST_RUN.txt",
+      "ACAWLR_PPP_P1D_OPTIMIZATION_TRAJECTORIES.png",
+      "ACAWLR_PPP_P1D_OPTIMIZATION_TRAJECTORY_SUMMARY.json",
+      "acawlr_ppp_synthetic.py",
+      "acawlr_ppp_teacher_student.py",
+      "report_acawlr_ppp_p1c.py",
+      "report_acawlr_ppp_p1d.py",
+      "report_acawlr_ppp_p1d_lr.py",
+      "test_acawlr_ppp_bridge.py",
+      "test_acawlr_ppp_p1.py",
+      "test_acawlr_ppp_p1b.py",
+      "test_acawlr_ppp_p1c_teacher_student.py",
+      "test_acawlr_ppp_p1d_lr.py",
+      "test_acawlr_ppp_p1d_optimization.py",
+      "../scripts/ACAWLR_improved.py"
+    ]
+  },
+  {
+    "path": "mineral_prediction/p1e_identifiability/20260917T112555Z_p1e_v1/COLLAPSED.json",
+    "sha256": "60d91c0785598e78b1c7684a1425cea72710be441a6e8cabbce65fd2597600b4",
+    "characters": 4545,
+    "read_complete": true,
+    "json_top_level": [
+      "unpenalized",
+      "penalized"
+    ]
+  },
+  {
+    "path": "mineral_prediction/p1e_identifiability/20260917T112555Z_p1e_v1/CONVEX_CONTROLS.json",
+    "sha256": "e8564036c0f974177fa8aa526accc80648083ce7613ed96ac55efda3942aee8f",
+    "characters": 15298,
+    "read_complete": true,
+    "json_top_level": [
+      "48",
+      "96",
+      "192",
+      "fidelity"
+    ]
+  },
+  {
+    "path": "mineral_prediction/p1e_identifiability/20260917T112555Z_p1e_v1/EXECUTION_END.json",
+    "sha256": "b4a9e75ce41311ab91a0683dec081ccb9a3c2e4a5c92fcd26728d3fe91d541b3",
+    "characters": 50,
+    "read_complete": true,
+    "json_top_level": [
+      "ended"
+    ]
+  },
+  {
+    "path": "mineral_prediction/p1e_identifiability/20260917T112555Z_p1e_v1/FAIR_COMPARISON.json",
+    "sha256": "27ba320f4b822f3ef2b002b7ccb5f7711a801ec493d9a7802b5c3cc42f477276",
+    "characters": 3841,
+    "read_complete": true,
+    "json_top_level": [
+      "0.01_23",
+      "0.01_71",
+      "global",
+      "global_ridge",
+      "fixed_h",
+      "fixed_h_ridge"
+    ]
+  },
+  {
+    "path": "mineral_prediction/p1e_identifiability/20260917T112555Z_p1e_v1/FINAL_VERIFY.json",
+    "sha256": "494bfb64df021f7d20ef0a89d160f8a5c353ae018aa28f59591a6d503a32b20b",
+    "characters": 323,
+    "read_complete": true,
+    "json_top_level": [
+      "timestamp_utc",
+      "tests_exit_code",
+      "tests_count",
+      "canonical_run_index_events",
+      "paths_resolve",
+      "protocol_hash_unchanged",
+      "frozen_files",
+      "frozen_unchanged",
+      "population_trajectories",
+      "branch_diagnostic_forward_only"
+    ]
+  },
+  {
+    "path": "mineral_prediction/p1e_identifiability/20260917T112555Z_p1e_v1/FROZEN_VERIFY.json",
+    "sha256": "c2ca49ad5eee7525b1a72d2d4d4118017273c8e21f752975c19224e26f49a272",
+    "characters": 2559,
+    "read_complete": true,
+    "json_top_level": [
+      "passed",
+      "files",
+      "time"
+    ]
+  },
+  {
+    "path": "mineral_prediction/p1e_identifiability/20260917T112555Z_p1e_v1/GATES.json",
+    "sha256": "c6a112e9dcc02639f8aaffa95eae10a180958aa7acfbc141aa0674e07815087e",
+    "characters": 855,
+    "read_complete": true,
+    "json_top_level": [
+      "checks",
+      "passed",
+      "failed"
+    ]
+  },
+  {
+    "path": "mineral_prediction/p1e_identifiability/20260917T112555Z_p1e_v1/JACOBIAN.json",
+    "sha256": "258b5ca5ce6cd1950264ad7a6e2b5124afb8b6c5c269d0468575ff81c06516cb",
+    "characters": 102347,
+    "read_complete": true,
+    "json_top_level": [
+      "teacher",
+      "init1011",
+      "collapsed",
+      "grid24_dimension_bound"
+    ]
+  },
+  {
+    "path": "mineral_prediction/p1e_identifiability/20260917T112555Z_p1e_v1/MATH_REVIEW.md",
+    "sha256": "109cc8f38175d1180d43b15fe144878843c6e8505f56287fdb6fba93c8a0c588",
+    "characters": 6328,
+    "read_complete": true
+  },
+  {
+    "path": "mineral_prediction/p1e_identifiability/20260917T112555Z_p1e_v1/NEXT_DECISION.md",
+    "sha256": "db1326e2987f868568ee3d9847d9c11bc485ef77cd9b2e3973cc143fab87babe",
+    "characters": 605,
+    "read_complete": true
+  },
+  {
+    "path": "mineral_prediction/p1e_identifiability/20260917T112555Z_p1e_v1/NOTES.md",
+    "sha256": "5028ed7bbd375b0d321b7e7170e605a8406ffe972175bc98ca81aa07a1dbc2ba",
+    "characters": 3204,
+    "read_complete": true
+  },
+  {
+    "path": "mineral_prediction/p1e_identifiability/20260917T112555Z_p1e_v1/PHASE_STATUS.json",
+    "sha256": "386ed1bd7aeca45a6c5583ebfff6f3c512c247eabfae5f0ef00c9f16072ef2b6",
+    "characters": 959,
+    "read_complete": true,
+    "json_top_level": [
+      "audit",
+      "A",
+      "B",
+      "C",
+      "C_teacher",
+      "C_init1011",
+      "C_collapsed",
+      "D",
+      "run"
+    ]
+  },
+  {
+    "path": "mineral_prediction/p1e_identifiability/20260917T112555Z_p1e_v1/POPULATION_RESULTS.json",
+    "sha256": "01f195deb46dab10dfe2f65a13ee78074a456382da7d22cabcafda9eaf68ec6a",
+    "characters": 112,
+    "read_complete": true,
+    "json_top_level": [
+      "status",
+      "reason",
+      "count",
+      "trajectories"
+    ]
+  },
+  {
+    "path": "mineral_prediction/p1e_identifiability/20260917T112555Z_p1e_v1/PROTOCOL.json",
+    "sha256": "5089b8a2e3e93ae17cc48d4d660f692afa1b0f3448ec777141a2c7a82c438e3e",
+    "characters": 24307,
+    "read_complete": true,
+    "json_top_level": [
+      "version",
+      "frozen_at",
+      "task_spec",
+      "task_sha256",
+      "complete_spec",
+      "grids",
+      "n_ref",
+      "dtype",
+      "threads",
+      "independent_points",
+      "line_scan",
+      "FD_eps",
+      "collapsed_directions",
+      "svd_cutoffs",
+      "whitening_cutoff",
+      "weak_directions",
+      "whitening_convention",
+      "weak_steps",
+      "weak_norm",
+      "convex",
+      "population",
+      "tolerances",
+      "gate_policy",
+      "oracle_floor",
+      "oracle_reduction"
+    ]
+  },
+  {
+    "path": "mineral_prediction/p1e_identifiability/20260917T112555Z_p1e_v1/PROVENANCE.json",
+    "sha256": "f02d7dbfdd71a785b5448674a4a74a1bb1722f56f975431360ef1d2b4d0955d9",
+    "characters": 10549,
+    "read_complete": true,
+    "json_top_level": [
+      "start",
+      "HEAD",
+      "branch",
+      "dirty",
+      "sources",
+      "frozen",
+      "torch",
+      "python",
+      "executable",
+      "threads",
+      "dtype",
+      "command",
+      "protocol_sha256",
+      "teacher_sha256",
+      "init_sha256",
+      "events",
+      "parameter_order",
+      "grid_hashes"
+    ]
+  },
+  {
+    "path": "mineral_prediction/p1e_identifiability/20260917T112555Z_p1e_v1/REPORT_PROVENANCE.json",
+    "sha256": "dbca13934c50ba4ba105b6374768daeacb6b77071ae8f4ff9c47b2c5b4c140b5",
+    "characters": 1220,
+    "read_complete": true,
+    "json_top_level": [
+      "source_sha256",
+      "inputs"
+    ]
+  },
+  {
+    "path": "mineral_prediction/p1e_identifiability/20260917T112555Z_p1e_v1/REPORT_SOURCE_CHANGE.json",
+    "sha256": "6b10ad593eb9e8d2a7478ad8cba9cacbd6ac7568422b2e31b4adec48cf368fa9",
+    "characters": 367,
+    "read_complete": true,
+    "json_top_level": [
+      "reason",
+      "previous_sha256",
+      "current_sha256"
+    ]
+  },
+  {
+    "path": "mineral_prediction/p1e_identifiability/20260917T112555Z_p1e_v1/SOURCE_AUDIT.md",
+    "sha256": "9ad295a2cb8a24117f17d2a31f27a21c5c7a09c902c8f87b94fd4928774aaedf",
+    "characters": 2383,
+    "read_complete": true
+  },
+  {
+    "path": "mineral_prediction/p1e_identifiability/20260917T112555Z_p1e_v1/STRUCTURE.json",
+    "sha256": "4a212ca095ff04397b8e0e0e6ef231d1c505a51235eb907016698c74a64b7aca",
+    "characters": 50344,
+    "read_complete": true,
+    "json_top_level": [
+      "symmetries",
+      "lines",
+      "penalty",
+      "historical",
+      "teacher_identity",
+      "shrink",
+      "smooth_FD",
+      "anchor",
+      "teacher_fidelity",
+      "KL_identity"
+    ]
+  },
+  {
+    "path": "mineral_prediction/p1e_identifiability/20260917T112555Z_p1e_v1/SUMMARY.json",
+    "sha256": "30bc66166fe2800d86bb034a451ed9665b36e763aa62de51dc4fe925c7b2eb54",
+    "characters": 3837,
+    "read_complete": true,
+    "json_top_level": [
+      "run_id",
+      "HEAD",
+      "execution",
+      "scientific_status",
+      "population",
+      "failed_gates",
+      "teacher_penalty",
+      "global192",
+      "fixed_h_ridge192",
+      "historical_fidelity",
+      "frozen"
+    ]
+  },
+  {
+    "path": "mineral_prediction/p1e_identifiability/20260917T112555Z_p1e_v1/logs/branch_diagnostic_unit_check.json",
+    "sha256": "74d32b0421dcd2bbbacc09b470aa91ec69ff481b760b896963278c81349b0b08",
+    "characters": 1444,
+    "read_complete": true,
+    "json_top_level": [
+      "raw_range",
+      "tanh_range",
+      "saturation_fraction",
+      "saturation_definition",
+      "reference_raw",
+      "u_norm",
+      "h",
+      "q",
+      "recovery",
+      "ReLU_active_fractions",
+      "branch_data_gradient"
+    ]
+  },
+  {
+    "path": "mineral_prediction/p1e_identifiability/20260917T112555Z_p1e_v1/logs/runner.log",
+    "sha256": "a6e2d25a27f91c17745bc0460e7733dd8ba88d9d19b4f206be563cbe9edd9472",
+    "characters": 2416,
+    "read_complete": true
+  },
+  {
+    "path": "mineral_prediction/p1e_identifiability/20260917T112555Z_p1e_v1/logs/tests_final.txt",
+    "sha256": "cfb7b01dd9f07229c004f433945b787cd03771e82f323de8fca61ae27ed3d660",
+    "characters": 1984,
+    "read_complete": true
+  },
+  {
+    "path": "mineral_prediction/p1e_identifiability/20260917T112555Z_p1e_v1/raw/source_at_execution/acawlr_ppp_p1e_identifiability.py",
+    "sha256": "eca791e77b77c6acb5ea15266bcfb0df7d59e33e0c0f14d75e807db209f1bfea",
+    "characters": 38024,
+    "read_complete": true,
+    "top_level_definitions": [
+      "utc",
+      "sha",
+      "read",
+      "write",
+      "vec",
+      "setvec",
+      "model",
+      "penalty_parts",
+      "flat_grad",
+      "surface",
+      "target",
+      "pop",
+      "measures",
+      "fidelity",
+      "canonical",
+      "global_functions",
+      "solve_global",
+      "convex_newton",
+      "event",
+      "reserve_output",
+      "protocol",
+      "setup",
+      "load_archives",
+      "compare_surface",
+      "symmetries",
+      "line_diagnostics",
+      "stage_a",
+      "stage_b",
+      "collapsed_check",
+      "HWrapper",
+      "jacobians",
+      "stage_c",
+      "gates",
+      "branch_diagnostics",
+      "population_run",
+      "run_population",
+      "run"
+    ]
+  },
+  {
+    "path": "mineral_prediction/p1e_identifiability/20260917T112555Z_p1e_v1/raw/source_at_execution/report_acawlr_ppp_p1e_identifiability.py",
+    "sha256": "0b576c56f0746a309540300e20bfde10dd18dad978b9bd293d4344470b282187",
+    "characters": 16463,
+    "read_complete": true,
+    "top_level_definitions": [
+      "read",
+      "write",
+      "run"
+    ]
+  },
+  {
+    "path": "mineral_prediction/p1e_identifiability/20260917T112555Z_p1e_v1/raw/source_at_execution/test_acawlr_ppp_p1e_identifiability.py",
+    "sha256": "274bf401d87e3d0d10749d0d340a0640ddf98e4ab8460c03cd5665886225f1fd",
+    "characters": 5883,
+    "read_complete": true,
+    "top_level_definitions": [
+      "DiagnosticTests"
+    ]
+  },
+  {
+    "path": "mineral_prediction/report_acawlr_ppp_p1c.py",
+    "sha256": "0d965546591a160552535134e1a2d3b56e05055d15be55b0e53848c605ff95f1",
+    "characters": 10949,
+    "read_complete": true,
+    "top_level_definitions": [
+      "main"
+    ]
+  },
+  {
+    "path": "mineral_prediction/report_acawlr_ppp_p1d.py",
+    "sha256": "2228faa0dbe3fa148188b0e834b3bbc39d643ea1b9d3fdc6bccfdda626b5b509",
+    "characters": 5008,
+    "read_complete": true,
+    "top_level_definitions": [
+      "main"
+    ]
+  },
+  {
+    "path": "mineral_prediction/report_acawlr_ppp_p1d_lr.py",
+    "sha256": "3ec49fe74171f8196cfc12516f215a9202ae54f5a8d829bdc934cb132c987f3b",
+    "characters": 9464,
+    "read_complete": true,
+    "top_level_definitions": [
+      "summarize",
+      "main"
+    ]
+  },
+  {
+    "path": "mineral_prediction/report_acawlr_ppp_p1e_identifiability.py",
+    "sha256": "1c5a4bed4159d21a49093d00cc3ec836bf5e29fc7556b53086b135800fb94f59",
+    "characters": 16737,
+    "read_complete": true,
+    "top_level_definitions": [
+      "read",
+      "write",
+      "run"
+    ]
+  },
+  {
+    "path": "mineral_prediction/test_acawlr_ppp_bridge.py",
+    "sha256": "d9bba7c1718b176b5c4f87b3e309ace45d28aa72b281da1a0e24b0cded008656",
+    "characters": 8759,
+    "read_complete": true,
+    "top_level_definitions": [
+      "SyntheticP0Tests"
+    ]
+  },
+  {
+    "path": "mineral_prediction/test_acawlr_ppp_p1.py",
+    "sha256": "9f95942afee603daf29b40c4a02f1f7ee1f61ee15f072053b3ec5bae8732bd43",
+    "characters": 9891,
+    "read_complete": true,
+    "top_level_definitions": [
+      "SyntheticP1ATests"
+    ]
+  },
+  {
+    "path": "mineral_prediction/test_acawlr_ppp_p1b.py",
+    "sha256": "33a1cc7fc41752877af977df22b3eba46a34aa0c2033f315db7041b5b2d67436",
+    "characters": 12377,
+    "read_complete": true,
+    "top_level_definitions": [
+      "synthetic_io_only",
+      "SyntheticP1BTests"
+    ]
+  },
+  {
+    "path": "mineral_prediction/test_acawlr_ppp_p1c_teacher_student.py",
+    "sha256": "70302b9cbb7bf092bd15f1e27cb6ea2854138413764c356af45457ff807d153b",
+    "characters": 10879,
+    "read_complete": true,
+    "top_level_definitions": [
+      "TeacherStudentMathTests",
+      "TeacherStudentFullExperiments"
+    ]
+  },
+  {
+    "path": "mineral_prediction/test_acawlr_ppp_p1d_lr.py",
+    "sha256": "030eeb89c48b9c6cecbc5292a5bce7f8f9159147443126d761608aaf1d88ea4a",
+    "characters": 7954,
+    "read_complete": true,
+    "top_level_definitions": [
+      "LearningRateDiagnosticTests"
+    ]
+  },
+  {
+    "path": "mineral_prediction/test_acawlr_ppp_p1d_optimization.py",
+    "sha256": "e54416ffba7f1a34ffea905e9c1e7a76a2b18e7f1e30aa5a1210b63390257fa3",
+    "characters": 8652,
+    "read_complete": true,
+    "top_level_definitions": [
+      "OptimizationDiagnosticTests"
+    ]
+  },
+  {
+    "path": "mineral_prediction/test_acawlr_ppp_p1e_identifiability.py",
+    "sha256": "274bf401d87e3d0d10749d0d340a0640ddf98e4ab8460c03cd5665886225f1fd",
+    "characters": 5883,
+    "read_complete": true,
+    "top_level_definitions": [
+      "DiagnosticTests"
+    ]
+  },
+  {
+    "path": "scripts/ACAWLR_improved.py",
+    "sha256": "80aaf0431b209498303116bf85a76bfba9dd882827549cb26bb783f8a262ba56",
+    "characters": 35379,
+    "read_complete": true,
+    "top_level_definitions": [
+      "Config",
+      "setup_logging",
+      "seed_everything",
+      "ASPNN",
+      "ResBlock",
+      "CBAM",
+      "CAWNN",
+      "ACAWLR",
+      "smart_read_table",
+      "infer_coord_cols",
+      "looks_like_lonlat",
+      "choose_metric_crs",
+      "require_file",
+      "load_and_select_samples",
+      "axial_mean_angle",
+      "line_orientation_and_length",
+      "normalize_sindex_result",
+      "compute_fault_features",
+      "cache_matches_points",
+      "compute_gravity_features",
+      "prepare_features_for_fold",
+      "compute_global_beta_logistic",
+      "make_global_grid",
+      "generate_anisotropic_grid",
+      "predict_prob",
+      "safe_roc_auc",
+      "safe_average_precision",
+      "choose_threshold_from_train",
+      "compute_metrics",
+      "train_one_fold",
+      "run_fivefold_validation",
+      "parse_args",
+      "main"
+    ]
+  }
+]

@@ -1,35 +1,38 @@
-# 当前交接：P1-E 静态诊断已完成，population 被门槛阻断
+# 当前交接：P1-F 已完成，未观察到 population collapse
 
-## 1. 时间与代码快照
-更新时间：2026-09-17T11:31:09.821571+00:00（UTC）；北京时间见会话记录。分支 codex-refactor，HEAD `af633edd655a6e14398f59a222b69d07a347620b`。已跟踪文件 diff 为空；用户已要求将本轮新代码、记录、结果提交并推送；本条记录随该提交发布。原始忽略规则保持不变，明确核对的交付文件会强制加入跟踪。实际提交 SHA 与远端推送结果以 Git 历史和当前发布会话为准。实际 Git 根为 D:/code/ResearchPractice；代码目录为 mineral_prediction。
-源码清单：`docs/project_memory/snapshots/20260917T111349Z_p1e_final_sources.json`；SHA256 `3aa2d0c364884203d99b49134d6a572895db82c2f13f6fffb8bcc92fdd947105`。运行时源码完整副本：`mineral_prediction/p1e_identifiability/20260917T112555Z_p1e_v1/raw/source_at_execution/`。报告程序运行后修订仅涉及路径纠正与图坐标，详见 REPORT_SOURCE_CHANGE.json。
+## 1. 快照
+更新时间 UTC：2026-09-17T12:40:41.676720+00:00。基线 HEAD `bf97a33056911b84240df612d78795006f77446d`，codex-refactor；用户已明确要求直接push；本轮完整交付随本提交发布至origin/codex-refactor，远端完成状态以Git提交核对为准。源码清单 `docs/project_memory/snapshots/20260917T120519Z_p1f_final_sources.json`，SHA256 `7f3d13369d16bea4e928b3333bb3245ca6e96292bc5f0415d8cdf9aed0fd4c5a`。训练源码及protocol在运行前冻结；report独立记录其生成源码hash。
 
-## 2. 研究目标与五层对象
-分别考察 p（归一化密度）、g（标量预测函数）、b（系数场）、beta/u/h（anchored 分解）、theta（网络权重）。以 p/g 为主要恢复对象；小 KL、高相关、branch 非零和 theta 距离不能互相替代。有限节点检查不证明连续域 identification。
+## 2. 五层对象
+p（密度）、g（预测函数）、b（系数场）、beta/u/h（anchored分解）、theta（神经参数）分开。所有四条p/g通过不意味着b/分解/权重全恢复；小KL不是连续域field唯一性证明。
 
 ## 3. 阶段状态
-P1-C、P1-D、P1-D LR：frozen。P1-E 数学/结构、凸对照、Jacobian：COMPLETED（已执行，不等于所有科学门槛通过）。Population：BLOCKED；实际轨迹数 0。整体 scientific_status=numerical_unresolved。唯一失败 gate 为历史 .001/71 终点积分，其他记录的 gate 通过。原14项 no-training tests 通过；最终复核日志见本次 session。
+P1-C/P1-D/P1-D-LR/P1-E：frozen；P1-E v1依旧BLOCKED，训练0。P1-F审计/协议/fresh gate/四条主轨迹/报告：COMPLETED。第二阶段剂量：SKIPPED（预声明条件不满足，不是失败）。所有fresh endpoint fidelity通过；候选“稳定收缩/塌缩机制”在本设置下未获支持。四条共8000更新，无其他训练。
 
-## 4. 重要已确认结论
-1. 【本轮数值诊断】正式 teacher/init 完整状态哈希匹配；teacher-copy gap 与 per-event gradient max 均为0；旧55文件 SHA256 不变。证据：mineral_prediction/p1e_identifiability/20260917T112555Z_p1e_v1/PROVENANCE.json、STRUCTURE.json#/teacher_identity、FROZEN_VERIFY.json。
-2. 【数学推导与数值诊断】anchor 固定 g(0)=0；连续 h 给出 ∇g(0)=beta。sign/ReLU scaling/permutation/axial sign 是表示对称性；任意 readout scaling 不是 exact h scaling。证据：MATH_REVIEW.md、STRUCTURE.json#/symmetries（均在上述运行目录）。
-3. 【本轮数值诊断】192² teacher 矩下 global-only 最优 KL≈0.00633107473，TV≈0.04397763；96→192通过。本值是受控积分近似，不是全解析 truth 积分。证据：CONVEX_CONTROLS.json#/192/global。
-4. 【数学推导与数值诊断】teacher 的 R≈4.511811843；缩小 u 的 penalized population 方向导数为−9，FD通过。全局对照相对 teacher 的 `256 KL+R-R_teacher≈−2.888223`；fixed-h ridge 对照约−3.402710，KL≈0.003038141。因此 exact teacher 不是旧正则目标的最优点；尚不能据此解释每次 collapse。证据：STRUCTURE.json#/shrink、CONVEX_CONTROLS.json#/192。
-5. 【本轮数值诊断】旧 .001/71 step2000 的 |ΔlogZ96→192|≈0.000506155，超过0.0001；24→48 SUM 修正≈11.60365435。证据：STRUCTURE.json#/historical/0.001_71。未放宽门槛或重训。
+## 4. 已确认结果（本轮数值，固定step2000/192²）
+| 初态 | 正则倍数 | KL | TV | q RMS/teacher | b RMSE |
+|---|---:|---:|---:|---:|---:|
+| standard_P0 | 0.0 | 1.33455722e-05 | 0.001921125 | 1.147552 | 0.3124241 |
+| standard_Plambda | 1.0 | 5.35918125e-05 | 0.003262326 | 1.0615 | 0.3029337 |
+| local_P0 | 0.0 | 2.6627589e-11 | 2.518798e-06 | 0.9999657 | 1.511192e-05 |
+| local_Plambda | 1.0 | 4.35696606e-05 | 0.003220352 | 1.062014 | 0.04558534 |
 
-## 5. 未解决解释
-已有条件证明支持正惩罚下全零 branch 的 strict local minimum；不是所有历史 collapsed state 的机制证明。正式 teacher 的 recipe 零线上 h 最大约5.50e−6，说明其在已测点不再严格为零；不能证明所有方向上无零线。Jacobian 谱和有限位移已保存，但未建立固定网络中的 field-changing exact counterexample，也未证明 global identification。
+1. 四条density与predictor gates通过，两个matched pair均CaseC；没有任何monitor点的collapse，未出现预声明稳定收缩。证据 `mineral_prediction/p1f_population/20260917T121240Z_p1f_v1/POPULATION_COMPARISON.json` / SUMMARY.json。
+2. local Plambda的u norm从6.70807降至1.51041，h RMS从0.0578917升至0.229656，q没有塌缩。参数收缩不能代替功能收缩。证据同目录raw/local_Plambda_trajectory.jsonl。
+3. 原正则终点KL比对应P0大约4e-5，支持该固定优化程序下的精度取舍；local从step0起total下降约4.2606、penalty下降约4.2717、qRMS增加约.00936。未把正则bias连接成历史collapse主因。
+4. 96→192 logZ误差均约7–9e-6；独立标准库复算KL/TV/bRMSE一致到1e-12内。协议、训练源码及143项旧文件哈希未变。证据GATES.json/FINAL_VERIFY.json。
+5. 只有localP0通过末200步stationarity；另三条未通过，不能宣称全局优化完成。source/阈值/步数未事后改动。
 
-## 6. 最近实际执行
-run_id：20260917T112555Z_p1e_v1。
-命令（cwd=矿产代码目录）：`python -B acawlr_ppp_p1e_identifiability.py --output-dir p1e_identifiability/20260917T112555Z_p1e_v1 --run-population`；runner exit 0，门槛阻断训练。报告命令 `python -B report_acawlr_ppp_p1e_identifiability.py --input-dir p1e_identifiability/20260917T112555Z_p1e_v1`；exit 0。protocol/provenance 与 logs 均在 `mineral_prediction/p1e_identifiability/20260917T112555Z_p1e_v1/`。
+## 5. 未解决与反证
+“原正则在population中稳定诱导场收缩/塌缩”的强预期在这一个teacher、两个初态、固定2000步下未获支持；不是对所有初态的普遍排除。理论exact-density penalty bias仍成立。标准P0密度好而field误差明显，不能因此证明field结构不可辨识。历史empirical24²/.01等交互未复现，原因仍未决。第二篇论文假设降温，至多Level1/机制未决，不支持Level2/3。
 
-## 7. 下一项最小允许行动
-先审查下一版本是否应让仅涉及旧经验终点的积分失败阻断 fresh population 对照。保留本版 BLOCKED 与原阈值，不自动启动新轨迹或扩大网格。Population 基线可信以后，才考虑同归档data23/init1011、同grid/optimizer/penalty的 population/empirical matched comparison；尚未执行。
+## 6. 最近执行与异常
+run_id=20260917T121240Z_p1f_v1；prepare/train/report均exit0。命令与完整记录见session；protocol/provenance在 `mineral_prediction/p1f_population/20260917T121240Z_p1f_v1/`。10项新无训练测试通过。训练后独立验证首次因OpenMP双运行库冲突退出，已留日志；改用标准库复算通过，未重训、未使用冲突绕过开关。一次验证审批超时后重试成功，不影响训练结果。
+
+## 7. 下一项最小实验（仅建议）
+固定归档data23/init1011，在同48²、Adam .003、2000步做empirical λ0/原λ一对，与本轮standard population pair匹配。先检验目标×正则交互，不扩seed、不改架构/优化器；本轮未执行。若未来endpoint fidelity失败先停解释，不调阈值或用最好checkpoint替代。
 
 ## 8. 阅读顺序
-`docs/project_memory/sessions/20260917T111349Z_p1e.md` → `mineral_prediction/p1e_identifiability/20260917T112555Z_p1e_v1/PROTOCOL.json` / PROVENANCE.json → SUMMARY.json / NOTES.md → raw/ → `mineral_prediction/acawlr_ppp_p1e_identifiability.py`。根 AGENTS 未修改；建议补入口见 session。本轮用户已授权发布；此前仅本地的历史描述保留在原会话中。
+`docs/project_memory/sessions/20260917T120519Z_p1f.md` → `mineral_prediction/p1f_population/20260917T121240Z_p1f_v1/PROTOCOL.json` / PROVENANCE.json → NOTES.md / SUMMARY.json → raw/trajectory/states → 新P1-F源码。根AGENTS未改，历史session/decision/index保留；本轮仅更新当前摘要与追加记录。
 
-最终验收：14项新测试再次通过；canonical索引路径、protocol哈希和55项旧文件哈希通过；参见运行目录 FINAL_VERIFY.json。
-
-发布会话：`docs/project_memory/sessions/20260917T113838Z_github_push.md`。实验基线 HEAD 保持记录为 af633edd，不代表本次发布提交。
+审校补充：q分级未出现收缩，不代表field完全不变。Pλ的(b-beta)范数比匹配P0下降约7.07%/10.71%；标准P0本身相对teacher只有0.5793。原始结果FIELD_NORM_ADDENDUM.json记录区别；未改门槛或CaseC/剂量决定。

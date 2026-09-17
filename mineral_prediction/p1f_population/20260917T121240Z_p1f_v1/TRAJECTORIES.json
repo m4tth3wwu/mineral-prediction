@@ -1,0 +1,29 @@
+{
+  "runs": {
+    "standard_P0": {
+      "jsonl": "mineral_prediction/p1f_population/20260917T121240Z_p1f_v1/raw/standard_P0_trajectory.jsonl",
+      "csv": "mineral_prediction/p1f_population/20260917T121240Z_p1f_v1/raw/standard_P0_trajectory.csv",
+      "observations": "mineral_prediction/p1f_population/20260917T121240Z_p1f_v1/raw/standard_P0_observations.json",
+      "summary": "mineral_prediction/p1f_population/20260917T121240Z_p1f_v1/raw/standard_P0_summary.json"
+    },
+    "standard_Plambda": {
+      "jsonl": "mineral_prediction/p1f_population/20260917T121240Z_p1f_v1/raw/standard_Plambda_trajectory.jsonl",
+      "csv": "mineral_prediction/p1f_population/20260917T121240Z_p1f_v1/raw/standard_Plambda_trajectory.csv",
+      "observations": "mineral_prediction/p1f_population/20260917T121240Z_p1f_v1/raw/standard_Plambda_observations.json",
+      "summary": "mineral_prediction/p1f_population/20260917T121240Z_p1f_v1/raw/standard_Plambda_summary.json"
+    },
+    "local_P0": {
+      "jsonl": "mineral_prediction/p1f_population/20260917T121240Z_p1f_v1/raw/local_P0_trajectory.jsonl",
+      "csv": "mineral_prediction/p1f_population/20260917T121240Z_p1f_v1/raw/local_P0_trajectory.csv",
+      "observations": "mineral_prediction/p1f_population/20260917T121240Z_p1f_v1/raw/local_P0_observations.json",
+      "summary": "mineral_prediction/p1f_population/20260917T121240Z_p1f_v1/raw/local_P0_summary.json"
+    },
+    "local_Plambda": {
+      "jsonl": "mineral_prediction/p1f_population/20260917T121240Z_p1f_v1/raw/local_Plambda_trajectory.jsonl",
+      "csv": "mineral_prediction/p1f_population/20260917T121240Z_p1f_v1/raw/local_Plambda_trajectory.csv",
+      "observations": "mineral_prediction/p1f_population/20260917T121240Z_p1f_v1/raw/local_Plambda_observations.json",
+      "summary": "mineral_prediction/p1f_population/20260917T121240Z_p1f_v1/raw/local_Plambda_summary.json"
+    }
+  },
+  "count": 4
+}

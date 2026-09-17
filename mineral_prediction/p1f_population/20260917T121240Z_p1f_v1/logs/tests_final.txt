@@ -1,0 +1,16 @@
+D:\anaconda\python.exe -B -m unittest discover -s mineral_prediction -p test_acawlr_ppp_p1f_population.py -v
+test_collapse_is_function_level_not_u_norm (test_acawlr_ppp_p1f_population.PopulationTests.test_collapse_is_function_level_not_u_norm) ... ok
+test_dose_requires_complete_matched_fidelity_and_effect (test_acawlr_ppp_p1f_population.PopulationTests.test_dose_requires_complete_matched_fidelity_and_effect) ... ok
+test_forward_formula_identity (test_acawlr_ppp_p1f_population.PopulationTests.test_forward_formula_identity) ... ok
+test_historical_frozen_integrity (test_acawlr_ppp_p1f_population.PopulationTests.test_historical_frozen_integrity) ... ok
+test_kl_identity_and_weight_perturbation (test_acawlr_ppp_p1f_population.PopulationTests.test_kl_identity_and_weight_perturbation) ... ok
+test_legacy_failure_cannot_enter_fresh_gate (test_acawlr_ppp_p1f_population.PopulationTests.test_legacy_failure_cannot_enter_fresh_gate) ... ok
+test_matched_gradient_difference_exact_penalty (test_acawlr_ppp_p1f_population.PopulationTests.test_matched_gradient_difference_exact_penalty) ... ok
+test_mild_and_severe_distinct (test_acawlr_ppp_p1f_population.PopulationTests.test_mild_and_severe_distinct) ... ok
+test_population_teacher_gradient_and_target_detach (test_acawlr_ppp_p1f_population.PopulationTests.test_population_teacher_gradient_and_target_detach) ... ok
+test_same_initializations_and_buffers (test_acawlr_ppp_p1f_population.PopulationTests.test_same_initializations_and_buffers) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 1.737s
+
+OK

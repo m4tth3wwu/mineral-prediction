@@ -1,0 +1,1 @@
+Independent verification attempt1: OMP Error15, duplicate libiomp5md.dll. Training was already complete with exit0. No training replay; no KMP_DUPLICATE_LIB_OK. Attempt2 uses Python math.fsum/log/exp instead of BLAS reductions. First approval for attempt2 timed out before execution; this is its single permitted retry.

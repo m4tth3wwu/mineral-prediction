@@ -1,0 +1,572 @@
+{
+  "run_id": "20260917T121240Z_p1f_v1",
+  "answers": [
+    "P0 达到预定密度恢复门槛的初态：standard、local；standard 与 local 分开报告，local 的保持成功不等于从远处恢复。",
+    "Pλ 在末段满足预声明稳定收缩定义的初态：无。",
+    "观察到持续功能层面 collapse 的轨迹：无；至少一次监测到 collapse 的轨迹：无。",
+    "当前证据判别：regularization_changes_recovery_without_stable_field_shrinkage。这是固定teacher/optimizer/初态下的匹配结果，不自动解释历史经验样本轨迹。"
+  ],
+  "pairs": {
+    "standard": {
+      "case": "C",
+      "fidelity": true,
+      "delta_KL": 4.024624027643142e-05,
+      "q_ratio_P0": 1.147551764834022,
+      "q_ratio_Plambda": 1.0614995002114915,
+      "delta_b_RMSE": -0.009490312871403672,
+      "density_P0": true,
+      "density_Plambda": true,
+      "stable_shrinkage": false,
+      "stable_severe_shrinkage": false,
+      "stable_collapse": false
+    },
+    "local": {
+      "case": "C",
+      "fidelity": true,
+      "delta_KL": 4.356963395935054e-05,
+      "q_ratio_P0": 0.9999657012679883,
+      "q_ratio_Plambda": 1.0620137937802676,
+      "delta_b_RMSE": 0.04557022848065981,
+      "density_P0": true,
+      "density_Plambda": true,
+      "stable_shrinkage": false,
+      "stable_severe_shrinkage": false,
+      "stable_collapse": false
+    }
+  },
+  "evidence": "regularization_changes_recovery_without_stable_field_shrinkage",
+  "all_main_fidelity_passed": true,
+  "trajectory_count": 4,
+  "updates": 8000,
+  "stage2": {
+    "eligible": false,
+    "qualifying_pairs": [],
+    "all_main_complete_and_fidelity": true,
+    "reason": "predeclared paired criterion not met; no dose search"
+  },
+  "small_lambda_normal_starts": [],
+  "second_paper_triage": {
+    "level": "Level 1 上限或机制未决",
+    "reason": "有理论正则偏差，但本轮不足以建立跨初始化稳定病理及历史collapse主因；优先作为第一篇的诊断证据。"
+  },
+  "dynamics": {
+    "standard_P0": {
+      "first_threshold_event": {
+        "first_density_success_step": 771,
+        "delta_total_to_final": -0.02216513785560892,
+        "delta_KL_to_final": -8.658256974847234e-05,
+        "delta_q_RMS_to_final": -0.02137021426804972,
+        "delta_penalty_to_final": 0.0,
+        "scope": "48-grid descriptive first threshold crossing, never checkpoint selection"
+      },
+      "fixed_intervals": [
+        {
+          "start": 0,
+          "end": 100,
+          "delta_total": -12.834164215459168,
+          "delta_KL": -0.050133453966637376,
+          "delta_q_RMS": 0.175228363682184,
+          "delta_penalty": 0.0
+        },
+        {
+          "start": 100,
+          "end": 300,
+          "delta_total": -0.27651601224124533,
+          "delta_KL": -0.0010801406728173646,
+          "delta_q_RMS": 0.021453702125318053,
+          "delta_penalty": 0.0
+        },
+        {
+          "start": 300,
+          "end": 600,
+          "delta_total": -0.28328362493994064,
+          "delta_KL": -0.0011065766599216431,
+          "delta_q_RMS": 0.0004081934037082624,
+          "delta_penalty": 0.0
+        },
+        {
+          "start": 600,
+          "end": 1000,
+          "delta_total": -0.04849410630095008,
+          "delta_KL": -0.00018943010273808625,
+          "delta_q_RMS": -0.00996396687481338,
+          "delta_penalty": 0.0
+        },
+        {
+          "start": 1000,
+          "end": 1500,
+          "delta_total": -0.0067094238033860165,
+          "delta_KL": -2.6208686731976627e-05,
+          "delta_q_RMS": -0.007564886390442005,
+          "delta_penalty": 0.0
+        },
+        {
+          "start": 1500,
+          "end": 2000,
+          "delta_total": -0.002531245082082023,
+          "delta_KL": -9.887676101882903e-06,
+          "delta_q_RMS": -0.007686191005516707,
+          "delta_penalty": 0.0
+        }
+      ],
+      "adjacent_total_down_KL_up_q_down_steps": 0
+    },
+    "standard_Plambda": {
+      "first_threshold_event": {
+        "first_density_success_step": 862,
+        "delta_total_to_final": -0.017643095580297086,
+        "delta_KL_to_final": -4.709824158943832e-05,
+        "delta_q_RMS_to_final": -0.009986602205020872,
+        "delta_penalty_to_final": -0.00558594573327853,
+        "scope": "48-grid descriptive first threshold crossing, never checkpoint selection"
+      },
+      "fixed_intervals": [
+        {
+          "start": 0,
+          "end": 100,
+          "delta_total": -12.50489488628773,
+          "delta_KL": -0.04894758399213295,
+          "delta_q_RMS": 0.15948376273282325,
+          "delta_penalty": 0.02568661569816947
+        },
+        {
+          "start": 100,
+          "end": 300,
+          "delta_total": -0.7822488230058298,
+          "delta_KL": -0.003121158161622617,
+          "delta_q_RMS": 0.02319602560552525,
+          "delta_penalty": 0.016767666369279233
+        },
+        {
+          "start": 300,
+          "end": 600,
+          "delta_total": -0.05802191159000358,
+          "delta_KL": -0.0003058653753509333,
+          "delta_q_RMS": -0.004305859809181051,
+          "delta_penalty": 0.020279624500288557
+        },
+        {
+          "start": 600,
+          "end": 1000,
+          "delta_total": -0.01448753813338044,
+          "delta_KL": -9.672275999328406e-05,
+          "delta_q_RMS": -0.01152188807555643,
+          "delta_penalty": 0.010273488424573124
+        },
+        {
+          "start": 1000,
+          "end": 1500,
+          "delta_total": -0.007666419557608606,
+          "delta_KL": -2.5660097312751873e-05,
+          "delta_q_RMS": -0.003996747471901346,
+          "delta_penalty": -0.0010974346452268524
+        },
+        {
+          "start": 1500,
+          "end": 2000,
+          "delta_total": -0.004187225640180259,
+          "delta_KL": -9.172689022562963e-06,
+          "delta_q_RMS": -0.003849644761552473,
+          "delta_penalty": -0.0018390172502532331
+        }
+      ],
+      "adjacent_total_down_KL_up_q_down_steps": 37
+    },
+    "local_P0": {
+      "first_threshold_event": {
+        "first_density_success_step": 0,
+        "delta_total_to_final": -5.4953829931037035e-06,
+        "delta_KL_to_final": -2.1466339816811342e-08,
+        "delta_q_RMS_to_final": 5.5230524396154834e-05,
+        "delta_penalty_to_final": 0.0,
+        "scope": "48-grid descriptive first threshold crossing, never checkpoint selection"
+      },
+      "fixed_intervals": [
+        {
+          "start": 0,
+          "end": 100,
+          "delta_total": -5.370509825297631e-06,
+          "delta_KL": -2.0978554005068872e-08,
+          "delta_q_RMS": 7.312474498141763e-05,
+          "delta_penalty": 0.0
+        },
+        {
+          "start": 100,
+          "end": 300,
+          "delta_total": -1.1569409252842888e-07,
+          "delta_KL": -4.519300489391753e-10,
+          "delta_q_RMS": -1.969920884145604e-05,
+          "delta_penalty": 0.0
+        },
+        {
+          "start": 300,
+          "end": 600,
+          "delta_total": -6.000391294946894e-09,
+          "delta_KL": -2.3439028495886305e-11,
+          "delta_q_RMS": 2.448838586355251e-06,
+          "delta_penalty": 0.0
+        },
+        {
+          "start": 600,
+          "end": 1000,
+          "delta_total": -4.694356903200969e-09,
+          "delta_KL": -1.8337331653128786e-11,
+          "delta_q_RMS": 4.6235817902084975e-07,
+          "delta_penalty": 0.0
+        },
+        {
+          "start": 1000,
+          "end": 1500,
+          "delta_total": -3.0358933145180345e-09,
+          "delta_KL": -1.1858958259836072e-11,
+          "delta_q_RMS": 1.0598760075142266e-07,
+          "delta_penalty": 0.0
+        },
+        {
+          "start": 1500,
+          "end": 2000,
+          "delta_total": 4.551566235022619e-09,
+          "delta_KL": 1.7779555605557107e-11,
+          "delta_q_RMS": -1.2121961099342826e-06,
+          "delta_penalty": 0.0
+        }
+      ],
+      "adjacent_total_down_KL_up_q_down_steps": 0
+    },
+    "local_Plambda": {
+      "first_threshold_event": {
+        "first_density_success_step": 0,
+        "delta_total_to_final": -4.260609451158871,
+        "delta_KL_to_final": 4.343227589487242e-05,
+        "delta_q_RMS_to_final": 0.009362538994764025,
+        "delta_penalty_to_final": -4.271728113787839,
+        "scope": "48-grid descriptive first threshold crossing, never checkpoint selection"
+      },
+      "fixed_intervals": [
+        {
+          "start": 0,
+          "end": 100,
+          "delta_total": -0.5155244795446379,
+          "delta_KL": 2.4816134995830907e-06,
+          "delta_q_RMS": 0.002401051590660952,
+          "delta_penalty": -0.5161597726006466
+        },
+        {
+          "start": 100,
+          "end": 300,
+          "delta_total": -0.88011392754197,
+          "delta_KL": 1.6100961060416807e-05,
+          "delta_q_RMS": 0.00781999893548746,
+          "delta_penalty": -0.884235773573693
+        },
+        {
+          "start": 300,
+          "end": 600,
+          "delta_total": -0.9971314594117757,
+          "delta_KL": 4.220324735726422e-05,
+          "delta_q_RMS": 0.004849543814235274,
+          "delta_penalty": -1.007935490735056
+        },
+        {
+          "start": 600,
+          "end": 1000,
+          "delta_total": -0.878272543937328,
+          "delta_KL": 5.458472934627423e-05,
+          "delta_q_RMS": 0.004237647407539402,
+          "delta_penalty": -0.8922462346497455
+        },
+        {
+          "start": 1000,
+          "end": 1500,
+          "delta_total": -0.6419418038681215,
+          "delta_KL": -1.5760155971378254e-06,
+          "delta_q_RMS": -0.0031768245421290864,
+          "delta_penalty": -0.6415383438754156
+        },
+        {
+          "start": 1500,
+          "end": 2000,
+          "delta_total": -0.34762523685503766,
+          "delta_KL": -7.03622597715281e-05,
+          "delta_q_RMS": -0.006768878211029977,
+          "delta_penalty": -0.3296124983532823
+        }
+      ],
+      "adjacent_total_down_KL_up_q_down_steps": 524
+    }
+  },
+  "endpoints": {
+    "standard_P0": {
+      "density_success": true,
+      "predictor_success": true,
+      "fidelity": {
+        "errors": {
+          "logZ": 9.076111625816452e-06,
+          "KL": 3.39865984244625e-08,
+          "TV": 1.4421555823089082e-06
+        },
+        "passed": true
+      },
+      "stable_shrinkage": false,
+      "stable_collapse": false,
+      "metrics": {
+        "logZ": 9.221728695839108,
+        "KL": 1.3345572197565048e-05,
+        "TV": 0.0019211248543573574,
+        "centered_g_area_RMSE": 0.005270865400434253,
+        "centered_g_teacher_RMSE": 0.0051655604213706905,
+        "beta_error": 0.07605110334485439,
+        "u_norm": 1.3005864622603829,
+        "theta_norm": 8.431648730458965,
+        "h": {
+          "mean": 0.05810031768517371,
+          "RMS": 0.17305029702431404,
+          "variance": 0.026570758385085203,
+          "max_abs": 0.4306494281419148
+        },
+        "q": {
+          "mean": 0.0005425410348090737,
+          "RMS": 0.17198074805646862,
+          "variance": 0.02957708335128809,
+          "max_abs": 0.6998054827460819
+        },
+        "field_contribution_RMS": 0.22506687359996108,
+        "b_RMSE": 0.3124240535622296,
+        "b_relative_RMSE": 0.7212547212730333,
+        "b_component_RMSE": [
+          0.33780196550972713,
+          0.28479362806473557
+        ],
+        "theta_distance": 10.081180585536014,
+        "q_ratio": 1.147551764834022,
+        "field_ratio": 0.5793348241475615,
+        "canonical": {
+          "defined": true,
+          "v": [
+            -0.5017329348200409,
+            0.8650225789636179
+          ],
+          "angle": 1.6327496727177542,
+          "f_RMSE": 0.5339965752688879
+        },
+        "labels": {
+          "collapse": false,
+          "near_zero": false,
+          "category": "not_shrunken_by_definition",
+          "density_success": true,
+          "predictor_success": true,
+          "spatial_signal_success": true
+        }
+      },
+      "local_probe": {
+        "initial_gap_resolved": true,
+        "interpretation": "local_recovery_probe",
+        "excess_gap_reduction90": true
+      }
+    },
+    "standard_Plambda": {
+      "density_success": true,
+      "predictor_success": true,
+      "fidelity": {
+        "errors": {
+          "logZ": 7.055282976509147e-06,
+          "KL": 1.782965455277008e-07,
+          "TV": 2.206747098149227e-06
+        },
+        "passed": true
+      },
+      "stable_shrinkage": false,
+      "stable_collapse": false,
+      "metrics": {
+        "logZ": 9.219766199265505,
+        "KL": 5.359181247399647e-05,
+        "TV": 0.0032623259704614607,
+        "centered_g_area_RMSE": 0.010393234768634433,
+        "centered_g_teacher_RMSE": 0.010359149719449375,
+        "beta_error": 0.06555217520330957,
+        "u_norm": 0.7762009136584056,
+        "theta_norm": 6.94505196815585,
+        "h": {
+          "mean": 0.11280011478918733,
+          "RMS": 0.26946817694966535,
+          "variance": 0.0598892324921223,
+          "max_abs": 0.6570403079974128
+        },
+        "q": {
+          "mean": -0.0009105571268787334,
+          "RMS": 0.15908430774305365,
+          "variance": 0.025306987855805298,
+          "max_abs": 0.660001241375245
+        },
+        "field_contribution_RMS": 0.2091614451501952,
+        "b_RMSE": 0.3029337406908259,
+        "b_relative_RMSE": 0.699345611245131,
+        "b_component_RMSE": [
+          0.32263021578027395,
+          0.28186423392024573
+        ],
+        "theta_distance": 8.916911343777095,
+        "q_ratio": 1.0614995002114915,
+        "field_ratio": 0.538393354412149,
+        "canonical": {
+          "defined": true,
+          "v": [
+            -0.42439825988021124,
+            0.9054756302687824
+          ],
+          "angle": 1.5454459428785363,
+          "f_RMSE": 0.5284728706766201
+        },
+        "labels": {
+          "collapse": false,
+          "near_zero": false,
+          "category": "not_shrunken_by_definition",
+          "density_success": true,
+          "predictor_success": true,
+          "spatial_signal_success": true
+        }
+      },
+      "local_probe": {
+        "initial_gap_resolved": true,
+        "interpretation": "local_recovery_probe",
+        "excess_gap_reduction90": true
+      }
+    },
+    "local_P0": {
+      "density_success": true,
+      "predictor_success": true,
+      "fidelity": {
+        "errors": {
+          "logZ": 9.221153222327416e-06,
+          "KL": 1.5987211554602254e-14,
+          "TV": 1.2659018823349158e-09
+        },
+        "passed": true
+      },
+      "stable_shrinkage": false,
+      "stable_collapse": false,
+      "metrics": {
+        "logZ": 9.221117240410045,
+        "KL": 2.6627589022609754e-11,
+        "TV": 2.5187975809146495e-06,
+        "centered_g_area_RMSE": 8.588296958283176e-06,
+        "centered_g_teacher_RMSE": 7.297827485414863e-06,
+        "beta_error": 7.878703710212428e-06,
+        "u_norm": 6.707572972440452,
+        "theta_norm": 4.59526351298071,
+        "h": {
+          "mean": 0.03931155881663091,
+          "RMS": 0.057916666954969866,
+          "variance": 0.001808941654579468,
+          "max_abs": 0.18970695387308556
+        },
+        "q": {
+          "mean": 2.50942017723964e-06,
+          "RMS": 0.14986238930995302,
+          "variance": 0.02245873572339073,
+          "max_abs": 0.5681557791112848
+        },
+        "field_contribution_RMS": 0.3884802699209909,
+        "b_RMSE": 1.5111919181345917e-05,
+        "b_relative_RMSE": 3.488701632530112e-05,
+        "b_component_RMSE": [
+          1.911762344317913e-05,
+          9.552836048622894e-06
+        ],
+        "theta_distance": 0.3585344548482715,
+        "q_ratio": 0.9999657012679883,
+        "field_ratio": 0.9999701211449779,
+        "canonical": {
+          "defined": true,
+          "v": [
+            0.894425750276498,
+            0.4472164769351903
+          ],
+          "angle": 3.2215469629053896e-06,
+          "f_RMSE": 2.3047791905571525e-05
+        },
+        "labels": {
+          "collapse": false,
+          "near_zero": false,
+          "category": "not_shrunken_by_definition",
+          "density_success": true,
+          "predictor_success": true,
+          "spatial_signal_success": true
+        }
+      },
+      "local_probe": {
+        "initial_gap_resolved": true,
+        "interpretation": "local_recovery_probe",
+        "excess_gap_reduction90": true
+      }
+    },
+    "local_Plambda": {
+      "density_success": true,
+      "predictor_success": true,
+      "fidelity": {
+        "errors": {
+          "logZ": 9.067263702533523e-06,
+          "KL": 2.2038559421844184e-08,
+          "TV": 2.731579490681743e-07
+        },
+        "passed": true
+      },
+      "stable_shrinkage": false,
+      "stable_collapse": false,
+      "metrics": {
+        "logZ": 9.221273769756683,
+        "KL": 4.356966058693956e-05,
+        "TV": 0.0032203518999346587,
+        "centered_g_area_RMSE": 0.009346533188009671,
+        "centered_g_teacher_RMSE": 0.009332673332810631,
+        "beta_error": 0.06801259458675112,
+        "u_norm": 1.510409244781272,
+        "theta_norm": 4.6383905218557775,
+        "h": {
+          "mean": 0.15282674412896152,
+          "RMS": 0.22965593881968785,
+          "variance": 0.029385836514093124,
+          "max_abs": 0.6710359608920577
+        },
+        "q": {
+          "mean": 0.0002315169180907037,
+          "RMS": 0.15916138364968305,
+          "variance": 0.025332292445198235,
+          "max_abs": 0.6154212059107763
+        },
+        "field_contribution_RMS": 0.3468744531121788,
+        "b_RMSE": 0.045585340399841155,
+        "b_relative_RMSE": 0.10523723000628346,
+        "b_component_RMSE": [
+          0.0405038200655652,
+          0.05015463167879013
+        ],
+        "theta_distance": 3.809744275089987,
+        "q_ratio": 1.0620137937802676,
+        "field_ratio": 0.8928744025307349,
+        "canonical": {
+          "defined": true,
+          "v": [
+            0.9427310654441148,
+            0.3335538011275008
+          ],
+          "angle": 0.12357684846885081,
+          "f_RMSE": 0.05109398236613235
+        },
+        "labels": {
+          "collapse": false,
+          "near_zero": false,
+          "category": "not_shrunken_by_definition",
+          "density_success": true,
+          "predictor_success": true,
+          "spatial_signal_success": true
+        }
+      },
+      "local_probe": {
+        "initial_gap_resolved": true,
+        "interpretation": "local_recovery_probe",
+        "excess_gap_reduction90": false
+      }
+    }
+  }
+}

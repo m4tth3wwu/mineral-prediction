@@ -1,0 +1,11 @@
+{
+  "time": "2026-09-17T12:22:24.325408+00:00",
+  "source_sha256": "0be0e87f0dc7c39782b2bde78a3d4d915d2a29c3ecd62ba7e2553be8fb02d290",
+  "reader_only": true,
+  "input_hashes": {
+    "POPULATION_COMPARISON.json": "1604c8f7ce414e8847cb5fc58e1f7c2e2a71947b2877105c69e3de304264122e",
+    "GATES.json": "e8d6c7d49442ede8269dfab991f90b371cf46e9ca948becae4ad822c7d9c7af2",
+    "DOSE_DECISION.json": "56c61cad279e5dfe32324e7bf4b77ac5fe2fadb59e7dc8ac79b0834dbf510b2f",
+    "CONTROLS.json": "92564b1ad7ac62ce5fecf257ee0a931abd3162317fd09e6075f18d3e99bd5ee8"
+  }
+}

@@ -1,0 +1,246 @@
+{
+  "standard_P0": {
+    "first_threshold_event": {
+      "first_density_success_step": 771,
+      "delta_total_to_final": -0.02216513785560892,
+      "delta_KL_to_final": -8.658256974847234e-05,
+      "delta_q_RMS_to_final": -0.02137021426804972,
+      "delta_penalty_to_final": 0.0,
+      "scope": "48-grid descriptive first threshold crossing, never checkpoint selection"
+    },
+    "fixed_intervals": [
+      {
+        "start": 0,
+        "end": 100,
+        "delta_total": -12.834164215459168,
+        "delta_KL": -0.050133453966637376,
+        "delta_q_RMS": 0.175228363682184,
+        "delta_penalty": 0.0
+      },
+      {
+        "start": 100,
+        "end": 300,
+        "delta_total": -0.27651601224124533,
+        "delta_KL": -0.0010801406728173646,
+        "delta_q_RMS": 0.021453702125318053,
+        "delta_penalty": 0.0
+      },
+      {
+        "start": 300,
+        "end": 600,
+        "delta_total": -0.28328362493994064,
+        "delta_KL": -0.0011065766599216431,
+        "delta_q_RMS": 0.0004081934037082624,
+        "delta_penalty": 0.0
+      },
+      {
+        "start": 600,
+        "end": 1000,
+        "delta_total": -0.04849410630095008,
+        "delta_KL": -0.00018943010273808625,
+        "delta_q_RMS": -0.00996396687481338,
+        "delta_penalty": 0.0
+      },
+      {
+        "start": 1000,
+        "end": 1500,
+        "delta_total": -0.0067094238033860165,
+        "delta_KL": -2.6208686731976627e-05,
+        "delta_q_RMS": -0.007564886390442005,
+        "delta_penalty": 0.0
+      },
+      {
+        "start": 1500,
+        "end": 2000,
+        "delta_total": -0.002531245082082023,
+        "delta_KL": -9.887676101882903e-06,
+        "delta_q_RMS": -0.007686191005516707,
+        "delta_penalty": 0.0
+      }
+    ],
+    "adjacent_total_down_KL_up_q_down_steps": 0
+  },
+  "standard_Plambda": {
+    "first_threshold_event": {
+      "first_density_success_step": 862,
+      "delta_total_to_final": -0.017643095580297086,
+      "delta_KL_to_final": -4.709824158943832e-05,
+      "delta_q_RMS_to_final": -0.009986602205020872,
+      "delta_penalty_to_final": -0.00558594573327853,
+      "scope": "48-grid descriptive first threshold crossing, never checkpoint selection"
+    },
+    "fixed_intervals": [
+      {
+        "start": 0,
+        "end": 100,
+        "delta_total": -12.50489488628773,
+        "delta_KL": -0.04894758399213295,
+        "delta_q_RMS": 0.15948376273282325,
+        "delta_penalty": 0.02568661569816947
+      },
+      {
+        "start": 100,
+        "end": 300,
+        "delta_total": -0.7822488230058298,
+        "delta_KL": -0.003121158161622617,
+        "delta_q_RMS": 0.02319602560552525,
+        "delta_penalty": 0.016767666369279233
+      },
+      {
+        "start": 300,
+        "end": 600,
+        "delta_total": -0.05802191159000358,
+        "delta_KL": -0.0003058653753509333,
+        "delta_q_RMS": -0.004305859809181051,
+        "delta_penalty": 0.020279624500288557
+      },
+      {
+        "start": 600,
+        "end": 1000,
+        "delta_total": -0.01448753813338044,
+        "delta_KL": -9.672275999328406e-05,
+        "delta_q_RMS": -0.01152188807555643,
+        "delta_penalty": 0.010273488424573124
+      },
+      {
+        "start": 1000,
+        "end": 1500,
+        "delta_total": -0.007666419557608606,
+        "delta_KL": -2.5660097312751873e-05,
+        "delta_q_RMS": -0.003996747471901346,
+        "delta_penalty": -0.0010974346452268524
+      },
+      {
+        "start": 1500,
+        "end": 2000,
+        "delta_total": -0.004187225640180259,
+        "delta_KL": -9.172689022562963e-06,
+        "delta_q_RMS": -0.003849644761552473,
+        "delta_penalty": -0.0018390172502532331
+      }
+    ],
+    "adjacent_total_down_KL_up_q_down_steps": 37
+  },
+  "local_P0": {
+    "first_threshold_event": {
+      "first_density_success_step": 0,
+      "delta_total_to_final": -5.4953829931037035e-06,
+      "delta_KL_to_final": -2.1466339816811342e-08,
+      "delta_q_RMS_to_final": 5.5230524396154834e-05,
+      "delta_penalty_to_final": 0.0,
+      "scope": "48-grid descriptive first threshold crossing, never checkpoint selection"
+    },
+    "fixed_intervals": [
+      {
+        "start": 0,
+        "end": 100,
+        "delta_total": -5.370509825297631e-06,
+        "delta_KL": -2.0978554005068872e-08,
+        "delta_q_RMS": 7.312474498141763e-05,
+        "delta_penalty": 0.0
+      },
+      {
+        "start": 100,
+        "end": 300,
+        "delta_total": -1.1569409252842888e-07,
+        "delta_KL": -4.519300489391753e-10,
+        "delta_q_RMS": -1.969920884145604e-05,
+        "delta_penalty": 0.0
+      },
+      {
+        "start": 300,
+        "end": 600,
+        "delta_total": -6.000391294946894e-09,
+        "delta_KL": -2.3439028495886305e-11,
+        "delta_q_RMS": 2.448838586355251e-06,
+        "delta_penalty": 0.0
+      },
+      {
+        "start": 600,
+        "end": 1000,
+        "delta_total": -4.694356903200969e-09,
+        "delta_KL": -1.8337331653128786e-11,
+        "delta_q_RMS": 4.6235817902084975e-07,
+        "delta_penalty": 0.0
+      },
+      {
+        "start": 1000,
+        "end": 1500,
+        "delta_total": -3.0358933145180345e-09,
+        "delta_KL": -1.1858958259836072e-11,
+        "delta_q_RMS": 1.0598760075142266e-07,
+        "delta_penalty": 0.0
+      },
+      {
+        "start": 1500,
+        "end": 2000,
+        "delta_total": 4.551566235022619e-09,
+        "delta_KL": 1.7779555605557107e-11,
+        "delta_q_RMS": -1.2121961099342826e-06,
+        "delta_penalty": 0.0
+      }
+    ],
+    "adjacent_total_down_KL_up_q_down_steps": 0
+  },
+  "local_Plambda": {
+    "first_threshold_event": {
+      "first_density_success_step": 0,
+      "delta_total_to_final": -4.260609451158871,
+      "delta_KL_to_final": 4.343227589487242e-05,
+      "delta_q_RMS_to_final": 0.009362538994764025,
+      "delta_penalty_to_final": -4.271728113787839,
+      "scope": "48-grid descriptive first threshold crossing, never checkpoint selection"
+    },
+    "fixed_intervals": [
+      {
+        "start": 0,
+        "end": 100,
+        "delta_total": -0.5155244795446379,
+        "delta_KL": 2.4816134995830907e-06,
+        "delta_q_RMS": 0.002401051590660952,
+        "delta_penalty": -0.5161597726006466
+      },
+      {
+        "start": 100,
+        "end": 300,
+        "delta_total": -0.88011392754197,
+        "delta_KL": 1.6100961060416807e-05,
+        "delta_q_RMS": 0.00781999893548746,
+        "delta_penalty": -0.884235773573693
+      },
+      {
+        "start": 300,
+        "end": 600,
+        "delta_total": -0.9971314594117757,
+        "delta_KL": 4.220324735726422e-05,
+        "delta_q_RMS": 0.004849543814235274,
+        "delta_penalty": -1.007935490735056
+      },
+      {
+        "start": 600,
+        "end": 1000,
+        "delta_total": -0.878272543937328,
+        "delta_KL": 5.458472934627423e-05,
+        "delta_q_RMS": 0.004237647407539402,
+        "delta_penalty": -0.8922462346497455
+      },
+      {
+        "start": 1000,
+        "end": 1500,
+        "delta_total": -0.6419418038681215,
+        "delta_KL": -1.5760155971378254e-06,
+        "delta_q_RMS": -0.0031768245421290864,
+        "delta_penalty": -0.6415383438754156
+      },
+      {
+        "start": 1500,
+        "end": 2000,
+        "delta_total": -0.34762523685503766,
+        "delta_KL": -7.03622597715281e-05,
+        "delta_q_RMS": -0.006768878211029977,
+        "delta_penalty": -0.3296124983532823
+      }
+    ],
+    "adjacent_total_down_KL_up_q_down_steps": 524
+  }
+}
