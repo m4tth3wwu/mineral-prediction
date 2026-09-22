@@ -1,0 +1,65 @@
+{
+  "pretraining": {
+    "checks": {
+      "data_hash": true,
+      "data_bit_exact_P1D": true,
+      "data_statistics": true,
+      "initialization": true,
+      "teacher": true,
+      "n_dtype": true,
+      "frozen": true,
+      "environment": true,
+      "grid48": true,
+      "grid96": true,
+      "grid192": true,
+      "regularization_gradient": true,
+      "objective_formula": true,
+      "streaming_gradient": true,
+      "streaming_value": true,
+      "FD": true,
+      "initial_restored": true,
+      "initial_metrics": true,
+      "old48_initial_objective": true,
+      "initial_fidelity": true,
+      "P1H_inputs": true,
+      "P1H_initial_objective": true,
+      "P1H_verified": true
+    },
+    "passed": true,
+    "failed": []
+  },
+  "endpoints": {
+    "lr0.003_empirical_P0": {
+      "errors": {
+        "logZ": 4.115091780221292e-06,
+        "KL": 3.7648021482539207e-06,
+        "TV": 1.7119797896536504e-06
+      },
+      "passed": true
+    },
+    "lr0.003_empirical_Plambda": {
+      "errors": {
+        "logZ": 5.902520463507699e-06,
+        "KL": 1.0370102945245208e-05,
+        "TV": 1.1277851635627112e-05
+      },
+      "passed": true
+    },
+    "lr0.001_empirical_P0": {
+      "errors": {
+        "logZ": 7.4326413965764004e-06,
+        "KL": 4.761670792774453e-06,
+        "TV": 2.9310884669397907e-06
+      },
+      "passed": true
+    },
+    "lr0.001_empirical_Plambda": {
+      "errors": {
+        "logZ": 3.2155302012171205e-06,
+        "KL": 1.9190329378915294e-06,
+        "TV": 1.5776511234355528e-06
+      },
+      "passed": true
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "mineral_prediction/p1h_quadrature/20260922T072637Z_p1h_train96/raw/states/empirical_P0_2000.pt": "dfa7ad9842c4f943b027f3e6ad1ecc4e75a517d721a46fbaa53d529772bab208",
+  "mineral_prediction/p1h_quadrature/20260922T072637Z_p1h_train96/raw/states/empirical_Plambda_2000.pt": "b9328a99c7dbc53ee5f2a3b43464e3fedbe579ab6457ed12bc28654553730a56",
+  "mineral_prediction/p1i_learning_rate/20260922T082159Z_p1i_lr001/raw/states/empirical_P0_2000.pt": "4ef98047de0651551664fd0a885b83bee8ac24d025804584794d826e13c59f90",
+  "mineral_prediction/p1i_learning_rate/20260922T082159Z_p1i_lr001/raw/states/empirical_Plambda_2000.pt": "de90050f272e8ea8d1112b0cb9fea8a1cf105184b42895d42b4d1d95a62eba71"
+}

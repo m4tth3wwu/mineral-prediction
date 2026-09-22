@@ -1,0 +1,18 @@
+{
+  "empirical_P0": {
+    "label": "empirical_P0",
+    "lambda_multiplier": 0.0,
+    "steps": 2000,
+    "seconds": 565.4509723999654,
+    "final_objective": 2318.63422301536,
+    "checkpoints": 81
+  },
+  "empirical_Plambda": {
+    "label": "empirical_Plambda",
+    "lambda_multiplier": 1.0,
+    "steps": 2000,
+    "seconds": 572.0028052999987,
+    "final_objective": 2328.374695671979,
+    "checkpoints": 86
+  }
+}

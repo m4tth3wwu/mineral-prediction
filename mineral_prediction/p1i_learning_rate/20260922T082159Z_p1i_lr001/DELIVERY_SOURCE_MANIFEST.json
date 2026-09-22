@@ -1,0 +1,6 @@
+{
+  "mineral_prediction/evaluate_acawlr_ppp_p1i_learning_rate.py": "88dd321c7258ca38d29b4f110d21388d00dc75993d4080e693b62d3ad028a030",
+  "mineral_prediction/verify_acawlr_ppp_p1i_learning_rate.py": "630778af23ddba78b27265a7a03e177b90b8283a83d65df1422e435b22e46f51",
+  "mineral_prediction/report_acawlr_ppp_p1i_learning_rate.py": "c994690f552c5a53ada840d898270179856cd65f740e726ef006a609f1347467",
+  "mineral_prediction/report_acawlr_ppp_p1g_empirical.py": "f958065380a952e24d021590eca7e34c1c8994651037525fc816f8e68c92faa9"
+}

@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "method": "AST comparison before prepare: trajectory identical after substituting Adam lr .001 with .003",
+  "only_training_change": "learning_rate",
+  "old": 0.003,
+  "new": 0.001
+}

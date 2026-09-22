@@ -1,8 +1,3 @@
-# 当前交接：P1-I完成，较小lr改善固定终点结果但仍未通过stationarity
-
-最新run：mineral_prediction/p1i_learning_rate/20260922T082159Z_p1i_lr001
-基准：88bdd5090fff343263d1c7b964c8578bc5500273，codex-refactor。完整证据准备commit并普通push，远端最终状态以Git核对为准。
-
 # P1-I 完整结论：较小学习率改善固定终点恢复并减少大幅波动，但尚未解决收敛问题
 
 固定训练积分96²、data23/init1011、teacher、Adam其他设置、lambda0/原lambda配对及每条2000步，只将lr从.003改为.001。新增2条轨迹共4000更新；对照P1-H，完成四终点384²/768²统一评价、两轮逐步更新诊断、新终点梯度和候选完整位移诊断、报告及独立核验。没有追加步数、扫描lr或选最佳checkpoint。
@@ -54,7 +49,4 @@ p由归一化g决定；b=beta+u*h是向量场，theta是神经网络参数。密
 
 训练函数AST核对证明，除Adam lr字面值外与P1-H相同。训练前冻结协议与训练源码，训练期间冻结评价/报告/核验源码。4张图已目视检查，无缺图或裁切。散点图红色为反转、蓝色为其他更新，各面板坐标范围不同，比较幅度须读取刻度。
 
-完整表格见[REPORT.md](../../mineral_prediction/p1i_learning_rate/20260922T082159Z_p1i_lr001/REPORT.md)，配对差异见[COMPARISON.json](../../mineral_prediction/p1i_learning_rate/20260922T082159Z_p1i_lr001/COMPARISON.json)，完整指标见[ENDPOINTS.json](../../mineral_prediction/p1i_learning_rate/20260922T082159Z_p1i_lr001/ENDPOINTS.json)，运行与证据映射见[EXECUTION.md](../../mineral_prediction/p1i_learning_rate/20260922T082159Z_p1i_lr001/EXECUTION.md)。完整结果提交并普通push至codex-refactor；发布状态以Git远端核对为准。
-
-
-P1-C至P1-H原结果、旧脚本、旧pointer与旧门槛全部冻结。P1-E原BLOCKED与P1-F/P1-G/P1-H结论不回改。P1-I只有本轮预声明学习率对照，不包含更长预算续训。
+完整表格见[REPORT.md](REPORT.md)，配对差异见[COMPARISON.json](COMPARISON.json)，完整指标见[ENDPOINTS.json](ENDPOINTS.json)，运行与证据映射见[EXECUTION.md](EXECUTION.md)。完整结果提交并普通push至codex-refactor；发布状态以Git远端核对为准。

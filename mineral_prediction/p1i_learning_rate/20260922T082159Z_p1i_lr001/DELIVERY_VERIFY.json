@@ -1,0 +1,18 @@
+{
+  "time": "2026-09-22T08:46:56.736164+00:00",
+  "passed": true,
+  "checks": {
+    "SOURCE_MANIFEST.json": true,
+    "DELIVERY_SOURCE_MANIFEST.json": true,
+    "EVALUATION_SOURCE_MANIFEST.json": true,
+    "protocol": true,
+    "historical": true,
+    "verified": true
+  },
+  "figures_visually_checked": [
+    "four_endpoints768.png",
+    "independent_monitor192.png",
+    "same_objective_dynamics.png",
+    "four_trajectory_linearity.png"
+  ]
+}
