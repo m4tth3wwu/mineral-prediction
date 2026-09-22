@@ -1,0 +1,8 @@
+{
+  "session_id": "20260922T054836Z_p1g",
+  "run_id": "20260922T054836Z_p1g_v1",
+  "output_dir": "mineral_prediction/p1g_empirical/20260922T054836Z_p1g_v1",
+  "frozen_manifest": "docs/project_memory/snapshots/20260922T054836Z_p1g_frozen_before.json",
+  "prompt_path": "docs/project_memory/prompts/20260922T054836Z_p1g.md",
+  "base_commit": "28b0bd3c14e9b3ff3b92fccbb0ba1e92de4a0bf7"
+}

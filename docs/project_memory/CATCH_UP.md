@@ -1,38 +1,37 @@
-# 当前交接：P1-F 已完成，未观察到 population collapse
+# 当前交接：P1-G 完成；未复现 collapse，数值保真度未解决
 
-## 1. 快照
-更新时间 UTC：2026-09-17T12:40:41.676720+00:00。基线 HEAD `bf97a33056911b84240df612d78795006f77446d`，codex-refactor；用户已明确要求直接push；本轮完整交付随本提交发布至origin/codex-refactor，远端完成状态以Git提交核对为准。源码清单 `docs/project_memory/snapshots/20260917T120519Z_p1f_final_sources.json`，SHA256 `7f3d13369d16bea4e928b3333bb3245ca6e96292bc5f0415d8cdf9aed0fd4c5a`。训练源码及protocol在运行前冻结；report独立记录其生成源码hash。
+本轮基线 codex-refactor / 28b0bd3c14e9b3ff3b92fccbb0ba1e92de4a0bf7。P1-C/D/D-LR/E/F全冻结，305文件哈希未变。
+本轮完整代码、结果与交接记录随本提交发布至既有origin/codex-refactor；实际远端状态以Git核对为准。用户已在P1-G任务中明确授权普通push，不改main。
 
-## 2. 五层对象
-p（密度）、g（预测函数）、b（系数场）、beta/u/h（anchored分解）、theta（神经参数）分开。所有四条p/g通过不意味着b/分解/权重全恢复；小KL不是连续域field唯一性证明。
+五层对象分别为p、g、b、beta/u/h、theta。不得将参数收缩、未collapse或更低经验目标等同于恢复成功。
 
-## 3. 阶段状态
-P1-C/P1-D/P1-D-LR/P1-E：frozen；P1-E v1依旧BLOCKED，训练0。P1-F审计/协议/fresh gate/四条主轨迹/报告：COMPLETED。第二阶段剂量：SKIPPED（预声明条件不满足，不是失败）。所有fresh endpoint fidelity通过；候选“稳定收缩/塌缩机制”在本设置下未获支持。四条共8000更新，无其他训练。
+## 实际执行
 
-## 4. 已确认结果（本轮数值，固定step2000/192²）
-| 初态 | 正则倍数 | KL | TV | q RMS/teacher | b RMSE |
-|---|---:|---:|---:|---:|---:|
-| standard_P0 | 0.0 | 1.33455722e-05 | 0.001921125 | 1.147552 | 0.3124241 |
-| standard_Plambda | 1.0 | 5.35918125e-05 | 0.003262326 | 1.0615 | 0.3029337 |
-| local_P0 | 0.0 | 2.6627589e-11 | 2.518798e-06 | 0.9999657 | 1.511192e-05 |
-| local_Plambda | 1.0 | 4.35696606e-05 | 0.003220352 | 1.062014 | 0.04558534 |
+run: mineral_prediction/p1g_empirical/20260922T054836Z_p1g_v1
+session: docs/project_memory/sessions/20260922T054836Z_p1g.md
+仅新增empirical_P0/empirical_Plambda，严格恢复P1-D/LR data23/init1011；相同teacher、Adam .003、float64/CPU1线程、48²训练/96²监测/192²终点。各2000更新，共4000，2001行轨迹/81次监测；模型与Adam checkpoints为595/1238份。未重跑历史、未加seed/dose、未延长预算、未进入真实数据。
+20项训练前gate通过；训练exit0；32项独立验证通过、4项无训练解释测试通过。初次代码写入审核超时未执行，按允许重试一次成功；无训练失败/重试。原始日志与失败的科学门槛完整保存。
 
-1. 四条density与predictor gates通过，两个matched pair均CaseC；没有任何monitor点的collapse，未出现预声明稳定收缩。证据 `mineral_prediction/p1f_population/20260917T121240Z_p1f_v1/POPULATION_COMPARISON.json` / SUMMARY.json。
-2. local Plambda的u norm从6.70807降至1.51041，h RMS从0.0578917升至0.229656，q没有塌缩。参数收缩不能代替功能收缩。证据同目录raw/local_Plambda_trajectory.jsonl。
-3. 原正则终点KL比对应P0大约4e-5，支持该固定优化程序下的精度取舍；local从step0起total下降约4.2606、penalty下降约4.2717、qRMS增加约.00936。未把正则bias连接成历史collapse主因。
-4. 96→192 logZ误差均约7–9e-6；独立标准库复算KL/TV/bRMSE一致到1e-12内。协议、训练源码及143项旧文件哈希未变。证据GATES.json/FINAL_VERIFY.json。
-5. 只有localP0通过末200步stationarity；另三条未通过，不能宣称全局优化完成。source/阈值/步数未事后改动。
+## 2×2固定终点（192²）
 
-## 5. 未解决与反证
-“原正则在population中稳定诱导场收缩/塌缩”的强预期在这一个teacher、两个初态、固定2000步下未获支持；不是对所有初态的普遍排除。理论exact-density penalty bias仍成立。标准P0密度好而field误差明显，不能因此证明field结构不可辨识。历史empirical24²/.01等交互未复现，原因仍未决。第二篇论文假设降温，至多Level1/机制未决，不支持Level2/3。
+| objective / λ | KL | q/teacher | field/teacher | collapse | stationarity |
+|---|---:|---:|---:|---|---|
+| population / 0 | 1.33455722e-5 | 1.147552 | .579335 | 未观察到 | 未通过 |
+| population / 原λ | 5.35918125e-5 | 1.061500 | .538393 | 未观察到 | 未通过 |
+| empirical / 0 | .169594595 | 7.156446 | 3.983157 | 未观察到 | 未通过 |
+| empirical / 原λ | .088306149 | 3.539910 | 2.329680 | 未观察到 | 未通过 |
 
-## 6. 最近执行与异常
-run_id=20260917T121240Z_p1f_v1；prepare/train/report均exit0。命令与完整记录见session；protocol/provenance在 `mineral_prediction/p1f_population/20260917T121240Z_p1f_v1/`。10项新无训练测试通过。训练后独立验证首次因OpenMP双运行库冲突退出，已留日志；改用标准库复算通过，未重训、未使用冲突绕过开关。一次验证审批超时后重试成功，不影响训练结果。
+## 已确认与解释限制
 
-## 7. 下一项最小实验（仅建议）
-固定归档data23/init1011，在同48²、Adam .003、2000步做empirical λ0/原λ一对，与本轮standard population pair匹配。先检验目标×正则交互，不扩seed、不改架构/优化器；本轮未执行。若未来endpoint fidelity失败先停解释，不调阈值或用最好checkpoint替代。
+empirical原λ相对λ0使192² KL下降47.93%、q下降50.54%、field下降41.51%，方向是压低过大支路幅度，未达到P1-F相对teacher的shrink/collapse标准。KL的empirical效应=-.081288447，population效应=+4.024624e-5，interaction=-.081328693；只有一个固定dataset/init，不是统计显著性或最优解结论。
+原λ并未全面改善优化：gradient峰值2320.57→2978.12，单步total绝对跳变>1次数273→353。两条empirical均未恢复teacher、未stationary。没有预声明objective conflict（步级48²、监测96²和持续条件均未触发）；相反经验目标下降而teacher KL/g误差上升的监测区间为46/36个。
+两条empirical的96→192 logZ误差分别.000602173/.000112211，都大于1e-4。KL/TV一致性条件通过但不豁免logZ失败。必须保留numerically_unresolved；192²数值和interaction只能作当前离散评估。没有放宽阈值/重训。48→192经验目标修正约+.844975/+.164026。
+当前更支持经验目标拟合与teacher恢复脱钩，伴随优化振荡和积分误差；没有证明其各自因果贡献。原λ在这个终点减轻错误幅度扩张，不支持正则稳定诱导collapse或结构性不可辨识性强机制。只符合CaseC“未复现collapse”部分，不能说两条恢复正常。历史24²/.01 collapse仍未解释。
 
-## 8. 阅读顺序
-`docs/project_memory/sessions/20260917T120519Z_p1f.md` → `mineral_prediction/p1f_population/20260917T121240Z_p1f_v1/PROTOCOL.json` / PROVENANCE.json → NOTES.md / SUMMARY.json → raw/trajectory/states → 新P1-F源码。根AGENTS未改，历史session/decision/index保留；本轮仅更新当前摘要与追加记录。
+## 唯一下一步建议（没有执行）
 
-审校补充：q分级未出现收缩，不代表field完全不变。Pλ的(b-beta)范数比匹配P0下降约7.07%/10.71%；标准P0本身相对teacher只有0.5793。原始结果FIELD_NORM_ADDENDUM.json记录区别；未改门槛或CaseC/剂量决定。
+固定两份step2000模型，不训练、不改参数，只做192²/384²独立积分一致性检查，沿用容差。先解决终点评价可信度，不自动测试lr=.01、24²、额外seed或新模型。
+
+## 阅读顺序
+
+本轮session → PROTOCOL/PROVENANCE/GATES → NOTES/SUMMARY/OBJECTIVE_REGULARIZATION_INTERACTION/NUMERICAL_FIDELITY → TRAJECTORY_DYNAMICS/raw/states → FINAL_VERIFY。训练source manifest在SOURCE_MANIFEST，报告/验证/测试的最终manifest在DELIVERY_SOURCE_MANIFEST；P1-F与旧文件不改。

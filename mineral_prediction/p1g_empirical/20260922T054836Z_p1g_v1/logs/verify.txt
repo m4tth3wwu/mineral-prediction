@@ -1,0 +1,113 @@
+{
+  "passed": true,
+  "checks": {
+    "frozen": true,
+    "source_frozen": true,
+    "protocol_frozen": true,
+    "inputs_frozen": true,
+    "exactly_two_runs": true,
+    "matched_states": true,
+    "empirical_P0_step_sequence": true,
+    "empirical_P0_monitor_sequence": true,
+    "empirical_P0_loss_accounting": true,
+    "empirical_P0_transition_checkpoints": true,
+    "empirical_P0_optimizer_states": true,
+    "empirical_P0_actual_updates": true,
+    "empirical_P0_initial_archive_exact": true,
+    "empirical_P0_legacy_endpoint_objective_gradient": true,
+    "empirical_P0_surface96": true,
+    "empirical_P0_independent_math96": true,
+    "empirical_P0_surface192": true,
+    "empirical_P0_independent_math192": true,
+    "empirical_P0_empirical192": true,
+    "empirical_Plambda_step_sequence": true,
+    "empirical_Plambda_monitor_sequence": true,
+    "empirical_Plambda_loss_accounting": true,
+    "empirical_Plambda_transition_checkpoints": true,
+    "empirical_Plambda_optimizer_states": true,
+    "empirical_Plambda_actual_updates": true,
+    "empirical_Plambda_initial_archive_exact": true,
+    "empirical_Plambda_legacy_endpoint_objective_gradient": true,
+    "empirical_Plambda_surface96": true,
+    "empirical_Plambda_independent_math96": true,
+    "empirical_Plambda_surface192": true,
+    "empirical_Plambda_independent_math192": true,
+    "empirical_Plambda_empirical192": true
+  },
+  "failed": [],
+  "details": {
+    "empirical_P0": {
+      "checkpoint_count": 595,
+      "max_actual_update_error": 0.0,
+      "endpoint_gradient_error": 0.0,
+      "independent_endpoints": {
+        "96": {
+          "values": {
+            "logZ": 9.05620795524503,
+            "KL": 0.1690640926239464,
+            "TV": 0.15394988106524152,
+            "centered_g_area_RMSE": 0.9098205151467095,
+            "centered_g_teacher_RMSE": 0.7815319056376553,
+            "b_RMSE": 1.0225033772641097,
+            "q_ratio": 7.156717263487138,
+            "field_ratio": 3.983172511942439
+          },
+          "max_error": 2.220446049250313e-16
+        },
+        "192": {
+          "values": {
+            "logZ": 9.056810128080668,
+            "KL": 0.16959459549494582,
+            "TV": 0.1541704760109827,
+            "centered_g_area_RMSE": 0.9099390138034178,
+            "centered_g_teacher_RMSE": 0.7817418498107909,
+            "b_RMSE": 1.0225968914452108,
+            "q_ratio": 7.156445576118865,
+            "field_ratio": 3.9831573139059913
+          },
+          "max_error": 2.220446049250313e-16
+        }
+      }
+    },
+    "empirical_Plambda": {
+      "checkpoint_count": 1238,
+      "max_actual_update_error": 0.0,
+      "endpoint_gradient_error": 0.0,
+      "independent_endpoints": {
+        "96": {
+          "values": {
+            "logZ": 9.097358376450272,
+            "KL": 0.08839651852056463,
+            "TV": 0.14253229781860105,
+            "centered_g_area_RMSE": 0.4366406393181059,
+            "centered_g_teacher_RMSE": 0.44420309774869504,
+            "b_RMSE": 0.6099850937098498,
+            "q_ratio": 3.5425616241851436,
+            "field_ratio": 2.332597697547788
+          },
+          "max_error": 5.551115123125783e-17
+        },
+        "192": {
+          "values": {
+            "logZ": 9.097246165141105,
+            "KL": 0.08830614855958174,
+            "TV": 0.142319010876316,
+            "centered_g_area_RMSE": 0.43634669273012683,
+            "centered_g_teacher_RMSE": 0.4439249895467211,
+            "b_RMSE": 0.6093872003833872,
+            "q_ratio": 3.539910039901988,
+            "field_ratio": 2.3296800225489807
+          },
+          "max_error": 0.0
+        }
+      }
+    }
+  },
+  "frozen": {
+    "time": "2026-09-22T06:10:35.447368+00:00",
+    "count": 305,
+    "passed": true,
+    "changed": []
+  },
+  "note": "Execution/integrity verification is separate from endpoint fidelity and scientific recovery gates. No optimizer updates. Independent math.fsum/log/exp reductions avoid the P1-F postprocessing OpenMP conflict."
+}

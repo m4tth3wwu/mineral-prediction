@@ -1,0 +1,46 @@
+{
+  "pretraining": {
+    "checks": {
+      "data_hash": true,
+      "data_bit_exact_P1D": true,
+      "data_statistics": true,
+      "initialization": true,
+      "teacher": true,
+      "n_dtype": true,
+      "frozen": true,
+      "environment": true,
+      "grid48": true,
+      "grid96": true,
+      "grid192": true,
+      "matched_initial_states": true,
+      "gradient_difference": true,
+      "legacy_gradient": true,
+      "finite_sample_formula": true,
+      "not_population": true,
+      "event_dependence": true,
+      "finite_difference": true,
+      "initial_fidelity": true,
+      "initial_metrics_match_population": true
+    },
+    "passed": true,
+    "failed": []
+  },
+  "endpoints": {
+    "empirical_P0": {
+      "errors": {
+        "logZ": 0.0006021728356380152,
+        "KL": 0.0005305028709994275,
+        "TV": 0.0002205949457411427
+      },
+      "passed": false
+    },
+    "empirical_Plambda": {
+      "errors": {
+        "logZ": 0.00011221130916716504,
+        "KL": 9.036996098288341e-05,
+        "TV": 0.0002132869422850625
+      },
+      "passed": false
+    }
+  }
+}

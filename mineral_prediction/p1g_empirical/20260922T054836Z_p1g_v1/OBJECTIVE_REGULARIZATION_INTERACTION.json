@@ -1,0 +1,282 @@
+{
+  "definition": "(empirical_lambda-empirical_0)-(population_lambda-population_0)",
+  "metrics": {
+    "KL": {
+      "values": {
+        "standard_P0": 1.3345572197565048e-05,
+        "standard_Plambda": 5.359181247399647e-05,
+        "empirical_P0": 0.16959459549494582,
+        "empirical_Plambda": 0.08830614855958174
+      },
+      "empirical_effect": -0.08128844693536408,
+      "population_effect": 4.024624027643142e-05,
+      "interaction": -0.08132869317564051
+    },
+    "TV": {
+      "values": {
+        "standard_P0": 0.0019211248543573574,
+        "standard_Plambda": 0.0032623259704614607,
+        "empirical_P0": 0.15417047601098266,
+        "empirical_Plambda": 0.142319010876316
+      },
+      "empirical_effect": -0.011851465134666672,
+      "population_effect": 0.0013412011161041033,
+      "interaction": -0.013192666250770776
+    },
+    "centered_g_area_RMSE": {
+      "values": {
+        "standard_P0": 0.005270865400434253,
+        "standard_Plambda": 0.010393234768634433,
+        "empirical_P0": 0.9099390138034178,
+        "empirical_Plambda": 0.43634669273012683
+      },
+      "empirical_effect": -0.47359232107329097,
+      "population_effect": 0.00512236936820018,
+      "interaction": -0.4787146904414912
+    },
+    "centered_g_teacher_RMSE": {
+      "values": {
+        "standard_P0": 0.0051655604213706905,
+        "standard_Plambda": 0.010359149719449375,
+        "empirical_P0": 0.7817418498107909,
+        "empirical_Plambda": 0.4439249895467211
+      },
+      "empirical_effect": -0.33781686026406976,
+      "population_effect": 0.005193589298078684,
+      "interaction": -0.34301044956214843
+    },
+    "q_ratio": {
+      "values": {
+        "standard_P0": 1.147551764834022,
+        "standard_Plambda": 1.0614995002114915,
+        "empirical_P0": 7.156445576118865,
+        "empirical_Plambda": 3.539910039901988
+      },
+      "empirical_effect": -3.6165355362168774,
+      "population_effect": -0.08605226462253057,
+      "interaction": -3.530483271594347
+    },
+    "field_ratio": {
+      "values": {
+        "standard_P0": 0.5793348241475615,
+        "standard_Plambda": 0.538393354412149,
+        "empirical_P0": 3.9831573139059913,
+        "empirical_Plambda": 2.3296800225489807
+      },
+      "empirical_effect": -1.6534772913570106,
+      "population_effect": -0.04094146973541257,
+      "interaction": -1.6125358216215981
+    },
+    "b_RMSE": {
+      "values": {
+        "standard_P0": 0.3124240535622296,
+        "standard_Plambda": 0.3029337406908259,
+        "empirical_P0": 1.0225968914452106,
+        "empirical_Plambda": 0.6093872003833872
+      },
+      "empirical_effect": -0.41320969106182337,
+      "population_effect": -0.009490312871403672,
+      "interaction": -0.4037193781904197
+    },
+    "beta_error": {
+      "values": {
+        "standard_P0": 0.07605110334485439,
+        "standard_Plambda": 0.06555217520330957,
+        "empirical_P0": 0.5287028745873071,
+        "empirical_Plambda": 0.4689522223662395
+      },
+      "empirical_effect": -0.059750652221067624,
+      "population_effect": -0.010498928141544822,
+      "interaction": -0.0492517240795228
+    },
+    "u_norm": {
+      "values": {
+        "standard_P0": 1.3005864622603829,
+        "standard_Plambda": 0.7762009136584056,
+        "empirical_P0": 5.88519462648963,
+        "empirical_Plambda": 2.895054502543322
+      },
+      "empirical_effect": -2.990140123946308,
+      "population_effect": -0.5243855486019773,
+      "interaction": -2.465754575344331
+    },
+    "theta_norm": {
+      "values": {
+        "standard_P0": 8.431648730458965,
+        "standard_Plambda": 6.94505196815585,
+        "empirical_P0": 26.09967866435179,
+        "empirical_Plambda": 18.686994863324703
+      },
+      "empirical_effect": -7.412683801027086,
+      "population_effect": -1.4865967623031153,
+      "interaction": -5.926087038723971
+    },
+    "gradient_max": {
+      "values": {
+        "standard_P0": 129.93418126475868,
+        "standard_Plambda": 57.45370826884673,
+        "empirical_P0": 2320.573381344368,
+        "empirical_Plambda": 2978.118056428833
+      },
+      "empirical_effect": 657.5446750844649,
+      "population_effect": -72.48047299591195,
+      "interaction": 730.0251480803768
+    },
+    "gradient_max_after300": {
+      "values": {
+        "standard_P0": 129.93418126475868,
+        "standard_Plambda": 57.45370826884673,
+        "empirical_P0": 2320.573381344368,
+        "empirical_Plambda": 2978.118056428833
+      },
+      "empirical_effect": 657.5446750844649,
+      "population_effect": -72.48047299591195,
+      "interaction": 730.0251480803768
+    },
+    "gradient_tail_median": {
+      "values": {
+        "standard_P0": 0.8788015668202467,
+        "standard_Plambda": 0.21799034310749124,
+        "empirical_P0": 883.8599154605402,
+        "empirical_Plambda": 779.3558469142902
+      },
+      "empirical_effect": -104.50406854624998,
+      "population_effect": -0.6608112237127555,
+      "interaction": -103.84325732253723
+    },
+    "update_max": {
+      "values": {
+        "standard_P0": 0.09260892096338871,
+        "standard_Plambda": 0.11049235872634952,
+        "empirical_P0": 0.08861310538854056,
+        "empirical_Plambda": 0.08182940245399492
+      },
+      "empirical_effect": -0.006783702934545638,
+      "population_effect": 0.017883437762960808,
+      "interaction": -0.024667140697506446
+    },
+    "update_max_after300": {
+      "values": {
+        "standard_P0": 0.09260892096338871,
+        "standard_Plambda": 0.09776985817061394,
+        "empirical_P0": 0.050541589001560416,
+        "empirical_Plambda": 0.05644735619890383
+      },
+      "empirical_effect": 0.005905767197343412,
+      "population_effect": 0.005160937207225227,
+      "interaction": 0.0007448299901181843
+    },
+    "relative_update_max": {
+      "values": {
+        "standard_P0": 0.015441505244811367,
+        "standard_Plambda": 0.022564113012743102,
+        "empirical_P0": 0.015363214632198176,
+        "empirical_Plambda": 0.019683786668147536
+      },
+      "empirical_effect": 0.00432057203594936,
+      "population_effect": 0.007122607767931735,
+      "interaction": -0.0028020357319823753
+    },
+    "relative_update_max_after300": {
+      "values": {
+        "standard_P0": 0.011256834372300828,
+        "standard_Plambda": 0.01422803151924877,
+        "empirical_P0": 0.004780727237144669,
+        "empirical_Plambda": 0.005669705886378937
+      },
+      "empirical_effect": 0.0008889786492342682,
+      "population_effect": 0.0029711971469479417,
+      "interaction": -0.0020822184977136735
+    },
+    "total_tail_range": {
+      "values": {
+        "standard_P0": 0.02102729122952951,
+        "standard_Plambda": 0.0015389701738968142,
+        "empirical_P0": 7.804677710932992,
+        "empirical_Plambda": 10.813086520092384
+      },
+      "empirical_effect": 3.0084088091593912,
+      "population_effect": -0.019488321055632696,
+      "interaction": 3.027897130215024
+    },
+    "objective_spike_count": {
+      "values": {
+        "standard_P0": 2,
+        "standard_Plambda": 2,
+        "empirical_P0": 273,
+        "empirical_Plambda": 353
+      },
+      "empirical_effect": 80,
+      "population_effect": 0,
+      "interaction": 80
+    },
+    "gradient_spike_count": {
+      "values": {
+        "standard_P0": 9,
+        "standard_Plambda": 4,
+        "empirical_P0": 0,
+        "empirical_Plambda": 2
+      },
+      "empirical_effect": 2,
+      "population_effect": -5,
+      "interaction": 7
+    },
+    "transition_candidate_count": {
+      "values": {
+        "standard_P0": 9,
+        "standard_Plambda": 10,
+        "empirical_P0": 25,
+        "empirical_Plambda": 419
+      },
+      "empirical_effect": 394,
+      "population_effect": 1,
+      "interaction": 393
+    },
+    "collapse_indicator": {
+      "values": {
+        "standard_P0": 0,
+        "standard_Plambda": 0,
+        "empirical_P0": 0,
+        "empirical_Plambda": 0
+      },
+      "empirical_effect": 0,
+      "population_effect": 0,
+      "interaction": 0
+    }
+  },
+  "note": "Descriptive matched contrast, one fixed dataset and init. No statistical significance or optimized-minimum claim.",
+  "endpoint_fidelity": {
+    "standard_P0": {
+      "errors": {
+        "logZ": 9.076111625816452e-06,
+        "KL": 3.39865984244625e-08,
+        "TV": 1.4421555823089082e-06
+      },
+      "passed": true
+    },
+    "standard_Plambda": {
+      "errors": {
+        "logZ": 7.055282976509147e-06,
+        "KL": 1.782965455277008e-07,
+        "TV": 2.206747098149227e-06
+      },
+      "passed": true
+    },
+    "empirical_P0": {
+      "errors": {
+        "logZ": 0.0006021728356380152,
+        "KL": 0.0005305028709994275,
+        "TV": 0.0002205949457411427
+      },
+      "passed": false
+    },
+    "empirical_Plambda": {
+      "errors": {
+        "logZ": 0.00011221130916716504,
+        "KL": 9.036996098288341e-05,
+        "TV": 0.0002132869422850625
+      },
+      "passed": false
+    }
+  }
+}

@@ -24,3 +24,7 @@
 
 ## P1-F publication authorization 2026-09-17T12:47:00.171604+00:00
 用户要求“直接push”：提交完整P1-F代码、结果及交接记录至现有origin/codex-refactor；使用普通push，保持冻结历史文件不变。
+
+
+## D-20260922-001 — P1-G matched empirical pair completed
+Only archived data23/init1011 lambda0/1, 4000 total updates. No observed collapse; original lambda reduces endpoint KL/branch expansion but increases some instability measures. No predeclared objective conflict. Both empirical endpoints fail unchanged logZ96/192 gate; scientific status numerically_unresolved, not structural discovery. All32 integrity checks pass and305 historical hashes unchanged. Recommend only fixed-endpoint192/384 numerical check next, not executed. User explicitly authorizes complete results commit and ordinary push codex-refactor.

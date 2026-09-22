@@ -1,0 +1,17 @@
+{
+  "count": 2,
+  "runs": {
+    "empirical_P0": {
+      "steps": 2000,
+      "jsonl": "mineral_prediction/p1g_empirical/20260922T054836Z_p1g_v1/raw/empirical_P0_trajectory.jsonl",
+      "observations": "mineral_prediction/p1g_empirical/20260922T054836Z_p1g_v1/raw/empirical_P0_observations.json",
+      "checkpoints": 595
+    },
+    "empirical_Plambda": {
+      "steps": 2000,
+      "jsonl": "mineral_prediction/p1g_empirical/20260922T054836Z_p1g_v1/raw/empirical_Plambda_trajectory.jsonl",
+      "observations": "mineral_prediction/p1g_empirical/20260922T054836Z_p1g_v1/raw/empirical_Plambda_observations.json",
+      "checkpoints": 1238
+    }
+  }
+}

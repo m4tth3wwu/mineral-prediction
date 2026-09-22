@@ -1,0 +1,48 @@
+{
+  "time": "2026-09-22T05:59:47.743654+00:00",
+  "HEAD": "28b0bd3c14e9b3ff3b92fccbb0ba1e92de4a0bf7",
+  "command": "D:\\anaconda\\python.exe -B mineral_prediction/acawlr_ppp_p1g_empirical.py --phase prepare",
+  "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+  "torch": "2.12.0+cpu",
+  "threads": 1,
+  "dtype": "float64",
+  "protocol_sha256": "258aa3835faf5acc0b06be58c6d6a0c6e9be74cd441fcc267a5d1aaacc9db216",
+  "source_manifest_sha256": "33704ad2cbd4dae6b5ca23eaea417103f0b0fc0eb2907e7edd30c80101c4dec5",
+  "input_file_sha256": "fcf64228046de23ba86408af92411a8694247426f68fa8e23ee7ec6419236a48",
+  "data_sha256": "9e06ffd4a566cde87129c003afb3344eb7dd9aed262287d262e323d3367fb1f2",
+  "initial_sha256": "c94a02d1929dfa4d5ffbbfb55c8aaccf7d7d2d52f686203bf8e5c2eeffc064c6",
+  "teacher_sha256": "b0d6db361a0a0c5e685d0e91f07601521760a7efd34e15c07f909ff4473338d8",
+  "statistics": {
+    "shape": [
+      256,
+      2
+    ],
+    "dtype": "torch.float64",
+    "mean": [
+      8732.650437601074,
+      -1888.2917679813315
+    ],
+    "std": [
+      34836.1123211182,
+      22569.286002191762
+    ],
+    "min": [
+      -59487.00119352702,
+      -39460.947723639365
+    ],
+    "max": [
+      59889.26225980582,
+      39616.90930040079
+    ],
+    "sum": [
+      2235558.512025875,
+      -483402.6926032209
+    ]
+  },
+  "archive_hashes": {
+    "mineral_prediction/ACAWLR_PPP_P1D_LR_STATES.pt": "7c91596de2c284b2ab1c4e0e2c0f0d5831adf82bb739dd1a1336025bab6e7df7",
+    "mineral_prediction/ACAWLR_PPP_P1D_OPTIMIZATION_STATES.pt": "2cb2fc84a16cabb0e66f81c81fd5dfc18c3b8d377a11b275261e33059dcbc467"
+  },
+  "frozen_manifest": "docs/project_memory/snapshots/20260922T054836Z_p1g_frozen_before.json",
+  "neural_updates_so_far": 0
+}

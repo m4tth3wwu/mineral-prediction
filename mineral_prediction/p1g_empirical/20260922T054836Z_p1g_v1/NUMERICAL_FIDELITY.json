@@ -1,0 +1,34 @@
+{
+  "empirical_P0": {
+    "endpoint96_192": {
+      "errors": {
+        "logZ": 0.0006021728356380152,
+        "KL": 0.0005305028709994275,
+        "TV": 0.0002205949457411427
+      },
+      "passed": false
+    },
+    "training48_endpoint192_logZ": 0.0033006849766845647,
+    "empirical48": 2305.4048445523044,
+    "empirical192": 2306.2498199063357,
+    "max_logZ48_96": 0.003192492739557906,
+    "first_monitor_gap_above_1e_minus4": 450,
+    "note": "48/96 discrepancy is descriptive, not a newly introduced stopping gate. Endpoint96/192 uses unchanged P1-F tolerance."
+  },
+  "empirical_Plambda": {
+    "endpoint96_192": {
+      "errors": {
+        "logZ": 0.00011221130916716504,
+        "KL": 9.036996098288341e-05,
+        "TV": 0.0002132869422850625
+      },
+      "passed": false
+    },
+    "training48_endpoint192_logZ": 0.0006407270305004431,
+    "empirical48": 2316.951750784476,
+    "empirical192": 2317.1157769042843,
+    "max_logZ48_96": 0.001462034579940763,
+    "first_monitor_gap_above_1e_minus4": 475,
+    "note": "48/96 discrepancy is descriptive, not a newly introduced stopping gate. Endpoint96/192 uses unchanged P1-F tolerance."
+  }
+}

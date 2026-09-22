@@ -1,0 +1,158 @@
+{
+  "run_id": "20260922T054836Z_p1g_v1",
+  "trajectories": 2,
+  "updates": 4000,
+  "all_endpoint_fidelity": false,
+  "runs": {
+    "standard_P0": {
+      "KL": 1.3345572197565048e-05,
+      "TV": 0.0019211248543573574,
+      "centered_g_area_RMSE": 0.005270865400434253,
+      "centered_g_teacher_RMSE": 0.0051655604213706905,
+      "q_ratio": 1.147551764834022,
+      "field_ratio": 0.5793348241475615,
+      "b_RMSE": 0.3124240535622296,
+      "beta_error": 0.07605110334485439,
+      "u_norm": 1.3005864622603829,
+      "theta_norm": 8.431648730458965,
+      "collapse": false,
+      "collapse_ever": false,
+      "joint_functional_failure": false,
+      "stationarity": {
+        "max_gradient_per256": 0.049711511528579624,
+        "total_range_per256": 8.213785636534965e-05,
+        "passed": false
+      },
+      "fidelity": {
+        "errors": {
+          "logZ": 9.076111625816452e-06,
+          "KL": 3.39865984244625e-08,
+          "TV": 1.4421555823089082e-06
+        },
+        "passed": true
+      },
+      "density_success": true,
+      "predictor_success": true,
+      "category": "not_shrunken_by_definition"
+    },
+    "standard_Plambda": {
+      "KL": 5.359181247399647e-05,
+      "TV": 0.0032623259704614607,
+      "centered_g_area_RMSE": 0.010393234768634433,
+      "centered_g_teacher_RMSE": 0.010359149719449375,
+      "q_ratio": 1.0614995002114915,
+      "field_ratio": 0.538393354412149,
+      "b_RMSE": 0.3029337406908259,
+      "beta_error": 0.06555217520330957,
+      "u_norm": 0.7762009136584056,
+      "theta_norm": 6.94505196815585,
+      "collapse": false,
+      "collapse_ever": false,
+      "joint_functional_failure": false,
+      "stationarity": {
+        "max_gradient_per256": 0.004726232331479722,
+        "total_range_per256": 6.011602241784431e-06,
+        "passed": false
+      },
+      "fidelity": {
+        "errors": {
+          "logZ": 7.055282976509147e-06,
+          "KL": 1.782965455277008e-07,
+          "TV": 2.206747098149227e-06
+        },
+        "passed": true
+      },
+      "density_success": true,
+      "predictor_success": true,
+      "category": "not_shrunken_by_definition"
+    },
+    "empirical_P0": {
+      "KL": 0.16959459549494582,
+      "TV": 0.15417047601098266,
+      "centered_g_area_RMSE": 0.9099390138034178,
+      "centered_g_teacher_RMSE": 0.7817418498107909,
+      "q_ratio": 7.156445576118865,
+      "field_ratio": 3.9831573139059913,
+      "b_RMSE": 1.0225968914452106,
+      "beta_error": 0.5287028745873071,
+      "u_norm": 5.88519462648963,
+      "theta_norm": 26.09967866435179,
+      "collapse": false,
+      "collapse_ever": false,
+      "joint_functional_failure": false,
+      "stationarity": {
+        "max_gradient_per256": 9.064739770876438,
+        "total_range_per256": 0.030487022308332,
+        "passed": false
+      },
+      "fidelity": {
+        "errors": {
+          "logZ": 0.0006021728356380152,
+          "KL": 0.0005305028709994275,
+          "TV": 0.0002205949457411427
+        },
+        "passed": false
+      },
+      "density_success": false,
+      "predictor_success": false,
+      "category": "not_shrunken_by_definition"
+    },
+    "empirical_Plambda": {
+      "KL": 0.08830614855958174,
+      "TV": 0.142319010876316,
+      "centered_g_area_RMSE": 0.43634669273012683,
+      "centered_g_teacher_RMSE": 0.4439249895467211,
+      "q_ratio": 3.539910039901988,
+      "field_ratio": 2.3296800225489807,
+      "b_RMSE": 0.6093872003833872,
+      "beta_error": 0.4689522223662395,
+      "u_norm": 2.895054502543322,
+      "theta_norm": 18.686994863324703,
+      "collapse": false,
+      "collapse_ever": false,
+      "joint_functional_failure": false,
+      "stationarity": {
+        "max_gradient_per256": 11.633273657925129,
+        "total_range_per256": 0.04223861921911087,
+        "passed": false
+      },
+      "fidelity": {
+        "errors": {
+          "logZ": 0.00011221130916716504,
+          "KL": 9.036996098288341e-05,
+          "TV": 0.0002132869422850625
+        },
+        "passed": false
+      },
+      "density_success": false,
+      "predictor_success": false,
+      "category": "not_shrunken_by_definition"
+    }
+  },
+  "conflict": {
+    "empirical_P0": {
+      "sustained_conflict": false,
+      "coarse_sustained_conflict": false,
+      "longest_monitor_conflict_streak": 0,
+      "step48_count": 0,
+      "monitor96_count": 0,
+      "overfit_monitor_count": 46
+    },
+    "empirical_Plambda": {
+      "sustained_conflict": false,
+      "coarse_sustained_conflict": false,
+      "longest_monitor_conflict_streak": 0,
+      "step48_count": 0,
+      "monitor96_count": 0,
+      "overfit_monitor_count": 36
+    }
+  },
+  "empirical_relative_changes": {
+    "KL": -0.4793103618551724,
+    "TV": -0.0768724689792254,
+    "q_ratio": -0.5053536001566609,
+    "field_ratio": -0.4151172452025417,
+    "b_RMSE": -0.4040787670279776
+  },
+  "interpretation_boundary": "Relative suppression of an expanded empirical branch is not P1-F near-zero collapse or teacher-relative shrinkage. Numeric failure and nonstationarity retained."
+}
