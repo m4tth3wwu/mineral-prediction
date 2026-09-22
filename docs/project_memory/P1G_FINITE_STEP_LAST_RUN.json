@@ -1,0 +1,14 @@
+{
+  "timestamp_utc": "2026-09-22T07:16:23.946106+00:00",
+  "session_id": "20260922T071328Z_p1g_candidate_fullstep",
+  "run_id": "20260922T071328Z_p1g_candidate_fullstep",
+  "output_dir": "mineral_prediction/p1g_finite_step/20260922T071328Z_p1g_candidate_fullstep",
+  "source_base_commit": "228c812b43ae7ce9ed43b41d097201ca7da610c0",
+  "phase": "single_finite_candidate_displacement",
+  "status": "COMPLETED",
+  "scientific_status": "regularized_endpoint_finite_increase_despite_negative_directional_derivative_on_both_grids",
+  "optimizer_steps": 0,
+  "temporary_displacements": 2,
+  "verification_passed": true,
+  "frozen_files": 2315
+}

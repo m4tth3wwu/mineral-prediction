@@ -44,3 +44,7 @@ Data gradient relative differences23.9377%/9.60879%, whole-vector angles4.3902/2
 
 ## D-20260922-005 — candidate Adam direction remains local descent
 Frozen step2000 moments plus saved48 total gradients yield candidate t2001 displacement only, no update/forward/backward. Total g dot d: P0 -0.565320/-0.738614, original lambda -3.406370/-3.739032 on48/384. All total/data blocks negative. No candidate local-ascent or grid sign-reversal evidence here; finite-step loss/path cause unresolved. Next proposed finite-displacement diagnostic on copies only, not executed or authorized as a training extension.
+
+
+## D-20260922-006 — one finite candidate perturbation per frozen endpoint
+P0 total changes48/384=-.371054/-.525037; original lambda=+2.072713/+1.665135 despite linear predictions-3.406370/-3.739032. Confirms finite-displacement nonlinearity at the regularized endpoint, not cause of historical collapse or isolated causal regularization effect. Two temporary copies, no optimizer calls/backward/training continuation, no alpha scan. All49 checks pass;2315 frozen hashes unchanged. Item1 completed. Next: freeze a single-variable training quadrature protocol before any new runs; not executed.

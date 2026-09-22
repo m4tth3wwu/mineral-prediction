@@ -1,7 +1,8 @@
-# 当前交接：原λ终点候选完整位移反转一阶下降预测
+# P1-G candidate finite displacement session
 
-最新run mineral_prediction/p1g_finite_step/20260922T071328Z_p1g_candidate_fullstep
-基准 228c812b43ae7ce9ed43b41d097201ca7da610c0，codex-refactor。仅2个临时副本单点位移，optimizer更新0，未追加训练。旧P1-G及全部诊断冻结。
+UTC 2026-09-22T07:16:23.946106+00:00
+Baseline 228c812b43ae7ce9ed43b41d097201ca7da610c0 / codex-refactor. User 你继续 explicitly follows recommendation to execute item1 only. Read canonical handoff, previous candidate protocol/provenance, root directory rules.
+Command D:\anaconda\python.exe -B mineral_prediction/check_acawlr_ppp_p1g_finite_step.py; exit0.
 
 # P1-G候选完整位移的单点诊断
 
@@ -41,4 +42,4 @@
 
 本轮完成此前计划第1项，结束这一串终点局部诊断。下一项工作应先冻结单变量训练积分网格对照协议，再启动实验：固定data23/init1011、Adam/.003、2000更新、λ0/原λ，只改变训练积分网格；训练分辨率与独立评价网格必须事前固定。新发现作为预声明的有限步长非线性诊断线索，不同时改学习率/优化器/架构，也不继续扫描本次候选步长。本轮没有编制或启动该训练对照。
 
-历史总状态：population恢复好而empirical恢复差，两者无观察到collapse；原λ在empirical固定终点KL较低但动态不稳定。两终点值层加密分别通过，梯度幅度受网格影响但无整体方向反转，候选Adam方向均局部下降；本次只有原λ完整位移使目标上升。原2000步stationarity未通过。报告随提交发布，远端状态以Git核对为准。
+Complete delivery via ordinary push under continuing project workflow.

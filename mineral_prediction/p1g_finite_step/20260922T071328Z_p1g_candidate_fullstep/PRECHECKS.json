@@ -1,0 +1,8 @@
+{
+  "checks": {
+    "input_hashes": true,
+    "parent_verified": true,
+    "environment": true
+  },
+  "passed": true
+}

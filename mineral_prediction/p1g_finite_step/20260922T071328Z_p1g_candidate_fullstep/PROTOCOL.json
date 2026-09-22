@@ -1,0 +1,30 @@
+{
+  "stage": "P1-G single candidate finite-displacement diagnostic",
+  "run_id": "20260922T071328Z_p1g_candidate_fullstep",
+  "time": "2026-09-22T07:13:29.604439+00:00",
+  "request": "User approved executing item1 only: evaluate full saved candidate displacement on temporary copies, original archive unchanged, no training/grid experiment.",
+  "models": [
+    "empirical_P0",
+    "empirical_Plambda"
+  ],
+  "base_step": 2000,
+  "alphas": [
+    0,
+    1
+  ],
+  "grids": [
+    48,
+    384
+  ],
+  "candidate_source": "mineral_prediction/p1g_adam_direction/20260922T070225Z_p1g_adam_candidate",
+  "scope": "Exactly one temporary parameter displacement per model, no optimizer step/backward/training continuation, no alpha scan or checkpoint selection; not appended as step2001 training evidence.",
+  "predictions": "saved g dot d for data/penalty/total; actual J(theta+d)-J(theta); residual=actual-predicted; reversal if predicted<-1e-8 and actual>1e-8",
+  "precision": "float64 CPU1thread",
+  "validation": {
+    "objective_atol": 1e-09,
+    "gradient_dot_atol": 1e-10,
+    "parameter_displacement_atol": 1e-14,
+    "sign_atol": 1e-08
+  },
+  "interpretation": "Negative directional derivative need not guarantee finite-step decrease. Residual measures nonlinearity along one displacement, not a Hessian or proof of curvature vs nonsmoothness.384 is a comparison grid; candidate-point dense fidelity not independently refined."
+}

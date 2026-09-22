@@ -1,0 +1,22 @@
+{
+  "time": "2026-09-22T07:13:29.608307+00:00",
+  "HEAD": "228c812b43ae7ce9ed43b41d097201ca7da610c0",
+  "command": "D:\\anaconda\\python.exe -B mineral_prediction/check_acawlr_ppp_p1g_finite_step.py",
+  "torch": "2.12.0+cpu",
+  "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+  "protocol_sha256": "373c73e6b0b9726a2628826a0f9dea067277766d34cfb7e8b990cccf1a5af840",
+  "source_manifest_sha256": "f33948f8f9a7243bc43c6eca1531fb7bb84efd726f59248b07c026c57360eb0f",
+  "inputs": {
+    "mineral_prediction/p1g_empirical/20260922T054836Z_p1g_v1/raw/states/empirical_P0_2000.pt": "8b482436bb2c1d0b47907b181295ee43346d67a083cb519e4a5b05a545b14bf9",
+    "mineral_prediction/p1g_empirical/20260922T054836Z_p1g_v1/raw/states/empirical_Plambda_2000.pt": "b037c0a597e0c5fe723734b363d9c400e0b9ca5e80b72324472dffd6ddc01f4c",
+    "mineral_prediction/p1g_adam_direction/20260922T070225Z_p1g_adam_candidate/raw/empirical_P0_candidate.pt": "ded1846fea4aba622d806082e3193bafae632041a33e40cc8257f768b372892a",
+    "mineral_prediction/p1g_adam_direction/20260922T070225Z_p1g_adam_candidate/raw/empirical_Plambda_candidate.pt": "32ea7d3672df952e36bf64f68751249b20d746567e20368875ed1254b2b10ec5",
+    "mineral_prediction/p1f_population/20260917T121240Z_p1f_v1/raw/GRID_48.pt": "6d6871227b24a0ba55f6322b4ecc8bb75098bbc5cd93cfa1ccea22b0660c949a",
+    "mineral_prediction/p1g_quadrature/20260922T062242Z_p1g_q192_384/raw/GRID_384.pt": "232dc552d3321aa0725016892d470c7e09778708a66a6c8ec6ea07efcc1fc5a1",
+    "mineral_prediction/p1g_gradient/20260922T065517Z_p1g_grad48_384/raw/empirical_P0_gradients_48.pt": "7e77556cf8e7000c5340597a1f1a3020c812dd600b194ba7bcdacf3f45b902eb",
+    "mineral_prediction/p1g_gradient/20260922T065517Z_p1g_grad48_384/raw/empirical_P0_gradients_384.pt": "5066d311d32e2f20ef7d43bd2e2178ddf1502f8a3e64b343f349906d960aa6fc",
+    "mineral_prediction/p1g_gradient/20260922T065517Z_p1g_grad48_384/raw/empirical_Plambda_gradients_48.pt": "ed6769d0b6441dfea779d9db1652b077efb114112a1127a98b1bb97f0e5e9714",
+    "mineral_prediction/p1g_gradient/20260922T065517Z_p1g_grad48_384/raw/empirical_Plambda_gradients_384.pt": "d6b4f1d2c77d1c9f761feae8add1a883ddc9a7f757226596885fd4a1b6af5def",
+    "mineral_prediction/p1g_empirical/20260922T054836Z_p1g_v1/raw/INPUTS.pt": "fcf64228046de23ba86408af92411a8694247426f68fa8e23ee7ec6419236a48"
+  }
+}

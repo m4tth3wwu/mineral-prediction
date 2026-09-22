@@ -1,0 +1,5 @@
+empirical_P0 48 {"predicted": -0.5653196880152347, "actual": -0.37105418471264784, "residual": 0.19426550330258685, "effective_displacement_prediction": -0.5653196880152249, "actual_sign": "decrease", "first_order_decrease_but_finite_increase": false}
+empirical_P0 384 {"predicted": -0.7386142867861505, "actual": -0.525036849431217, "residual": 0.2135774373549335, "effective_displacement_prediction": -0.7386142867861378, "actual_sign": "decrease", "first_order_decrease_but_finite_increase": false}
+empirical_Plambda 48 {"predicted": -3.40636997008718, "actual": 2.072712608042366, "residual": 5.479082578129546, "effective_displacement_prediction": -3.406369970087174, "actual_sign": "increase", "first_order_decrease_but_finite_increase": true}
+empirical_Plambda 384 {"predicted": -3.7390324186229904, "actual": 1.6651347961446845, "residual": 5.404167214767675, "effective_displacement_prediction": -3.7390324186229846, "actual_sign": "increase", "first_order_decrease_but_finite_increase": true}
+OUT mineral_prediction/p1g_finite_step/20260922T071328Z_p1g_candidate_fullstep

@@ -1,0 +1,117 @@
+{
+  "run_id": "20260922T071328Z_p1g_candidate_fullstep",
+  "integrity_passed": true,
+  "optimizer_steps": 0,
+  "temporary_displacements": 2,
+  "results": {
+    "empirical_P0": {
+      "48": {
+        "data": {
+          "predicted": -0.5653196880152347,
+          "actual": -0.37105418471264784,
+          "residual": 0.19426550330258685,
+          "effective_displacement_prediction": -0.5653196880152249,
+          "actual_sign": "decrease",
+          "first_order_decrease_but_finite_increase": false
+        },
+        "penalty": {
+          "predicted": 0.0,
+          "actual": 0.0,
+          "residual": 0.0,
+          "effective_displacement_prediction": 0.0,
+          "actual_sign": "numerically_neutral",
+          "first_order_decrease_but_finite_increase": false
+        },
+        "total": {
+          "predicted": -0.5653196880152347,
+          "actual": -0.37105418471264784,
+          "residual": 0.19426550330258685,
+          "effective_displacement_prediction": -0.5653196880152249,
+          "actual_sign": "decrease",
+          "first_order_decrease_but_finite_increase": false
+        }
+      },
+      "384": {
+        "data": {
+          "predicted": -0.7386142867861505,
+          "actual": -0.525036849431217,
+          "residual": 0.2135774373549335,
+          "effective_displacement_prediction": -0.7386142867861378,
+          "actual_sign": "decrease",
+          "first_order_decrease_but_finite_increase": false
+        },
+        "penalty": {
+          "predicted": 0.0,
+          "actual": 0.0,
+          "residual": 0.0,
+          "effective_displacement_prediction": 0.0,
+          "actual_sign": "numerically_neutral",
+          "first_order_decrease_but_finite_increase": false
+        },
+        "total": {
+          "predicted": -0.7386142867861505,
+          "actual": -0.525036849431217,
+          "residual": 0.2135774373549335,
+          "effective_displacement_prediction": -0.7386142867861378,
+          "actual_sign": "decrease",
+          "first_order_decrease_but_finite_increase": false
+        }
+      }
+    },
+    "empirical_Plambda": {
+      "48": {
+        "data": {
+          "predicted": -3.4060749796709904,
+          "actual": 2.0730074511052408,
+          "residual": 5.479082430776231,
+          "effective_displacement_prediction": -3.4060749796709846,
+          "actual_sign": "increase",
+          "first_order_decrease_but_finite_increase": true
+        },
+        "penalty": {
+          "predicted": -0.00029499041618963334,
+          "actual": -0.00029484306307137054,
+          "residual": 1.4735311826280387e-07,
+          "effective_displacement_prediction": -0.000294990416189663,
+          "actual_sign": "decrease",
+          "first_order_decrease_but_finite_increase": false
+        },
+        "total": {
+          "predicted": -3.40636997008718,
+          "actual": 2.072712608042366,
+          "residual": 5.479082578129546,
+          "effective_displacement_prediction": -3.406369970087174,
+          "actual_sign": "increase",
+          "first_order_decrease_but_finite_increase": true
+        }
+      },
+      "384": {
+        "data": {
+          "predicted": -3.738737428206801,
+          "actual": 1.6654296392075594,
+          "residual": 5.4041670674143605,
+          "effective_displacement_prediction": -3.7387374282067944,
+          "actual_sign": "increase",
+          "first_order_decrease_but_finite_increase": true
+        },
+        "penalty": {
+          "predicted": -0.00029499041618963334,
+          "actual": -0.00029484306307137054,
+          "residual": 1.4735311826280387e-07,
+          "effective_displacement_prediction": -0.000294990416189663,
+          "actual_sign": "decrease",
+          "first_order_decrease_but_finite_increase": false
+        },
+        "total": {
+          "predicted": -3.7390324186229904,
+          "actual": 1.6651347961446845,
+          "residual": 5.404167214767675,
+          "effective_displacement_prediction": -3.7390324186229846,
+          "actual_sign": "increase",
+          "first_order_decrease_but_finite_increase": true
+        }
+      }
+    }
+  },
+  "caution": "Isolated finite perturbation on copies, not historical step2001 or additional training. No claim about global or historical cause."
+}
