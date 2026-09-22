@@ -1,0 +1,10 @@
+{
+  "mineral_prediction/check_acawlr_ppp_p1g_gradients.py": "8d2509b1b9523240a03047a15dbe753d8a409ccdbfbb3392fb77d6fafab2902e",
+  "mineral_prediction/check_acawlr_ppp_p1g_quadrature.py": "232b9d6aa0e0e85f0a4ddacf05784f3843e026655403312adf0059072034e8f2",
+  "mineral_prediction/acawlr_ppp_p1f_population.py": "3e9442d7c9461f66ee60c5a84d976e505639ecc27c7f0a82c6e31363ce2dca55",
+  "mineral_prediction/acawlr_ppp_p1e_identifiability.py": "eca791e77b77c6acb5ea15266bcfb0df7d59e33e0c0f14d75e807db209f1bfea",
+  "mineral_prediction/acawlr_ppp_bridge.py": "c95ed6131085bbce953c797a54cf00b410a8aad7fcfe3178173d4d2b7a23953d",
+  "mineral_prediction/acawlr_ppp_synthetic.py": "f4338fcdafcf3b18988e9e8c89d7fca0cb3660bc5f6192440cddaa614f82261b",
+  "mineral_prediction/acawlr_ppp_teacher_student.py": "5bc1d1d4ac80454149d95fa262bdf838ed52fb379088dd85ae1c447af59783d3",
+  "scripts/ACAWLR_improved.py": "80aaf0431b209498303116bf85a76bfba9dd882827549cb26bb783f8a262ba56"
+}

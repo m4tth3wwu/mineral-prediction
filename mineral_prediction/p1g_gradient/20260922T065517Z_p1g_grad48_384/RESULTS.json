@@ -1,0 +1,302 @@
+{
+  "empirical_P0": {
+    "metrics": {
+      "48": {
+        "empirical_ppp": 2305.404844552305,
+        "logZ": 9.053509443103986,
+        "penalty_effective": 0.0,
+        "total": 2305.404844552305,
+        "data_gradient_norm": 682.1601812174885,
+        "total_gradient_norm": 682.1601812174885,
+        "penalty_gradient_norm": 0.0
+      },
+      "384": {
+        "empirical_ppp": 2306.289290573773,
+        "logZ": 9.056964310375346,
+        "penalty_effective": 0.0,
+        "total": 2306.289290573773,
+        "data_gradient_norm": 885.6251520733515,
+        "total_gradient_norm": 885.6251520733515,
+        "penalty_gradient_norm": 0.0
+      }
+    },
+    "data_comparison": {
+      "all": {
+        "norm48": 682.1601812174885,
+        "norm384": 885.6251520733515,
+        "difference_norm": 211.99823901818678,
+        "relative_difference_to384": 0.23937694014434238,
+        "cosine": 0.9970658543873451,
+        "angle_degrees": 4.390204080289436,
+        "dense_derivative_along_unit_negative48": -883.0265989189386,
+        "negative48_is_dense_descent": true,
+        "scope": "Euclidean negative gradient, not an Adam update; no finite step performed"
+      },
+      "beta": {
+        "norm48": 1.25954848234507,
+        "norm384": 2.260791594580498,
+        "difference_norm": 1.005903747268125,
+        "relative_difference_to384": 0.44493430959290864,
+        "cosine": 0.9983574491205285,
+        "angle_degrees": 3.2844035252367845,
+        "dense_derivative_along_unit_negative48": -2.257078129358518,
+        "negative48_is_dense_descent": true,
+        "scope": "Euclidean negative gradient, not an Adam update; no finite step performed"
+      },
+      "u": {
+        "norm48": 0.7785668601334867,
+        "norm384": 0.5913539525910826,
+        "difference_norm": 0.664939660287093,
+        "relative_difference_to384": 1.124435978441653,
+        "cosine": 0.557896955194704,
+        "angle_degrees": 56.08951740559002,
+        "dense_derivative_along_unit_negative48": -0.32991456959291826,
+        "negative48_is_dense_descent": true,
+        "scope": "Euclidean negative gradient, not an Adam update; no finite step performed"
+      },
+      "theta": {
+        "norm48": 682.1585740939871,
+        "norm384": 885.6220690039379,
+        "difference_norm": 211.99480974710596,
+        "relative_difference_to384": 0.23937390131383834,
+        "cosine": 0.9970665435452999,
+        "angle_degrees": 4.3896882226726035,
+        "dense_derivative_along_unit_negative48": -883.0241352291935,
+        "negative48_is_dense_descent": true,
+        "scope": "Euclidean negative gradient, not an Adam update; no finite step performed"
+      }
+    },
+    "total_comparison": {
+      "all": {
+        "norm48": 682.1601812174885,
+        "norm384": 885.6251520733515,
+        "difference_norm": 211.99823901818678,
+        "relative_difference_to384": 0.23937694014434238,
+        "cosine": 0.9970658543873451,
+        "angle_degrees": 4.390204080289436,
+        "dense_derivative_along_unit_negative48": -883.0265989189386,
+        "negative48_is_dense_descent": true,
+        "scope": "Euclidean negative gradient, not an Adam update; no finite step performed"
+      },
+      "beta": {
+        "norm48": 1.25954848234507,
+        "norm384": 2.260791594580498,
+        "difference_norm": 1.005903747268125,
+        "relative_difference_to384": 0.44493430959290864,
+        "cosine": 0.9983574491205285,
+        "angle_degrees": 3.2844035252367845,
+        "dense_derivative_along_unit_negative48": -2.257078129358518,
+        "negative48_is_dense_descent": true,
+        "scope": "Euclidean negative gradient, not an Adam update; no finite step performed"
+      },
+      "u": {
+        "norm48": 0.7785668601334867,
+        "norm384": 0.5913539525910826,
+        "difference_norm": 0.664939660287093,
+        "relative_difference_to384": 1.124435978441653,
+        "cosine": 0.557896955194704,
+        "angle_degrees": 56.08951740559002,
+        "dense_derivative_along_unit_negative48": -0.32991456959291826,
+        "negative48_is_dense_descent": true,
+        "scope": "Euclidean negative gradient, not an Adam update; no finite step performed"
+      },
+      "theta": {
+        "norm48": 682.1585740939871,
+        "norm384": 885.6220690039379,
+        "difference_norm": 211.99480974710596,
+        "relative_difference_to384": 0.23937390131383834,
+        "cosine": 0.9970665435452999,
+        "angle_degrees": 4.3896882226726035,
+        "dense_derivative_along_unit_negative48": -883.0241352291935,
+        "negative48_is_dense_descent": true,
+        "scope": "Euclidean negative gradient, not an Adam update; no finite step performed"
+      }
+    },
+    "objective_shift": 0.8844460214681931,
+    "verification": {
+      "48": {
+        "chunk_max_gradient_difference": 2.2737367544323206e-13,
+        "chunk_value_difference": 0.0,
+        "independent": {
+          "logZ": 9.053509443103984,
+          "beta": [
+            0.7605871885859727,
+            -1.0039768463150995
+          ],
+          "u": [
+            0.06728344631417837,
+            0.7756541068995917
+          ]
+        },
+        "independent_beta_u_max_error": 7.815970093361102e-14
+      },
+      "384": {
+        "chunk_max_gradient_difference": 5.343281372915953e-12,
+        "chunk_value_difference": 2.2737367544323206e-12,
+        "independent": {
+          "logZ": 9.056964310375351,
+          "beta": [
+            1.466196588259308,
+            -1.7208852950448836
+          ],
+          "u": [
+            0.5174457251508466,
+            0.28626808897990685
+          ]
+        },
+        "independent_beta_u_max_error": 2.2026824808563106e-13
+      }
+    },
+    "model_hash": "dac560b6b09c29c0279e5695acd6409841d4d63d70eccdde1df506699d6a1954"
+  },
+  "empirical_Plambda": {
+    "metrics": {
+      "48": {
+        "empirical_ppp": 2316.951750784476,
+        "logZ": 9.096605438110604,
+        "penalty_effective": 1.0147014752084869,
+        "total": 2317.9664522596845,
+        "data_gradient_norm": 849.5899029956975,
+        "total_gradient_norm": 849.5901742947972,
+        "penalty_gradient_norm": 0.5793802273654082
+      },
+      "384": {
+        "empirical_ppp": 2317.1273961889615,
+        "logZ": 9.097291552971875,
+        "penalty_effective": 1.0147014752084869,
+        "total": 2318.14209766417,
+        "data_gradient_norm": 927.0108957821664,
+        "total_gradient_norm": 927.011143219234,
+        "penalty_gradient_norm": 0.5793802273654082
+      }
+    },
+    "data_comparison": {
+      "all": {
+        "norm48": 849.5899029956975,
+        "norm384": 927.0108957821664,
+        "difference_norm": 89.07450560668843,
+        "relative_difference_to384": 0.0960878734133235,
+        "cosine": 0.9987682142451683,
+        "angle_degrees": 2.844132393372989,
+        "dense_derivative_along_unit_negative48": -925.869016966168,
+        "negative48_is_dense_descent": true,
+        "scope": "Euclidean negative gradient, not an Adam update; no finite step performed"
+      },
+      "beta": {
+        "norm48": 2.2995633512832976,
+        "norm384": 2.497705965916922,
+        "difference_norm": 0.23725547031802482,
+        "relative_difference_to384": 0.09498935165129696,
+        "cosine": 0.9985175182536017,
+        "angle_degrees": 3.120225450900072,
+        "dense_derivative_along_unit_negative48": -2.4940031624145798,
+        "negative48_is_dense_descent": true,
+        "scope": "Euclidean negative gradient, not an Adam update; no finite step performed"
+      },
+      "u": {
+        "norm48": 1.4835579359667608,
+        "norm384": 1.4591698157516095,
+        "difference_norm": 0.031144136813456774,
+        "relative_difference_to384": 0.021343737018994335,
+        "cosine": 0.9999133445884967,
+        "angle_degrees": 0.7542904530229805,
+        "dense_derivative_along_unit_negative48": -1.4590433707907724,
+        "negative48_is_dense_descent": true,
+        "scope": "Euclidean negative gradient, not an Adam update; no finite step performed"
+      },
+      "theta": {
+        "norm48": 849.5854956015214,
+        "norm384": 927.0063824954017,
+        "difference_norm": 89.0741841891382,
+        "relative_difference_to384": 0.09608799450696343,
+        "cosine": 0.9987682278005859,
+        "angle_degrees": 2.8441167407211814,
+        "dense_derivative_along_unit_negative48": -925.8645218047645,
+        "negative48_is_dense_descent": true,
+        "scope": "Euclidean negative gradient, not an Adam update; no finite step performed"
+      }
+    },
+    "total_comparison": {
+      "all": {
+        "norm48": 849.5901742947972,
+        "norm384": 927.011143219234,
+        "difference_norm": 89.07450560668843,
+        "relative_difference_to384": 0.09608784776562573,
+        "cosine": 0.9987682126216055,
+        "angle_degrees": 2.844134268120374,
+        "dense_derivative_along_unit_negative48": -925.8692625933855,
+        "negative48_is_dense_descent": true,
+        "scope": "Euclidean negative gradient, not an Adam update; no finite step performed"
+      },
+      "beta": {
+        "norm48": 2.305740434668624,
+        "norm384": 2.5042190658990444,
+        "difference_norm": 0.23725547031802482,
+        "relative_difference_to384": 0.09474229852684525,
+        "cosine": 0.9985368756922264,
+        "angle_degrees": 3.0997824098236157,
+        "dense_derivative_along_unit_negative48": -2.5005550821117377,
+        "negative48_is_dense_descent": true,
+        "scope": "Euclidean negative gradient, not an Adam update; no finite step performed"
+      },
+      "u": {
+        "norm48": 1.6438703486893878,
+        "norm384": 1.627862927077666,
+        "difference_norm": 0.031144136813456774,
+        "relative_difference_to384": 0.01913191602032895,
+        "cosine": 0.9998666440797114,
+        "angle_degrees": 0.9357258064311287,
+        "dense_derivative_along_unit_negative48": -1.627645841918922,
+        "negative48_is_dense_descent": true,
+        "scope": "Euclidean negative gradient, not an Adam update; no finite step performed"
+      },
+      "theta": {
+        "norm48": 849.5854550953591,
+        "norm384": 927.0063314788049,
+        "difference_norm": 89.07418418913818,
+        "relative_difference_to384": 0.09608799979504215,
+        "cosine": 0.9987682266408585,
+        "angle_degrees": 2.8441180798798595,
+        "dense_derivative_along_unit_negative48": -925.8644697759338,
+        "negative48_is_dense_descent": true,
+        "scope": "Euclidean negative gradient, not an Adam update; no finite step performed"
+      }
+    },
+    "objective_shift": 0.17564540448529442,
+    "verification": {
+      "48": {
+        "chunk_max_gradient_difference": 1.1368683772161603e-13,
+        "chunk_value_difference": 0.0,
+        "independent": {
+          "logZ": 9.096605438110604,
+          "beta": [
+            2.2706514680875074,
+            -0.3635017428257825
+          ],
+          "u": [
+            1.4823905182802521,
+            -0.05884301728124752
+          ]
+        },
+        "independent_beta_u_max_error": 1.4210854715202004e-14
+      },
+      "384": {
+        "chunk_max_gradient_difference": 2.3305801732931286e-12,
+        "chunk_value_difference": 2.2737367544323206e-12,
+        "independent": {
+          "logZ": 9.097291552971878,
+          "beta": [
+            2.484137358020668,
+            -0.25999361273348676
+          ],
+          "u": [
+            1.4571333406961853,
+            -0.07706476907249016
+          ]
+        },
+        "independent_beta_u_max_error": 1.7053025658242404e-13
+      }
+    },
+    "model_hash": "5f99dd5893282efb7f9ddee3b928b7a30dfbbdf7bdf14c5e72907ca1c2cbfc17"
+  }
+}

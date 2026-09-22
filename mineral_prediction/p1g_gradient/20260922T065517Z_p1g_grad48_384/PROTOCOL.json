@@ -1,0 +1,34 @@
+{
+  "stage": "P1-G fixed-endpoint training-grid gradient audit",
+  "run_id": "20260922T065517Z_p1g_grad48_384",
+  "time": "2026-09-22T06:55:20.507436+00:00",
+  "request": "User 急须 interpreted as continue the previously proposed48/384 fixed-endpoint gradient check; interpretation stated before execution.",
+  "models": [
+    "empirical_P0",
+    "empirical_Plambda"
+  ],
+  "steps": [
+    2000
+  ],
+  "grids": [
+    48,
+    384
+  ],
+  "updates": 0,
+  "precision": "float64 CPU one thread",
+  "objective": "256 logZ - sum archived data23 g(events)",
+  "penalty": "also report actual optimized gradient with multiplier0/1; original beta=.02,u=.2,theta=.001",
+  "implementation": "existing exact two-pass streaming gradient; full-domain logZ, never minibatch normalization",
+  "chunk_primary": 512,
+  "chunk_verification": 1024,
+  "verification": {
+    "gradient_atol": 1e-08,
+    "gradient_rtol": 1e-09,
+    "value_atol": 1e-09,
+    "archive_metric_atol": 1e-09,
+    "independent_beta_u_atol": 1e-08
+  },
+  "comparison": "||g48-g384||/||g384||, cosine, angle, dot-derived directional derivative for all/beta/u/theta, data and actual total separately",
+  "interpretation": "No significance/path-causality/Adam-step claim. Dense384 is a comparison grid, not established converged-gradient ground truth; value-fidelity does not ensure derivative fidelity. No arbitrary effect-size pass threshold.",
+  "scope": "Only two frozen endpoints. No training, finite update, extra checkpoint/seed or higher grid."
+}

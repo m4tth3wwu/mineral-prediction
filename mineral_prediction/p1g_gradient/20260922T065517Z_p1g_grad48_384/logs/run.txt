@@ -1,0 +1,5 @@
+empirical_P0 48 {"empirical_ppp": 2305.404844552305, "logZ": 9.053509443103986, "penalty_effective": 0.0, "total": 2305.404844552305, "data_gradient_norm": 682.1601812174885, "total_gradient_norm": 682.1601812174885, "penalty_gradient_norm": 0.0}
+empirical_P0 384 {"empirical_ppp": 2306.289290573773, "logZ": 9.056964310375346, "penalty_effective": 0.0, "total": 2306.289290573773, "data_gradient_norm": 885.6251520733515, "total_gradient_norm": 885.6251520733515, "penalty_gradient_norm": 0.0}
+empirical_Plambda 48 {"empirical_ppp": 2316.951750784476, "logZ": 9.096605438110604, "penalty_effective": 1.0147014752084869, "total": 2317.9664522596845, "data_gradient_norm": 849.5899029956975, "total_gradient_norm": 849.5901742947972, "penalty_gradient_norm": 0.5793802273654082}
+empirical_Plambda 384 {"empirical_ppp": 2317.1273961889615, "logZ": 9.097291552971875, "penalty_effective": 1.0147014752084869, "total": 2318.14209766417, "data_gradient_norm": 927.0108957821664, "total_gradient_norm": 927.011143219234, "penalty_gradient_norm": 0.5793802273654082}
+OUT mineral_prediction/p1g_gradient/20260922T065517Z_p1g_grad48_384

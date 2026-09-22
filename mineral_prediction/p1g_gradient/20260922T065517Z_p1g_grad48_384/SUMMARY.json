@@ -1,0 +1,58 @@
+{
+  "run_id": "20260922T065517Z_p1g_grad48_384",
+  "updates": 0,
+  "integrity_passed": true,
+  "results": {
+    "empirical_P0": {
+      "objective_shift": 0.8844460214681931,
+      "data": {
+        "norm48": 682.1601812174885,
+        "norm384": 885.6251520733515,
+        "difference_norm": 211.99823901818678,
+        "relative_difference_to384": 0.23937694014434238,
+        "cosine": 0.9970658543873451,
+        "angle_degrees": 4.390204080289436,
+        "dense_derivative_along_unit_negative48": -883.0265989189386,
+        "negative48_is_dense_descent": true,
+        "scope": "Euclidean negative gradient, not an Adam update; no finite step performed"
+      },
+      "total": {
+        "norm48": 682.1601812174885,
+        "norm384": 885.6251520733515,
+        "difference_norm": 211.99823901818678,
+        "relative_difference_to384": 0.23937694014434238,
+        "cosine": 0.9970658543873451,
+        "angle_degrees": 4.390204080289436,
+        "dense_derivative_along_unit_negative48": -883.0265989189386,
+        "negative48_is_dense_descent": true,
+        "scope": "Euclidean negative gradient, not an Adam update; no finite step performed"
+      }
+    },
+    "empirical_Plambda": {
+      "objective_shift": 0.17564540448529442,
+      "data": {
+        "norm48": 849.5899029956975,
+        "norm384": 927.0108957821664,
+        "difference_norm": 89.07450560668843,
+        "relative_difference_to384": 0.0960878734133235,
+        "cosine": 0.9987682142451683,
+        "angle_degrees": 2.844132393372989,
+        "dense_derivative_along_unit_negative48": -925.869016966168,
+        "negative48_is_dense_descent": true,
+        "scope": "Euclidean negative gradient, not an Adam update; no finite step performed"
+      },
+      "total": {
+        "norm48": 849.5901742947972,
+        "norm384": 927.011143219234,
+        "difference_norm": 89.07450560668843,
+        "relative_difference_to384": 0.09608784776562573,
+        "cosine": 0.9987682126216055,
+        "angle_degrees": 2.844134268120374,
+        "dense_derivative_along_unit_negative48": -925.8692625933855,
+        "negative48_is_dense_descent": true,
+        "scope": "Euclidean negative gradient, not an Adam update; no finite step performed"
+      }
+    }
+  },
+  "caution": "384 derivative convergence not established; no inference about Adam steps or past trajectory causality"
+}

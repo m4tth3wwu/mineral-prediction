@@ -1,0 +1,10 @@
+{
+  "checks": {
+    "input_exact": true,
+    "event_hash": true,
+    "environment": true,
+    "checkpoints_exact": true
+  },
+  "passed": true,
+  "updates": 0
+}

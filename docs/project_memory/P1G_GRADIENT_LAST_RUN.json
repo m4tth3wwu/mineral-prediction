@@ -1,0 +1,13 @@
+{
+  "timestamp_utc": "2026-09-22T06:57:52.388737+00:00",
+  "session_id": "20260922T065517Z_p1g_grad48_384",
+  "run_id": "20260922T065517Z_p1g_grad48_384",
+  "phase": "fixed_endpoint_gradient_comparison",
+  "status": "COMPLETED",
+  "scientific_status": "gradient_magnitude_and_block_sensitivity_without_overall_direction_reversal",
+  "output_dir": "mineral_prediction/p1g_gradient/20260922T065517Z_p1g_grad48_384",
+  "source_base_commit": "bb2085a66d257dac8699db57a9409893cd9bbef0",
+  "updates": 0,
+  "verification_passed": true,
+  "frozen_files": 2263
+}

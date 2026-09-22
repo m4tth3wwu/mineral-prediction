@@ -1,0 +1,30 @@
+{
+  "time": "2026-09-22T06:55:20.507436+00:00",
+  "HEAD": "bb2085a66d257dac8699db57a9409893cd9bbef0",
+  "command": "D:\\anaconda\\python.exe -B mineral_prediction/check_acawlr_ppp_p1g_gradients.py",
+  "torch": "2.12.0+cpu",
+  "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+  "protocol_sha256": "15b2e147efbd42270320532e295fb6ec17a1b1f157be11f76e0e9940867a1ab8",
+  "source_manifest_sha256": "9ec51eb2403c3bb9ce58d9b063d5680ee05c32fc3b1984faf7c629c8601aa820",
+  "input_sha256": "fcf64228046de23ba86408af92411a8694247426f68fa8e23ee7ec6419236a48",
+  "checkpoints": {
+    "empirical_P0": {
+      "path": "mineral_prediction/p1g_empirical/20260922T054836Z_p1g_v1/raw/states/empirical_P0_2000.pt",
+      "sha256": "8b482436bb2c1d0b47907b181295ee43346d67a083cb519e4a5b05a545b14bf9"
+    },
+    "empirical_Plambda": {
+      "path": "mineral_prediction/p1g_empirical/20260922T054836Z_p1g_v1/raw/states/empirical_Plambda_2000.pt",
+      "sha256": "b037c0a597e0c5fe723734b363d9c400e0b9ca5e80b72324472dffd6ddc01f4c"
+    }
+  },
+  "grids": {
+    "48": {
+      "path": "mineral_prediction/p1f_population/20260917T121240Z_p1f_v1/raw/GRID_48.pt",
+      "sha256": "6d6871227b24a0ba55f6322b4ecc8bb75098bbc5cd93cfa1ccea22b0660c949a"
+    },
+    "384": {
+      "path": "mineral_prediction/p1g_quadrature/20260922T062242Z_p1g_q192_384/raw/GRID_384.pt",
+      "sha256": "232dc552d3321aa0725016892d470c7e09778708a66a6c8ec6ea07efcc1fc5a1"
+    }
+  }
+}

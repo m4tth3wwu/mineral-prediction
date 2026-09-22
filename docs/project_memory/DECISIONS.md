@@ -36,3 +36,7 @@ Original lambda passes the unchanged logZ/KL/TV pairwise gates; lambda0 logZ del
 
 ## D-20260922-003 — lambda0 endpoint384/768 passes
 Unchanged endpoint model, zero updates. logZ delta3.8467674e-5, KL delta3.5270307e-5, TV delta1.5755961e-5 pass original tolerances. Poor recovery persists on refined evaluation. Original lambda passed192/384 earlier; do not imply both models evaluated768 or optimizer convergence. No historical gates rewritten. Next proposed only: fixed two endpoints empirical gradient/data-term comparison48/384, no training; not executed.
+
+
+## D-20260922-004 — fixed endpoints48/384 gradient audit
+Data gradient relative differences23.9377%/9.60879%, whole-vector angles4.3902/2.8441deg, both negative48 directions remain local descent for384. Lambda0 u-block angle56.0895deg; full-vector angle hides block sensitivity. No updates, no Adam-direction or path-causality conclusion;384 derivative convergence not established. Next proposed only: read-only candidate next Adam direction from archived moments and existing48 gradient, dot against48/384 gradients; not executed.
