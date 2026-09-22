@@ -1,0 +1,13 @@
+{
+  "timestamp_utc": "2026-09-22T06:24:15.328761+00:00",
+  "session_id": "20260922T062242Z_p1g_q192_384",
+  "run_id": "20260922T062242Z_p1g_q192_384",
+  "phase": "fixed_endpoint_quadrature",
+  "status": "COMPLETED",
+  "scientific_status": "partially_resolved_lambda0_logZ_unresolved",
+  "output_dir": "mineral_prediction/p1g_quadrature/20260922T062242Z_p1g_q192_384",
+  "source_base_commit": "235deac76e2904aa08b186e6e31cfc16f40d441b",
+  "optimizer_updates": 0,
+  "integrity_passed": true,
+  "frozen_files": 2206
+}

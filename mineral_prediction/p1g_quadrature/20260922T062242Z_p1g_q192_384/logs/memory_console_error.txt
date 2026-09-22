@@ -1,0 +1,2 @@
+Memory finalization wrote every UTF-8 artifact successfully, then the last diagnostic print(text) raised UnicodeEncodeError: 'gbk' codec can't encode character '\xb2' in position14. No scientific computation or file write failed. Did not rerun the finalizer or append duplicate decisions. Subsequent readback confirmed report and memory content.
+First publication audit read the UTF-8 frozen manifest with implicit GBK and failed to decode it. Repeated only the read/hash audit with explicit UTF-8. No evaluation rerun, no evidence modification.

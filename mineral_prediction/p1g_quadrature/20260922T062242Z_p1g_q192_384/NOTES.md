@@ -1,9 +1,3 @@
-# 当前交接：P1-G固定终点积分检查完成
-
-基准 codex-refactor / 235deac76e2904aa08b186e6e31cfc16f40d441b。
-最新结果：mineral_prediction/p1g_quadrature/20260922T062242Z_p1g_q192_384
-旧P1-G: mineral_prediction/p1g_empirical/20260922T054836Z_p1g_v1（两条共4000更新），保持冻结。P1-C至P1-G所有历史证据不改。本轮0更新。
-
 # P1-G 固定终点192²/384²积分检查
 
 结论：原λ通过本次网格一致性门槛；λ=0仍未通过logZ门槛。旧P1-G 96²/192²失败记录保持不变。
@@ -27,5 +21,3 @@
 执行：两份原step2000模型、相同teacher与events，CPU单线程float64；optimizer updates=0。192²表面与原始归档逐位一致；标准库独立复算logZ/KL/TV通过；2206项历史文件哈希未变。原协议、模型、历史结果均未修改。
 
 下一步仅建议：固定λ=0同一step2000模型，做384²/768²的一次积分一致性检查，沿用原容差；不训练、不改参数，也不重复原λ。本轮未执行。
-
-阅读顺序：最新NOTES → PROTOCOL/PROVENANCE/GATES/RESULTS/FINAL_VERIFY；旧P1-G全程动态和2×2解释见旧NOTES。当前记录随本轮提交发布，实际远端状态以Git核对为准。

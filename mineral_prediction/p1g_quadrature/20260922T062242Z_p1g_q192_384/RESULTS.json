@@ -1,0 +1,282 @@
+{
+  "empirical_P0": {
+    "metrics": {
+      "192": {
+        "logZ": 9.056810128080668,
+        "KL": 0.16959459549494582,
+        "TV": 0.15417047601098266,
+        "centered_g_area_RMSE": 0.9099390138034178,
+        "centered_g_teacher_RMSE": 0.7817418498107909,
+        "beta_error": 0.5287028745873071,
+        "u_norm": 5.88519462648963,
+        "theta_norm": 26.09967866435179,
+        "h": {
+          "mean": 0.11417952416911265,
+          "RMS": 0.2629351044303867,
+          "variance": 0.05609790540233338,
+          "max_abs": 0.9979007220393159
+        },
+        "q": {
+          "mean": -0.3481618030634426,
+          "RMS": 1.0725188190393682,
+          "variance": 1.0290799760812135,
+          "max_abs": 6.585324591826901
+        },
+        "field_contribution_RMS": 1.5474242637092015,
+        "b_RMSE": 1.0225968914452106,
+        "b_relative_RMSE": 2.3607428029451567,
+        "b_component_RMSE": [
+          0.47990973752342836,
+          1.3642197215320597
+        ],
+        "theta_distance": 26.79157669130007,
+        "q_ratio": 7.156445576118865,
+        "field_ratio": 3.9831573139059913,
+        "canonical": {
+          "defined": true,
+          "v": [
+            -0.3139626263356522,
+            0.9494353423295446
+          ],
+          "angle": 1.4265125524591733,
+          "f_RMSE": 1.7314785950564875
+        },
+        "labels": {
+          "collapse": false,
+          "near_zero": false,
+          "category": "not_shrunken_by_definition",
+          "density_success": false,
+          "predictor_success": false,
+          "spatial_signal_success": false
+        },
+        "empirical_ppp": 2306.2498199063357
+      },
+      "384": {
+        "logZ": 9.056964310375351,
+        "KL": 0.16973447650634554,
+        "TV": 0.15424359902574394,
+        "centered_g_area_RMSE": 0.9099634049311486,
+        "centered_g_teacher_RMSE": 0.7817889115946942,
+        "beta_error": 0.5287028745873071,
+        "u_norm": 5.88519462648963,
+        "theta_norm": 26.09967866435179,
+        "h": {
+          "mean": 0.11417796990846524,
+          "RMS": 0.2629314038728797,
+          "variance": 0.05609631433014504,
+          "max_abs": 0.9979559591897377
+        },
+        "q": {
+          "mean": -0.3481611365504686,
+          "RMS": 1.0725477703667128,
+          "variance": 1.0291425427144927,
+          "max_abs": 6.594798462757442
+        },
+        "field_contribution_RMS": 1.5474024852080461,
+        "b_RMSE": 1.022584455363907,
+        "b_relative_RMSE": 2.360686646832936,
+        "b_component_RMSE": [
+          0.47990136831018687,
+          1.364204021910875
+        ],
+        "theta_distance": 26.79157669130007,
+        "q_ratio": 7.156366842309831,
+        "field_ratio": 3.983014724036949,
+        "canonical": {
+          "defined": true,
+          "v": [
+            -0.3139626263356522,
+            0.9494353423295446
+          ],
+          "angle": 1.4265125524591733,
+          "f_RMSE": 1.7314680264488578
+        },
+        "labels": {
+          "collapse": false,
+          "near_zero": false,
+          "category": "not_shrunken_by_definition",
+          "density_success": false,
+          "predictor_success": false,
+          "spatial_signal_success": false
+        },
+        "empirical_ppp": 2306.2892905737745
+      }
+    },
+    "fidelity": {
+      "errors": {
+        "logZ": 0.00015418229468266986,
+        "KL": 0.00013988101139972287,
+        "TV": 7.31230147612838e-05
+      },
+      "passed": false
+    },
+    "verification": {
+      "192": {
+        "independent": {
+          "logZ": 9.056810128080668,
+          "KL": 0.16959459549494582,
+          "TV": 0.1541704760109827
+        },
+        "errors": {
+          "logZ": 0.0,
+          "KL": 0.0,
+          "TV": 2.7755575615628914e-17
+        }
+      },
+      "384": {
+        "independent": {
+          "logZ": 9.056964310375351,
+          "KL": 0.16973447650634554,
+          "TV": 0.15424359902574392
+        },
+        "errors": {
+          "logZ": 0.0,
+          "KL": 0.0,
+          "TV": 2.7755575615628914e-17
+        }
+      }
+    },
+    "empirical_objective_shift": 0.039470667438763485,
+    "stationarity": "not reevaluated; frozen P1-G status remains false"
+  },
+  "empirical_Plambda": {
+    "metrics": {
+      "192": {
+        "logZ": 9.097246165141105,
+        "KL": 0.08830614855958174,
+        "TV": 0.142319010876316,
+        "centered_g_area_RMSE": 0.43634669273012683,
+        "centered_g_teacher_RMSE": 0.4439249895467211,
+        "beta_error": 0.4689522223662395,
+        "u_norm": 2.895054502543322,
+        "theta_norm": 18.686994863324703,
+        "h": {
+          "mean": 0.15449342779693181,
+          "RMS": 0.31262339462126343,
+          "variance": 0.07386516763207647,
+          "max_abs": 1.3350558158929797
+        },
+        "q": {
+          "mean": -0.18683386345395883,
+          "RMS": 0.5305175726020532,
+          "variance": 0.24654200230644235,
+          "max_abs": 3.007566007340693
+        },
+        "field_contribution_RMS": 0.9050617661986665,
+        "b_RMSE": 0.6093872003833872,
+        "b_relative_RMSE": 1.4068167618609058,
+        "b_component_RMSE": [
+          0.3003557796382224,
+          0.8077697231390396
+        ],
+        "theta_distance": 19.44586317310211,
+        "q_ratio": 3.539910039901988,
+        "field_ratio": 2.3296800225489807,
+        "canonical": {
+          "defined": true,
+          "v": [
+            -0.057135880923568055,
+            0.9983664112494409
+          ],
+          "angle": 1.1643157312391466,
+          "f_RMSE": 1.107697224957674
+        },
+        "labels": {
+          "collapse": false,
+          "near_zero": false,
+          "category": "not_shrunken_by_definition",
+          "density_success": false,
+          "predictor_success": false,
+          "spatial_signal_success": false
+        },
+        "empirical_ppp": 2317.1157769042843
+      },
+      "384": {
+        "logZ": 9.097291552971878,
+        "KL": 0.08834040653248998,
+        "TV": 0.14237037668526764,
+        "centered_g_area_RMSE": 0.4363964056167651,
+        "centered_g_teacher_RMSE": 0.4439789690242892,
+        "beta_error": 0.4689522223662395,
+        "u_norm": 2.895054502543322,
+        "theta_norm": 18.686994863324703,
+        "h": {
+          "mean": 0.15449642713508974,
+          "RMS": 0.3126521789966074,
+          "variance": 0.07388223903381842,
+          "max_abs": 1.3436040278454136
+        },
+        "q": {
+          "mean": -0.18682843647813602,
+          "RMS": 0.5305649101584843,
+          "variance": 0.24659425921461564,
+          "max_abs": 3.0269517074010786
+        },
+        "field_contribution_RMS": 0.905145098534109,
+        "b_RMSE": 0.6094502492575629,
+        "b_relative_RMSE": 1.4069459571623701,
+        "b_component_RMSE": [
+          0.30036283496283,
+          0.8078622283615585
+        ],
+        "theta_distance": 19.44586317310211,
+        "q_ratio": 3.5400913932747953,
+        "field_ratio": 2.3298439089468803,
+        "canonical": {
+          "defined": true,
+          "v": [
+            -0.057135880923568055,
+            0.9983664112494409
+          ],
+          "angle": 1.1643157312391466,
+          "f_RMSE": 1.1077767515308639
+        },
+        "labels": {
+          "collapse": false,
+          "near_zero": false,
+          "category": "not_shrunken_by_definition",
+          "density_success": false,
+          "predictor_success": false,
+          "spatial_signal_success": false
+        },
+        "empirical_ppp": 2317.1273961889624
+      }
+    },
+    "fidelity": {
+      "errors": {
+        "logZ": 4.538783077379094e-05,
+        "KL": 3.4257972908235956e-05,
+        "TV": 5.1365808951653324e-05
+      },
+      "passed": true
+    },
+    "verification": {
+      "192": {
+        "independent": {
+          "logZ": 9.097246165141105,
+          "KL": 0.08830614855958174,
+          "TV": 0.142319010876316
+        },
+        "errors": {
+          "logZ": 0.0,
+          "KL": 0.0,
+          "TV": 0.0
+        }
+      },
+      "384": {
+        "independent": {
+          "logZ": 9.097291552971878,
+          "KL": 0.08834040653248998,
+          "TV": 0.14237037668526764
+        },
+        "errors": {
+          "logZ": 0.0,
+          "KL": 0.0,
+          "TV": 0.0
+        }
+      }
+    },
+    "empirical_objective_shift": 0.01161928467809048,
+    "stationarity": "not reevaluated; frozen P1-G status remains false"
+  }
+}

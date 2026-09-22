@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "checks": {
+    "input_file": true,
+    "teacher": true,
+    "events": true,
+    "environment": true,
+    "fixed_step2000": true,
+    "empirical_P0_math192": true,
+    "empirical_P0_surface192_exact": true,
+    "empirical_P0_metrics192": true,
+    "empirical_P0_math384": true,
+    "empirical_P0_state_unchanged": true,
+    "empirical_Plambda_math192": true,
+    "empirical_Plambda_surface192_exact": true,
+    "empirical_Plambda_metrics192": true,
+    "empirical_Plambda_math384": true,
+    "empirical_Plambda_state_unchanged": true,
+    "teacher_unchanged": true,
+    "source_unchanged": true,
+    "protocol_unchanged": true,
+    "historical_unchanged": true,
+    "teacher_logZ": true
+  },
+  "failed": [],
+  "frozen_count": 2206,
+  "changed": [],
+  "updates": 0
+}

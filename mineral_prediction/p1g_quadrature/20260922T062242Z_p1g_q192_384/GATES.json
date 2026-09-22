@@ -1,0 +1,23 @@
+{
+  "endpoint_fidelity": {
+    "empirical_P0": {
+      "errors": {
+        "logZ": 0.00015418229468266986,
+        "KL": 0.00013988101139972287,
+        "TV": 7.31230147612838e-05
+      },
+      "passed": false
+    },
+    "empirical_Plambda": {
+      "errors": {
+        "logZ": 4.538783077379094e-05,
+        "KL": 3.4257972908235956e-05,
+        "TV": 5.1365808951653324e-05
+      },
+      "passed": true
+    }
+  },
+  "teacher_logZ_abs": 2.3028086530985092e-06,
+  "teacher_logZ_passed": true,
+  "all_endpoints_pass": false
+}

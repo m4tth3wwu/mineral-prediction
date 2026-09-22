@@ -1,0 +1,11 @@
+{
+  "checks": {
+    "input_file": true,
+    "teacher": true,
+    "events": true,
+    "environment": true,
+    "fixed_step2000": true
+  },
+  "passed": true,
+  "updates": 0
+}

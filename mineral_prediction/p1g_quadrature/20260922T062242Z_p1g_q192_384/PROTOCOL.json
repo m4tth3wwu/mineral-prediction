@@ -1,0 +1,27 @@
+{
+  "stage": "P1-G fixed endpoint numerical follow-up",
+  "time": "2026-09-22T06:22:43.141550+00:00",
+  "run_id": "20260922T062242Z_p1g_q192_384",
+  "parent": "mineral_prediction/p1g_empirical/20260922T054836Z_p1g_v1",
+  "request": "User: 继续下一步; accepted proposal: fixed two step2000 models, compare192/384 without training or parameter changes.",
+  "grids": [
+    192,
+    384
+  ],
+  "models": [
+    "empirical_P0",
+    "empirical_Plambda"
+  ],
+  "updates": 0,
+  "dtype": "float64",
+  "threads": 1,
+  "quadrature": "unchanged nonuniform midpoint cells, true area weights",
+  "thresholds": {
+    "logZ_abs": 0.0001,
+    "KL_abs": 1e-06,
+    "KL_relative": 0.01,
+    "TV_abs": 0.001
+  },
+  "policy": "No higher grid, optimizer, parameter modification or adaptive refinement. Preserve old failed gates. New pairwise pass is not exact continuous integration proof or stationarity.",
+  "verification": "192 surfaces bit equal archived; metrics reproduce old within1e-12; independent standard-library logZ/KL/TV agreement1e-10; all model and historical hashes unchanged."
+}

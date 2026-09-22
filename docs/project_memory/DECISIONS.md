@@ -28,3 +28,7 @@
 
 ## D-20260922-001 — P1-G matched empirical pair completed
 Only archived data23/init1011 lambda0/1, 4000 total updates. No observed collapse; original lambda reduces endpoint KL/branch expansion but increases some instability measures. No predeclared objective conflict. Both empirical endpoints fail unchanged logZ96/192 gate; scientific status numerically_unresolved, not structural discovery. All32 integrity checks pass and305 historical hashes unchanged. Recommend only fixed-endpoint192/384 numerical check next, not executed. User explicitly authorizes complete results commit and ordinary push codex-refactor.
+
+
+## D-20260922-002 — Fixed P1-G endpoint192/384 check
+Original lambda passes the unchanged logZ/KL/TV pairwise gates; lambda0 logZ delta=.0001541823 still fails1e-4. KL effect direction stable; no training, no claim of exact integration or convergence. Historical gates remain frozen. Only proposed next check: fixed lambda0 endpoint384/768, not executed.
