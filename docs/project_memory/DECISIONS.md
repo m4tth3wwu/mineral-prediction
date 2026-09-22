@@ -32,3 +32,7 @@ Only archived data23/init1011 lambda0/1, 4000 total updates. No observed collaps
 
 ## D-20260922-002 — Fixed P1-G endpoint192/384 check
 Original lambda passes the unchanged logZ/KL/TV pairwise gates; lambda0 logZ delta=.0001541823 still fails1e-4. KL effect direction stable; no training, no claim of exact integration or convergence. Historical gates remain frozen. Only proposed next check: fixed lambda0 endpoint384/768, not executed.
+
+
+## D-20260922-003 — lambda0 endpoint384/768 passes
+Unchanged endpoint model, zero updates. logZ delta3.8467674e-5, KL delta3.5270307e-5, TV delta1.5755961e-5 pass original tolerances. Poor recovery persists on refined evaluation. Original lambda passed192/384 earlier; do not imply both models evaluated768 or optimizer convergence. No historical gates rewritten. Next proposed only: fixed two endpoints empirical gradient/data-term comparison48/384, no training; not executed.

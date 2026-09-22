@@ -1,0 +1,12 @@
+{
+  "checks": {
+    "input_exact": true,
+    "checkpoint_exact": true,
+    "step2000": true,
+    "teacher": true,
+    "events": true,
+    "environment": true
+  },
+  "passed": true,
+  "updates": 0
+}

@@ -1,0 +1,12 @@
+{
+  "endpoint_fidelity": {
+    "errors": {
+      "logZ": 3.846767411808116e-05,
+      "KL": 3.527030714778334e-05,
+      "TV": 1.5755961122160267e-05
+    },
+    "passed": true
+  },
+  "teacher_logZ_abs": 5.762484018845271e-07,
+  "teacher_pass": true
+}

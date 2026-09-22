@@ -1,0 +1,4 @@
+{"grid": 384, "KL": 0.16973447650634554, "q_ratio": 7.156366842309831, "field_ratio": 3.983014724036949}
+{"grid": 768, "KL": 0.16976974681349333, "q_ratio": 7.1563520865475425, "field_ratio": 3.9830075098387576}
+{"fidelity": {"errors": {"logZ": 3.846767411808116e-05, "KL": 3.527030714778334e-05, "TV": 1.5755961122160267e-05}, "passed": true}, "verified": true, "frozen_files": 2235}
+OUT mineral_prediction/p1g_quadrature/20260922T063312Z_p1g_q384_768

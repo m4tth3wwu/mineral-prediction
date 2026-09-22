@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "checks": {
+    "input_exact": true,
+    "checkpoint_exact": true,
+    "step2000": true,
+    "teacher": true,
+    "events": true,
+    "environment": true,
+    "independent_math384": true,
+    "surface384_exact": true,
+    "metrics384_exact": true,
+    "independent_math768": true,
+    "teacher_logZ": true,
+    "state_unchanged": true,
+    "teacher_unchanged": true,
+    "source_unchanged": true,
+    "protocol_unchanged": true,
+    "historical_unchanged": true
+  },
+  "failed": [],
+  "frozen_count": 2235,
+  "changed": [],
+  "updates": 0
+}

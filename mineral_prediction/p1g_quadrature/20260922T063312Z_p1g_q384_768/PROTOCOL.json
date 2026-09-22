@@ -1,0 +1,25 @@
+{
+  "stage": "P1-G lambda0 fixed-endpoint384/768 follow-up",
+  "run_id": "20260922T063312Z_p1g_q384_768",
+  "time": "2026-09-22T06:33:13.253114+00:00",
+  "request": "User: 继续; accepts the proposed lambda0-only384/768 check. No original-lambda reevaluation.",
+  "checkpoint": "mineral_prediction/p1g_empirical/20260922T054836Z_p1g_v1/raw/states/empirical_P0_2000.pt",
+  "grids": [
+    384,
+    768
+  ],
+  "updates": 0,
+  "models": [
+    "empirical_P0"
+  ],
+  "dtype": "float64",
+  "threads": 1,
+  "thresholds": {
+    "logZ_abs": 0.0001,
+    "KL_abs": 1e-06,
+    "KL_relative": 0.01,
+    "TV_abs": 0.001
+  },
+  "policy": "Same quadrature rule and fixed step2000 model; no parameter changes, training, adaptive refinement or new seeds. Preserve all historical failed gates. Pairwise grid agreement does not prove exact integration or optimizer convergence.",
+  "verification": "384 surface exact against previous; independent math.fsum/log/exp verification at both resolutions; frozen source/state/history hashes."
+}
