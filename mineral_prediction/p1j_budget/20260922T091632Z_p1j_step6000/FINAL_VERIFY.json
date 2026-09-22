@@ -1,0 +1,148 @@
+{
+  "time": "2026-09-22T12:06:50.550254+00:00",
+  "passed": true,
+  "checks": {
+    "source_frozen": true,
+    "protocol_frozen": true,
+    "grids_frozen": true,
+    "input_file": true,
+    "pretraining_pass": true,
+    "training_count": true,
+    "evaluation_pass": true,
+    "input_hash": true,
+    "empirical_P0_segment_boundary": true,
+    "empirical_P0_rows": true,
+    "empirical_P0_monitors": true,
+    "empirical_P0_grid_labels": true,
+    "empirical_P0_accounting": true,
+    "empirical_P0_linear_accounting": true,
+    "empirical_P0_norm_decomposition": true,
+    "empirical_P0_flags": true,
+    "empirical_P0_monitor_alignment": true,
+    "empirical_P0_checkpoint_coverage": true,
+    "empirical_P0_checkpoint_integrity": true,
+    "empirical_P0_alignment_2000": true,
+    "empirical_P0_alignment_4000": true,
+    "empirical_P0_alignment_5975": true,
+    "empirical_P0_first_actual_matches_archived_probe": true,
+    "empirical_P0_first_moments": true,
+    "empirical_Plambda_segment_boundary": true,
+    "empirical_Plambda_rows": true,
+    "empirical_Plambda_monitors": true,
+    "empirical_Plambda_grid_labels": true,
+    "empirical_Plambda_accounting": true,
+    "empirical_Plambda_linear_accounting": true,
+    "empirical_Plambda_norm_decomposition": true,
+    "empirical_Plambda_flags": true,
+    "empirical_Plambda_monitor_alignment": true,
+    "empirical_Plambda_checkpoint_coverage": true,
+    "empirical_Plambda_checkpoint_integrity": true,
+    "empirical_Plambda_alignment_2000": true,
+    "empirical_Plambda_alignment_4000": true,
+    "empirical_Plambda_alignment_5975": true,
+    "empirical_Plambda_first_actual_matches_archived_probe": true,
+    "empirical_Plambda_first_moments": true,
+    "step2000_empirical_P0_reported_rates": true,
+    "step2000_empirical_P0_reported_endpoint": true,
+    "step4000_empirical_P0_reported_rates": true,
+    "step4000_empirical_P0_reported_endpoint": true,
+    "step6000_empirical_P0_reported_rates": true,
+    "step6000_empirical_P0_reported_endpoint": true,
+    "step2000_empirical_Plambda_reported_rates": true,
+    "step2000_empirical_Plambda_reported_endpoint": true,
+    "step4000_empirical_Plambda_reported_rates": true,
+    "step4000_empirical_Plambda_reported_endpoint": true,
+    "step6000_empirical_Plambda_reported_rates": true,
+    "step6000_empirical_Plambda_reported_endpoint": true,
+    "empirical_P0_2000_4000_contrast384": true,
+    "empirical_Plambda_2000_4000_contrast384": true,
+    "empirical_P0_2000_4000_contrast768": true,
+    "empirical_Plambda_2000_4000_contrast768": true,
+    "empirical_P0_2000_6000_contrast384": true,
+    "empirical_Plambda_2000_6000_contrast384": true,
+    "empirical_P0_2000_6000_contrast768": true,
+    "empirical_Plambda_2000_6000_contrast768": true,
+    "empirical_P0_4000_6000_contrast384": true,
+    "empirical_Plambda_4000_6000_contrast384": true,
+    "empirical_P0_4000_6000_contrast768": true,
+    "empirical_Plambda_4000_6000_contrast768": true,
+    "historical_unchanged": true
+  },
+  "failed": [],
+  "detail": {
+    "empirical_P0": {
+      "checkpoints": 1391,
+      "consecutive_saved_pairs": 1193,
+      "checkpoint_errors": [],
+      "alignment_points": [
+        {
+          "step": 2000,
+          "errors": {
+            "objective": 0.0,
+            "gradient": 0.0,
+            "prediction": 2.7200464103316335e-15,
+            "update": 9.584347204771859e-17
+          }
+        },
+        {
+          "step": 4000,
+          "errors": {
+            "objective": 0.0,
+            "gradient": 0.0,
+            "prediction": 3.419486915845482e-14,
+            "update": 2.504507018441515e-16
+          }
+        },
+        {
+          "step": 5975,
+          "errors": {
+            "objective": 0.0,
+            "gradient": 0.0,
+            "prediction": 7.605027718682322e-15,
+            "update": 7.892991815694472e-17
+          }
+        }
+      ]
+    },
+    "empirical_Plambda": {
+      "checkpoints": 443,
+      "consecutive_saved_pairs": 268,
+      "checkpoint_errors": [],
+      "alignment_points": [
+        {
+          "step": 2000,
+          "errors": {
+            "objective": 0.0,
+            "gradient": 0.0,
+            "prediction": 2.400857290751901e-15,
+            "update": 4.087442190270352e-17
+          }
+        },
+        {
+          "step": 4000,
+          "errors": {
+            "objective": 0.0,
+            "gradient": 0.0,
+            "prediction": 6.439293542825908e-15,
+            "update": 1.1796119636642288e-16
+          }
+        },
+        {
+          "step": 5975,
+          "errors": {
+            "objective": 0.0,
+            "gradient": 0.0,
+            "prediction": 1.199040866595169e-14,
+            "update": 9.974659986866641e-17
+          }
+        }
+      ]
+    }
+  },
+  "frozen": {
+    "count": 4631,
+    "passed": true,
+    "changed": []
+  },
+  "optimizer_steps": 0
+}

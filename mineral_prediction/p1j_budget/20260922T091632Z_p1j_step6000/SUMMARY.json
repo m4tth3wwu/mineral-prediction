@@ -1,0 +1,675 @@
+{
+  "run_id": "20260922T091632Z_p1j_step6000",
+  "new_updates": 8000,
+  "resume_step": 2000,
+  "end_step": 6000,
+  "temporary_displacements": 2,
+  "runs": {
+    "step2000_empirical_P0": {
+      "budget": 2000,
+      "learning_rate": 0.001,
+      "training_grid": 96,
+      "metrics768": {
+        "logZ": 9.074035310868126,
+        "KL": 0.07334895967984423,
+        "TV": 0.12898945564992934,
+        "centered_g_area_RMSE": 0.437728258181539,
+        "centered_g_teacher_RMSE": 0.402899009714188,
+        "beta_error": 0.4301088537395233,
+        "u_norm": 2.8913910527305346,
+        "theta_norm": 17.405649195334547,
+        "h": {
+          "mean": 0.18074445880255424,
+          "RMS": 0.3188218018355941,
+          "variance": 0.06897878193786644,
+          "max_abs": 0.9854674103734782
+        },
+        "q": {
+          "mean": -0.1919980360054591,
+          "RMS": 0.513064418532119,
+          "variance": 0.22637185173374813,
+          "max_abs": 3.2166301153679036
+        },
+        "field_contribution_RMS": 0.9218385052428644,
+        "b_RMSE": 0.5832447658729027,
+        "b_relative_RMSE": 1.3464454026900192,
+        "b_component_RMSE": [
+          0.4981426429338763,
+          0.6574213421597499
+        ],
+        "theta_distance": 18.35996084608382,
+        "q_ratio": 3.4232901919315295,
+        "field_ratio": 2.3727998947972604,
+        "canonical": {
+          "defined": true,
+          "v": [
+            -0.5354395986041592,
+            0.8445735232924465
+          ],
+          "angle": 1.6721768768353578,
+          "f_RMSE": 1.1154646909292545
+        },
+        "labels": {
+          "collapse": false,
+          "near_zero": false,
+          "category": "not_shrunken_by_definition",
+          "density_success": false,
+          "predictor_success": false,
+          "spatial_signal_success": false
+        },
+        "empirical_ppp": 2318.6694698426113,
+        "penalty_effective": 0.0,
+        "total_objective": 2318.6694698426113
+      },
+      "fidelity": {
+        "errors": {
+          "logZ": 7.4326413965764004e-06,
+          "KL": 4.761670792774453e-06,
+          "TV": 2.9310884669397907e-06
+        },
+        "passed": true
+      },
+      "stationarity": {
+        "max_gradient_per256": 2.182805759227563,
+        "total_range_per256": 0.007496542267309891,
+        "passed": false
+      },
+      "block_start": 1,
+      "block_end": 2000,
+      "block_counts": {
+        "reversals": 460,
+        "positive_predictions": 75,
+        "actual_increases": 535,
+        "positive_prediction_and_increase": 75
+      },
+      "block_rates": {
+        "reversals": 0.23,
+        "positive_predictions": 0.0375,
+        "actual_increases": 0.2675,
+        "positive_prediction_and_increase": 0.0375
+      },
+      "objective_spikes": 0,
+      "gradient_max": 558.7982743622562,
+      "collapse_ever48": false,
+      "density_success": false,
+      "predictor_success": false,
+      "empirical96": 2318.63422301536,
+      "total96": 2318.63422301536,
+      "overfit_intervals192": 55,
+      "strict_conflicts192": 0
+    },
+    "step2000_empirical_Plambda": {
+      "budget": 2000,
+      "learning_rate": 0.001,
+      "training_grid": 96,
+      "metrics768": {
+        "logZ": 9.110376505312532,
+        "KL": 0.035343880722154,
+        "TV": 0.09186498924254527,
+        "centered_g_area_RMSE": 0.2585753712644214,
+        "centered_g_teacher_RMSE": 0.26398800538009726,
+        "beta_error": 0.29636146267310876,
+        "u_norm": 1.9850289688850895,
+        "theta_norm": 15.621437111631046,
+        "h": {
+          "mean": 0.1276377588843896,
+          "RMS": 0.23449060195839042,
+          "variance": 0.03869444491377862,
+          "max_abs": 0.9833531539340084
+        },
+        "q": {
+          "mean": -0.1179400040598859,
+          "RMS": 0.30366934784887445,
+          "variance": 0.07830522826531479,
+          "max_abs": 2.6524116342757598
+        },
+        "field_contribution_RMS": 0.46547063781870773,
+        "b_RMSE": 0.3674887478800238,
+        "b_relative_RMSE": 0.848363438603398,
+        "b_component_RMSE": [
+          0.3531498349168435,
+          0.3812888062021512
+        ],
+        "theta_distance": 16.78555245089463,
+        "q_ratio": 2.0261555128992397,
+        "field_ratio": 1.1981151515866262,
+        "canonical": {
+          "defined": true,
+          "v": [
+            -0.4859383160121377,
+            0.8739931081142962
+          ],
+          "angle": 1.6145851620265672,
+          "f_RMSE": 0.7256552596915594
+        },
+        "labels": {
+          "collapse": false,
+          "near_zero": false,
+          "category": "not_shrunken_by_definition",
+          "density_success": false,
+          "predictor_success": false,
+          "spatial_signal_success": false
+        },
+        "empirical_ppp": 2327.877972549868,
+        "penalty_effective": 0.5166385025347867,
+        "total_objective": 2328.394611052403
+      },
+      "fidelity": {
+        "errors": {
+          "logZ": 3.2155302012171205e-06,
+          "KL": 1.9190329378915294e-06,
+          "TV": 1.5776511234355528e-06
+        },
+        "passed": true
+      },
+      "stationarity": {
+        "max_gradient_per256": 2.0869321909032026,
+        "total_range_per256": 0.00296378172997791,
+        "passed": false
+      },
+      "block_start": 1,
+      "block_end": 2000,
+      "block_counts": {
+        "reversals": 498,
+        "positive_predictions": 150,
+        "actual_increases": 648,
+        "positive_prediction_and_increase": 150
+      },
+      "block_rates": {
+        "reversals": 0.249,
+        "positive_predictions": 0.075,
+        "actual_increases": 0.324,
+        "positive_prediction_and_increase": 0.075
+      },
+      "objective_spikes": 1,
+      "gradient_max": 604.7268085770968,
+      "collapse_ever48": false,
+      "density_success": false,
+      "predictor_success": false,
+      "empirical96": 2327.8580571694442,
+      "total96": 2328.374695671979,
+      "overfit_intervals192": 50,
+      "strict_conflicts192": 0
+    },
+    "step4000_empirical_P0": {
+      "budget": 4000,
+      "learning_rate": 0.001,
+      "training_grid": 96,
+      "metrics768": {
+        "logZ": 9.056739573024558,
+        "KL": 0.16126925393918334,
+        "TV": 0.1713930395476722,
+        "centered_g_area_RMSE": 0.7859944806644918,
+        "centered_g_teacher_RMSE": 0.7000061630920154,
+        "beta_error": 0.537850092622915,
+        "u_norm": 5.0054376846937085,
+        "theta_norm": 24.6780178466344,
+        "h": {
+          "mean": 0.16161905702802887,
+          "RMS": 0.3498797408148821,
+          "variance": 0.09629511343805953,
+          "max_abs": 1.13084566143223
+        },
+        "q": {
+          "mean": -0.32010626391248787,
+          "RMS": 0.9083117567992018,
+          "variance": 0.7225622273436405,
+          "max_abs": 5.2476229908514584
+        },
+        "field_contribution_RMS": 1.7513012397856784,
+        "b_RMSE": 1.1624332461173303,
+        "b_relative_RMSE": 2.683526697108473,
+        "b_component_RMSE": [
+          0.79353972892095,
+          1.4397210847875408
+        ],
+        "theta_distance": 25.37880743663642,
+        "q_ratio": 6.060476259809367,
+        "field_ratio": 4.507825800167654,
+        "canonical": {
+          "defined": true,
+          "v": [
+            -0.42244949173672924,
+            0.9063864666528174
+          ],
+          "angle": 1.5432948217801614,
+          "f_RMSE": 1.8780974585169723
+        },
+        "labels": {
+          "collapse": false,
+          "near_zero": false,
+          "category": "not_shrunken_by_definition",
+          "density_success": false,
+          "predictor_success": false,
+          "spatial_signal_success": false
+        },
+        "empirical_ppp": 2301.097466398459,
+        "penalty_effective": 0.0,
+        "total_objective": 2301.097466398459
+      },
+      "fidelity": {
+        "errors": {
+          "logZ": 1.3750556060898589e-05,
+          "KL": 1.0107322077956837e-05,
+          "TV": 6.608119873796614e-06
+        },
+        "passed": true
+      },
+      "stationarity": {
+        "max_gradient_per256": 7.715963013314929,
+        "total_range_per256": 0.013053222620065696,
+        "passed": false
+      },
+      "block_start": 2001,
+      "block_end": 4000,
+      "block_counts": {
+        "reversals": 760,
+        "positive_predictions": 198,
+        "actual_increases": 958,
+        "positive_prediction_and_increase": 198
+      },
+      "block_rates": {
+        "reversals": 0.38,
+        "positive_predictions": 0.099,
+        "actual_increases": 0.479,
+        "positive_prediction_and_increase": 0.099
+      },
+      "objective_spikes": 100,
+      "gradient_max": 2002.9899313767742,
+      "collapse_ever48": false,
+      "density_success": false,
+      "predictor_success": false,
+      "empirical96": 2300.9986492328367,
+      "total96": 2300.9986492328367,
+      "overfit_intervals192": 39,
+      "strict_conflicts192": 0
+    },
+    "step4000_empirical_Plambda": {
+      "budget": 4000,
+      "learning_rate": 0.001,
+      "training_grid": 96,
+      "metrics768": {
+        "logZ": 9.125334659229214,
+        "KL": 0.0516613545622544,
+        "TV": 0.103738289974406,
+        "centered_g_area_RMSE": 0.33947325053349015,
+        "centered_g_teacher_RMSE": 0.3303008436059476,
+        "beta_error": 0.3131887481214584,
+        "u_norm": 2.627659537898583,
+        "theta_norm": 20.887413310745927,
+        "h": {
+          "mean": 0.11514510595198282,
+          "RMS": 0.23652525509285982,
+          "variance": 0.04268580087204914,
+          "max_abs": 0.9459398012628062
+        },
+        "q": {
+          "mean": -0.12128637086380721,
+          "RMS": 0.380396051596772,
+          "variance": 0.129990772313101,
+          "max_abs": 2.9791287430977453
+        },
+        "field_contribution_RMS": 0.6215078424986485,
+        "b_RMSE": 0.4649424497767925,
+        "b_relative_RMSE": 1.0733394633734543,
+        "b_component_RMSE": [
+          0.3335112880293123,
+          0.566668495653252
+        ],
+        "theta_distance": 21.86191628872681,
+        "q_ratio": 2.5380946825475257,
+        "field_ratio": 1.5997528145213922,
+        "canonical": {
+          "defined": true,
+          "v": [
+            -0.2252155515756248,
+            0.9743089629724686
+          ],
+          "angle": 1.334312983658737,
+          "f_RMSE": 0.8549823257812081
+        },
+        "labels": {
+          "collapse": false,
+          "near_zero": false,
+          "category": "not_shrunken_by_definition",
+          "density_success": false,
+          "predictor_success": false,
+          "spatial_signal_success": false
+        },
+        "empirical_ppp": 2324.9077680294504,
+        "penalty_effective": 0.9094702239281736,
+        "total_objective": 2325.8172382533785
+      },
+      "fidelity": {
+        "errors": {
+          "logZ": 4.6931985373532825e-06,
+          "KL": 3.1999632721380067e-06,
+          "TV": 2.2363513316886463e-06
+        },
+        "passed": true
+      },
+      "stationarity": {
+        "max_gradient_per256": 4.4267690198673435,
+        "total_range_per256": 0.006295853247463512,
+        "passed": false
+      },
+      "block_start": 2001,
+      "block_end": 4000,
+      "block_counts": {
+        "reversals": 703,
+        "positive_predictions": 271,
+        "actual_increases": 974,
+        "positive_prediction_and_increase": 271
+      },
+      "block_rates": {
+        "reversals": 0.3515,
+        "positive_predictions": 0.1355,
+        "actual_increases": 0.487,
+        "positive_prediction_and_increase": 0.1355
+      },
+      "objective_spikes": 42,
+      "gradient_max": 1133.25286908604,
+      "collapse_ever48": false,
+      "density_success": false,
+      "predictor_success": false,
+      "empirical96": 2324.8940619732266,
+      "total96": 2325.8035321971547,
+      "overfit_intervals192": 22,
+      "strict_conflicts192": 0
+    },
+    "step6000_empirical_P0": {
+      "budget": 6000,
+      "learning_rate": 0.001,
+      "training_grid": 96,
+      "metrics768": {
+        "logZ": 9.055767974254234,
+        "KL": 0.3039534973223983,
+        "TV": 0.21519507272927846,
+        "centered_g_area_RMSE": 1.2053301841633033,
+        "centered_g_teacher_RMSE": 1.077290675240515,
+        "beta_error": 0.610754768494478,
+        "u_norm": 6.86210200068439,
+        "theta_norm": 29.219432224767875,
+        "h": {
+          "mean": 0.1628926244030639,
+          "RMS": 0.3857226384026752,
+          "variance": 0.12224794669140335,
+          "max_abs": 1.5628171646691182
+        },
+        "q": {
+          "mean": -0.4817051494002648,
+          "RMS": 1.3777851382974622,
+          "variance": 1.6662520363546243,
+          "max_abs": 7.44769950038181
+        },
+        "field_contribution_RMS": 2.6468680886922584,
+        "b_RMSE": 1.77970649549558,
+        "b_relative_RMSE": 4.108528304426777,
+        "b_component_RMSE": [
+          1.1433922168283495,
+          2.2421785519254867
+        ],
+        "theta_distance": 29.862751792468426,
+        "q_ratio": 9.192916484087583,
+        "field_ratio": 6.813002805449725,
+        "canonical": {
+          "defined": true,
+          "v": [
+            -0.4173157748590861,
+            0.9087615441103131
+          ],
+          "angle": 1.5376383098495197,
+          "f_RMSE": 2.7589834332498864
+        },
+        "labels": {
+          "collapse": false,
+          "near_zero": false,
+          "category": "not_shrunken_by_definition",
+          "density_success": false,
+          "predictor_success": false,
+          "spatial_signal_success": false
+        },
+        "empirical_ppp": 2286.572965639507,
+        "penalty_effective": 0.0,
+        "total_objective": 2286.572965639507
+      },
+      "fidelity": {
+        "errors": {
+          "logZ": 1.3000951566866092e-05,
+          "KL": 1.0097405654718727e-05,
+          "TV": 7.2400444076081705e-06
+        },
+        "passed": true
+      },
+      "stationarity": {
+        "max_gradient_per256": 19.347362149804674,
+        "total_range_per256": 0.028214890781878665,
+        "passed": false
+      },
+      "block_start": 4001,
+      "block_end": 6000,
+      "block_counts": {
+        "reversals": 760,
+        "positive_predictions": 199,
+        "actual_increases": 959,
+        "positive_prediction_and_increase": 199
+      },
+      "block_rates": {
+        "reversals": 0.38,
+        "positive_predictions": 0.0995,
+        "actual_increases": 0.4795,
+        "positive_prediction_and_increase": 0.0995
+      },
+      "objective_spikes": 456,
+      "gradient_max": 5217.719361774868,
+      "collapse_ever48": false,
+      "density_success": false,
+      "predictor_success": false,
+      "empirical96": 2286.5109847693275,
+      "total96": 2286.5109847693275,
+      "overfit_intervals192": 34,
+      "strict_conflicts192": 0
+    },
+    "step6000_empirical_Plambda": {
+      "budget": 6000,
+      "learning_rate": 0.001,
+      "training_grid": 96,
+      "metrics768": {
+        "logZ": 9.133064566915957,
+        "KL": 0.06380284795727853,
+        "TV": 0.11180182860462531,
+        "centered_g_area_RMSE": 0.3923257242093274,
+        "centered_g_teacher_RMSE": 0.37598435490064425,
+        "beta_error": 0.321798388375612,
+        "u_norm": 2.884206466427896,
+        "theta_norm": 25.112567916434262,
+        "h": {
+          "mean": 0.11583572274676171,
+          "RMS": 0.2508721771206571,
+          "variance": 0.04951893458899392,
+          "max_abs": 0.9205659710166982
+        },
+        "q": {
+          "mean": -0.12704201817291835,
+          "RMS": 0.43415942225165244,
+          "variance": 0.1723547295484405,
+          "max_abs": 3.0616413454536846
+        },
+        "field_contribution_RMS": 0.7235671554982436,
+        "b_RMSE": 0.5266040376529543,
+        "b_relative_RMSE": 1.2156878672964082,
+        "b_component_RMSE": [
+          0.327820629949672,
+          0.6686981826834798
+        ],
+        "theta_distance": 25.9493391942692,
+        "q_ratio": 2.896816926383092,
+        "field_ratio": 1.8624521113843708,
+        "canonical": {
+          "defined": true,
+          "v": [
+            -0.168319900690299,
+            0.9857324236483285
+          ],
+          "angle": 1.2762737207861994,
+          "f_RMSE": 0.9404025109662066
+        },
+        "labels": {
+          "collapse": false,
+          "near_zero": false,
+          "category": "not_shrunken_by_definition",
+          "density_success": false,
+          "predictor_success": false,
+          "spatial_signal_success": false
+        },
+        "empirical_ppp": 2321.5628898180057,
+        "penalty_effective": 1.148177459074803,
+        "total_objective": 2322.7110672770805
+      },
+      "fidelity": {
+        "errors": {
+          "logZ": 7.831652641954179e-06,
+          "KL": 5.71221301015612e-06,
+          "TV": 4.527975976886811e-06
+        },
+        "passed": true
+      },
+      "stationarity": {
+        "max_gradient_per256": 7.390729507796446,
+        "total_range_per256": 0.005569612298602422,
+        "passed": false
+      },
+      "block_start": 4001,
+      "block_end": 6000,
+      "block_counts": {
+        "reversals": 725,
+        "positive_predictions": 269,
+        "actual_increases": 994,
+        "positive_prediction_and_increase": 269
+      },
+      "block_rates": {
+        "reversals": 0.3625,
+        "positive_predictions": 0.1345,
+        "actual_increases": 0.497,
+        "positive_prediction_and_increase": 0.1345
+      },
+      "objective_spikes": 53,
+      "gradient_max": 1892.0267539958902,
+      "collapse_ever48": false,
+      "density_success": false,
+      "predictor_success": false,
+      "empirical96": 2321.5479457390384,
+      "total96": 2322.696123198113,
+      "overfit_intervals192": 19,
+      "strict_conflicts192": 0
+    }
+  },
+  "historical_lr003_2000": {
+    "empirical_P0": {
+      "logZ": 9.022715367515833,
+      "KL": 0.12787325884851164,
+      "TV": 0.15486343723998552,
+      "centered_g_area_RMSE": 0.6987778744066021,
+      "centered_g_teacher_RMSE": 0.6196015413574414,
+      "beta_error": 0.5415614306277602,
+      "u_norm": 5.077972051540975,
+      "theta_norm": 25.612188816136126,
+      "h": {
+        "mean": 0.11412422800268193,
+        "RMS": 0.2738982972147632,
+        "variance": 0.061995937799938616,
+        "max_abs": 1.1499686399313467
+      },
+      "q": {
+        "mean": -0.304226243249044,
+        "RMS": 0.8392010434073679,
+        "variance": 0.6117047841745886,
+        "max_abs": 5.502132906320752
+      },
+      "field_contribution_RMS": 1.3908478982212311,
+      "b_RMSE": 0.918937213293415,
+      "b_relative_RMSE": 2.121405726372727,
+      "b_component_RMSE": [
+        0.6117271161684178,
+        1.146595455814825
+      ],
+      "theta_distance": 26.52459874829027,
+      "q_ratio": 5.5993528242990065,
+      "field_ratio": 3.58002375449577,
+      "canonical": {
+        "defined": true,
+        "v": [
+          -0.44945047682154754,
+          0.8933052495563224
+        ],
+        "angle": 1.5732988043508118,
+        "f_RMSE": 1.5573871992061752
+      },
+      "labels": {
+        "collapse": false,
+        "near_zero": false,
+        "category": "not_shrunken_by_definition",
+        "density_success": false,
+        "predictor_success": false,
+        "spatial_signal_success": false
+      },
+      "empirical_ppp": 2321.9494100924308,
+      "penalty_effective": 0.0,
+      "total_objective": 2321.9494100924308
+    },
+    "empirical_Plambda": {
+      "logZ": 9.03864275200711,
+      "KL": 0.11575846798766953,
+      "TV": 0.1809966152813995,
+      "centered_g_area_RMSE": 0.4889873101807245,
+      "centered_g_teacher_RMSE": 0.497960152609094,
+      "beta_error": 0.6876495322878804,
+      "u_norm": 1.3574326602354507,
+      "theta_norm": 20.347486367857595,
+      "h": {
+        "mean": 0.517360058970315,
+        "RMS": 0.8755154369135305,
+        "variance": 0.49886584965612285,
+        "max_abs": 1.9707795039804026
+      },
+      "q": {
+        "mean": -0.27820627833380474,
+        "RMS": 0.7176106244493669,
+        "variance": 0.43756627501826384,
+        "max_abs": 2.524963400470773
+      },
+      "field_contribution_RMS": 1.1884532486067367,
+      "b_RMSE": 0.7256748598301901,
+      "b_relative_RMSE": 1.6752513456400284,
+      "b_component_RMSE": [
+        0.28600616384233485,
+        0.9856005674832599
+      ],
+      "theta_distance": 21.329116441537224,
+      "q_ratio": 4.788072069647117,
+      "field_ratio": 3.0590626527610603,
+      "canonical": {
+        "defined": true,
+        "v": [
+          -0.06737927621613925,
+          0.9977274342908433
+        ],
+        "angle": 1.1745790817308734,
+        "f_RMSE": 1.4083154922103065
+      },
+      "labels": {
+        "collapse": false,
+        "near_zero": false,
+        "category": "not_shrunken_by_definition",
+        "density_success": false,
+        "predictor_success": false,
+        "spatial_signal_success": false
+      },
+      "empirical_ppp": 2307.9880986396092,
+      "penalty_effective": 0.3949466884051289,
+      "total_objective": 2308.3830453280143
+    }
+  },
+  "all_endpoint_fidelity": true,
+  "interpretation": "Budget intervention, not lr.003x2000 equivalence. No best checkpoint, statistical significance or optimum claim."
+}

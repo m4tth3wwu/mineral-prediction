@@ -1,0 +1,9 @@
+{
+  "label": "empirical_Plambda",
+  "lambda_multiplier": 1.0,
+  "steps": 6000,
+  "new_updates": 4000,
+  "seconds": 1235.3119607000262,
+  "final_objective": 2322.696123198113,
+  "checkpoints": 443
+}

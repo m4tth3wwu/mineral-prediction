@@ -1,0 +1,8 @@
+{
+  "session_id": "20260922T091632Z_p1j",
+  "run_id": "20260922T091632Z_p1j_step6000",
+  "output_dir": "mineral_prediction/p1j_budget/20260922T091632Z_p1j_step6000",
+  "base_commit": "bdfee6c5d3570a3b8146fad133f9a3f00160f465",
+  "prompt_path": "docs/project_memory/prompts/20260922T091632Z_p1j.md",
+  "frozen_manifest": "mineral_prediction/p1j_budget/20260922T091632Z_p1j_step6000/FROZEN_BEFORE.json"
+}

@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "checks": {
+    "SOURCE_MANIFEST.json": {
+      "count": 10,
+      "passed": true
+    },
+    "DELIVERY_SOURCE_MANIFEST.json": {
+      "count": 3,
+      "passed": true
+    },
+    "EVALUATION_SOURCE_MANIFEST.json": {
+      "count": 4,
+      "passed": true
+    },
+    "FROZEN_BEFORE.json": {
+      "count": 4631,
+      "passed": true
+    }
+  },
+  "protocol_frozen": true,
+  "evaluation_passed": true,
+  "independent_verification_passed": true,
+  "figures_visually_verified": [
+    "equal_block_dynamics.png",
+    "fixed_budget_endpoints768.png",
+    "full_independent_monitor192.png",
+    "full_objective_dynamics.png"
+  ],
+  "next_phase_executed": false
+}

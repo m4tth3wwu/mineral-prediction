@@ -1,0 +1,8 @@
+{
+  "mineral_prediction/p1i_learning_rate/20260922T082159Z_p1i_lr001/raw/states/empirical_P0_2000.pt": "4ef98047de0651551664fd0a885b83bee8ac24d025804584794d826e13c59f90",
+  "mineral_prediction/p1i_learning_rate/20260922T082159Z_p1i_lr001/raw/states/empirical_Plambda_2000.pt": "de90050f272e8ea8d1112b0cb9fea8a1cf105184b42895d42b4d1d95a62eba71",
+  "mineral_prediction/p1j_budget/20260922T091632Z_p1j_step6000/raw/states/empirical_P0_4000.pt": "0dabaabd4fd8c1280745f778b078484dc3c825c4b33b129c7a9659066c8d8240",
+  "mineral_prediction/p1j_budget/20260922T091632Z_p1j_step6000/raw/states/empirical_Plambda_4000.pt": "797fe4f6a295ad24ed94966151ea90a55b8446a1121e245b3a089fd090e2f44b",
+  "mineral_prediction/p1j_budget/20260922T091632Z_p1j_step6000/raw/states/empirical_P0_6000.pt": "f9027ac0df8a5e1ac6e1403862e15e9072107d252b7693a503a9e1624fdabf93",
+  "mineral_prediction/p1j_budget/20260922T091632Z_p1j_step6000/raw/states/empirical_Plambda_6000.pt": "35be7e7d0a8365bf1e18f5ae5c7985bbfba5041bda6b7d588306c11f30203783"
+}

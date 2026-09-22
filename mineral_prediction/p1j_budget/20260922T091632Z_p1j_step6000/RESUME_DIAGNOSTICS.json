@@ -1,0 +1,14 @@
+{
+  "empirical_P0": {
+    "model_sha256": "13434e1185ce15b0dbe1e47f0ad540d1e973131ce90076afb5bf1d28f888ddcd",
+    "candidate_max_error": 5.59990422088763e-17,
+    "total": 2318.63422301536,
+    "gradient_norm": 114.10208903213979
+  },
+  "empirical_Plambda": {
+    "model_sha256": "8d3d8c8b34a0e668e51d7267167fb6d334733b2e7ea4d7c97d7976b425d381a3",
+    "candidate_max_error": 4.443060502845597e-16,
+    "total": 2328.374695671979,
+    "gradient_norm": 369.9706261668108
+  }
+}

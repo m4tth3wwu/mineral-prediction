@@ -1,0 +1,203 @@
+{
+  "optimizer": {
+    "name": "Adam",
+    "lr": 0.001,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0,
+    "amsgrad": false,
+    "schedule": "constant",
+    "steps": 6000,
+    "no_early_stop": true,
+    "resume_step": 2000,
+    "new_updates_per_trajectory": 4000,
+    "load_complete_adam_state": true
+  },
+  "precision": {
+    "dtype": "float64",
+    "device": "cpu",
+    "threads": 1,
+    "expected_torch": "2.12.0+cpu"
+  },
+  "quadrature": {
+    "training": 96,
+    "per_step_diagnostics": 48,
+    "monitor_every25": [
+      48,
+      96,
+      192
+    ],
+    "fixed_evaluation_steps": [
+      2000,
+      4000,
+      6000
+    ],
+    "evaluation_grids": [
+      384,
+      768
+    ],
+    "source": "Frozen P1-F/P1-G grids"
+  },
+  "penalty": {
+    "beta": 0.02,
+    "u": 0.2,
+    "theta": 0.001
+  },
+  "recovery": {
+    "density_KL": 0.0001,
+    "density_TV": 0.01,
+    "predictor_centered_area_and_teacher_RMSE": 0.02,
+    "spatial_signal": "KL <= .1*delta_global when reliable delta_global>1e-5",
+    "field": "report independently; not a density gate",
+    "local_floor": 1e-10,
+    "local_meaning": "if initialKL<10*floor, stability-only; otherwise require >=90% initial excess-KL reduction plus absolute success for local recovery, report final stability separately"
+  },
+  "definitions": {
+    "teacher_scale": "area-weighted teacher q RMS and (b-beta) Euclidean field RMS on same grid",
+    "near_zero_q_relative": 0.0001,
+    "near_zero_field_relative": 0.0001,
+    "collapse_relative": 1e-08,
+    "collapse_abs_floor": 1e-12,
+    "collapse_max_factor": 10.0,
+    "collapse": "q RMS<=max(1e-12,1e-8*teacher qRMS) AND field contributionRMS<=analogous floor AND max|q|<=10*q floor; global-family degeneration, not necessarily optimal global beta",
+    "mild_shrink_ratio_max": 0.8,
+    "severe_shrink_ratio_max": 0.5,
+    "degradation_KL": "max(1e-4,.1*delta_global)",
+    "mild": "0<q ratio<=.8, not collapsed, acceptable density recovery",
+    "severe": "q ratio<=.5, not collapsed, KL>=degradation threshold",
+    "other": "shrink_degraded/intermediate/near_zero_without_full_collapse retained; no forced category",
+    "stable": "all9 final monitor observations meet relevant threshold; q ratio range<=.1 and KL range<=.05*delta_global",
+    "post_growth": "report separately whether q ratio ever exceeded .01 before nearzero/collapse; low initial branch is not newly induced collapse",
+    "stationarity": {
+      "gradient_L2_per256": 0.001,
+      "total_range_per256": 1e-05,
+      "window": 200
+    }
+  },
+  "stage": "P1-J",
+  "version": 1,
+  "frozen_at": "2026-09-22T11:22:26.154360+00:00",
+  "run_id": "20260922T091632Z_p1j_step6000",
+  "task_path": "docs/project_memory/prompts/20260922T091632Z_p1j.md",
+  "task_sha256": "b65eca62a18bc096e2497ea3bfd9da0082040cbe1b23aa77b1ad8a2a21976d37",
+  "base_commit": "bdfee6c5d3570a3b8146fad133f9a3f00160f465",
+  "population_reference": "mineral_prediction/p1f_population/20260917T121240Z_p1f_v1",
+  "objective": "256*logsumexp(log(w96)+g96)-sum(g(archived events data23)) + lambda*original penalty",
+  "trajectories": [
+    "empirical_P0",
+    "empirical_Plambda"
+  ],
+  "data_archive": "ACAWLR_PPP_P1D_LR_STATES.pt cases[0.003_23], cross-check P1-D cases[23]",
+  "initialization": {
+    "archive": "mineral_prediction/ACAWLR_PPP_P1C_TS_STATES.pt",
+    "case": "B_n256_data23_init1011",
+    "hash": "c94a02d1929dfa4d5ffbbfb55c8aaccf7d7d2d52f686203bf8e5c2eeffc064c6"
+  },
+  "teacher": "b0d6db361a0a0c5e685d0e91f07601521760a7efd34e15c07f909ff4473338d8",
+  "pretraining_gates": {
+    "exact": "checkpoint hashes, model buffers/parameters, full Adam state including moments and step2000, data/teacher/init",
+    "value_atol": 1e-09,
+    "gradient_atol": 1e-08,
+    "gradient_rtol": 1e-09,
+    "candidate_atol": 1e-14,
+    "candidate_rtol": 1e-12,
+    "policy": "Any failed pre-resume gate -> zero updates; no repairs/restarts/threshold relaxation"
+  },
+  "endpoint_gates": {
+    "legacy": "audit only; do not include legacy endpoint in fresh AND-gate",
+    "reason": "The old empirical endpoint is not used in population target, initial state, controls or objective. Dependency scope changes by user request; numerical thresholds remain unchanged; P1-E gate/result immutable.",
+    "copy_max": 1e-12,
+    "teacher_gradient_max": 1e-09,
+    "KL_identity_atol": 1e-10,
+    "FD_eps": [
+      0.0001,
+      1e-05,
+      1e-06
+    ],
+    "FD_atol": 1e-07,
+    "FD_rtol": 0.0001,
+    "logZ_96_192": 0.0001,
+    "KL_96_192_atol": 1e-06,
+    "KL_96_192_rtol": 0.01,
+    "TV_96_192": 0.001,
+    "teacher_moments_abs": 5e-05,
+    "teacher_moment_basis": "X1,X2,h*X1,h*X2,g; dimensionless; maximum absolute96-192 difference",
+    "teacher_density_common_grid_TV": 0.001,
+    "controls_gradient_per_event": 1e-10,
+    "controls": "global unpenalized and ridge; fixed-h unpenalized and ridge, recomputed on48/96/192",
+    "endpoint_policy": "check each new endpoint; retain failed endpoint as grid_unresolved, no dose if any main endpoint fails; no legacy veto"
+  },
+  "endpoint_policy": "No adaptive refinement/retraining if384/768 fidelity fails; mark unresolved. NaN aborts further training. No best checkpoint selection.",
+  "logging": {
+    "every_step": "96 objective/gradients;48 recovery diagnostics; previous96 gradient dot actual update, actual96 loss delta, remainder",
+    "monitor_every": 25,
+    "checkpoint_every": 25,
+    "transition_states": "previous2/current/next2 within new2000..6000 segment; do not synthesize unavailable pre2000 checkpoints",
+    "gradient_update_alignment": "gradient_t generates update_t+1; actual_update_t=parameters_t-parameters_t-1",
+    "boundary": "Recompute step2000 state metrics/gradient, reuse archived actual-update and linear fields for that already-executed step; equality checked. Inherit original0..1999 history for flags. New first update2001 uses fresh gradient2000 and restored moments.",
+    "mandatory_boundary": [
+      2000,
+      2001
+    ]
+  },
+  "dynamics": {
+    "objective_spike": "after25: abs(delta total)>1",
+    "gradient_spike": "after25: grad/256>10 OR grad>10*median(previous25) with >1 absolute increase",
+    "transition_candidate": "after25: abs(delta qratio)>.1 OR abs(delta fieldratio)>.1 OR collapse indicator change; not a proven basin transition",
+    "relative_update": "actual L2 update / max(previous parameter L2,1e-30)",
+    "objective_conflict": "delta total<-1e-8 AND delta empirical>1e-8 AND delta KL>1e-8 AND delta centered_g_area_RMSE>1e-8; step48 and monitor96 separately",
+    "sustained_conflict": ">=3 consecutive qualifying monitor intervals (>=75 steps)",
+    "coarse_conflict": "also test fixed checkpoint intervals: every monitored total decreases, net empirical/KL96/g96 increase",
+    "overfit": "total and empirical decrease while independent KL96 and g96 error increase"
+  },
+  "interpretation": "Budget intervention, not an optimization-time equivalence with lr.003x2000. Better empirical fit need not improve teacher recovery. Never call nonstationary residual an irreducible statistical or regularization error.",
+  "scope": "Exactly2 continued trajectories,4000 new updates each,8000 total. No reset/retraining/lr/grid/model changes or adaptive extension. Two isolated final6000 candidate probes; not step6001 training.",
+  "publication": "commit complete evidence and ordinary push codex-refactor after verification",
+  "training_grid": 96,
+  "diagnostic_grid": 48,
+  "monitor_grids": [
+    48,
+    96,
+    192
+  ],
+  "evaluation_grids": [
+    384,
+    768
+  ],
+  "comparison": "Budget continuation only: same96 objective, lr.001, data/init/teacher/lambda. Reuse each archived step2000 model AND entire Adam state; continue to6000. Fixed stages2000/4000/6000 on384/768. Compare equal2000-update blocks.",
+  "reference": "mineral_prediction/p1i_learning_rate/20260922T082159Z_p1i_lr001",
+  "linear_diagnostic": {
+    "prediction": "gradient(theta[t-1]) dot (theta[t]-theta[t-1])",
+    "reversal": "prediction < -1e-8 AND actual total delta >1e-8",
+    "scope": "Compare blocks1..2000,2001..4000,4001..6000; boundary2000 is not a new update. Same96 objective and thresholds."
+  },
+  "endpoint_diagnostics": {
+    "grids": [
+      96,
+      384
+    ],
+    "gradient": "Exact two-pass streaming, primary512/check1024, direct96 and independent beta/u verification",
+    "candidate": "At6000 only: restore moments and gradient96, construct candidate6001 and one full displacement on temporary copy; zero optimizer steps. Scalar verification.",
+    "probe": "alpha0 and1 only, data/penalty/total96 and384, no recovery claims from probe objective",
+    "tolerances": {
+      "gradient_atol": 1e-08,
+      "gradient_rtol": 1e-09,
+      "value_atol": 1e-09,
+      "candidate_atol": 1e-14,
+      "candidate_rtol": 1e-12
+    },
+    "caution": "384 derivative convergence not established; finite-step comparison not causal attribution to penalty or universal optimizer failure."
+  },
+  "resume_gates": {
+    "exact": "checkpoint hashes, model buffers/parameters, full Adam state including moments and step2000, data/teacher/init",
+    "value_atol": 1e-09,
+    "gradient_atol": 1e-08,
+    "gradient_rtol": 1e-09,
+    "candidate_atol": 1e-14,
+    "candidate_rtol": 1e-12,
+    "policy": "Any failed pre-resume gate -> zero updates; no repairs/restarts/threshold relaxation"
+  }
+}

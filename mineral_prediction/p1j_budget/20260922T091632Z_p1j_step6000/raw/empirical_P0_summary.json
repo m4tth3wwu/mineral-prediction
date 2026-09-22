@@ -1,0 +1,9 @@
+{
+  "label": "empirical_P0",
+  "lambda_multiplier": 0.0,
+  "steps": 6000,
+  "new_updates": 4000,
+  "seconds": 1156.3144237000379,
+  "final_objective": 2286.5109847693275,
+  "checkpoints": 1391
+}

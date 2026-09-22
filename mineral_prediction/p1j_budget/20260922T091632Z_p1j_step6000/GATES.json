@@ -1,0 +1,79 @@
+{
+  "pretraining": {
+    "checks": {
+      "parent_verified": true,
+      "frozen": true,
+      "environment": true,
+      "data": true,
+      "teacher": true,
+      "initial": true,
+      "grids": true,
+      "empirical_P0_model_restore": true,
+      "empirical_P0_optimizer_restore": true,
+      "empirical_P0_recipe": true,
+      "empirical_P0_objective": true,
+      "empirical_P0_gradient": true,
+      "empirical_P0_metrics": true,
+      "empirical_P0_next_candidate": true,
+      "empirical_Plambda_model_restore": true,
+      "empirical_Plambda_optimizer_restore": true,
+      "empirical_Plambda_recipe": true,
+      "empirical_Plambda_objective": true,
+      "empirical_Plambda_gradient": true,
+      "empirical_Plambda_metrics": true,
+      "empirical_Plambda_next_candidate": true
+    },
+    "passed": true,
+    "failed": []
+  },
+  "endpoints": {
+    "step2000_empirical_P0": {
+      "errors": {
+        "logZ": 7.4326413965764004e-06,
+        "KL": 4.761670792774453e-06,
+        "TV": 2.9310884669397907e-06
+      },
+      "passed": true
+    },
+    "step2000_empirical_Plambda": {
+      "errors": {
+        "logZ": 3.2155302012171205e-06,
+        "KL": 1.9190329378915294e-06,
+        "TV": 1.5776511234355528e-06
+      },
+      "passed": true
+    },
+    "step4000_empirical_P0": {
+      "errors": {
+        "logZ": 1.3750556060898589e-05,
+        "KL": 1.0107322077956837e-05,
+        "TV": 6.608119873796614e-06
+      },
+      "passed": true
+    },
+    "step4000_empirical_Plambda": {
+      "errors": {
+        "logZ": 4.6931985373532825e-06,
+        "KL": 3.1999632721380067e-06,
+        "TV": 2.2363513316886463e-06
+      },
+      "passed": true
+    },
+    "step6000_empirical_P0": {
+      "errors": {
+        "logZ": 1.3000951566866092e-05,
+        "KL": 1.0097405654718727e-05,
+        "TV": 7.2400444076081705e-06
+      },
+      "passed": true
+    },
+    "step6000_empirical_Plambda": {
+      "errors": {
+        "logZ": 7.831652641954179e-06,
+        "KL": 5.71221301015612e-06,
+        "TV": 4.527975976886811e-06
+      },
+      "passed": true
+    }
+  }
+}
