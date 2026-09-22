@@ -1,0 +1,102 @@
+{
+  "run_id": "20260922T070225Z_p1g_adam_candidate",
+  "actual_updates": 0,
+  "integrity_passed": true,
+  "results": {
+    "empirical_P0": {
+      "candidate_norm": 0.011835145787578966,
+      "total": {
+        "48": {
+          "dot": -0.5653196880152347,
+          "unit_direction_derivative": -47.766178648051806,
+          "gradient_norm": 682.1601812174885,
+          "direction_norm": 0.011835145787578966,
+          "cosine": -0.07002193907419355,
+          "classification": "descent",
+          "sign_tolerance": 8.073465195190263e-12,
+          "independent_dot": -0.5653196880152347
+        },
+        "384": {
+          "dot": -0.7386142867861505,
+          "unit_direction_derivative": -62.408549927735514,
+          "gradient_norm": 885.6251520733515,
+          "direction_norm": 0.011835145787578966,
+          "cosine": -0.07046835761340996,
+          "classification": "descent",
+          "sign_tolerance": 1.0481502787934907e-11,
+          "independent_dot": -0.7386142867861506
+        }
+      },
+      "data": {
+        "48": {
+          "dot": -0.5653196880152347,
+          "unit_direction_derivative": -47.766178648051806,
+          "gradient_norm": 682.1601812174885,
+          "direction_norm": 0.011835145787578966,
+          "cosine": -0.07002193907419355,
+          "classification": "descent",
+          "sign_tolerance": 8.073465195190263e-12,
+          "independent_dot": -0.5653196880152347
+        },
+        "384": {
+          "dot": -0.7386142867861505,
+          "unit_direction_derivative": -62.408549927735514,
+          "gradient_norm": 885.6251520733515,
+          "direction_norm": 0.011835145787578966,
+          "cosine": -0.07046835761340996,
+          "classification": "descent",
+          "sign_tolerance": 1.0481502787934907e-11,
+          "independent_dot": -0.7386142867861506
+        }
+      }
+    },
+    "empirical_Plambda": {
+      "candidate_norm": 0.011917307706367059,
+      "total": {
+        "48": {
+          "dot": -3.40636997008718,
+          "unit_direction_derivative": -285.83385224393083,
+          "gradient_norm": 849.5901742947972,
+          "direction_norm": 0.011917307706367059,
+          "cosine": -0.33643733283660837,
+          "classification": "descent",
+          "sign_tolerance": 1.012482753137712e-11,
+          "independent_dot": -3.40636997008718
+        },
+        "384": {
+          "dot": -3.7390324186229904,
+          "unit_direction_derivative": -313.7480805857969,
+          "gradient_norm": 927.011143219234,
+          "direction_norm": 0.011917307706367059,
+          "cosine": -0.33845125043075874,
+          "classification": "descent",
+          "sign_tolerance": 1.1047477040974714e-11,
+          "independent_dot": -3.7390324186229904
+        }
+      },
+      "data": {
+        "48": {
+          "dot": -3.4060749796709904,
+          "unit_direction_derivative": -285.8090991349688,
+          "gradient_norm": 849.5899029956975,
+          "direction_norm": 0.011917307706367059,
+          "cosine": -0.33640830490945256,
+          "classification": "descent",
+          "sign_tolerance": 1.0124824298222267e-11,
+          "independent_dot": -3.4060749796709904
+        },
+        "384": {
+          "dot": -3.738737428206801,
+          "unit_direction_derivative": -313.7233274768349,
+          "gradient_norm": 927.0108957821664,
+          "direction_norm": 0.011917307706367059,
+          "cosine": -0.33842463870085426,
+          "classification": "descent",
+          "sign_tolerance": 1.1047474092191041e-11,
+          "independent_dot": -3.7387374282068007
+        }
+      }
+    }
+  },
+  "caution": "Local candidate directional derivative, not executed update or finite-step prediction. No historical-cause or converged-gradient claim."
+}

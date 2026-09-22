@@ -1,0 +1,42 @@
+{
+  "time": "2026-09-22T07:02:27.228119+00:00",
+  "HEAD": "c0afcbac481ee9e8b42a95435eb61bb5ca8cce56",
+  "command": "D:\\anaconda\\python.exe -B mineral_prediction/check_acawlr_ppp_p1g_adam_direction.py",
+  "torch": "2.12.0+cpu",
+  "runtime_adam_path": "D:\\anaconda\\Lib\\site-packages\\torch\\optim\\adam.py",
+  "runtime_adam_sha256": "1adac65df82cfc583c02eb88e9aa55126af2d27ea485230481403db38857b15c",
+  "protocol_sha256": "8c171723c62463b86cae013bf8df746c99150eb99c3aec91cacd2d19ee785b31",
+  "source_manifest_sha256": "eea2169ea7b1b3d97e3afea6cfd83635734c975921aad1aedfdfabd8b1cb8b8e",
+  "checkpoints": {
+    "empirical_P0": {
+      "path": "mineral_prediction/p1g_empirical/20260922T054836Z_p1g_v1/raw/states/empirical_P0_2000.pt",
+      "sha256": "8b482436bb2c1d0b47907b181295ee43346d67a083cb519e4a5b05a545b14bf9"
+    },
+    "empirical_Plambda": {
+      "path": "mineral_prediction/p1g_empirical/20260922T054836Z_p1g_v1/raw/states/empirical_Plambda_2000.pt",
+      "sha256": "b037c0a597e0c5fe723734b363d9c400e0b9ca5e80b72324472dffd6ddc01f4c"
+    }
+  },
+  "gradient_files": {
+    "empirical_P0": {
+      "48": {
+        "path": "mineral_prediction/p1g_gradient/20260922T065517Z_p1g_grad48_384/raw/empirical_P0_gradients_48.pt",
+        "sha256": "7e77556cf8e7000c5340597a1f1a3020c812dd600b194ba7bcdacf3f45b902eb"
+      },
+      "384": {
+        "path": "mineral_prediction/p1g_gradient/20260922T065517Z_p1g_grad48_384/raw/empirical_P0_gradients_384.pt",
+        "sha256": "5066d311d32e2f20ef7d43bd2e2178ddf1502f8a3e64b343f349906d960aa6fc"
+      }
+    },
+    "empirical_Plambda": {
+      "48": {
+        "path": "mineral_prediction/p1g_gradient/20260922T065517Z_p1g_grad48_384/raw/empirical_Plambda_gradients_48.pt",
+        "sha256": "ed6769d0b6441dfea779d9db1652b077efb114112a1127a98b1bb97f0e5e9714"
+      },
+      "384": {
+        "path": "mineral_prediction/p1g_gradient/20260922T065517Z_p1g_grad48_384/raw/empirical_Plambda_gradients_384.pt",
+        "sha256": "d6b4f1d2c77d1c9f761feae8add1a883ddc9a7f757226596885fd4a1b6af5def"
+      }
+    }
+  }
+}

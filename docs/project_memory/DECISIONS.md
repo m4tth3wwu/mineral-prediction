@@ -40,3 +40,7 @@ Unchanged endpoint model, zero updates. logZ delta3.8467674e-5, KL delta3.527030
 
 ## D-20260922-004 — fixed endpoints48/384 gradient audit
 Data gradient relative differences23.9377%/9.60879%, whole-vector angles4.3902/2.8441deg, both negative48 directions remain local descent for384. Lambda0 u-block angle56.0895deg; full-vector angle hides block sensitivity. No updates, no Adam-direction or path-causality conclusion;384 derivative convergence not established. Next proposed only: read-only candidate next Adam direction from archived moments and existing48 gradient, dot against48/384 gradients; not executed.
+
+
+## D-20260922-005 — candidate Adam direction remains local descent
+Frozen step2000 moments plus saved48 total gradients yield candidate t2001 displacement only, no update/forward/backward. Total g dot d: P0 -0.565320/-0.738614, original lambda -3.406370/-3.739032 on48/384. All total/data blocks negative. No candidate local-ascent or grid sign-reversal evidence here; finite-step loss/path cause unresolved. Next proposed finite-displacement diagnostic on copies only, not executed or authorized as a training extension.

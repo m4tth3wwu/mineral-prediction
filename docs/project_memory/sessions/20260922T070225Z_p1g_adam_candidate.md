@@ -1,7 +1,8 @@
-# 当前交接：P1-G候选Adam方向在两级目标上均局部下降
+# P1-G candidate Adam direction session
 
-最新run mineral_prediction/p1g_adam_direction/20260922T070225Z_p1g_adam_candidate
-基准 c0afcbac481ee9e8b42a95435eb61bb5ca8cce56，codex-refactor。本轮实际更新0，无模型前向/反向；所有旧实验和诊断冻结。
+UTC 2026-09-22T07:04:16.598894+00:00
+Base c0afcbac481ee9e8b42a95435eb61bb5ca8cce56 / codex-refactor. User continues proposed read-only candidate direction check. Read current full handoff/protocol/provenance and local PyTorch Adam formula.
+Command D:\anaconda\python.exe -B mineral_prediction/check_acawlr_ppp_p1g_adam_direction.py; exit0.
 
 # P1-G只读候选Adam方向检查
 
@@ -47,4 +48,4 @@ m_next=.9*m+.1*g48；v_next=.999*v+.001*g48²；d=−lr*(m_next/(1−.9^2001))/(
 
 在独立临时副本上只评估这一次候选位移的有限步长效应，对比48²/384²目标实际差与g·d；原归档不动，不调用optimizer，不继续训练、不扫描步长、不选择checkpoint。这是单点扰动诊断，不是追加训练轨迹；需在下一轮明确该范围后才执行。本轮未做任何候选点前向或权重位移。
 
-历史：P1-G两模型没有观察到collapse但恢复差/未stationary；函数值加密检查分别通过；48/384数据梯度相对差23.94%/9.61%、λ0 u夹角56.09°；本次候选方向仍无局部上升证据。当前报告随提交发布，远端状态以Git核对为准。
+Full results and memory published by ordinary push under continuing workflow.

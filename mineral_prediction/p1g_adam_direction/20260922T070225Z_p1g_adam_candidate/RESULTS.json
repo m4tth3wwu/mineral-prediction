@@ -1,0 +1,532 @@
+{
+  "empirical_P0": {
+    "candidate_norm": 0.011835145787578966,
+    "scalar_formula_max_error": 4.336808689942018e-19,
+    "source_step": 2000,
+    "candidate_step": 2001,
+    "actual_updates": 0,
+    "grids": {
+      "48": {
+        "total": {
+          "all": {
+            "dot": -0.5653196880152347,
+            "unit_direction_derivative": -47.766178648051806,
+            "gradient_norm": 682.1601812174885,
+            "direction_norm": 0.011835145787578966,
+            "cosine": -0.07002193907419355,
+            "classification": "descent",
+            "sign_tolerance": 8.073465195190263e-12,
+            "independent_dot": -0.5653196880152347
+          },
+          "beta": {
+            "dot": -0.0006958120310987352,
+            "unit_direction_derivative": -1.126143970253608,
+            "gradient_norm": 1.25954848234507,
+            "direction_norm": 0.0006178712930834572,
+            "cosine": -0.8940854489038128,
+            "classification": "descent",
+            "sign_tolerance": 1e-12,
+            "independent_dot": -0.0006958120310987352
+          },
+          "u": {
+            "dot": -0.001706643424036576,
+            "unit_direction_derivative": -0.689268790402433,
+            "gradient_norm": 0.7785668601334867,
+            "direction_norm": 0.002476020164847655,
+            "cosine": -0.8853045585375373,
+            "classification": "descent",
+            "sign_tolerance": 1e-12,
+            "independent_dot": -0.001706643424036576
+          },
+          "theta": {
+            "dot": -0.5629172325600994,
+            "unit_direction_derivative": -48.70899941030327,
+            "gradient_norm": 682.1585740939871,
+            "direction_norm": 0.011556739809379603,
+            "cosine": -0.07140421781694441,
+            "classification": "descent",
+            "sign_tolerance": 7.883529149541607e-12,
+            "independent_dot": -0.5629172325600994
+          }
+        },
+        "data": {
+          "all": {
+            "dot": -0.5653196880152347,
+            "unit_direction_derivative": -47.766178648051806,
+            "gradient_norm": 682.1601812174885,
+            "direction_norm": 0.011835145787578966,
+            "cosine": -0.07002193907419355,
+            "classification": "descent",
+            "sign_tolerance": 8.073465195190263e-12,
+            "independent_dot": -0.5653196880152347
+          },
+          "beta": {
+            "dot": -0.0006958120310987352,
+            "unit_direction_derivative": -1.126143970253608,
+            "gradient_norm": 1.25954848234507,
+            "direction_norm": 0.0006178712930834572,
+            "cosine": -0.8940854489038128,
+            "classification": "descent",
+            "sign_tolerance": 1e-12,
+            "independent_dot": -0.0006958120310987352
+          },
+          "u": {
+            "dot": -0.001706643424036576,
+            "unit_direction_derivative": -0.689268790402433,
+            "gradient_norm": 0.7785668601334867,
+            "direction_norm": 0.002476020164847655,
+            "cosine": -0.8853045585375373,
+            "classification": "descent",
+            "sign_tolerance": 1e-12,
+            "independent_dot": -0.001706643424036576
+          },
+          "theta": {
+            "dot": -0.5629172325600994,
+            "unit_direction_derivative": -48.70899941030327,
+            "gradient_norm": 682.1585740939871,
+            "direction_norm": 0.011556739809379603,
+            "cosine": -0.07140421781694441,
+            "classification": "descent",
+            "sign_tolerance": 7.883529149541607e-12,
+            "independent_dot": -0.5629172325600994
+          }
+        },
+        "penalty": {
+          "all": {
+            "dot": 0.0,
+            "unit_direction_derivative": 0.0,
+            "gradient_norm": 0.0,
+            "direction_norm": 0.011835145787578966,
+            "cosine": null,
+            "classification": "numerically_neutral",
+            "sign_tolerance": 1e-12,
+            "independent_dot": 0.0
+          },
+          "beta": {
+            "dot": 0.0,
+            "unit_direction_derivative": 0.0,
+            "gradient_norm": 0.0,
+            "direction_norm": 0.0006178712930834572,
+            "cosine": null,
+            "classification": "numerically_neutral",
+            "sign_tolerance": 1e-12,
+            "independent_dot": 0.0
+          },
+          "u": {
+            "dot": 0.0,
+            "unit_direction_derivative": 0.0,
+            "gradient_norm": 0.0,
+            "direction_norm": 0.002476020164847655,
+            "cosine": null,
+            "classification": "numerically_neutral",
+            "sign_tolerance": 1e-12,
+            "independent_dot": 0.0
+          },
+          "theta": {
+            "dot": 0.0,
+            "unit_direction_derivative": 0.0,
+            "gradient_norm": 0.0,
+            "direction_norm": 0.011556739809379603,
+            "cosine": null,
+            "classification": "numerically_neutral",
+            "sign_tolerance": 1e-12,
+            "independent_dot": 0.0
+          }
+        }
+      },
+      "384": {
+        "total": {
+          "all": {
+            "dot": -0.7386142867861505,
+            "unit_direction_derivative": -62.408549927735514,
+            "gradient_norm": 885.6251520733515,
+            "direction_norm": 0.011835145787578966,
+            "cosine": -0.07046835761340996,
+            "classification": "descent",
+            "sign_tolerance": 1.0481502787934907e-11,
+            "independent_dot": -0.7386142867861506
+          },
+          "beta": {
+            "dot": -0.001211031772922074,
+            "unit_direction_derivative": -1.960006536116086,
+            "gradient_norm": 2.260791594580498,
+            "direction_norm": 0.0006178712930834572,
+            "cosine": -0.8669558666152843,
+            "classification": "descent",
+            "sign_tolerance": 1e-12,
+            "independent_dot": -0.001211031772922074
+          },
+          "u": {
+            "dot": -0.00015812057933433288,
+            "unit_direction_derivative": -0.0638607801257797,
+            "gradient_norm": 0.5913539525910826,
+            "direction_norm": 0.002476020164847655,
+            "cosine": -0.10799078935038252,
+            "classification": "descent",
+            "sign_tolerance": 1e-12,
+            "independent_dot": -0.00015812057933433288
+          },
+          "theta": {
+            "dot": -0.7372451344338942,
+            "unit_direction_derivative": -63.79352192696562,
+            "gradient_norm": 885.6220690039379,
+            "direction_norm": 0.011556739809379603,
+            "cosine": -0.07203244381513031,
+            "classification": "descent",
+            "sign_tolerance": 1.0234903820922939e-11,
+            "independent_dot": -0.7372451344338942
+          }
+        },
+        "data": {
+          "all": {
+            "dot": -0.7386142867861505,
+            "unit_direction_derivative": -62.408549927735514,
+            "gradient_norm": 885.6251520733515,
+            "direction_norm": 0.011835145787578966,
+            "cosine": -0.07046835761340996,
+            "classification": "descent",
+            "sign_tolerance": 1.0481502787934907e-11,
+            "independent_dot": -0.7386142867861506
+          },
+          "beta": {
+            "dot": -0.001211031772922074,
+            "unit_direction_derivative": -1.960006536116086,
+            "gradient_norm": 2.260791594580498,
+            "direction_norm": 0.0006178712930834572,
+            "cosine": -0.8669558666152843,
+            "classification": "descent",
+            "sign_tolerance": 1e-12,
+            "independent_dot": -0.001211031772922074
+          },
+          "u": {
+            "dot": -0.00015812057933433288,
+            "unit_direction_derivative": -0.0638607801257797,
+            "gradient_norm": 0.5913539525910826,
+            "direction_norm": 0.002476020164847655,
+            "cosine": -0.10799078935038252,
+            "classification": "descent",
+            "sign_tolerance": 1e-12,
+            "independent_dot": -0.00015812057933433288
+          },
+          "theta": {
+            "dot": -0.7372451344338942,
+            "unit_direction_derivative": -63.79352192696562,
+            "gradient_norm": 885.6220690039379,
+            "direction_norm": 0.011556739809379603,
+            "cosine": -0.07203244381513031,
+            "classification": "descent",
+            "sign_tolerance": 1.0234903820922939e-11,
+            "independent_dot": -0.7372451344338942
+          }
+        },
+        "penalty": {
+          "all": {
+            "dot": 0.0,
+            "unit_direction_derivative": 0.0,
+            "gradient_norm": 0.0,
+            "direction_norm": 0.011835145787578966,
+            "cosine": null,
+            "classification": "numerically_neutral",
+            "sign_tolerance": 1e-12,
+            "independent_dot": 0.0
+          },
+          "beta": {
+            "dot": 0.0,
+            "unit_direction_derivative": 0.0,
+            "gradient_norm": 0.0,
+            "direction_norm": 0.0006178712930834572,
+            "cosine": null,
+            "classification": "numerically_neutral",
+            "sign_tolerance": 1e-12,
+            "independent_dot": 0.0
+          },
+          "u": {
+            "dot": 0.0,
+            "unit_direction_derivative": 0.0,
+            "gradient_norm": 0.0,
+            "direction_norm": 0.002476020164847655,
+            "cosine": null,
+            "classification": "numerically_neutral",
+            "sign_tolerance": 1e-12,
+            "independent_dot": 0.0
+          },
+          "theta": {
+            "dot": 0.0,
+            "unit_direction_derivative": 0.0,
+            "gradient_norm": 0.0,
+            "direction_norm": 0.011556739809379603,
+            "cosine": null,
+            "classification": "numerically_neutral",
+            "sign_tolerance": 1e-12,
+            "independent_dot": 0.0
+          }
+        }
+      }
+    }
+  },
+  "empirical_Plambda": {
+    "candidate_norm": 0.011917307706367059,
+    "scalar_formula_max_error": 4.336808689942018e-19,
+    "source_step": 2000,
+    "candidate_step": 2001,
+    "actual_updates": 0,
+    "grids": {
+      "48": {
+        "total": {
+          "all": {
+            "dot": -3.40636997008718,
+            "unit_direction_derivative": -285.83385224393083,
+            "gradient_norm": 849.5901742947972,
+            "direction_norm": 0.011917307706367059,
+            "cosine": -0.33643733283660837,
+            "classification": "descent",
+            "sign_tolerance": 1.012482753137712e-11,
+            "independent_dot": -3.40636997008718
+          },
+          "beta": {
+            "dot": -0.0005309065831873064,
+            "unit_direction_derivative": -0.6043012939580976,
+            "gradient_norm": 2.305740434668624,
+            "direction_norm": 0.0008785461631398056,
+            "cosine": -0.2620855690744507,
+            "classification": "descent",
+            "sign_tolerance": 1e-12,
+            "independent_dot": -0.0005309065831873064
+          },
+          "u": {
+            "dot": -0.0013219789659113777,
+            "unit_direction_derivative": -1.5873827704950545,
+            "gradient_norm": 1.6438703486893878,
+            "direction_norm": 0.0008328041544126716,
+            "cosine": -0.9656374493040956,
+            "classification": "descent",
+            "sign_tolerance": 1e-12,
+            "independent_dot": -0.0013219789659113777
+          },
+          "theta": {
+            "dot": -3.4045170845380817,
+            "unit_direction_derivative": -287.1637137842868,
+            "gradient_norm": 849.5854550953591,
+            "direction_norm": 0.01185566602295548,
+            "cosine": -0.3380045080362811,
+            "classification": "descent",
+            "sign_tolerance": 1.0072401413571217e-11,
+            "independent_dot": -3.4045170845380817
+          }
+        },
+        "data": {
+          "all": {
+            "dot": -3.4060749796709904,
+            "unit_direction_derivative": -285.8090991349688,
+            "gradient_norm": 849.5899029956975,
+            "direction_norm": 0.011917307706367059,
+            "cosine": -0.33640830490945256,
+            "classification": "descent",
+            "sign_tolerance": 1.0124824298222267e-11,
+            "independent_dot": -3.4060749796709904
+          },
+          "beta": {
+            "dot": -0.0005240962442885953,
+            "unit_direction_derivative": -0.5965494657850942,
+            "gradient_norm": 2.2995633512832976,
+            "direction_norm": 0.0008785461631398056,
+            "cosine": -0.25941858285929936,
+            "classification": "descent",
+            "sign_tolerance": 1e-12,
+            "independent_dot": -0.0005240962442885953
+          },
+          "u": {
+            "dot": -0.0010047708515873047,
+            "unit_direction_derivative": -1.2064911615335434,
+            "gradient_norm": 1.4835579359667608,
+            "direction_norm": 0.0008328041544126716,
+            "cosine": -0.8132416889720814,
+            "classification": "descent",
+            "sign_tolerance": 1e-12,
+            "independent_dot": -0.0010047708515873047
+          },
+          "theta": {
+            "dot": -3.4045461125751144,
+            "unit_direction_derivative": -287.16616223694876,
+            "gradient_norm": 849.5854956015214,
+            "direction_norm": 0.01185566602295548,
+            "cosine": -0.3380073738589782,
+            "classification": "descent",
+            "sign_tolerance": 1.0072401893798749e-11,
+            "independent_dot": -3.4045461125751144
+          }
+        },
+        "penalty": {
+          "all": {
+            "dot": -0.00029499041618963334,
+            "unit_direction_derivative": -0.024753108962020747,
+            "gradient_norm": 0.5793802273654082,
+            "direction_norm": 0.011917307706367059,
+            "cosine": -0.042723427194917465,
+            "classification": "descent",
+            "sign_tolerance": 1e-12,
+            "independent_dot": -0.00029499041618963323
+          },
+          "beta": {
+            "dot": -6.810338898711217e-06,
+            "unit_direction_derivative": -0.007751828173003435,
+            "gradient_norm": 0.008866858356574542,
+            "direction_norm": 0.0008785461631398056,
+            "cosine": -0.874247434803744,
+            "classification": "descent",
+            "sign_tolerance": 1e-12,
+            "independent_dot": -6.810338898711217e-06
+          },
+          "u": {
+            "dot": -0.0003172081143240731,
+            "unit_direction_derivative": -0.3808916089615109,
+            "gradient_norm": 0.5790109005086643,
+            "direction_norm": 0.0008328041544126716,
+            "cosine": -0.6578314995916235,
+            "classification": "descent",
+            "sign_tolerance": 1e-12,
+            "independent_dot": -0.0003172081143240731
+          },
+          "theta": {
+            "dot": 2.9028037033151096e-05,
+            "unit_direction_derivative": 0.002448452661954688,
+            "gradient_norm": 0.018686994863324705,
+            "direction_norm": 0.01185566602295548,
+            "cosine": 0.13102441991676508,
+            "classification": "ascent",
+            "sign_tolerance": 1e-12,
+            "independent_dot": 2.90280370331511e-05
+          }
+        }
+      },
+      "384": {
+        "total": {
+          "all": {
+            "dot": -3.7390324186229904,
+            "unit_direction_derivative": -313.7480805857969,
+            "gradient_norm": 927.011143219234,
+            "direction_norm": 0.011917307706367059,
+            "cosine": -0.33845125043075874,
+            "classification": "descent",
+            "sign_tolerance": 1.1047477040974714e-11,
+            "independent_dot": -3.7390324186229904
+          },
+          "beta": {
+            "dot": -0.0006905738276126493,
+            "unit_direction_derivative": -0.7860415952926497,
+            "gradient_norm": 2.5042190658990444,
+            "direction_norm": 0.0008785461631398056,
+            "cosine": -0.31388691428657084,
+            "classification": "descent",
+            "sign_tolerance": 1e-12,
+            "independent_dot": -0.0006905738276126493
+          },
+          "u": {
+            "dot": -0.0013146853235559556,
+            "unit_direction_derivative": -1.5786248382527903,
+            "gradient_norm": 1.627862927077666,
+            "direction_norm": 0.0008328041544126716,
+            "cosine": -0.9697529269781531,
+            "classification": "descent",
+            "sign_tolerance": 1e-12,
+            "independent_dot": -0.0013146853235559556
+          },
+          "theta": {
+            "dot": -3.737027159471822,
+            "unit_direction_derivative": -315.21022540918574,
+            "gradient_norm": 927.0063314788049,
+            "direction_norm": 0.01185566602295548,
+            "cosine": -0.3400302831873298,
+            "classification": "descent",
+            "sign_tolerance": 1.0990277467177872e-11,
+            "independent_dot": -3.737027159471822
+          }
+        },
+        "data": {
+          "all": {
+            "dot": -3.738737428206801,
+            "unit_direction_derivative": -313.7233274768349,
+            "gradient_norm": 927.0108957821664,
+            "direction_norm": 0.011917307706367059,
+            "cosine": -0.33842463870085426,
+            "classification": "descent",
+            "sign_tolerance": 1.1047474092191041e-11,
+            "independent_dot": -3.7387374282068007
+          },
+          "beta": {
+            "dot": -0.000683763488713938,
+            "unit_direction_derivative": -0.7782897671196463,
+            "gradient_norm": 2.497705965916922,
+            "direction_norm": 0.0008785461631398056,
+            "cosine": -0.311601836941576,
+            "classification": "descent",
+            "sign_tolerance": 1e-12,
+            "independent_dot": -0.000683763488713938
+          },
+          "u": {
+            "dot": -0.0009974772092318823,
+            "unit_direction_derivative": -1.1977332292912792,
+            "gradient_norm": 1.4591698157516095,
+            "direction_norm": 0.0008328041544126716,
+            "cosine": -0.8208319664797439,
+            "classification": "descent",
+            "sign_tolerance": 1e-12,
+            "independent_dot": -0.0009974772092318823
+          },
+          "theta": {
+            "dot": -3.7370561875088546,
+            "unit_direction_derivative": -315.2126738618477,
+            "gradient_norm": 927.0063824954017,
+            "direction_norm": 0.01185566602295548,
+            "cosine": -0.34003290572102535,
+            "classification": "descent",
+            "sign_tolerance": 1.0990278072013605e-11,
+            "independent_dot": -3.737056187508855
+          }
+        },
+        "penalty": {
+          "all": {
+            "dot": -0.00029499041618963334,
+            "unit_direction_derivative": -0.024753108962020747,
+            "gradient_norm": 0.5793802273654082,
+            "direction_norm": 0.011917307706367059,
+            "cosine": -0.042723427194917465,
+            "classification": "descent",
+            "sign_tolerance": 1e-12,
+            "independent_dot": -0.00029499041618963323
+          },
+          "beta": {
+            "dot": -6.810338898711217e-06,
+            "unit_direction_derivative": -0.007751828173003435,
+            "gradient_norm": 0.008866858356574542,
+            "direction_norm": 0.0008785461631398056,
+            "cosine": -0.874247434803744,
+            "classification": "descent",
+            "sign_tolerance": 1e-12,
+            "independent_dot": -6.810338898711217e-06
+          },
+          "u": {
+            "dot": -0.0003172081143240731,
+            "unit_direction_derivative": -0.3808916089615109,
+            "gradient_norm": 0.5790109005086643,
+            "direction_norm": 0.0008328041544126716,
+            "cosine": -0.6578314995916235,
+            "classification": "descent",
+            "sign_tolerance": 1e-12,
+            "independent_dot": -0.0003172081143240731
+          },
+          "theta": {
+            "dot": 2.9028037033151096e-05,
+            "unit_direction_derivative": 0.002448452661954688,
+            "gradient_norm": 0.018686994863324705,
+            "direction_norm": 0.01185566602295548,
+            "cosine": 0.13102441991676508,
+            "classification": "ascent",
+            "sign_tolerance": 1e-12,
+            "independent_dot": 2.90280370331511e-05
+          }
+        }
+      }
+    }
+  }
+}
