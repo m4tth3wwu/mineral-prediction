@@ -1,0 +1,8 @@
+{
+  "session_id": "20260922T072637Z_p1h",
+  "run_id": "20260922T072637Z_p1h_train96",
+  "output_dir": "mineral_prediction/p1h_quadrature/20260922T072637Z_p1h_train96",
+  "base_commit": "bd4fb6d01ea5efec9d54a79475962e75b6586cca",
+  "prompt_path": "docs/project_memory/prompts/20260922T072637Z_p1h.md",
+  "frozen_manifest": "mineral_prediction/p1h_quadrature/20260922T072637Z_p1h_train96/FROZEN_BEFORE.json"
+}

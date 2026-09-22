@@ -1,0 +1,12 @@
+{
+  "time": "2026-09-22T07:56:21.276048+00:00",
+  "runtime_adam_path": "D:\\anaconda\\Lib\\site-packages\\torch\\optim\\adam.py",
+  "runtime_adam_sha256": "1adac65df82cfc583c02eb88e9aa55126af2d27ea485230481403db38857b15c",
+  "protocol_sha256": "e71d24e16af86dae4823f1edfae342b167041840f2be34d97bde98976dccc1f2",
+  "sources": {
+    "mineral_prediction/evaluate_acawlr_ppp_p1h_quadrature.py": "e3bc14ad1ef6b0ec36d15d2173239eaf481c2f12de60181607ac30863ca40437",
+    "mineral_prediction/check_acawlr_ppp_p1g_quadrature.py": "232b9d6aa0e0e85f0a4ddacf05784f3843e026655403312adf0059072034e8f2",
+    "mineral_prediction/check_acawlr_ppp_p1g_gradients.py": "8d2509b1b9523240a03047a15dbe753d8a409ccdbfbb3392fb77d6fafab2902e",
+    "mineral_prediction/check_acawlr_ppp_p1g_finite_step.py": "9d73ff2c34431bce1b41648163dad41dca2146c1013f687a9a2c5c019d0bc4be"
+  }
+}

@@ -48,3 +48,9 @@ Frozen step2000 moments plus saved48 total gradients yield candidate t2001 displ
 
 ## D-20260922-006 — one finite candidate perturbation per frozen endpoint
 P0 total changes48/384=-.371054/-.525037; original lambda=+2.072713/+1.665135 despite linear predictions-3.406370/-3.739032. Confirms finite-displacement nonlinearity at the regularized endpoint, not cause of historical collapse or isolated causal regularization effect. Two temporary copies, no optimizer calls/backward/training continuation, no alpha scan. All49 checks pass;2315 frozen hashes unchanged. Item1 completed. Next: freeze a single-variable training quadrature protocol before any new runs; not executed.
+
+## 20260922T072637Z_p1h
+用户要求一次多推进；预声明P1-H整批固定train96配对对照及统一评价。无自适应扩展，完整证据核验后沿用commit/push授权。正在执行，结果以对应run为准。
+
+## 20260922T072637Z_p1h 完成
+单变量train96配对实验完成4000更新。统一768评价：lambda0 KL改善24.68%，原lambda恶化31.04%；四终点fidelity通过、恢复及stationarity均失败，无collapse。实际更新反转702/679；两个新终点分别出现候选方向上升和有限位移反转。保留混合结果，不宣称网格加密解决问题或正则机制成立。下一阶段建议仅改预定学习率，尚未启动。20/61/35组检查通过，2345旧文件未变，1935新检查点完整。沿用直接push授权。

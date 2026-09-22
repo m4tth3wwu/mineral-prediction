@@ -1,0 +1,6 @@
+{
+  "mineral_prediction/evaluate_acawlr_ppp_p1h_quadrature.py": "e3bc14ad1ef6b0ec36d15d2173239eaf481c2f12de60181607ac30863ca40437",
+  "mineral_prediction/verify_acawlr_ppp_p1h_quadrature.py": "1e34389901fc7f5a30634af99d982fb93f2e0d83361a417817488f2aaff89884",
+  "mineral_prediction/report_acawlr_ppp_p1h_quadrature.py": "2708108448011e3f22eb72d68c7c11a63d7037322772f32a185b88c14a8d46b3",
+  "mineral_prediction/report_acawlr_ppp_p1g_empirical.py": "f958065380a952e24d021590eca7e34c1c8994651037525fc816f8e68c92faa9"
+}

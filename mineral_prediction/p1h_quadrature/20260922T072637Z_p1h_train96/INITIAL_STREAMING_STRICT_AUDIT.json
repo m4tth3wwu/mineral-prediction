@@ -1,0 +1,7 @@
+{
+  "purpose": "Audit initial streaming comparison against inherited strict pretraining gradient tolerance; no training/update, original checks preserved.",
+  "max_absolute_error": 3.932618120039422e-15,
+  "strict_atol": 1e-10,
+  "strict_rtol": 1e-10,
+  "passed": true
+}

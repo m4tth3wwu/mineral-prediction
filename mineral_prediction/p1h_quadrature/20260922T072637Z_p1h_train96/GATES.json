@@ -1,0 +1,62 @@
+{
+  "pretraining": {
+    "checks": {
+      "data_hash": true,
+      "data_bit_exact_P1D": true,
+      "data_statistics": true,
+      "initialization": true,
+      "teacher": true,
+      "n_dtype": true,
+      "frozen": true,
+      "environment": true,
+      "grid48": true,
+      "grid96": true,
+      "grid192": true,
+      "regularization_gradient": true,
+      "objective_formula": true,
+      "streaming_gradient": true,
+      "streaming_value": true,
+      "FD": true,
+      "initial_restored": true,
+      "initial_metrics": true,
+      "old48_initial_objective": true,
+      "initial_fidelity": true
+    },
+    "passed": true,
+    "failed": []
+  },
+  "endpoints": {
+    "train48_empirical_P0": {
+      "errors": {
+        "logZ": 3.846767411808116e-05,
+        "KL": 3.527030714778334e-05,
+        "TV": 1.5755961122160267e-05
+      },
+      "passed": true
+    },
+    "train48_empirical_Plambda": {
+      "errors": {
+        "logZ": 1.0975753461650584e-06,
+        "KL": 7.502866967712407e-07,
+        "TV": 8.826204668493931e-06
+      },
+      "passed": true
+    },
+    "train96_empirical_P0": {
+      "errors": {
+        "logZ": 4.115091780221292e-06,
+        "KL": 3.7648021482539207e-06,
+        "TV": 1.7119797896536504e-06
+      },
+      "passed": true
+    },
+    "train96_empirical_Plambda": {
+      "errors": {
+        "logZ": 5.902520463507699e-06,
+        "KL": 1.0370102945245208e-05,
+        "TV": 1.1277851635627112e-05
+      },
+      "passed": true
+    }
+  }
+}
